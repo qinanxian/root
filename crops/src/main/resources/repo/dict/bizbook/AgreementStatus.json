@@ -1,0 +1,27 @@
+{
+  "categoryCode": "bizbook",
+  "code": "AgreementStatus",
+  "name": "协议状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "10",
+      "name": "未生效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "20",
+      "name": "生效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "30",
+      "name": "失效",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

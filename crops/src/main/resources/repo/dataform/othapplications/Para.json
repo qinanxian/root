@@ -1,0 +1,139 @@
+{
+  "id": "othapplications-Para",
+  "pack": "othapplications",
+  "code": "Para",
+  "name": "期限利率详情",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_PARA_CONFIG",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "",
+    "from": "QCFQ_PARA_CONFIG\r\n",
+    "orderBy": "CREATED_TIME asc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-Para",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Para",
+      "name": "期限",
+      "code": "timeLimit",
+      "dataType": "String",
+      "column": "TIME_LIMIT",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Time_Limit"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-Para",
+      "name": "年数",
+      "code": "years",
+      "dataType": "String",
+      "column": "YEARS",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeExpr": ""
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-Para",
+      "name": "客户承担费率（%）",
+      "code": "rate",
+      "dataType": "String",
+      "column": "RATE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": ""
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "2"
+    },
+    {
+      "dataformId": "othapplications-Para",
+      "name": "利率（%）",
+      "code": "intRate",
+      "dataType": "String",
+      "column": "INT_RATE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "2"
+    }
+  ],
+  "filters": []
+}

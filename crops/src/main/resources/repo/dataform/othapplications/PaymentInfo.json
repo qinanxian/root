@@ -1,0 +1,89 @@
+{
+  "id": "othapplications-PaymentInfo",
+  "pack": "othapplications",
+  "code": "PaymentInfo",
+  "name": "支付信息",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_PAYMENT_INFO",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "CONTRACT_ID =:contractId",
+    "from": "ZRY_PAYMENT_INFO",
+    "groupBy": "",
+    "orderBy": "PAY_DATE desc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-PaymentInfo",
+      "code": "contractId",
+      "name": "合同编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0000",
+      "column": "CONTRACT_ID",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PaymentInfo",
+      "code": "perfAmount",
+      "name": "支付金额",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0010",
+      "column": "PERF_AMOUNT",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PaymentInfo",
+      "code": "payDate",
+      "name": "支付日期",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0020",
+      "column": "PAY_DATE",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

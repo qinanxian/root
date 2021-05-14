@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+.btn-toolbar{
+    margin:.5em .5em 0px 0px;
+    padding:0px 0px 5px 0px;
+    text-align: center;
+    border-bottom: 1px solid #aaaaaa;
+}
+.btn>i{
+    padding:3px;
+}
+
+
+.rb-fieldset{
+    padding:.35em .625em .75em;
+    margin: 20px 5px;
+    border: 1px solid #DCDCDC;
+    border-radius: 3px;
+    font-size:14px;
+}
+.rb-legend{
+    padding:0;
+    margin: 0;
+    border:none;
+    width: auto;
+    font-size : 1em;
+}
+.rb-legend-title{
+    padding:5px 10px 5px 5px;
+    text-decoration: none !important;
+    white-space: nowrap;
+}
+.rb-legend-title-label{
+    padding-left:5px;
+}
+
+.rb-legend-title:hover,
+.rb-legend-title:active,
+.rb-legend-title:link{
+    color: #337ab7;
+}
+.rb-fieldset-body{
+    margin: 0;
+    padding: 0;
+}
+.rb-fieldset-collapse-hint{
+    text-align: center;
+    color: #5e5e5e;
+    font-size: 0.8em;
+    display: none;
+    cursor: pointer;
+}
+
+.rb-fieldset-collapse-hint:hover{
+    color: #337ab7;
+}
+
+.rb-autofit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+
+.rb-field{
+	clear: none;
+	font-size: small;
+	margin-bottom: 15px;
+	padding-right: 20px;
+	display: flex;
+	align-items: center;
+    width: auto;
+}
+.rb-field-name{
+    font-weight: 400;
+    margin-bottom: 0;
+    min-width: 100px;
+    max-width: 100px;
+    text-align: left;
+    padding-left: 5px;
+    position: relative;
+}
+.rb-field-required .rb-field-name:before{
+    content: "*";
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-right:3px;
+    color: #FF0000;
+    position: absolute;
+    left: -5px;
+}
+.rb-field-name:after{
+    content: ":";
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left:3px;
+}
+.rb-field-container,
+.response-layout-inline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.rb-field-addon:first-child {
+    border-right: 0;
+    border-radius: 0;
+}
+
+.rb-field-addon:last-child {
+    border-left: 0;
+    border-radius: 0;
+}
+
+.form-control {
+    min-width: 180px;
+}
+
+.rb-field-container .form-control:first-child,
+.rb-field-addon:first-child,
+.input-group-btn:first-child>.btn,
+.input-group-btn:first-child>.btn-group>.btn,
+.input-group-btn:first-child>.dropdown-toggle,
+.input-group-btn:last-child>.btn-group:not(:last-child)>.btn,
+.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.rb-field-container .form-control:last-child,
+.rb-field-addon:last-child,
+.input-group-btn:first-child>.btn-group:not(:first-child)>.btn,
+.input-group-btn:first-child>.btn:not(:first-child),
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group>.btn,
+.input-group-btn:last-child>.dropdown-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rb-field-container .form-control:not(:first-child):not(:last-child),
+.rb-field-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+
+.rb-field-input{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+textarea.rb-field-input{
+    min-height: 100px;
+    min-width: 40%;
+    max-width: 100%;
+}
+
+.rb-field-addon{
+    padding: 0 18px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 3px;
+}
+.rb-field-addon:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.rb-field-note{
+	font-size: small;
+	padding-left: 5px;
+	color: #aaaaaa;
+}
+
+/*----------------------------------------------*/
+/*        容器分成多少列，最多四列(默认方式)        */
+/*----------------------------------------------*/
+.rb-container-col-1,
+.rb-container-col-2,
+.rb-container-col-3,
+.rb-container-col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.rb-field-col-1,
+.rb-field-col-2,
+.rb-field-col-3,
+.rb-field-col-4 {
+    width: 100%;
+}
+
+@media screen and (min-width: 678px){
+
+    .rb-container-col-2 .rb-field-col-1 {
+        width: 50%;
+    }
+
+    .rb-container-col-3 .rb-field-col-1 {
+        width: 50%;
+    }
+
+    .rb-container-col-4 .rb-field-col-1 {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (min-width: 996px){
+
+    .rb-container-col-2 .rb-field-col-1 {
+        width: 50%;
+    }
+
+    .rb-container-col-3 .rb-field-col-2 {
+        width: 66.66%;
+    }
+    .rb-container-col-3 .rb-field-col-1 {
+        width: 33.33%;
+    }
+
+    .rb-container-col-4 .rb-field-col-3 {
+        width: 100%;
+    }
+    .rb-container-col-4 .rb-field-col-2 {
+        width: 66.6%;
+    }
+    .rb-container-col-4 .rb-field-col-1 {
+        width: 33.3%;
+    }
+}
+
+
+@media screen and (min-width: 1300px){
+
+    .rb-container-col-2 .rb-field-col-1 {
+        width: 50%;
+    }
+
+    .rb-container-col-3 .rb-field-col-2 {
+        width: 66.66%;
+    }
+    .rb-container-col-3 .rb-field-col-1 {
+        width: 33.33%;
+    }
+
+    .rb-container-col-4 .rb-field-col-3 {
+        width: 75%;
+    }
+    .rb-container-col-4 .rb-field-col-2 {
+        width: 50%;
+    }
+    .rb-container-col-4 .rb-field-col-1 {
+        width: 25%;
+    }
+}
+
+
+

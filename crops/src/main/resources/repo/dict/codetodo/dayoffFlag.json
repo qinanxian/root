@@ -1,0 +1,51 @@
+{
+  "categoryCode": "codetodo",
+  "code": "dayoffFlag",
+  "name": "轮休情况",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "周一",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "周二",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "3",
+      "name": "周三",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "4",
+      "name": "周四",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "5",
+      "name": "周五",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "6",
+      "name": "周六",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "7",
+      "name": "周日",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

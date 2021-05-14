@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>信贷工厂后管平台2</title>
+    <link href="favicon-rober.ico" mce_href="favicon-rober.ico" rel="bookmark" type="image/x-icon" />
+    <link href="favicon-rober.ico" mce_href="favicon-rober.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon-rober.ico" mce_href="favicon-rober.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<style>
+    #loading {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+</style>
+<body style="overflow: hidden">
+<div id="loading">
+    <img id="loadingImg" style="opacity: 0">
+    <div style="height: 6px;background-color: #f5f5f5; width: 400px;">
+        <div id="process" style="background-color: #52c41a; height: 6px; width: 0"></div>
+    </div>
+    <div id="precent">0%</div>
+</div>
+<div >
+    <iframe id="main" src="main.html" style="opacity: 0">
+    </iframe>
+</div>
+</body>
+<script type="text/javascript" src="asset/jquery.min.js" defer></script>
+<script src="loadIndex.js" defer></script>
+</html>

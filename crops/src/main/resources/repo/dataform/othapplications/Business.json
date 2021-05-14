@@ -1,0 +1,385 @@
+{
+  "id": "othapplications-Business",
+  "pack": "othapplications",
+  "code": "Business",
+  "name": "业务信息",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_BUSINESS_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "QCFQ_BUSINESS_INFO QBI , CUSTOMER_INFO CI",
+    "where": "QBI.CUSTOMER_ID = CI.ID ",
+    "orderBy": "CREATED_TIME asc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-Business",
+      "name": "业务id",
+      "code": "busId",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "QBI"
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "姓名",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "身份证号码",
+      "code": "cert",
+      "dataType": "String",
+      "column": "CERT",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "手机号",
+      "code": "phone",
+      "dataType": "String",
+      "column": "PHONE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "选择产品",
+      "code": "productId",
+      "dataType": "String",
+      "column": "PRODUCT_ID",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT PRODUCT_ID AS CODE , PRODUCT_NAME AS NAME FROM QCFQ_APPLY_PRODUCT"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "",
+      "defaultValue": ""
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "合作机构",
+      "code": "comId",
+      "dataType": "String",
+      "column": "COM_ID",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT COM_ID AS CODE,COM_NAME AS NAME FROM QCFQ_COOPER_ORG qco"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "申请状态",
+      "code": "status",
+      "dataType": "String",
+      "column": "STATUS",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "BusStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "申请时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "table": "QBI"
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "授权协议",
+      "code": "authFileId",
+      "dataType": "String",
+      "column": "AUTH_FILE_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "身份证正面文件Id",
+      "code": "frontImageId",
+      "dataType": "String",
+      "column": "FRONT_IMAGE_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "身份证正面文件名称",
+      "code": "frontImageName",
+      "dataType": "String",
+      "column": "FRONT_IMAGE_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "身份证反面文件Id",
+      "code": "reverseImageId",
+      "dataType": "String",
+      "column": "REVERSE_IMAGE_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "身份证反面文件名称",
+      "code": "reverseImageName",
+      "dataType": "String",
+      "column": "REVERSE_IMAGE_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Business",
+      "name": "人脸识别文件Id",
+      "code": "faceFileId",
+      "dataType": "String",
+      "column": "FACE_FILE_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": [
+    {
+      "name": "合作机构",
+      "code": "comId",
+      "bindFor": "comId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000",
+      "enable": true
+    },
+    {
+      "name": "选择产品",
+      "code": "productId",
+      "bindFor": "productId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0010",
+      "enable": true
+    },
+    {
+      "name": "申请时间",
+      "code": "createdTime",
+      "bindFor": "createdTime",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Range",
+      "sortCode": "0020"
+    }
+  ],
+  "handler": "com.vekai.crops.othApplications.qcfq.handler.BusinessHandler"
+}

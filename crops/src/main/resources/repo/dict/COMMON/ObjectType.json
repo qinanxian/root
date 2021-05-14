@@ -1,0 +1,199 @@
+{
+  "code" : "ObjectType",
+  "name" : "对象类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "00",
+  "intro" : null,
+  "items" : [ {
+    "code" : "ATTACHMENT",
+    "name" : "附件",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "MESSAGE",
+    "name" : "消息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "TOPIC",
+    "name" : "话题",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "TODO_TASK",
+    "name" : "任务事项",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "32",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "MEETING",
+    "name" : "会议",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "INVEST_PLAN",
+    "name" : "投资方案",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "INVEST_PLAN_LOAN",
+    "name" : "项目出资放款",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "44",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "INVEST_CONTRACT",
+    "name" : "投资合同",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "INVEST_EXECUTE_TASK",
+    "name" : "投资端落实任务",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "52",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "投资端落实任务"
+  }, {
+    "code" : "IVST_PLAN_TRANSFER",
+    "name" : "项目移交",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "55",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "IPO_MANAGE",
+    "name" : "上市管理",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "56",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "IVST_MANAGE_TASK_DESIGN",
+    "name" : "管理表设计",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "59",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "CUSTOMER",
+    "name" : "客户",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "WORK_FLOW",
+    "name" : "工作流",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "70",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FINANCE_FUND",
+    "name" : "融资端基金产品",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "91",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FINANCE_FUND_PARTNER",
+    "name" : "融资端基金合伙人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "92",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FINANCE_FUND_GP_MANAGER",
+    "name" : "融资端基金GP及管理人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "93",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FINANCE_FUND_INVESTOR",
+    "name" : "融资端基金投资人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "94",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "DASHBOARD",
+    "name" : "首页组件",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "95",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

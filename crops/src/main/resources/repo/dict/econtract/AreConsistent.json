@@ -1,0 +1,21 @@
+{
+  "categoryCode": "econtract",
+  "code": "AreConsistent",
+  "name": "经办人法人是否一致",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "Yes",
+      "name": "是",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "No",
+      "name": "否",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "code" : "DataType",
+  "name" : "数据类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0057",
+  "intro" : null,
+  "items" : [ {
+    "code" : "INTEGER",
+    "name" : "整数",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0010",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "STRING",
+    "name" : "字符串",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0020",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "DOUBLE",
+    "name" : "小数",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0030",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

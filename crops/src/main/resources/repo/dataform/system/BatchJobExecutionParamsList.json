@@ -1,0 +1,192 @@
+{
+  "id": "system-BatchJobExecutionParamsList",
+  "pack": "system",
+  "code": "BatchJobExecutionParamsList",
+  "name": "作业参数列表",
+  "dataModelType": "DataMap",
+  "dataModel": "com.vekai.batch.entity.BatchJobExecutionParams",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "BJEP.JOB_EXECUTION_ID=:jobExecutionId",
+    "from": "BATCH_JOB_EXECUTION_PARAMS BJEP"
+  },
+  "elements": [
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "参数类型",
+      "code": "typeCd",
+      "dataType": "String",
+      "column": "TYPE_CD",
+      "table": "BJEP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "参数名字",
+      "code": "keyName",
+      "dataType": "String",
+      "column": "KEY_NAME",
+      "table": "BJEP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "执行器ID",
+      "code": "jobExecutionId",
+      "dataType": "String",
+      "column": "JOB_EXECUTION_ID",
+      "table": "BJEP",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "String参数值",
+      "code": "stringVal",
+      "dataType": "String",
+      "column": "STRING_VAL",
+      "table": "BJEP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "Date参数值",
+      "code": "dateVal",
+      "dataType": "Date",
+      "column": "DATE_VAL",
+      "table": "BJEP",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "Long参数值",
+      "code": "longVal",
+      "dataType": "String",
+      "column": "LONG_VAL",
+      "table": "BJEP",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "Double参数值",
+      "code": "doubleVal",
+      "dataType": "String",
+      "column": "DOUBLE_VAL",
+      "table": "BJEP",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-BatchJobExecutionParamsList",
+      "name": "是否标识作业实例",
+      "code": "identifying",
+      "dataType": "String",
+      "column": "IDENTIFYING",
+      "table": "BJEP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

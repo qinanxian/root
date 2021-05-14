@@ -1,0 +1,154 @@
+{
+  "id": "system-SimpleUserListForOrgManage",
+  "pack": "system",
+  "code": "SimpleUserListForOrgManage",
+  "name": "机构下的用户列表",
+  "tags": "",
+  "description": "",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.auth.entity.User",
+  "handler": "com.vekai.appframe.auth.handler.SimpleUserListHandler",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "SELECT",
+    "selectItems": [],
+    "from": "AUTH_USER AU, AUTH_ORG AO",
+    "where": "AO.ID=AU.ORG_ID AND AU.ORG_ID=:orgId",
+    "groupBy": null,
+    "having": null,
+    "orderBy": " AO.ID ASC"
+  },
+  "elements": [
+    {
+      "dataformId": "system-SimpleUserListForOrgManage",
+      "name": "用户ID",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-SimpleUserListForOrgManage",
+      "name": "用户代码",
+      "code": "code",
+      "dataType": "String",
+      "column": "CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-SimpleUserListForOrgManage",
+      "name": "用户名",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-SimpleUserListForOrgManage",
+      "name": "机构",
+      "code": "orgId",
+      "dataType": "String",
+      "column": "ORG_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "AU",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-SimpleUserListForOrgManage",
+      "name": "邮件",
+      "code": "email",
+      "dataType": "String",
+      "column": "EMAIL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-SimpleUserListForOrgManage",
+      "name": "状态",
+      "code": "status",
+      "dataType": "String",
+      "column": "STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "UserStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "AU",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "managedByRR": false
+}

@@ -1,0 +1,29 @@
+{
+  "code" : "TaxQualification",
+  "name" : "税务资质",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0028",
+  "intro" : "税务资质的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "一般纳税人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "小规模纳税人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

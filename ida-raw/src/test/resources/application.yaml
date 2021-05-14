@@ -1,0 +1,27 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /raw
+    session:
+      timeout: "30m"
+
+spring:
+  messages:
+    encoding: UTF-8
+    basename-set:
+      - classpath:i18n/messages
+#RAW相关配置
+cn.fisok:
+  raw:
+    charset: UTF-8
+    run-model: Dev
+    long-date-format: "yyyy-MM-dd HH:mm:ss.SSS"
+    shor-date-format: "yyyy-MM-dd"
+    json-serialize-secret-mask: "***"         #JSON序列化，保密字段统一使显示文字
+    json-serialize-property-secrets:          #JSON序列化，保密字段（向前端输出后，显示为 ${secret-mask})
+      - cn.fisok.auth.entity.User.password
+      - cn.fisok.auth.entity.User.status
+    json-serialize-property-excludes:         #JSON序列化，需要排除的字段（向前端输出后，这些字段不输出)
+      - cn.fisok.auth.entity.User.revision
+      - cn.fisok.auth.entity.User.orgId
+

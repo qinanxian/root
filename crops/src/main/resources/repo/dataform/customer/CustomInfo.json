@@ -1,0 +1,411 @@
+{
+  "id": "customer-CustomInfo",
+  "pack": "customer",
+  "code": "CustomInfo",
+  "name": "客户详细信息",
+  "managedByRR": false,
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.crops.customer.entity.CustomerInfoPO",
+  "formUIHint": {
+    "columnNumber": 3,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "id = :id",
+    "from": "CUSTOMER_INFO"
+  },
+  "elements": [
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "客户编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "是否实名认证",
+      "code": "realAuth",
+      "dataType": "String",
+      "column": "REAL_AUTH",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "IfAuth",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "手机号",
+      "code": "tel",
+      "dataType": "String",
+      "column": "TEL",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "性别",
+      "code": "sex",
+      "dataType": "String",
+      "column": "SEX",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Sex",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "code": "authStep",
+      "name": "当前实名步骤",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"268px\"}"
+      },
+      "sortCode": "0060",
+      "column": "AUTH_STEP",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "年龄",
+      "code": "age",
+      "dataType": "Integer",
+      "column": "AGE",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "常住地址",
+      "code": "permanntAddr",
+      "dataType": "String",
+      "column": "PERMANNT_ADDR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "邮箱",
+      "code": "email",
+      "dataType": "String",
+      "column": "EMAIL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "身份证正面",
+      "code": "frontImageId",
+      "dataType": "String",
+      "column": "FRONT_IMAGE_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "身份证反面",
+      "code": "reverseImageId",
+      "dataType": "String",
+      "column": "REVERSE_IMAGE_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "code": "faceFileId",
+      "name": "人脸识别照片",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0120",
+      "column": "FACE_FILE_ID",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomInfo",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0170",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

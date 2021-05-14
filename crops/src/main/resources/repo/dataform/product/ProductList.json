@@ -1,0 +1,328 @@
+{
+  "id": "product-ProductList",
+  "pack": "product",
+  "code": "ProductList",
+  "name": "产品列表",
+  "managedByRR": false,
+  "tags": "产品，产品列表",
+  "dataModelType": "DataMap",
+  "dataModel": "PRODUCT_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "PRODUCT_INFO prod",
+    "where": "prod.APP_ID = :appId"
+  },
+  "elements": [
+    {
+      "dataformId": "product-ProductList",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": false,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod",
+      "primaryKey": true
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "产品名称",
+      "code": "productName",
+      "dataType": "String",
+      "column": "PRODUCT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "应用编号",
+      "code": "appId",
+      "dataType": "String",
+      "column": "APP_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "额度上限",
+      "code": "maxLimit",
+      "dataType": "Double",
+      "column": "MAX_LIMIT",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "产品基础年利率",
+      "code": "baseYearRate",
+      "dataType": "Double",
+      "column": "BASE_YEAR_RATE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "还款方式",
+      "code": "repayType",
+      "dataType": "String",
+      "column": "REPAY_TYPE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "RepayType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "产品期限",
+      "code": "loanTerm",
+      "dataType": "String",
+      "column": "LOAN_TERM",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "场景编号",
+      "code": "sceneId",
+      "dataType": "String",
+      "column": "SCENE_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "prod"
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "产品代码",
+      "code": "productCode",
+      "dataType": "String",
+      "column": "PRODUCT_CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "LPR利率",
+      "code": "lprRate",
+      "dataType": "String",
+      "column": "LPR_RATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "白名单有效期(日)",
+      "code": "whiteValidity",
+      "dataType": "String",
+      "column": "WHITE_VALIDITY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "客户经理",
+      "code": "custManager",
+      "dataType": "String",
+      "column": "CUST_MANAGER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "product-ProductList",
+      "name": "机构号",
+      "code": "orgId",
+      "dataType": "String",
+      "column": "ORG_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "产品名称",
+      "code": "productName",
+      "bindFor": "productName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "还款方式",
+      "code": "repayType",
+      "bindFor": "repayType",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    }
+  ]
+}

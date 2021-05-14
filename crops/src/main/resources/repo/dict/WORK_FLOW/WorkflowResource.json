@@ -1,0 +1,39 @@
+{
+  "code" : "WorkflowResource",
+  "name" : "流程资源类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "WORK_FLOW",
+  "sortCode" : "1030",
+  "intro" : null,
+  "items" : [ {
+    "code" : "Button",
+    "name" : "按钮",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "Button",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fieldset",
+    "name" : "信息块",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "Fieldset",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Link",
+    "name" : "超链接",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "Link",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,59 @@
+{
+  "code" : "investmentWay",
+  "name" : "出资方式",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0035",
+  "intro" : "出资方式的码表",
+  "items" : [ {
+    "code" : "FUND",
+    "name" : "资金",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "资金"
+  }, {
+    "code" : "TECHNOLOGY",
+    "name" : "技术",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "技术"
+  }, {
+    "code" : "MATERIAL_OBJECT",
+    "name" : "实物",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "实物"
+  }, {
+    "code" : "RIGHT",
+    "name" : "权利",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "权利"
+  }, {
+    "code" : "OTHER",
+    "name" : "其他",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "其他"
+  } ]
+}

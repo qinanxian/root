@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constant-library>
+    <category name="VouchType" label="担保方式">
+        <constant name="00" label="信用" type="String"/>
+        <constant name="10" label="保证" type="String"/>
+        <constant name="20" label="抵押" type="String"/>
+        <constant name="30" label="质押" type="String"/>
+    </category>
+</constant-library>

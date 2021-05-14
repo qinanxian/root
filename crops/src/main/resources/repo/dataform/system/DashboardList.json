@@ -1,0 +1,195 @@
+{
+  "id": "system-DashboardList",
+  "pack": "system",
+  "code": "DashboardList",
+  "name": "工作台配置列表",
+  "description": "工作台配置列表",
+  "sortCode": "0010",
+  "classification": null,
+  "tags": "工作台配置列表",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.appframe.cmon.dashboard.entity.CmonDashBoardPO",
+  "query": {
+    "select": "select",
+    "selectItems": [],
+    "from": "CMON_DASH_BOARD",
+    "where": null,
+    "groupBy": null,
+    "having": null,
+    "orderBy": null
+  },
+  "handler": null,
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "elements": [
+    {
+      "dataformId": "system-DashboardList",
+      "name": "标识号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "用户号",
+      "code": "userId",
+      "dataType": "String",
+      "column": "USER_ID",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "代码",
+      "code": "boardKey",
+      "dataType": "String",
+      "column": "BOARD_KEY",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "名称",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "X轴",
+      "code": "axisX",
+      "dataType": "Integer",
+      "column": "AXIS_X",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "Y轴",
+      "code": "axisY",
+      "dataType": "Integer",
+      "column": "AXIS_Y",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "宽度",
+      "code": "sizeW",
+      "dataType": "Integer",
+      "column": "SIZE_W",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-DashboardList",
+      "name": "高度",
+      "code": "sizeH",
+      "dataType": "Integer",
+      "column": "SIZE_H",
+      "table": "CMON_DASH_BOARD",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "properties": {},
+  "revision": 0,
+  "createdBy": null,
+  "createdTime": null,
+  "updatedBy": null,
+  "updatedTime": null
+}

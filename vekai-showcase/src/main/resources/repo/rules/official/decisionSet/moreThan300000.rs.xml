@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule-set>
+    <import-variable-library path="jcr:/测试项目/loan.vl.xml"/>
+    <remark><![CDATA[]]></remark>
+    <rule name="rule">
+        <remark><![CDATA[]]></remark>
+        <if>
+            <and>
+                <or>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="level" var-label="客户等级" datatype="String" type="variable"/>
+                        <value content="一类" type="Input"/>
+                    </atom>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="level" var-label="客户等级" datatype="String" type="variable"/>
+                        <value content="二类" type="Input"/>
+                    </atom>
+                </or>
+                <or>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                        <value content="北京" type="Input"/>
+                    </atom>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                        <value content="上海" type="Input"/>
+                    </atom>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                        <value content="杭州" type="Input"/>
+                    </atom>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                        <value content="苏州" type="Input"/>
+                    </atom>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                        <value content="南京" type="Input"/>
+                    </atom>
+                </or>
+                <atom op="Equals">
+                    <left var-category="贷款人" var="houseProperty" var-label="是否有当地房产证明" datatype="Boolean" type="variable"/>
+                    <value content="true" type="Input"/>
+                </atom>
+                <atom op="Equals">
+                    <left var-category="贷款人" var="record" var-label="人行记录是否为空" datatype="Boolean" type="variable"/>
+                    <value content="true" type="Input"/>
+                </atom>
+                <atom op="Equals">
+                    <left var-category="贷款人" var="proofIncome" var-label="收入证明：工作流水/税单" datatype="Boolean" type="variable"/>
+                    <value content="true" type="Input"/>
+                </atom>
+            </and>
+        </if>
+        <then>
+            <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                <value content="true" type="Input"/>
+            </var-assign>
+        </then>
+        <else>
+            <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                <value content="false" type="Input"/>
+            </var-assign>
+        </else>
+    </rule>
+</rule-set>

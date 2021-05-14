@@ -1,0 +1,317 @@
+{
+  "id": "workflow-AuditMonitorActionTypeList",
+  "pack": "workflow",
+  "code": "AuditMonitorActionTypeList",
+  "name": "数据审计操作类型列表",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "AUTH_DATA_AUDIT_ITEM",
+    "where": "DATA_AUDIT_ID=:dataAuditId"
+  },
+  "elements": [
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "数据项唯一编号",
+      "code": "auditItemId",
+      "dataType": "String",
+      "column": "AUDIT_ITEM_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "审计ID",
+      "code": "dataAuditId",
+      "dataType": "String",
+      "column": "DATA_AUDIT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "属性代码",
+      "code": "itemCode",
+      "dataType": "String",
+      "column": "ITEM_CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "属性名称",
+      "code": "itemName",
+      "dataType": "String",
+      "column": "ITEM_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "字段代码",
+      "code": "columnName",
+      "dataType": "String",
+      "column": "COLUMN_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "code": "dataType",
+      "name": "数据类型",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0050",
+      "column": "DATA_TYPE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "是否数据字典",
+      "code": "isDict",
+      "dataType": "String",
+      "column": "IS_DICT",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改前描述值",
+      "code": "valueExplainOld",
+      "dataType": "String",
+      "column": "VALUE_EXPLAIN_OLD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改后描述值",
+      "code": "valueExplain",
+      "dataType": "String",
+      "column": "VALUE_EXPLAIN",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改前字串值",
+      "code": "valueStrOld",
+      "dataType": "String",
+      "column": "VALUE_STR_OLD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改后字串值",
+      "code": "valueStr",
+      "dataType": "String",
+      "column": "VALUE_STR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改前数字值",
+      "code": "valueNumberOld",
+      "dataType": "Double",
+      "column": "VALUE_NUMBER_OLD",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改后数字值",
+      "code": "valueNumber",
+      "dataType": "Double",
+      "column": "VALUE_NUMBER",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改前日期值",
+      "code": "valueDateOld",
+      "dataType": "Date",
+      "column": "VALUE_DATE_OLD",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorActionTypeList",
+      "name": "修改后日期值",
+      "code": "valueDate",
+      "dataType": "Date",
+      "column": "VALUE_DATE",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "tags": "数据审计，操作类型，列表",
+  "description": "数据审计操作类型列表模版",
+  "dataModel": "AUTH_DATA_AUDIT_ITEM",
+  "filters": []
+}

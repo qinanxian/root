@@ -1,0 +1,63 @@
+{
+  "categoryCode": "OTHER",
+  "code": "Position",
+  "name": "职务",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "厅级及以上",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "处级",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "科级",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "04",
+      "name": "科员",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "05",
+      "name": "企业总经理",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "06",
+      "name": "企业高级经理",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "07",
+      "name": "企业经理",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "08",
+      "name": "一般员工",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "09",
+      "name": "其他",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

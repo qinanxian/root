@@ -1,0 +1,213 @@
+{
+  "id": "insure-StaffWhiteList",
+  "pack": "insure",
+  "code": "StaffWhiteList",
+  "name": "保险职业人员白名单列表",
+  "managedByRR": false,
+  "tags": "BX_STAFF_WHITE_LIST",
+  "dataModelType": "DataMap",
+  "dataModel": "BX_STAFF_WHITE_LIST",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "BX_STAFF_WHITE_LIST bx",
+    "orderBy": "bx.CREATED_TIME desc"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "员工号",
+      "code": "oaNo",
+      "dataType": "String",
+      "column": "OA_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "bx",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "员工姓名",
+      "code": "oaName",
+      "dataType": "String",
+      "column": "OA_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "editStyle": "Integer",
+        "dataFormat": "Integer",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "String",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-StaffWhiteList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "String",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [
+    {
+      "name": "员工号",
+      "code": "oaNo",
+      "bindFor": "oaNo",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "员工姓名",
+      "code": "oaName",
+      "bindFor": "oaName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    }
+  ]
+}

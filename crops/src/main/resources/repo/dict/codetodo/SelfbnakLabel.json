@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "SelfbnakLabel",
+  "name": "自助银行标签",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "自助",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "24h",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="crops-credit-level-filling" unicode="&#58917;" d="M1002.667 512L812.8 776.533 723.2 512zM362.667 469.333L512 36.26700000000005l147.2 433.066zM678.4 512l93.867 298.667H251.733l96-298.667zM535.467-38.39999999999998l2.133-2.133 462.933 509.866H708.267zM209.067 778.667L21.333 512H300.8zM21.333 469.333L486.4-44.799999999999955v8.533l-170.667 505.6z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

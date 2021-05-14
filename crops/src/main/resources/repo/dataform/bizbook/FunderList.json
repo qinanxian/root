@@ -1,0 +1,163 @@
+{
+  "id": "bizbook-FunderList",
+  "pack": "bizbook",
+  "code": "FunderList",
+  "name": "资金渠道列表",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "BIZ_FUNDER"
+  },
+  "elements": [
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "资金方ID",
+      "code": "funderId",
+      "dataType": "String",
+      "column": "FUNDER_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "资金方名称",
+      "code": "funderName",
+      "dataType": "String",
+      "column": "FUNDER_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "年利率(%)",
+      "code": "interestRate",
+      "dataType": "Double",
+      "column": "INTEREST_RATE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "还款方式",
+      "code": "paymentMode",
+      "dataType": "String",
+      "column": "PAYMENT_MODE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "paymentMode"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "资金方服务费率(%)",
+      "code": "serviceFeeRate",
+      "dataType": "Double",
+      "column": "SERVICE_FEE_RATE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "公司管理费率(%)",
+      "code": "manageFeeRate",
+      "dataType": "Double",
+      "column": "MANAGE_FEE_RATE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-FunderList",
+      "name": "资金方状态",
+      "code": "funderStatus",
+      "dataType": "String",
+      "column": "FUNDER_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "dataModel": "BIZ_FUNDER"
+}

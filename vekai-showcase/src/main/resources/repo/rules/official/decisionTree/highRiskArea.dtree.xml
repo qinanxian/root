@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decision-tree>
+    <remark><![CDATA[]]></remark>
+    <import-variable-library path="jcr:/测试项目/loan.vl.xml"/>
+    <variable-tree-node>
+        <left var-category="贷款人" var="highRiskArea" var-label="是否高风险地区" datatype="Boolean" type="variable"/>
+        <condition-tree-node op="Equals">
+            <value content="true" type="Input"/>
+            <variable-tree-node>
+                <left var-category="贷款人" var="level" var-label="客户等级(1-4)" datatype="Integer" type="variable"/>
+                <condition-tree-node op="Equals">
+                    <value content="1" type="Input"/>
+                    <action-tree-node>
+                        <var-assign var-category="贷款人" var="level" var-label="客户等级(1-4)" datatype="Integer" type="variable">
+                            <value content="3" type="Input"/>
+                        </var-assign>
+                    </action-tree-node>
+                </condition-tree-node>
+                <condition-tree-node op="Equals">
+                    <value content="2" type="Input"/>
+                    <action-tree-node>
+                        <var-assign var-category="贷款人" var="level" var-label="客户等级(1-4)" datatype="Integer" type="variable">
+                            <value content="4" type="Input"/>
+                        </var-assign>
+                    </action-tree-node>
+                </condition-tree-node>
+                <condition-tree-node op="Equals">
+                    <value content="3" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="贷款人" var="register" var-label="是否本地户籍" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <variable-tree-node>
+                                <left var-category="贷款人" var="socialSecurity" var-label="是否一年无断档社保" datatype="Boolean" type="variable"/>
+                                <condition-tree-node op="Equals">
+                                    <value content="false" type="Input"/>
+                                    <action-tree-node>
+                                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                            <value content="false" type="Input"/>
+                                        </var-assign>
+                                    </action-tree-node>
+                                </condition-tree-node>
+                                <condition-tree-node op="Equals">
+                                    <value content="true" type="Input"/>
+                                    <action-tree-node>
+                                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                            <value content="true" type="Input"/>
+                                        </var-assign>
+                                    </action-tree-node>
+                                </condition-tree-node>
+                            </variable-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <variable-tree-node>
+                                <left var-category="贷款人" var="houseProperty" var-label="是否有当地房产证明" datatype="Boolean" type="variable"/>
+                                <condition-tree-node op="Equals">
+                                    <value content="false" type="Input"/>
+                                    <action-tree-node>
+                                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                            <value content="false" type="Input"/>
+                                        </var-assign>
+                                    </action-tree-node>
+                                </condition-tree-node>
+                                <condition-tree-node op="Equals">
+                                    <value content="true" type="Input"/>
+                                    <variable-tree-node>
+                                        <left var-category="贷款人" var="socialSecurity" var-label="是否一年无断档社保" datatype="Boolean" type="variable"/>
+                                        <condition-tree-node op="Equals">
+                                            <value content="false" type="Input"/>
+                                            <action-tree-node>
+                                                <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                                    <value content="false" type="Input"/>
+                                                </var-assign>
+                                            </action-tree-node>
+                                        </condition-tree-node>
+                                        <condition-tree-node op="Equals">
+                                            <value content="true" type="Input"/>
+                                            <action-tree-node>
+                                                <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                                    <value content="true" type="Input"/>
+                                                </var-assign>
+                                            </action-tree-node>
+                                        </condition-tree-node>
+                                    </variable-tree-node>
+                                </condition-tree-node>
+                            </variable-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+                <condition-tree-node op="Equals">
+                    <value content="4" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="贷款人" var="register" var-label="是否本地户籍" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <variable-tree-node>
+                                <left var-category="贷款人" var="socialSecurity" var-label="是否一年无断档社保" datatype="Boolean" type="variable"/>
+                                <condition-tree-node op="Equals">
+                                    <value content="false" type="Input"/>
+                                    <action-tree-node>
+                                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                            <value content="false" type="Input"/>
+                                        </var-assign>
+                                    </action-tree-node>
+                                </condition-tree-node>
+                                <condition-tree-node op="Equals">
+                                    <value content="true" type="Input"/>
+                                    <action-tree-node>
+                                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                            <value content="true" type="Input"/>
+                                        </var-assign>
+                                    </action-tree-node>
+                                </condition-tree-node>
+                            </variable-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <variable-tree-node>
+                                <left var-category="贷款人" var="houseProperty" var-label="是否有当地房产证明" datatype="Boolean" type="variable"/>
+                                <condition-tree-node op="Equals">
+                                    <value content="false" type="Input"/>
+                                    <action-tree-node>
+                                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                            <value content="false" type="Input"/>
+                                        </var-assign>
+                                    </action-tree-node>
+                                </condition-tree-node>
+                                <condition-tree-node op="Equals">
+                                    <value content="true" type="Input"/>
+                                    <variable-tree-node>
+                                        <left var-category="贷款人" var="socialSecurity" var-label="是否一年无断档社保" datatype="Boolean" type="variable"/>
+                                        <condition-tree-node op="Equals">
+                                            <value content="false" type="Input"/>
+                                            <action-tree-node>
+                                                <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                                    <value content="false" type="Input"/>
+                                                </var-assign>
+                                            </action-tree-node>
+                                        </condition-tree-node>
+                                        <condition-tree-node op="Equals">
+                                            <value content="true" type="Input"/>
+                                            <action-tree-node>
+                                                <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                                    <value content="true" type="Input"/>
+                                                </var-assign>
+                                            </action-tree-node>
+                                        </condition-tree-node>
+                                    </variable-tree-node>
+                                </condition-tree-node>
+                            </variable-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+            </variable-tree-node>
+        </condition-tree-node>
+    </variable-tree-node>
+</decision-tree>

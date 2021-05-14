@@ -1,0 +1,400 @@
+{
+  "id": "obiz-ContractList",
+  "pack": "obiz",
+  "code": "ContractList",
+  "name": "合同列表",
+  "dataModelType": "JavaBean",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "OBIZ_CONTRACT",
+    "orderBy": "CREATED_BY DESC"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "合同号",
+      "code": "contractId",
+      "dataType": "String",
+      "column": "CONTRACT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "客户号",
+      "code": "custId",
+      "dataType": "String",
+      "column": "CUST_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "客户名",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "申请号",
+      "code": "applicationId",
+      "dataType": "String",
+      "column": "APPLICATION_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "业务编号",
+      "code": "businessNo",
+      "dataType": "String",
+      "column": "BUSINESS_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "产品",
+      "code": "policyId",
+      "dataType": "String",
+      "column": "POLICY_ID",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "select POLICY_ID AS CODE,POLICY_NAME AS NAME from polc_definition where POLICY_CODE like 'B-%' order by SORT_CODE ASC"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "资金方",
+      "code": "funderId",
+      "dataType": "String",
+      "column": "FUNDER_ID",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "select FUNDER_ID AS CODE,FUNDER_NAME AS NAME,FUNDER_ID AS SORT_CODE from OBIZ_FUNDER ORDER BY UPDATED_TIME DESC"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "合同金额",
+      "code": "contractAmt",
+      "dataType": "Double",
+      "column": "CONTRACT_AMT",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "合同余额",
+      "code": "contractBalance",
+      "dataType": "Double",
+      "column": "CONTRACT_BALANCE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "执行年利率",
+      "code": "interestRate",
+      "dataType": "String",
+      "column": "INTEREST_RATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "合同起始日",
+      "code": "startDate",
+      "dataType": "Date",
+      "column": "START_DATE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "合同到期日",
+      "code": "expiryDate",
+      "dataType": "Date",
+      "column": "EXPIRY_DATE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "贷款月数",
+      "code": "termMonth",
+      "dataType": "String",
+      "column": "TERM_MONTH",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "还款周期",
+      "code": "paymentPeriod",
+      "dataType": "String",
+      "column": "PAYMENT_PERIOD",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "还款方式",
+      "code": "paymentMode",
+      "dataType": "String",
+      "column": "PAYMENT_MODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "负责人",
+      "code": "operator",
+      "dataType": "String",
+      "column": "OPERATOR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "合同状态",
+      "code": "contractStatus",
+      "dataType": "String",
+      "column": "CONTRACT_STATUS",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "ContractStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "额度号",
+      "code": "limitId",
+      "dataType": "String",
+      "column": "LIMIT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0170",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-ContractList",
+      "name": "服务费",
+      "code": "serviceFee",
+      "dataType": "String",
+      "column": "SERVICE_FEE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0180",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "dataModel": "com.vekai.crops.obiz.contract.entity.ObizContract",
+  "handler": "com.vekai.crops.obiz.contract.handler.ContractListHandler"
+}

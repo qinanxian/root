@@ -1,0 +1,57 @@
+{
+  "categoryCode": "OTHER",
+  "code": "UnitType",
+  "name": "企业性质",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "政府机关",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "事业机关",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "国有企业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "04",
+      "name": "三资企业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "05",
+      "name": "股份制企业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "06",
+      "name": "民营企业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "07",
+      "name": "个体，自由职业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "08",
+      "name": "其他",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

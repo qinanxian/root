@@ -1,0 +1,81 @@
+{
+  "categoryCode": "OTHER",
+  "code": "UnitIndustry",
+  "name": "单位行业",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "机关视野团体",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "金融业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "能源",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "04",
+      "name": "教科文卫",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "05",
+      "name": "信息产业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "06",
+      "name": "房地产，建筑业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "07",
+      "name": "交通，物流业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "08",
+      "name": "商业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "09",
+      "name": "制造业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "10",
+      "name": "农林牧渔业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "11",
+      "name": "酒店，餐饮业",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "12",
+      "name": "其他",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

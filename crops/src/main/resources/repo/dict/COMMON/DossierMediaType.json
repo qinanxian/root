@@ -1,0 +1,21 @@
+{
+  "categoryCode": "COMMON",
+  "code": "DossierMediaType",
+  "name": "清单项媒介类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "File",
+      "name": "文件附件",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "MediaText",
+      "name": "在线文本",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

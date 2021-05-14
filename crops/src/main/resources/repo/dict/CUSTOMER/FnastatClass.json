@@ -1,0 +1,159 @@
+{
+  "code" : "FnastatClass",
+  "name" : "报表类别",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "1121",
+  "intro" : null,
+  "items" : [ {
+    "code" : "FS000",
+    "name" : "一般企业-通用财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0100",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS010",
+    "name" : "城投-公共财政财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0110",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS020",
+    "name" : "健康-公立医院财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0120",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS030",
+    "name" : "健康-民营医院财报(企业版)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0130",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS040",
+    "name" : "健康-民营医院财报(医院版)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0140",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS050",
+    "name" : "健康-医疗工业财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0150",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS060",
+    "name" : "结构融资财务报表(事业单位)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0160",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS070",
+    "name" : "结构融资财务报表(银行)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0170",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS080",
+    "name" : "结构融资财务报表(公司)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0180",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS090",
+    "name" : "能源冶金财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0190",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS100",
+    "name" : "印包纺织食品财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0200",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS110",
+    "name" : "公办教育财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0210",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS120",
+    "name" : "民办教育、自动售卖机、连锁酒店、仓储、文化旅游-财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0220",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS130",
+    "name" : "教育局财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0230",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "FS2017",
+    "name" : "最新标准财报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0240",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

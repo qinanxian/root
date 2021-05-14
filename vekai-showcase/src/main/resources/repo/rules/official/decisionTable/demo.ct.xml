@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<crosstab assign-target-type="variable" var-category="会员" var="name" var-label="名称" datatype="String">
+    <remark><![CDATA[]]></remark>
+    <header rowspan="3" colspan="2"><![CDATA[LEFT && TOP]]></header>
+    <import-parameter-library path="jcr:/测试项目/parameters.pl.xml"/>
+    <import-variable-library path="jcr:/测试项目/custom.vl.xml"/>
+    <import-constant-library path="jcr:/测试项目/constants.cl.xml"/>
+    <row number="1" type="top" bundle-data-type="variable" var-category="会员" var="car" var-label="是否有车" datatype="Boolean"/>
+    <row number="2" type="top" bundle-data-type="variable" var-category="会员" var="house" var-label="是否有房" datatype="Boolean"/>
+    <row number="3" type="top" bundle-data-type="variable" var-category="会员" var="married" var-label="婚否" datatype="Boolean"/>
+    <row number="4" type="left"/>
+    <row number="5" type="left"/>
+    <row number="6" type="left"/>
+    <row number="7" type="left"/>
+    <row number="8" type="left"/>
+    <row number="9" type="left"/>
+    <column number="1" type="left" bundle-data-type="variable" var-category="会员" var="level" var-label="等级" datatype="Integer"/>
+    <column number="2" type="left" bundle-data-type="variable" var-category="会员" var="gender" var-label="性别" datatype="Boolean"/>
+    <column number="3" type="top"/>
+    <column number="4" type="top"/>
+    <column number="5" type="top"/>
+    <column number="6" type="top"/>
+    <column number="7" type="top"/>
+    <column number="8" type="top"/>
+    <column number="9" type="top"/>
+    <condition-cell row="1" col="3" rowspan="1" colspan="3">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="4" col="1" rowspan="2" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="1" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="3">
+        <value content="12" type="Input"/>
+    </value-cell>
+    <condition-cell row="2" col="3" rowspan="1" colspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="2" col="5" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="5">
+        <value content="13412" type="Input"/>
+    </value-cell>
+    <condition-cell row="3" col="3" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="3" col="5" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="6" rowspan="1" colspan="4">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="2" col="6" rowspan="1" colspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="3" col="6" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="6"/>
+    <condition-cell row="3" col="4" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="4"/>
+    <condition-cell row="2" col="8" rowspan="1" colspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="3" col="8" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="8"/>
+    <condition-cell row="3" col="7" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="7"/>
+    <condition-cell row="3" col="9" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="9"/>
+    <condition-cell row="8" col="1" rowspan="2" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="3" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="8" col="3"/>
+    <value-cell row="8" col="4">
+        <value content="5532" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="5"/>
+    <value-cell row="8" col="6"/>
+    <value-cell row="8" col="7"/>
+    <value-cell row="8" col="8"/>
+    <value-cell row="8" col="9"/>
+    <condition-cell row="6" col="1" rowspan="2" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="2" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="6" col="3"/>
+    <value-cell row="6" col="4">
+        <value content="4313" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="5">
+        <value content="13124" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="6"/>
+    <value-cell row="6" col="7"/>
+    <value-cell row="6" col="8"/>
+    <value-cell row="6" col="9"/>
+    <condition-cell row="4" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="6" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="8" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="5" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="5" col="3">
+        <value content="13" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="4"/>
+    <value-cell row="5" col="5"/>
+    <value-cell row="5" col="6"/>
+    <value-cell row="5" col="7"/>
+    <value-cell row="5" col="8"/>
+    <value-cell row="5" col="9"/>
+    <condition-cell row="7" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="7" col="3"/>
+    <value-cell row="7" col="4"/>
+    <value-cell row="7" col="5">
+        <value content="131434" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="6"/>
+    <value-cell row="7" col="7"/>
+    <value-cell row="7" col="8"/>
+    <value-cell row="7" col="9"/>
+    <condition-cell row="9" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="9" col="3"/>
+    <value-cell row="9" col="4"/>
+    <value-cell row="9" col="5"/>
+    <value-cell row="9" col="6"/>
+    <value-cell row="9" col="7"/>
+    <value-cell row="9" col="8"/>
+    <value-cell row="9" col="9"/>
+</crosstab>

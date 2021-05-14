@@ -1,0 +1,29 @@
+{
+  "code" : "CustomerStatus",
+  "name" : "客户状态",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0016",
+  "intro" : "客户状态的码表",
+  "items" : [ {
+    "code" : "ABNORMAL",
+    "name" : "异常",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "异常"
+  }, {
+    "code" : "NORMAL",
+    "name" : "正常",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "正常"
+  } ]
+}

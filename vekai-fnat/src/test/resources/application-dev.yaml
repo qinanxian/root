@@ -1,0 +1,9 @@
+server: { port: 8080,contextPath: /amix ,sessionTimeout: 30}
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.60.44:3350/rober?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: maxwell.1

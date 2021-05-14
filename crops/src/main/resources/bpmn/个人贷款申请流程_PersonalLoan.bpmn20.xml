@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+  <process id="PersonalLoan" name="个人贷款申请流程" isExecutable="true">
+    <startEvent id="sid-E6A95521-5700-4582-9F24-A277A0712D05"/>
+    <userTask id="sponsor" name="市场业务岗">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmitAssigneeSave" name="提交" type="Button"/>
+        <activiti:formProperty id="WBAbolished" name="作废" type="Button"/>
+        <activiti:formProperty id="WBSaveFieldSet" name="保存" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="LinkCust" name="客户信息" type="Link"/>
+        <activiti:formProperty id="LinkReportThree" name="第三方征信报告" type="Link"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationMileStone" name="业务进度" type="Fieldset" required="true"/>
+        <activiti:formProperty id="ApplicationInfo" name="业务信息" type="Fieldset" required="true"/>
+        <activiti:formProperty id="ApplicationDossier" name="资料清单" type="Fieldset"/>
+        <activiti:formProperty id="InquireReport" name="调查报告" type="Fieldset"/>
+        <activiti:formProperty id="SRViewComments" name="各级意见" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-9C6BE822-A0C8-4AD9-BAD4-D7C9289704DF" sourceRef="sid-E6A95521-5700-4582-9F24-A277A0712D05" targetRef="sponsor"/>
+    <userTask id="check" name="网点预审" activiti:candidateGroups="0003">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmitAssign" name="提交" type="Button"/>
+        <activiti:formProperty id="WBBackOrigin" name="驳回" type="Button"/>
+        <activiti:formProperty id="WBBackTrackAssignee" name="退回修改" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="LinkCust" name="客户信息" type="Link"/>
+        <activiti:formProperty id="LinkReportThree" name="第三方征信报告" type="Link"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationMileStone" name="业务进度" type="Fieldset" required="true"/>
+        <activiti:formProperty id="ApplicationInfo" name="业务信息" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationDossier" name="资料清单" type="Fieldset"/>
+        <activiti:formProperty id="InquireReport" name="调查报告" type="Fieldset"/>
+        <activiti:formProperty id="SRViewComments" name="各级意见" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-4161CFDC-1428-4694-8361-DC61CEFD438A" sourceRef="sponsor" targetRef="check"/>
+    <userTask id="re_check" name="信息复核" activiti:candidateGroups="0005">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmitAssign" name="提交" type="Button"/>
+        <activiti:formProperty id="WBBackTrackAssignee" name="退回修改" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="LinkCust" name="客户信息" type="Link"/>
+        <activiti:formProperty id="LinkReportThree" name="第三方征信报告" type="Link"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationMileStone" name="业务进度" type="Fieldset" required="true"/>
+        <activiti:formProperty id="ApplicationInfo" name="业务信息" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationDossier" name="资料清单" type="Fieldset"/>
+        <activiti:formProperty id="InquireReport" name="调查报告" type="Fieldset"/>
+        <activiti:formProperty id="SRViewComments" name="各级意见" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-3C476529-8EAC-4D5F-8380-29353E258FF6" sourceRef="check" targetRef="re_check"/>
+    <userTask id="first_trial" name="初审审批" activiti:candidateGroups="0007">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmitAssign" name="提交" type="Button"/>
+        <activiti:formProperty id="WBBackTrackAssignee" name="退回修改" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="LinkCust" name="客户信息" type="Link"/>
+        <activiti:formProperty id="LinkReportThree" name="第三方征信报告" type="Link"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationMileStone" name="业务进度" type="Fieldset" required="true"/>
+        <activiti:formProperty id="ApplicationInfo" name="业务信息" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationDossier" name="资料清单" type="Fieldset"/>
+        <activiti:formProperty id="InquireReport" name="调查报告" type="Fieldset"/>
+        <activiti:formProperty id="SRViewComments" name="各级意见" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-1FE68EED-0982-4966-BE8B-2429EE7FAB50" sourceRef="re_check" targetRef="first_trial"/>
+    <userTask id="last_trial" name="终审审批" activiti:candidateGroups="0013">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmit" name="提交" type="Button"/>
+        <activiti:formProperty id="WBBackTrackAssignee" name="退回修改" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="LinkCust" name="客户信息" type="Link"/>
+        <activiti:formProperty id="LinkReportThree" name="第三方征信报告" type="Link"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationMileStone" name="业务进度" type="Fieldset" required="true"/>
+        <activiti:formProperty id="ApplicationInfo" name="业务信息" type="Fieldset"/>
+        <activiti:formProperty id="ApplicationDossier" name="资料清单" type="Fieldset"/>
+        <activiti:formProperty id="InquireReport" name="调查报告" type="Fieldset"/>
+        <activiti:formProperty id="SRViewComments" name="各级意见" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-7ABC8988-0801-4D32-8C06-D4CA81192E9B" sourceRef="first_trial" targetRef="last_trial"/>
+    <endEvent id="sid-2BC04CAB-46FF-4035-AD49-C3495C9CE1C9"/>
+    <sequenceFlow id="sid-A547CE4E-411B-4811-A20C-54D37C5CF27E" sourceRef="last_trial" targetRef="sid-2BC04CAB-46FF-4035-AD49-C3495C9CE1C9"/>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_PersonalLoan">
+    <bpmndi:BPMNPlane bpmnElement="PersonalLoan" id="BPMNPlane_PersonalLoan">
+      <bpmndi:BPMNShape bpmnElement="sid-E6A95521-5700-4582-9F24-A277A0712D05" id="BPMNShape_sid-E6A95521-5700-4582-9F24-A277A0712D05">
+        <omgdc:Bounds height="30.0" width="30.0" x="80.25" y="151.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sponsor" id="BPMNShape_sponsor">
+        <omgdc:Bounds height="80.0" width="100.0" x="155.25" y="126.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="check" id="BPMNShape_check">
+        <omgdc:Bounds height="80.0" width="100.0" x="300.0" y="126.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="re_check" id="BPMNShape_re_check">
+        <omgdc:Bounds height="80.0" width="100.0" x="435.0" y="126.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="first_trial" id="BPMNShape_first_trial">
+        <omgdc:Bounds height="80.0" width="100.0" x="570.0" y="126.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="last_trial" id="BPMNShape_last_trial">
+        <omgdc:Bounds height="80.0" width="100.0" x="705.0" y="126.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-2BC04CAB-46FF-4035-AD49-C3495C9CE1C9" id="BPMNShape_sid-2BC04CAB-46FF-4035-AD49-C3495C9CE1C9">
+        <omgdc:Bounds height="28.0" width="28.0" x="850.0" y="152.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-9C6BE822-A0C8-4AD9-BAD4-D7C9289704DF" id="BPMNEdge_sid-9C6BE822-A0C8-4AD9-BAD4-D7C9289704DF">
+        <omgdi:waypoint x="110.25" y="166.0"/>
+        <omgdi:waypoint x="155.25" y="166.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-7ABC8988-0801-4D32-8C06-D4CA81192E9B" id="BPMNEdge_sid-7ABC8988-0801-4D32-8C06-D4CA81192E9B">
+        <omgdi:waypoint x="670.0" y="166.0"/>
+        <omgdi:waypoint x="705.0" y="166.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-1FE68EED-0982-4966-BE8B-2429EE7FAB50" id="BPMNEdge_sid-1FE68EED-0982-4966-BE8B-2429EE7FAB50">
+        <omgdi:waypoint x="535.0" y="166.0"/>
+        <omgdi:waypoint x="570.0" y="166.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-4161CFDC-1428-4694-8361-DC61CEFD438A" id="BPMNEdge_sid-4161CFDC-1428-4694-8361-DC61CEFD438A">
+        <omgdi:waypoint x="255.25" y="166.0"/>
+        <omgdi:waypoint x="300.0" y="166.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-3C476529-8EAC-4D5F-8380-29353E258FF6" id="BPMNEdge_sid-3C476529-8EAC-4D5F-8380-29353E258FF6">
+        <omgdi:waypoint x="400.0" y="166.0"/>
+        <omgdi:waypoint x="435.0" y="166.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-A547CE4E-411B-4811-A20C-54D37C5CF27E" id="BPMNEdge_sid-A547CE4E-411B-4811-A20C-54D37C5CF27E">
+        <omgdi:waypoint x="805.0" y="166.0"/>
+        <omgdi:waypoint x="850.0" y="166.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

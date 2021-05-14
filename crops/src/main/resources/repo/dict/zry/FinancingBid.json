@@ -1,0 +1,21 @@
+{
+  "categoryCode": "zry",
+  "code": "FinancingBid",
+  "name": "融资标类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "中标数据",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "合同数据",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

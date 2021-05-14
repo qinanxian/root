@@ -1,0 +1,192 @@
+{
+  "id": "obiz-Picker4IndCustomer",
+  "pack": "obiz",
+  "code": "Picker4IndCustomer",
+  "name": "个人客户选择器",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "A.CUST_ID=B.CUST_ID",
+    "from": "CUST_BASE A,CUST_IND B",
+    "orderBy": "B.UPDATED_TIME DESC"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-Picker4IndCustomer",
+      "name": "客户ID",
+      "code": "custId",
+      "dataType": "String",
+      "column": "CUST_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "A",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-Picker4IndCustomer",
+      "name": "客户名",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "A",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-Picker4IndCustomer",
+      "name": "客户类型",
+      "code": "custType",
+      "dataType": "String",
+      "column": "CUST_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "A",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-Picker4IndCustomer",
+      "name": "证件类型",
+      "code": "certType",
+      "dataType": "String",
+      "column": "CERT_TYPE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "CertType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "A",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-Picker4IndCustomer",
+      "name": "证件号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "A",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-Picker4IndCustomer",
+      "name": "手机号",
+      "code": "cellPhoneNo",
+      "dataType": "String",
+      "column": "CELL_PHONE_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "B",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "客户ID",
+      "code": "custId",
+      "bindFor": "custId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "客户名",
+      "code": "custName",
+      "bindFor": "custName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "证件类型",
+      "code": "custType",
+      "bindFor": "custType",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0020"
+    },
+    {
+      "name": "证件号",
+      "code": "certId",
+      "bindFor": "certId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0030"
+    },
+    {
+      "name": "手机号",
+      "code": "cellPhoneNo",
+      "bindFor": "cellPhoneNo",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0040"
+    }
+  ]
+}

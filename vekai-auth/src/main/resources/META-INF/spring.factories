@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.vekai.auth.autoconfigure.AuthAutoConfiguration,\
+com.vekai.auth.autoconfigure.AddAutoConfiguration
+
+org.springframework.context.ApplicationContextInitializer=com.vekai.auth.autoconfigure.CustomAppContextInitializer
+
+

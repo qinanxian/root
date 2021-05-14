@@ -1,0 +1,114 @@
+{
+  "id": "system-BatchJobExecutionList",
+  "pack": "system",
+  "code": "BatchJobExecutionList",
+  "name": "作业执行列表",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "BATCH_JOB_EXECUTION BJE,BATCH_JOB_INSTANCE BJI",
+    "where": "BJE.JOB_INSTANCE_ID = BJI.JOB_INSTANCE_ID and BJI.JOB_NAME=:jobName ",
+    "orderBy": "BJE.START_TIME DESC"
+  },
+  "elements": [
+    {
+      "dataformId": "system-BatchJobExecutionList",
+      "name": "执行器ID",
+      "code": "jobExecutionId",
+      "dataType": "String",
+      "column": "JOB_EXECUTION_ID",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionList",
+      "name": "开始执行时间",
+      "code": "startTime",
+      "dataType": "String",
+      "column": "START_TIME",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "Date",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionList",
+      "name": "执行器结束时间",
+      "code": "endTime",
+      "dataType": "String",
+      "column": "END_TIME",
+      "table": "BJE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionList",
+      "name": "执行的状态",
+      "code": "status",
+      "dataType": "String",
+      "column": "STATUS",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    }
+  ],
+  "dataModel": "",
+  "filters": []
+}

@@ -1,0 +1,249 @@
+{
+  "id": "application-AuthProcessInfo",
+  "pack": "application",
+  "code": "AuthProcessInfo",
+  "name": "实名认证信息",
+  "managedByRR": false,
+  "tags": "实名，认证",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.crops.applicaition.entiry.AppAuthPO",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "ID = :authProcessId",
+    "from": "APP_AUTH"
+  },
+  "elements": [
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center",
+        "required": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "应用编号",
+      "code": "appId",
+      "dataType": "String",
+      "column": "APP_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center",
+        "required": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "排序号",
+      "code": "sortNo",
+      "dataType": "String",
+      "column": "SORT_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "流程编号（匹配前端组件）",
+      "code": "flowNo",
+      "dataType": "String",
+      "column": "FLOW_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center",
+        "required": false,
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "流程名称",
+      "code": "flowName",
+      "dataType": "String",
+      "column": "FLOW_NAME",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "AppAuthFlow",
+        "htmlStyle": "{\"minWidth\":\"180px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "application-AuthProcessInfo",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": []
+}

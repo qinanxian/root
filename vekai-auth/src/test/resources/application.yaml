@@ -1,0 +1,36 @@
+server: { port: 8080,contextPath: /auth ,sessionTimeout: 30}
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/rober?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: Amars0ft
+    #打开PSCache，并且指定每个连接上PSCache的大小
+    pool-prepared-statements: true
+    max-pool-prepared-statement-per-connection-size: 20
+    filters: stat,wall,slf4j #配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    use-global-data-source-stat: true #合并多个DruidDataSource的监控数据
+  profiles:
+    active: dev
+
+#Fisok的相关配置信息
+com.vekai:
+  runtime:
+    druid-login-username: rober
+    druid-login-password: r0ber
+    json-serialize-secret-mask: "***"         #JSON序列化，保密字段统一使显示文字
+    json-serialize-property-secrets:        #JSON序列化，保密字段
+      - com.vekai.auth.entity.User.password
+      - com.vekai.auth.entity.User.status
+    json-serialize-property-excludes:       #JSON序列化，需要排除的字段
+      - com.vekai.auth.entity.User.revision
+      - com.vekai.auth.entity.User.orgId
+  auth:
+    shiro:
+      active-sessions-cache-name: vekaiDefaultActiveSessionsCacheName
+    access-control-strategy:
+      "com.vekai.auth.acl.strategy.impl.AccessControlStrategyImpl": ["/auth/"]
+      "com.vekai.auth.acl.strategy.impl.AccessControlStrategyAllowImpl": ["/base/","/ping/","/auth/logon"]

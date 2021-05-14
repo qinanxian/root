@@ -1,0 +1,38 @@
+{
+  "code": "RateFloatType",
+  "name": "利率浮动方式",
+  "nameI18nCode": null,
+  "categoryCode": "LACT",
+  "sortCode": "00",
+  "intro": "按点还是按比例",
+  "items": [
+    {
+      "code": "Multiply",
+      "name": "乘",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "10",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "Plus",
+      "name": "加",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "20",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "Fixed",
+      "name": "固定",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

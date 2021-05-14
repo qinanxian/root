@@ -1,0 +1,21 @@
+{
+  "categoryCode": "zry",
+  "code": "LockState",
+  "name": "锁定状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "已锁定",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0",
+      "name": "未锁定",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

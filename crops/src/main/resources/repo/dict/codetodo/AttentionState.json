@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "AttentionState",
+  "name": "关注状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "已关注",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0",
+      "name": "未关注",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

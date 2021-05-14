@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+  <process id="PostLoanChange" name="贷后变更" isExecutable="true">
+    <startEvent id="sid-408C1113-46C4-4F07-9063-718200213F30"/>
+    <userTask id="launch" name="变更发起">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmitAssign" name="提交" type="Button"/>
+        <activiti:formProperty id="WBAbolished" name="作废" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset" required="true"/>
+        <activiti:formProperty id="SRViewComments" name="查看各级意见" type="Fieldset" required="true"/>
+        <activiti:formProperty id="PostLoanChangeInfo" name="贷后变更详情" type="Fieldset" required="true"/>
+        <activiti:formProperty id="LoanDuebillInfo" name="借据详情" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-8D1D8BF0-3BC3-4E4B-9F32-935FE3A48489" sourceRef="sid-408C1113-46C4-4F07-9063-718200213F30" targetRef="launch"/>
+    <userTask id="sid-1EF6D470-6234-4581-ABB5-AB26605C8CC2" name="部门经理" activiti:candidateGroups="0007">
+      <extensionElements>
+        <activiti:formProperty id="WBSubmit" name="提交" type="Button"/>
+        <activiti:formProperty id="WBBackOrigin" name="驳回" type="Button"/>
+        <activiti:formProperty id="WBReject" name="否决" type="Button"/>
+        <activiti:formProperty id="WBViewFlowGraph" name="查看流程" type="Button"/>
+        <activiti:formProperty id="SRSignComment" name="签署意见" type="Fieldset" required="true"/>
+        <activiti:formProperty id="SRViewComments" name="查看各级意见" type="Fieldset" required="true"/>
+        <activiti:formProperty id="PostLoanChangeInfo" name="贷后变更详情" type="Fieldset" required="true"/>
+        <activiti:formProperty id="LoanDuebillInfo" name="借据详情" type="Fieldset" required="true"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-D5505446-123C-4A04-8197-8C77CD007E02" sourceRef="launch" targetRef="sid-1EF6D470-6234-4581-ABB5-AB26605C8CC2"/>
+    <endEvent id="sid-BF076CBF-7402-4EE9-A99C-27346687951B"/>
+    <sequenceFlow id="sid-48F74A2C-6A2C-400D-A336-78BF4CDB1D13" sourceRef="sid-1EF6D470-6234-4581-ABB5-AB26605C8CC2" targetRef="sid-BF076CBF-7402-4EE9-A99C-27346687951B"/>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_PostLoanChange">
+    <bpmndi:BPMNPlane bpmnElement="PostLoanChange" id="BPMNPlane_PostLoanChange">
+      <bpmndi:BPMNShape bpmnElement="sid-408C1113-46C4-4F07-9063-718200213F30" id="BPMNShape_sid-408C1113-46C4-4F07-9063-718200213F30">
+        <omgdc:Bounds height="30.0" width="30.0" x="180.86109203394508" y="207.99999735090464"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="launch" id="BPMNShape_launch">
+        <omgdc:Bounds height="79.99999999999997" width="99.99999999999997" x="255.00000000000003" y="182.9999973509047"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-1EF6D470-6234-4581-ABB5-AB26605C8CC2" id="BPMNShape_sid-1EF6D470-6234-4581-ABB5-AB26605C8CC2">
+        <omgdc:Bounds height="79.99999999999997" width="100.0" x="405.00000000000017" y="182.9999973509047"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="sid-BF076CBF-7402-4EE9-A99C-27346687951B" id="BPMNShape_sid-BF076CBF-7402-4EE9-A99C-27346687951B">
+        <omgdc:Bounds height="28.0" width="28.0" x="545.861092033945" y="208.99999735090466"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-48F74A2C-6A2C-400D-A336-78BF4CDB1D13" id="BPMNEdge_sid-48F74A2C-6A2C-400D-A336-78BF4CDB1D13">
+        <omgdi:waypoint x="505.00000000000017" y="222.99999735090466"/>
+        <omgdi:waypoint x="545.861092033945" y="222.99999735090466"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-8D1D8BF0-3BC3-4E4B-9F32-935FE3A48489" id="BPMNEdge_sid-8D1D8BF0-3BC3-4E4B-9F32-935FE3A48489">
+        <omgdi:waypoint x="210.86109203394508" y="222.99999735090464"/>
+        <omgdi:waypoint x="255.00000000000003" y="222.99999735090466"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-D5505446-123C-4A04-8197-8C77CD007E02" id="BPMNEdge_sid-D5505446-123C-4A04-8197-8C77CD007E02">
+        <omgdi:waypoint x="355.0" y="222.99999735090466"/>
+        <omgdi:waypoint x="405.00000000000017" y="222.99999735090466"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

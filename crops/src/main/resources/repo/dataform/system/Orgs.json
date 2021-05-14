@@ -1,0 +1,159 @@
+{
+  "id": "system-Orgs",
+  "pack": "system",
+  "code": "Orgs",
+  "name": "用户用机构列表",
+  "tags": "用户用弹窗选择机构列表",
+  "description": "用户用机构列表弹窗选择",
+  "dataModelType": "JavaBean",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "AUTH_ORG",
+    "where": "ID not in (select ORG_ID from AUTH_USER_ORG where USER_ID=:userId)"
+  },
+  "elements": [
+    {
+      "dataformId": "system-Orgs",
+      "name": "机构ID",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-Orgs",
+      "name": "机构代号",
+      "code": "code",
+      "dataType": "String",
+      "column": "CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-Orgs",
+      "name": "机构名",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-Orgs",
+      "name": "机构路径全称",
+      "code": "fullName",
+      "dataType": "String",
+      "column": "FULL_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-Orgs",
+      "name": "排序代码",
+      "code": "sortCode",
+      "dataType": "String",
+      "column": "SORT_CODE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-Orgs",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-Orgs",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    }
+  ],
+  "dataModel": "com.vekai.auth.entity.Org",
+  "filters": []
+}

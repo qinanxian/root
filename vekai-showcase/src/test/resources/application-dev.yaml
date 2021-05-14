@@ -1,0 +1,81 @@
+server: { port: 8080,contextPath: /showcase ,sessionTimeout: 30}
+
+eureka:
+  client:
+    register-with-eureka: false #不向注册中心注册自己，启动服务注册,如果不做集群，高可用，则关闭它
+    fetch-registry: false       #由于注册中心职责就是维护服务实例，它并不需要去检索服务，设置成false
+    service-url:
+      defaultZone: "http://127.0.0.1:1111/rsc/eureka/"
+
+  instance:
+    appname: "${spring.application.name}"
+    instance-id: "${spring.application.name}:${server.port}"
+    prefer-ip-address: true                       # 设置微服务调用地址为IP优先（缺省为false）
+    lease-renewal-interval-in-seconds: 5          # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 15      # 发呆时间，即服务续约到期时间（缺省为90s）
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://192.168.60.44:3350/rober?useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: maxwell.1
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/rober?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: Amars0ft
+
+#  redis:
+#    database: 0
+#    host: 192.168.60.44
+#    port: 6379
+#    password: Amars0ft
+#    timeout: 0
+#    pool:
+#      max-active: 8
+#      max-wait: -1
+#      max-idle: 8
+#      min-idle: 0
+
+
+endpoints.cors:
+  allowedOrigins: "*"
+  allowedHeaders: "*"
+  allowCredentials: true
+  exposedHeaders: WWW-Authenticate
+
+debug: true
+
+com.vekai:
+  base:
+    cache: Memory #Memory,EHCache,Memcached,Redis,MongoDB
+  auth:
+    enableJwtReplaceSession: false
+  runtime:
+    corsEnable: true
+  sql:
+    sql-dialect-type: MYSQL
+
+#URule的设置
+urule:
+##文件存储的方式
+#  repository:
+#      dir: /Users/cytsir/Documents/ws-set/ws-rober/vekai-cabin/vekai-urule/src/test/resources/repo
+#      dir: vekai-showcase/src/main/resources/repo/rules #相对路径的方式，要确保这个目录的存在
+#数据库存储的方式
+  repository:
+      datasourcename: dataSource
+      databasetype: mysql
+  welcomePage: welcomeHome
+  console:
+    title: "规则引擎"
+
+#UReport报表引擎的设置
+ureport:
+#  fileStoreDir: /Users/cytsir/Documents/ws-set/ws-rober/vekai-cabin/vekai-ureport/src/test/repo1
+#  fileStoreDir: vekai-ureport/src/test/repo1
+  fileStoreDir: vekai-ureport/src/main/resources/reportfiles
+  disableFileProvider: false
+  disableHttpSessionReportCache: false
+  debug: true

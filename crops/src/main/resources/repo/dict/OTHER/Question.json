@@ -1,0 +1,21 @@
+{
+  "categoryCode": "OTHER",
+  "code": "Question",
+  "name": "预留问题",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "你的小学名称",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "你母亲的姓名",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

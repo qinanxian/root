@@ -1,0 +1,29 @@
+{
+  "code" : "DrawMethod",
+  "name" : "提款方式",
+  "nameI18nCode" : null,
+  "categoryCode" : "CONTRACT",
+  "sortCode" : "10030",
+  "intro" : null,
+  "items" : [ {
+    "code" : "One",
+    "name" : "一次性",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Many",
+    "name" : "分次",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

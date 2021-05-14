@@ -1,0 +1,16 @@
+{
+  "id": "demo-Test1Info",
+  "pack": "demo",
+  "code": "Test1Info",
+  "name": "1",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "AUTH_INFO"
+  },
+  "elements": []
+}

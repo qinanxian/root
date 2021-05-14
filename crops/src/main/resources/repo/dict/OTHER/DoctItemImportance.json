@@ -1,0 +1,29 @@
+{
+  "code" : "DoctItemImportance",
+  "name" : "文档清单模板明细项重要性",
+  "nameI18nCode" : null,
+  "categoryCode" : "OTHER",
+  "sortCode" : "0038",
+  "intro" : "文档清单模板明细项重要性",
+  "items" : [ {
+    "code" : "MUST",
+    "name" : "必须",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "OPTIONAL",
+    "name" : "可选",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

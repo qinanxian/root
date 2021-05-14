@@ -1,0 +1,76 @@
+{
+  "code": "PaymentPeriod",
+  "name": "还款周期",
+  "nameI18nCode": null,
+  "categoryCode": "LACT",
+  "sortCode": "10060",
+  "intro": null,
+  "items": [
+    {
+      "code": "M",
+      "name": "月",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "30",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "TM",
+      "name": "双月",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "40",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "0",
+      "summary": null
+    },
+    {
+      "code": "Q",
+      "name": "季",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "50",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "FM",
+      "name": "四个月",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "60",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "0",
+      "summary": null
+    },
+    {
+      "code": "HY",
+      "name": "半年",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "70",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "Y",
+      "name": "年",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "80",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    }
+  ]
+}

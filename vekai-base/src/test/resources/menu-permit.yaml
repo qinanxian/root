@@ -1,0 +1,2236 @@
+topic: 金融风险平台
+path: root
+contextId: root
+permitCode: root
+type: start
+fullName: 金融风险综合管理平台
+icon: ''
+properties:
+  permitCopyTpl:
+  - topic: 数据权限
+    type: datascope
+    icon: fa-table
+    children:
+    - topic: 所有数据
+      type: datascope
+      icon: fa-th
+    - topic: 本机构数据
+      type: datascope
+      icon: fa-building-o
+    - topic: 本机构及下属机构
+      type: datascope
+      icon: fa-sitemap
+    - topic: 本人数据
+      type: datascope
+      icon: fa-user-secret
+  - topic: 操作权限
+    type: action
+    icon: fa-hand-pointer-o
+    children:
+    - topic: 写
+      type: action
+      icon: fa-pencil
+    - topic: 读
+      type: action
+      icon: fa-file-text-o
+children:
+- topic: 首页
+  path: 'root:home'
+  contextId: home
+  permitCode: ''
+  type: menu
+  fullName: 首页
+  icon: windowso
+  enabled: 'Y'
+  url: Common/DashBoard/Board
+  param: ''
+- topic: 客户管理
+  path: 'root:customer'
+  contextId: customer
+  permitCode: ''
+  type: menu
+  fullName: 客户管理
+  icon: roic-customer
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 法人客户
+    path: 'root:customer:ent'
+    contextId: ent
+    permitCode: ''
+    type: menu
+    fullName: 法人客户
+    icon: fa-users
+    enabled: 'Y'
+    url: Customer/Enterprise
+    param: ''
+    children:
+    - topic: 数据权限
+      type: datascope
+      icon: fa-table
+      children:
+      - topic: 所有数据
+        type: datascope
+        icon: fa-th
+        path: 'root:customer:ent:0b2aa0a163d255883:0b2aa0a16dbf2ee86'
+        permitCode: ''
+        contextId: 0b2aa0a16dbf2ee86
+        fullName: 所有数据
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children: []
+      - topic: 本机构数据
+        type: datascope
+        icon: fa-building-o
+        path: 'root:customer:ent:0b2aa0a163d255883:1b2aa0a1747225c83'
+        permitCode: ''
+        contextId: 1b2aa0a1747225c83
+        fullName: 本机构数据
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children: []
+      - topic: 本机构及下属机构
+        type: datascope
+        icon: fa-sitemap
+        path: 'root:customer:ent:0b2aa0a163d255883:2b2aa0a18320ae0fd'
+        permitCode: ''
+        contextId: 2b2aa0a18320ae0fd
+        fullName: 本机构及下属机构
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children: []
+      - topic: 本人数据
+        type: datascope
+        icon: fa-user-secret
+        path: 'root:customer:ent:0b2aa0a163d255883:3b2aa0a18f0910d2b'
+        permitCode: ''
+        contextId: 3b2aa0a18f0910d2b
+        fullName: 本人数据
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children: []
+      path: 'root:customer:ent:0b2aa0a163d255883'
+      permitCode: ''
+      contextId: 0b2aa0a163d255883
+      fullName: 数据权限
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 操作权限
+      type: action
+      icon: fa-hand-pointer-o
+      children:
+      - topic: 写
+        type: action
+        icon: fa-pencil
+        path: 'root:customer:ent:1b2aa0a19f77340ab:0b2aa0a1a96d3e982'
+        permitCode: ''
+        contextId: 0b2aa0a1a96d3e982
+        fullName: 写
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children: []
+      - topic: 读
+        type: action
+        icon: fa-file-text-o
+        path: 'root:customer:ent:1b2aa0a19f77340ab:1b2aa0a1afe92ad1e'
+        permitCode: ''
+        contextId: 1b2aa0a1afe92ad1e
+        fullName: 读
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children: []
+      path: 'root:customer:ent:1b2aa0a19f77340ab'
+      permitCode: ''
+      contextId: 1b2aa0a19f77340ab
+      fullName: 操作权限
+      enabled: 'Y'
+      url: ''
+      param: ''
+  - topic: 自然人客户
+    path: 'root:customer:ind'
+    contextId: ind
+    permitCode: ''
+    type: menu
+    fullName: 自然人客户
+    icon: roic-user
+    enabled: 'Y'
+    url: Customer/Individual
+    param: ''
+  - topic: 第三方客户
+    path: 'root:customer:thrid'
+    contextId: thrid
+    permitCode: ''
+    type: menu
+    fullName: 第三方客户
+    icon: fa-user-plus
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 律师事务所
+      path: 'root:customer:thrid:layer'
+      contextId: layer
+      permitCode: ''
+      type: menu
+      fullName: 律师事务所
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+      children:
+      - topic: 律师事务所管理
+        path: 'root:customer:thrid:layer:lawfirmmanager'
+        contextId: lawfirmmanager
+        permitCode: ''
+        type: menu
+        fullName: 律师事务所管理
+        icon: ''
+        enabled: 'Y'
+        url: ThirdPart/LawFirmManage
+        param: ''
+      - topic: 律师团队管理
+        path: 'root:customer:thrid:layer:lawyerTeamManage'
+        contextId: lawyerTeamManage
+        permitCode: ''
+        type: menu
+        fullName: 律师团队管理
+        icon: ''
+        enabled: 'Y'
+        url: ThirdPart/LawyerTeamManage
+        param: ''
+    - topic: 会计事务所
+      path: 'root:customer:thrid:events'
+      contextId: events
+      permitCode: ''
+      type: menu
+      fullName: 会计事务所
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 评估机构管理
+      path: 'root:customer:thrid:evaluateAgency'
+      contextId: evaluateAgency
+      permitCode: ''
+      type: menu
+      fullName: 评估机构管理
+      icon: ''
+      enabled: 'Y'
+      url: ThirdPart/EvaluateAgency
+      param: ''
+    - topic: 评级机构管理
+      path: 'root:customer:thrid:ratingAgency'
+      contextId: ratingAgency
+      permitCode: ''
+      type: menu
+      fullName: 评级机构管理
+      icon: ''
+      enabled: 'Y'
+      url: ThirdPart/RatingAgency
+      param: ''
+  - topic: 黑名单用户
+    path: 'root:customer:black'
+    contextId: black
+    permitCode: ''
+    type: menu
+    fullName: 黑名单用户
+    icon: fa-user-circle-o
+    enabled: 'Y'
+    url: Customer/BlackList
+    param: ''
+- topic: 项目管理
+  path: 'root:project'
+  contextId: project
+  permitCode: ''
+  type: menu
+  fullName: 项目管理
+  icon: roic-project
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 项目管理台账
+    path: 'root:project:projectList'
+    contextId: projectList
+    permitCode: ''
+    type: menu
+    fullName: 项目管理台账
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/Ledger
+    param: ''
+  - topic: 预沟通会议
+    path: 'root:project:preMeeting'
+    contextId: preMeeting
+    permitCode: ''
+    type: menu
+    fullName: 预沟通会议
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/PreMeeting
+    param: ''
+  - topic: 项目立项
+    path: 'root:project:establishment'
+    contextId: establishment
+    permitCode: ''
+    type: menu
+    fullName: 项目立项
+    icon: ''
+    enabled: 'Y'
+    url: ' InvestPlan/Establishment'
+    param: ''
+  - topic: 尽调及决策管理
+    path: 'root:project:dueDiligence'
+    contextId: dueDiligence
+    permitCode: ''
+    type: menu
+    fullName: 尽调及决策管理
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/DueDiligence
+    param: ''
+  - topic: 投决会管理
+    path: 'root:project:decisionMeeting/DecisionMeetingManageList'
+    contextId: decisionMeeting/DecisionMeetingManageList
+    permitCode: ''
+    type: menu
+    fullName: 投决会管理
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/DecisionMeeting/DecisionMeetingManageList
+    param: ''
+  - topic: 决议落实表管理
+    path: 'root:project:resolutionImplementationManager'
+    contextId: resolutionImplementationManager
+    permitCode: ''
+    type: menu
+    fullName: 决议落实表管理
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 决议落实表反馈任务
+      path: 'root:project:resolutionImplementationManager:executeTask'
+      contextId: executeTask
+      permitCode: ''
+      type: menu
+      fullName: 决议落实表反馈任务
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/ExecuteTask
+      param: ''
+  - topic: 出资管理
+    path: 'root:project:investmentManagement'
+    contextId: investmentManagement
+    permitCode: ''
+    type: menu
+    fullName: 出资管理
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 出资资料定制申请
+      path: 'root:project:investmentManagement:loanDocListMaking'
+      contextId: loanDocListMaking
+      permitCode: ''
+      type: menu
+      fullName: 出资资料定制申请
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/Loan/DocListMaking
+      param: ''
+    - topic: 出资申请
+      path: 'root:project:investmentManagement:loanFlow'
+      contextId: loanFlow
+      permitCode: ''
+      type: menu
+      fullName: 出资申请
+      icon: ''
+      enabled: 'Y'
+      url: ' InvestPlan/Loan/Flow'
+      param: ''
+    - topic: 后补资料管理
+      path: 'root:project:investmentManagement:loanAmendingDocList'
+      contextId: loanAmendingDocList
+      permitCode: ''
+      type: menu
+      fullName: 后补资料管理
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/Loan/AmendingDocList
+      param: ''
+  - topic: 项目移交
+    path: 'root:project:handover/'
+    contextId: handover/
+    permitCode: ''
+    type: menu
+    fullName: 项目移交
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/Handover/
+    param: ''
+- topic: 合同管理
+  path: 'root:contract'
+  contextId: contract
+  permitCode: ''
+  type: menu
+  fullName: 合同管理
+  icon: roic-contract
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 合同申请
+    path: 'root:contract:investContractApply'
+    contextId: investContractApply
+    permitCode: ''
+    type: menu
+    fullName: 合同申请
+    icon: ''
+    enabled: 'Y'
+    url: InvestContract/InvestContractApply
+    param: ''
+  - topic: 合同台账
+    path: 'root:contract:investContractLedger'
+    contextId: investContractLedger
+    permitCode: ''
+    type: menu
+    fullName: 合同台账
+    icon: ''
+    enabled: 'Y'
+    url: InvestContract/InvestContractLedger
+    param: ''
+  - topic: 标准文本库管理
+    path: 'root:contract:investContractDocManage'
+    contextId: investContractDocManage
+    permitCode: ''
+    type: menu
+    fullName: 标准文本库管理
+    icon: ''
+    enabled: 'Y'
+    url: ' InvestContract/InvestContractDocManage'
+    param: ''
+- topic: 投后管理
+  path: 'root:investPost'
+  contextId: investPost
+  permitCode: ''
+  type: menu
+  fullName: 投后管理
+  icon: roic-invest-post
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 投后管理台账
+    path: 'root:investPost:afterInvest/Ledger'
+    contextId: afterInvest/Ledger
+    permitCode: ''
+    type: menu
+    fullName: 投后管理台账
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/AfterInvest/Ledger
+    param: ''
+  - topic: 日常投后管理表
+    path: 'root:investPost:dailyPostManagement'
+    contextId: dailyPostManagement
+    permitCode: ''
+    type: menu
+    fullName: 日常投后管理表
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 管理表设计
+      path: 'root:investPost:dailyPostManagement:manageTaskDesign'
+      contextId: manageTaskDesign
+      permitCode: ''
+      type: menu
+      fullName: 管理表设计
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/AfterInvest/ManageTaskDesign
+      param: ''
+    - topic: 管理表跟踪
+      path: 'root:investPost:dailyPostManagement:manageTaskTrack'
+      contextId: manageTaskTrack
+      permitCode: ''
+      type: menu
+      fullName: 管理表跟踪
+      icon: ''
+      enabled: 'Y'
+      url: ' InvestPlan/AfterInvest/ManageTaskTrack'
+      param: ''
+    - topic: 管理表变更
+      path: 'root:investPost:dailyPostManagement:manageTaskChange'
+      contextId: manageTaskChange
+      permitCode: ''
+      type: menu
+      fullName: 管理表变更
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/AfterInvest/ManageTaskChange
+      param: ''
+  - topic: 投后变更管理
+    path: 'root:investPost:afterInvestChange'
+    contextId: afterInvestChange
+    permitCode: ''
+    type: menu
+    fullName: 投后变更管理
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/AfterInvest/Change
+    param: ''
+  - topic: 公司走访
+    path: 'root:investPost:afterInvestCorpVisit/'
+    contextId: afterInvestCorpVisit/
+    permitCode: ''
+    type: menu
+    fullName: 公司走访
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/AfterInvest/CorpVisit/
+    param: ''
+  - topic: 重大事项
+    path: 'root:investPost:afterInvestMajorMatter/'
+    contextId: afterInvestMajorMatter/
+    permitCode: ''
+    type: menu
+    fullName: 重大事项
+    icon: ''
+    enabled: 'Y'
+    url: ' InvestPlan/AfterInvest/MajorMatter/'
+    param: ''
+  - topic: 公司治理
+    path: 'root:investPost:afterInvestCorpGovernance/'
+    contextId: afterInvestCorpGovernance/
+    permitCode: ''
+    type: menu
+    fullName: 公司治理
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/AfterInvest/CorpGovernance/
+    param: ''
+  - topic: 投后管理报告
+    path: 'root:investPost:afterInvestReport'
+    contextId: afterInvestReport
+    permitCode: ''
+    type: menu
+    fullName: 投后管理报告
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/AfterInvest/Report
+    param: ''
+  - topic: 项目上市管理
+    path: 'root:investPost:projectListingManager'
+    contextId: projectListingManager
+    permitCode: ''
+    type: menu
+    fullName: 项目上市管理
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 上市管理
+      path: 'root:investPost:projectListingManager:afterInvestIPO'
+      contextId: afterInvestIPO
+      permitCode: ''
+      type: menu
+      fullName: 上市管理
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/AfterInvest/IPO
+      param: ''
+    - topic: 已上市跟踪
+      path: 'root:investPost:projectListingManager:afterInvestIPO/IPOTraceList'
+      contextId: afterInvestIPO/IPOTraceList
+      permitCode: ''
+      type: menu
+      fullName: 已上市跟踪
+      icon: ''
+      enabled: 'Y'
+      url: InvestPlan/AfterInvest/IPO/IPOTraceList
+      param: ''
+  - topic: 收益及流动性管理
+    path: 'root:investPost:afterInvestIncomeLiquidity'
+    contextId: afterInvestIncomeLiquidity
+    permitCode: ''
+    type: menu
+    fullName: 收益及流动性管理
+    icon: ''
+    enabled: 'Y'
+    url: InvestPlan/AfterInvest/IncomeLiquidity
+    param: ''
+- topic: 基金管理
+  path: 'root:fund'
+  contextId: fund
+  permitCode: ''
+  type: menu
+  fullName: 基金管理
+  icon: roic-fund
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 基金台账
+    path: 'root:fund:fundLedger'
+    contextId: fundLedger
+    permitCode: ''
+    type: menu
+    fullName: 基金台账
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Fund/Ledger
+    param: ''
+  - topic: 基金立项
+    path: 'root:fund:fundEstablishment'
+    contextId: fundEstablishment
+    permitCode: ''
+    type: menu
+    fullName: 基金立项
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Fund/Establishment
+    param: ''
+  - topic: GP及管理人备案
+    path: 'root:fund:fundGpManagerFiling'
+    contextId: fundGpManagerFiling
+    permitCode: ''
+    type: menu
+    fullName: GP及管理人备案
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Fund/GpManagerFiling
+    param: ''
+  - topic: 基金设立
+    path: 'root:fund:fundFounding'
+    contextId: fundFounding
+    permitCode: ''
+    type: menu
+    fullName: 基金设立
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Fund/Founding
+    param: ''
+  - topic: 合同领用申请
+    path: 'root:fund:fundContractApply'
+    contextId: fundContractApply
+    permitCode: ''
+    type: menu
+    fullName: 合同领用申请
+    icon: ''
+    enabled: 'Y'
+    url: ' FinancePlan/Fund/ContractApply'
+    param: ''
+- topic: 资金管理
+  path: 'root:capital'
+  contextId: capital
+  permitCode: ''
+  type: menu
+  fullName: 资金管理
+  icon: roic-capital
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 基金call款
+    path: 'root:capital:financeFundPayment'
+    contextId: financeFundPayment
+    permitCode: ''
+    type: menu
+    fullName: 基金call款
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Finance/FundPayment
+    param: ''
+  - topic: 基金缴款管理
+    path: 'root:capital:financeFundPayIn'
+    contextId: financeFundPayIn
+    permitCode: ''
+    type: menu
+    fullName: 基金缴款管理
+    icon: ''
+    enabled: 'Y'
+    url: ' FinancePlan/Finance/FundPayIn'
+    param: ''
+  - topic: 基金费用管理
+    path: 'root:capital:financeFee'
+    contextId: financeFee
+    permitCode: ''
+    type: menu
+    fullName: 基金费用管理
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Finance/Fee
+    param: ''
+  - topic: 基金清算
+    path: 'root:capital:financeLiquidation'
+    contextId: financeLiquidation
+    permitCode: ''
+    type: menu
+    fullName: 基金清算
+    icon: ''
+    enabled: 'Y'
+    url: FinancePlan/Finance/Liquidation
+    param: ''
+  - topic: 资金流水台账
+    path: 'root:capital:financeLedger'
+    contextId: financeLedger
+    permitCode: ''
+    type: menu
+    fullName: 资金流水台账
+    icon: ''
+    enabled: 'Y'
+    url: ' FinancePlan/Finance/Ledger'
+    param: ''
+- topic: 通用管理
+  path: 'root:common'
+  contextId: common
+  permitCode: ''
+  type: menu
+  fullName: 通用管理
+  icon: earth
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 会议管理
+    path: 'root:common:meeting'
+    contextId: meeting
+    permitCode: ''
+    type: menu
+    fullName: 会议管理
+    icon: ''
+    enabled: 'Y'
+    url: Common/Meeting
+    param: ''
+  - topic: 附件管理
+    path: 'root:common:file'
+    contextId: file
+    permitCode: ''
+    type: menu
+    fullName: 附件管理
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+  - topic: 资料清单一览
+    path: 'root:common:docLedger'
+    contextId: docLedger
+    permitCode: ''
+    type: menu
+    fullName: 资料清单一览
+    icon: ''
+    enabled: 'Y'
+    url: Common/DocList/Ledger
+    param: ''
+  - topic: 协议条款管理
+    path: 'root:common:textClause'
+    contextId: textClause
+    permitCode: ''
+    type: menu
+    fullName: 协议条款管理
+    icon: ''
+    enabled: 'Y'
+    url: Common/TextClause
+    param: ''
+  - topic: 数据维护
+    path: 'root:common:dataMaintenance'
+    contextId: dataMaintenance
+    permitCode: ''
+    type: menu
+    fullName: 数据维护
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 客户数据
+      path: 'root:common:dataMaintenance:customerMaintenance'
+      contextId: customerMaintenance
+      permitCode: ''
+      type: menu
+      fullName: 客户数据
+      icon: ''
+      enabled: 'Y'
+      url: Common/DataMaintenance/CustomerMaintenance
+      param: ''
+    - topic: 流程任务
+      path: 'root:common:dataMaintenance:flowTask'
+      contextId: flowTask
+      permitCode: ''
+      type: menu
+      fullName: 流程任务
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+- topic: 担保管理
+  path: 'root:guarantee'
+  contextId: guarantee
+  permitCode: ''
+  type: menu
+  fullName: 担保管理
+  icon: roic-partner
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 担保合同
+    path: 'root:guarantee:guaranteeContract'
+    contextId: guaranteeContract
+    permitCode: ''
+    type: menu
+    fullName: 担保合同
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+  - topic: 押品管理
+    path: 'root:guarantee:guarantyCollateral'
+    contextId: guarantyCollateral
+    permitCode: ''
+    type: menu
+    fullName: 押品管理
+    icon: ''
+    enabled: 'Y'
+    url: Guaranty/Collateral
+    param: ''
+- topic: 我的日常
+  path: 'root:daily'
+  contextId: daily
+  permitCode: ''
+  type: menu
+  fullName: 我的日常
+  icon: windowso
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 流程委托
+    path: 'root:daily:workflowDelegate'
+    contextId: workflowDelegate
+    permitCode: ''
+    type: menu
+    fullName: 流程委托
+    icon: ''
+    enabled: 'Y'
+    url: MyDailyWork/WorkflowDelegate
+    param: ''
+- topic: 业务配置
+  path: 'root:rules'
+  contextId: rules
+  permitCode: ''
+  type: menu
+  fullName: 业务配置
+  icon: roic-rules
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 产品配置规则
+    path: 'root:rules:configurationProduct'
+    contextId: configurationProduct
+    permitCode: ''
+    type: menu
+    fullName: 产品配置规则
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/Product
+    param: ''
+  - topic: 财务记账
+    path: 'root:rules:financialAccounting'
+    contextId: financialAccounting
+    permitCode: ''
+    type: menu
+    fullName: 财务记账
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 账套设置
+      path: 'root:rules:financialAccounting:fiscalBookConf'
+      contextId: fiscalBookConf
+      permitCode: ''
+      type: menu
+      fullName: 账套设置
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/FiscalConf/FiscalBookConf
+      param: ''
+    - topic: 科目体系
+      path: 'root:rules:financialAccounting:fiscalGaap'
+      contextId: fiscalGaap
+      permitCode: ''
+      type: menu
+      fullName: 科目体系
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/FiscalConf/FiscalGaap
+      param: ''
+    - topic: 记账事件配置
+      path: 'root:rules:financialAccounting:fiscalEvent'
+      contextId: fiscalEvent
+      permitCode: ''
+      type: menu
+      fullName: 记账事件配置
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/FiscalConf/FiscalEvent
+      param: ''
+  - topic: 核算配置
+    path: 'root:rules:accountingConfiguration'
+    contextId: accountingConfiguration
+    permitCode: ''
+    type: menu
+    fullName: 核算配置
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 核算参数
+      path: 'root:rules:accountingConfiguration:accountingParameter'
+      contextId: accountingParameter
+      permitCode: ''
+      type: menu
+      fullName: 核算参数
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 利率维护
+      path: 'root:rules:accountingConfiguration:interestRateProfile'
+      contextId: interestRateProfile
+      permitCode: ''
+      type: menu
+      fullName: 利率维护
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/LoanAccounting/InterestRateProfile
+      param: ''
+    - topic: 假日维护
+      path: 'root:rules:accountingConfiguration:holidayProfile'
+      contextId: holidayProfile
+      permitCode: ''
+      type: menu
+      fullName: 假日维护
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/LoanAccounting/HolidayProfile
+      param: ''
+    - topic: 汇率维护
+      path: 'root:rules:accountingConfiguration:exchangeRateProfile'
+      contextId: exchangeRateProfile
+      permitCode: ''
+      type: menu
+      fullName: 汇率维护
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/LoanAccounting/ExchangeRateProfile
+      param: ''
+    - topic: 税率维护
+      path: 'root:rules:accountingConfiguration:taxRateProfile'
+      contextId: taxRateProfile
+      permitCode: ''
+      type: menu
+      fullName: 税率维护
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/LoanAccounting/TaxRateProfile
+      param: ''
+  - topic: 文档清单配置
+    path: 'root:rules:configurationDocList'
+    contextId: configurationDocList
+    permitCode: ''
+    type: menu
+    fullName: 文档清单配置
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/DocList
+    param: ''
+  - topic: 文档模板配置
+    path: 'root:rules:configurationContractDoc'
+    contextId: configurationContractDoc
+    permitCode: ''
+    type: menu
+    fullName: 文档模板配置
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/ContractDoc
+    param: ''
+  - topic: 协议条款模板
+    path: 'root:rules:configurationTextClauseConf'
+    contextId: configurationTextClauseConf
+    permitCode: ''
+    type: menu
+    fullName: 协议条款模板
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/TextClauseConf
+    param: ''
+  - topic: 财务报表模型
+    path: 'root:rules:configurationFnastatList'
+    contextId: configurationFnastatList
+    permitCode: ''
+    type: menu
+    fullName: 财务报表模型
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/FnastatList
+    param: ''
+  - topic: 风险探测器
+    path: 'root:rules:configurationDetectorMain'
+    contextId: configurationDetectorMain
+    permitCode: ''
+    type: menu
+    fullName: 风险探测器
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/DetectorMain
+    param: ''
+  - topic: 里程碑
+    path: 'root:rules:configurationLandmark'
+    contextId: configurationLandmark
+    permitCode: ''
+    type: menu
+    fullName: 里程碑
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/Landmark
+    param: ''
+  - topic: 产品管理
+    path: 'root:rules:configurationPolicyDefinition'
+    contextId: configurationPolicyDefinition
+    permitCode: ''
+    type: menu
+    fullName: 产品管理
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/PolicyDefinition
+    param: ''
+  - topic: 公告维护
+    path: 'root:rules:configurationPublicNotice'
+    contextId: configurationPublicNotice
+    permitCode: ''
+    type: menu
+    fullName: 公告维护
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/PublicNotice
+    param: ''
+  - topic: 版本维护
+    path: 'root:rules:configurationVersion'
+    contextId: configurationVersion
+    permitCode: ''
+    type: menu
+    fullName: 版本维护
+    icon: ''
+    enabled: 'Y'
+    url: Configuration/Version
+    param: ''
+  - topic: 首页小部件
+    path: 'root:rules:homeWidget'
+    contextId: homeWidget
+    permitCode: ''
+    type: menu
+    fullName: 首页小部件
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 小部件模版配
+      path: 'root:rules:homeWidget:homeBlockConf'
+      contextId: homeBlockConf
+      permitCode: ''
+      type: menu
+      fullName: 小部件模版配
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/HomeBlockConf
+      param: ''
+    - topic: 小部件权限配置
+      path: 'root:rules:homeWidget:dashboardConf'
+      contextId: dashboardConf
+      permitCode: ''
+      type: menu
+      fullName: 小部件权限配置
+      icon: ''
+      enabled: 'Y'
+      url: Configuration/DashboardConf
+      param: ''
+- topic: 业务监控
+  path: 'root:monitoring'
+  contextId: monitoring
+  permitCode: ''
+  type: menu
+  fullName: 业务监控
+  icon: iconfontdesktop
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 流程监控
+    path: 'root:monitoring:monitor'
+    contextId: monitor
+    permitCode: ''
+    type: menu
+    fullName: 流程监控
+    icon: ''
+    enabled: 'Y'
+    url: System/Workflow/Monitor
+    param: ''
+  - topic: 我的任务
+    path: 'root:monitoring:taskList'
+    contextId: taskList
+    permitCode: ''
+    type: menu
+    fullName: 我的任务
+    icon: ''
+    enabled: 'Y'
+    url: Common/Workflow/TaskList
+    param: ''
+  - topic: 简式流程设计
+    path: 'root:monitoring:liteWorkflow'
+    contextId: liteWorkflow
+    permitCode: ''
+    type: menu
+    fullName: 简式流程设计
+    icon: ''
+    enabled: 'Y'
+    url: System/Workflow/LiteWorkflow
+    param: ''
+  - topic: 数据审计
+    path: 'root:monitoring:auditMonitor'
+    contextId: auditMonitor
+    permitCode: ''
+    type: menu
+    fullName: 数据审计
+    icon: ''
+    enabled: 'Y'
+    url: System/Workflow/AuditMonitor
+    param: ''
+- topic: 系统
+  path: 'root:setting'
+  contextId: setting
+  permitCode: ''
+  type: menu
+  fullName: 系统
+  icon: roic-setting
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 组织架构
+    path: 'root:setting:organization'
+    contextId: organization
+    permitCode: ''
+    type: menu
+    fullName: 组织架构
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 公司信息
+      path: 'root:setting:organization:corpManager'
+      contextId: corpManager
+      permitCode: ''
+      type: menu
+      fullName: 公司信息
+      icon: ''
+      enabled: 'Y'
+      url: System/Organization/CorpManager
+      param: ''
+    - topic: 机构部门
+      path: 'root:setting:organization:orgManager'
+      contextId: orgManager
+      permitCode: ''
+      type: menu
+      fullName: 机构部门
+      icon: ''
+      enabled: 'Y'
+      url: System/Organization/OrgManager
+      param: ''
+    - topic: 用户
+      path: 'root:setting:organization:userManager'
+      contextId: userManager
+      permitCode: ''
+      type: menu
+      fullName: 用户
+      icon: ''
+      enabled: 'Y'
+      url: System/Organization/UserManager
+      param: ''
+    - topic: 角色
+      path: 'root:setting:organization:roleManager'
+      contextId: roleManager
+      permitCode: ''
+      type: menu
+      fullName: 角色
+      icon: ''
+      enabled: 'Y'
+      url: System/Organization/RoleManager
+      param: ''
+    - topic: 权限
+      path: 'root:setting:organization:permission'
+      contextId: permission
+      permitCode: ''
+      type: menu
+      fullName: 权限
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+  - topic: 流程
+    path: 'root:setting:workflow'
+    contextId: workflow
+    permitCode: ''
+    type: menu
+    fullName: 流程
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 流程设计
+      path: 'root:setting:workflow:workflowDesigner'
+      contextId: workflowDesigner
+      permitCode: ''
+      type: menu
+      fullName: 流程设计
+      icon: ''
+      enabled: 'Y'
+      url: System/Workflow/Designer
+      param: ''
+    - topic: 流程资源
+      path: 'root:setting:workflow:workflowResources'
+      contextId: workflowResources
+      permitCode: ''
+      type: menu
+      fullName: 流程资源
+      icon: ''
+      enabled: 'Y'
+      url: System/Workflow/Resources
+      param: ''
+    - topic: 流程意见常用语配置
+      path: 'root:setting:workflow:workflowComonComent'
+      contextId: workflowComonComent
+      permitCode: ''
+      type: menu
+      fullName: 流程意见常用语配置
+      icon: ''
+      enabled: 'Y'
+      url: Common/Workflow/ComonComent
+      param: ''
+  - topic: 简式流程
+    path: 'root:setting:simpleWorkflow'
+    contextId: simpleWorkflow
+    permitCode: ''
+    type: menu
+    fullName: 简式流程
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 审批表单
+      path: 'root:setting:simpleWorkflow:liteflowForm'
+      contextId: liteflowForm
+      permitCode: ''
+      type: menu
+      fullName: 审批表单
+      icon: ''
+      enabled: 'Y'
+      url: System/Liteflow/Form/
+      param: ''
+    - topic: 预设模板
+      path: 'root:setting:simpleWorkflow:liteflowTemplate'
+      contextId: liteflowTemplate
+      permitCode: ''
+      type: menu
+      fullName: 预设模板
+      icon: ''
+      enabled: 'Y'
+      url: System/Liteflow/Template/
+      param: ''
+  - topic: 模版
+    path: 'root:setting:template'
+    contextId: template
+    permitCode: ''
+    type: menu
+    fullName: 模版
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 文档模版
+      path: 'root:setting:template:fileTemplate'
+      contextId: fileTemplate
+      permitCode: ''
+      type: menu
+      fullName: 文档模版
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 格式化报告
+      path: 'root:setting:template:formatReport'
+      contextId: formatReport
+      permitCode: ''
+      type: menu
+      fullName: 格式化报告
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 文档清单
+      path: 'root:setting:template:docList'
+      contextId: docList
+      permitCode: ''
+      type: menu
+      fullName: 文档清单
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+- topic: 开发运维
+  path: 'root:devoperation'
+  contextId: devoperation
+  permitCode: ''
+  type: menu
+  fullName: 开发运维
+  icon: roic-operation
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 系统管理
+    path: 'root:devoperation:systemManager'
+    contextId: systemManager
+    permitCode: ''
+    type: menu
+    fullName: 系统管理
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 菜单
+      path: 'root:devoperation:systemManager:menuConfig'
+      contextId: menuConfig
+      permitCode: ''
+      type: menu
+      fullName: 菜单
+      icon: ''
+      enabled: 'Y'
+      url: System/SystemManage/MenuConfig
+      param: ''
+    - topic: 菜单及权限
+      path: 'root:devoperation:systemManager:pilotConfig'
+      contextId: pilotConfig
+      permitCode: ''
+      type: menu
+      fullName: 菜单及权限
+      icon: ''
+      enabled: 'Y'
+      url: System/SystemManage/PilotConfig
+      param: ''
+    - topic: 显示模板
+      path: 'root:devoperation:systemManager:dataFormConfig'
+      contextId: dataFormConfig
+      permitCode: ''
+      type: menu
+      fullName: 显示模板
+      icon: ''
+      enabled: 'Y'
+      url: System/SystemManage/DataFormConfig
+      param: ''
+    - topic: 数据字典
+      path: 'root:devoperation:systemManager:dictManager'
+      contextId: dictManager
+      permitCode: ''
+      type: menu
+      fullName: 数据字典
+      icon: ''
+      enabled: 'Y'
+      url: System/Dictionary/DictManager
+      param: ''
+    - topic: 参数
+      path: 'root:devoperation:systemManager:paramManager'
+      contextId: paramManager
+      permitCode: ''
+      type: menu
+      fullName: 参数
+      icon: ''
+      enabled: 'Y'
+      url: System/Param/ParamManager
+      param: ''
+    - topic: 数据模型
+      path: 'root:devoperation:systemManager:dataModel'
+      contextId: dataModel
+      permitCode: ''
+      type: menu
+      fullName: 数据模型
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 工作台
+      path: 'root:devoperation:systemManager:dashboardManager'
+      contextId: dashboardManager
+      permitCode: ''
+      type: menu
+      fullName: 工作台
+      icon: ''
+      enabled: 'Y'
+      url: System/Dashboard/DashboardManager
+      param: ''
+  - topic: 系统监控
+    path: 'root:devoperation:monitor'
+    contextId: monitor
+    permitCode: ''
+    type: menu
+    fullName: 系统监控
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 资源监控
+      path: 'root:devoperation:monitor:resourceMonitor'
+      contextId: resourceMonitor
+      permitCode: ''
+      type: menu
+      fullName: 资源监控
+      icon: ''
+      enabled: 'Y'
+      url: System/SystemMonitor/ResourceMonitor
+      param: ''
+    - topic: 系统日志
+      path: 'root:devoperation:monitor:systemLog'
+      contextId: systemLog
+      permitCode: ''
+      type: menu
+      fullName: 系统日志
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 运行环境
+      path: 'root:devoperation:monitor:runtimeEnv'
+      contextId: runtimeEnv
+      permitCode: ''
+      type: menu
+      fullName: 运行环境
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 缓存
+      path: 'root:devoperation:monitor:ad99c668d2d31006'
+      contextId: ad99c668d2d31006
+      permitCode: ''
+      type: menu
+      fullName: 缓存
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 批量控制台
+      path: 'root:devoperation:monitor:batchJobConsole'
+      contextId: batchJobConsole
+      permitCode: ''
+      type: menu
+      fullName: 批量控制台
+      icon: ''
+      enabled: 'Y'
+      url: BatchJobConsole
+      param: ''
+  - topic: 规则及报表
+    path: 'root:devoperation:ad99b490c0751bdb'
+    contextId: ad99b490c0751bdb
+    permitCode: ''
+    type: menu
+    fullName: 规则及报表
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 报表开发
+      path: 'root:devoperation:ad99b490c0751bdb:reportDevelop'
+      contextId: reportDevelop
+      permitCode: ''
+      type: menu
+      fullName: 报表开发
+      icon: ''
+      enabled: 'Y'
+      url: System/RuleAndReport/ReportDevelop
+      param: ''
+    - topic: 规则开发
+      path: 'root:devoperation:ad99b490c0751bdb:ruleDevelop'
+      contextId: ruleDevelop
+      permitCode: ''
+      type: menu
+      fullName: 规则开发
+      icon: ''
+      enabled: 'Y'
+      url: System/RuleAndReport/RuleDevelop
+      param: ''
+  - topic: 开发控制台
+    path: 'root:devoperation:devTools'
+    contextId: devTools
+    permitCode: ''
+    type: menu
+    fullName: 开发控制台
+    icon: ''
+    enabled: 'Y'
+    url: System/DevTools
+    param: ''
+  - topic: 批量控制台
+    path: 'root:devoperation:batchJobConsole'
+    contextId: batchJobConsole
+    permitCode: ''
+    type: menu
+    fullName: 批量控制台
+    icon: ''
+    enabled: 'Y'
+    url: BatchJobConsole
+    param: ''
+- topic: 参考案例
+  path: 'root:showcase'
+  contextId: showcase
+  permitCode: ''
+  type: menu
+  fullName: 参考案例
+  icon: roic-showcase
+  enabled: 'Y'
+  url: ''
+  param: ''
+  children:
+  - topic: 入门
+    path: 'root:showcase:base'
+    contextId: base
+    permitCode: ''
+    type: menu
+    fullName: 入门
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 你好
+      path: 'root:showcase:base:helloWord'
+      contextId: helloWord
+      permitCode: ''
+      type: menu
+      fullName: 你好
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/HelloWord
+      param: ''
+    - topic: 按钮及调用
+      path: 'root:showcase:base:buttonCase'
+      contextId: buttonCase
+      permitCode: ''
+      type: menu
+      fullName: 按钮及调用
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/ButtonCase
+      param: ''
+    - topic: 多栏栅格
+      path: 'root:showcase:base:gridLayout'
+      contextId: gridLayout
+      permitCode: ''
+      type: menu
+      fullName: 多栏栅格
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/GridLayout
+      param: ''
+    - topic: 消息及交互
+      path: 'root:showcase:base:messageCase'
+      contextId: messageCase
+      permitCode: ''
+      type: menu
+      fullName: 消息及交互
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/MessageCase
+      param: ''
+    - topic: 表单及数据
+      path: 'root:showcase:base:formWithData'
+      contextId: formWithData
+      permitCode: ''
+      type: menu
+      fullName: 表单及数据
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/FormWithData
+      param: ''
+    - topic: 面板及分组
+      path: 'root:showcase:base:panelCase'
+      contextId: panelCase
+      permitCode: ''
+      type: menu
+      fullName: 面板及分组
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/PanelCase
+      param: ''
+    - topic: 全局对象注入
+      path: 'root:showcase:base:annotationCase'
+      contextId: annotationCase
+      permitCode: ''
+      type: menu
+      fullName: 全局对象注入
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/AnnotationCase
+      param: ''
+    - topic: 加载动画
+      path: 'root:showcase:base:loading'
+      contextId: loading
+      permitCode: ''
+      type: menu
+      fullName: 加载动画
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Guide/Loading
+      param: ''
+  - topic: 列表
+    path: 'root:showcase:list'
+    contextId: list
+    permitCode: ''
+    type: menu
+    fullName: 列表
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 简单列表
+      path: 'root:showcase:list:baseSimpleTable'
+      contextId: baseSimpleTable
+      permitCode: ''
+      type: menu
+      fullName: 简单列表
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/BaseSimpleTable
+      param: ''
+    - topic: 可编辑列表
+      path: 'root:showcase:list:editDataTable'
+      contextId: editDataTable
+      permitCode: ''
+      type: menu
+      fullName: 可编辑列表
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/EditDataTable
+      param: ''
+    - topic: 列表主要功能展示
+      path: 'root:showcase:list:dataTableFuncCase'
+      contextId: dataTableFuncCase
+      permitCode: ''
+      type: menu
+      fullName: 列表主要功能展示
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/DataTableFuncCase
+      param: ''
+    - topic: 可编辑列表有校验
+      path: 'root:showcase:list:editDataTableWithValidate'
+      contextId: editDataTableWithValidate
+      permitCode: ''
+      type: menu
+      fullName: 可编辑列表有校验
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/EditDataTableWithValidate
+      param: ''
+    - topic: 列表搜索器定制
+      path: 'root:showcase:list:customizeSearchFilter'
+      contextId: customizeSearchFilter
+      permitCode: ''
+      type: menu
+      fullName: 列表搜索器定制
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/CustomizeSearchFilter
+      param: ''
+    - topic: 当前用户权限内限制
+      path: 'root:showcase:list:userRangeDataListCase'
+      contextId: userRangeDataListCase
+      permitCode: ''
+      type: menu
+      fullName: 当前用户权限内限制
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/UserRangeDataListCase
+      param: ''
+    - topic: 树图表格
+      path: 'root:showcase:list:treeTableCase'
+      contextId: treeTableCase
+      permitCode: ''
+      type: menu
+      fullName: 树图表格
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/TreeTableCase
+      param: ''
+    - topic: 列表分组
+      path: 'root:showcase:list:groupDataTableCase'
+      contextId: groupDataTableCase
+      permitCode: ''
+      type: menu
+      fullName: 列表分组
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataTable/GroupDataTableCase
+      param: ''
+    - topic: 条目列表
+      path: 'root:showcase:list:listItemCase'
+      contextId: listItemCase
+      permitCode: ''
+      type: menu
+      fullName: 条目列表
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DataList/ListItemCase
+      param: ''
+    - topic: 卡片列表
+      path: 'root:showcase:list:cardList'
+      contextId: cardList
+      permitCode: ''
+      type: menu
+      fullName: 卡片列表
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 模板和数据分离使用
+      path: 'root:showcase:list:dataTemplateSplit'
+      contextId: dataTemplateSplit
+      permitCode: ''
+      type: menu
+      fullName: 模板和数据分离使用
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+  - topic: 详情
+    path: 'root:showcase:deatilInfo'
+    contextId: deatilInfo
+    permitCode: ''
+    type: menu
+    fullName: 详情
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 简单详情
+      path: 'root:showcase:deatilInfo:detailInfoSimple'
+      contextId: detailInfoSimple
+      permitCode: ''
+      type: menu
+      fullName: 简单详情
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/Simple
+      param: ''
+    - topic: 详情MapData
+      path: 'root:showcase:deatilInfo:mapDataInfoCase'
+      contextId: mapDataInfoCase
+      permitCode: ''
+      type: menu
+      fullName: 详情MapData
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/MapDataInfoCase
+      param: ''
+    - topic: 详情有分组
+      path: 'root:showcase:deatilInfo:detailInfoGroup'
+      contextId: detailInfoGroup
+      permitCode: ''
+      type: menu
+      fullName: 详情有分组
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/Group
+      param: ''
+    - topic: 详情四列
+      path: 'root:showcase:deatilInfo:detailInfoColumnFour'
+      contextId: detailInfoColumnFour
+      permitCode: ''
+      type: menu
+      fullName: 详情四列
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/ColumnFour
+      param: ''
+    - topic: 详情阅读模式
+      path: 'root:showcase:deatilInfo:detailInfoReadingInfoCase'
+      contextId: detailInfoReadingInfoCase
+      permitCode: ''
+      type: menu
+      fullName: 详情阅读模式
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/ReadingInfoCase
+      param: ''
+    - topic: 详情主要功能展示
+      path: 'root:showcase:deatilInfo:detailInfoMainFunction'
+      contextId: detailInfoMainFunction
+      permitCode: ''
+      type: menu
+      fullName: 详情主要功能展示
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/MainFunction
+      param: ''
+    - topic: 模板和数据分离使用
+      path: 'root:showcase:deatilInfo:detailInfoMetaSeparateData'
+      contextId: detailInfoMetaSeparateData
+      permitCode: ''
+      type: menu
+      fullName: 模板和数据分离使用
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/DetailInfo/MetaSeparateData
+      param: ''
+  - topic: 布局及组件
+    path: 'root:showcase:layoutComponent'
+    contextId: layoutComponent
+    permitCode: ''
+    type: menu
+    fullName: 布局及组件
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: Fieldset分组
+      path: 'root:showcase:layoutComponent:fieldsetCase'
+      contextId: fieldsetCase
+      permitCode: ''
+      type: menu
+      fullName: Fieldset分组
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/FieldsetCase
+      param: ''
+    - topic: 树图导航
+      path: 'root:showcase:layoutComponent:treeViewCase'
+      contextId: treeViewCase
+      permitCode: ''
+      type: menu
+      fullName: 树图导航
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/TreeViewCase
+      param: ''
+    - topic: 步骤条导航
+      path: 'root:showcase:layoutComponent:step'
+      contextId: step
+      permitCode: ''
+      type: menu
+      fullName: 步骤条导航
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/Step
+      param: ''
+    - topic: 业务集中检查
+      path: 'root:showcase:layoutComponent:detectorCase'
+      contextId: detectorCase
+      permitCode: ''
+      type: menu
+      fullName: 业务集中检查
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/DetectorCase
+      param: ''
+    - topic: 图标库
+      path: 'root:showcase:layoutComponent:icon'
+      contextId: icon
+      permitCode: ''
+      type: menu
+      fullName: 图标库
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/Icon
+      param: ''
+    - topic: 嵌入组件块
+      path: 'root:showcase:layoutComponent:embedBlockCase'
+      contextId: embedBlockCase
+      permitCode: ''
+      type: menu
+      fullName: 嵌入组件块
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/EmbedBlockCase
+      param: ''
+    - topic: 文件及图片的上传下载
+      path: 'root:showcase:layoutComponent:fileOperateCase'
+      contextId: fileOperateCase
+      permitCode: ''
+      type: menu
+      fullName: 文件及图片的上传下载
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/FileOperateCase
+      param: ''
+    - topic: IFRAME的使用场景
+      path: 'root:showcase:layoutComponent:iframeCase'
+      contextId: iframeCase
+      permitCode: ''
+      type: menu
+      fullName: IFRAME的使用场景
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/IframeCase
+      param: ''
+    - topic: 图表
+      path: 'root:showcase:layoutComponent:chartsCase'
+      contextId: chartsCase
+      permitCode: ''
+      type: menu
+      fullName: 图表
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/ChartsCase
+      param: ''
+    - topic: 图片查看
+      path: 'root:showcase:layoutComponent:imageCase'
+      contextId: imageCase
+      permitCode: ''
+      type: menu
+      fullName: 图片查看
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/ImageCase
+      param: ''
+    - topic: 思维导图
+      path: 'root:showcase:layoutComponent:mindCase'
+      contextId: mindCase
+      permitCode: ''
+      type: menu
+      fullName: 思维导图
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Layout/MindCase
+      param: ''
+    - topic: 结构化选择树
+      type: menu
+      path: 'root:showcase:layoutComponent:b2aa137e3c56c5c8'
+      permitCode: ''
+      contextId: b2aa137e3c56c5c8
+      fullName: 结构化选择树
+      enabled: 'Y'
+      icon: ''
+      url: ShowCase/Layout/MindTree
+      param: ''
+      children: []
+  - topic: 基础服务
+    path: 'root:showcase:baseService'
+    contextId: baseService
+    permitCode: ''
+    type: menu
+    fullName: 基础服务
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: rest调用
+      path: 'root:showcase:baseService:rest'
+      contextId: rest
+      permitCode: ''
+      type: menu
+      fullName: rest调用
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: rest传参场景
+      path: 'root:showcase:baseService:restPassScene'
+      contextId: restPassScene
+      permitCode: ''
+      type: menu
+      fullName: rest传参场景
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 国际化支持
+      path: 'root:showcase:baseService:ad9aa4e3a9431919'
+      contextId: ad9aa4e3a9431919
+      permitCode: ''
+      type: menu
+      fullName: 国际化支持
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 里程碑
+      path: 'root:showcase:baseService:mileStone'
+      contextId: mileStone
+      permitCode: ''
+      type: menu
+      fullName: 里程碑
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/BaseService/MileStone
+      param: ''
+  - topic: OFFICE
+    path: 'root:showcase:office'
+    contextId: office
+    permitCode: ''
+    type: menu
+    fullName: OFFICE
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: OFFICE使用案例
+      path: 'root:showcase:office:webOfficeCase'
+      contextId: webOfficeCase
+      permitCode: ''
+      type: menu
+      fullName: OFFICE使用案例
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Office/WebOfficeCase
+      param: ''
+    - topic: LIST页面导出EXCEL
+      path: 'root:showcase:office:dataList2ExcelCase'
+      contextId: dataList2ExcelCase
+      permitCode: ''
+      type: menu
+      fullName: LIST页面导出EXCEL
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Office/DataList2ExcelCase
+      param: ''
+    - topic: LIST页面导入EXCEL
+      path: 'root:showcase:office:dataListFromExcel'
+      contextId: dataListFromExcel
+      permitCode: ''
+      type: menu
+      fullName: LIST页面导入EXCEL
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Office/DataListFromExcel
+      param: ''
+    - topic: INFO页面导入
+      path: 'root:showcase:office:detailInfoFromExcel'
+      contextId: detailInfoFromExcel
+      permitCode: ''
+      type: menu
+      fullName: INFO页面导入
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Office/DetailInfoFromExcel
+      param: ''
+  - topic: 常见组合
+    path: 'root:showcase:commonCombination'
+    contextId: commonCombination
+    permitCode: ''
+    type: menu
+    fullName: 常见组合
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 列表详情联动
+      path: 'root:showcase:commonCombination:listDetailInfoLinkage'
+      contextId: listDetailInfoLinkage
+      permitCode: ''
+      type: menu
+      fullName: 列表详情联动
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 详情列表整合
+      path: 'root:showcase:commonCombination:detailInfoListIntegration'
+      contextId: detailInfoListIntegration
+      permitCode: ''
+      type: menu
+      fullName: 详情列表整合
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 动态分组并整合列表详情以及自定义
+      path: 'root:showcase:commonCombination:ad9aabe425adf443'
+      contextId: ad9aabe425adf443
+      permitCode: ''
+      type: menu
+      fullName: 动态分组并整合列表详情以及自定义
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+  - topic: 典型业务场景
+    path: 'root:showcase:typicalBusinessScenario'
+    contextId: typicalBusinessScenario
+    permitCode: ''
+    type: menu
+    fullName: 典型业务场景
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+  - topic: 债权核算
+    path: 'root:showcase:debtAccounting'
+    contextId: debtAccounting
+    permitCode: ''
+    type: menu
+    fullName: 债权核算
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 贷款咨询
+      path: 'root:showcase:debtAccounting:paymentCalc'
+      contextId: paymentCalc
+      permitCode: ''
+      type: menu
+      fullName: 贷款咨询
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/LoanAccounting/PaymentCalc
+      param: ShowCase/LoanAccounting/PaymentCalc
+    - topic: 调息
+      path: 'root:showcase:debtAccounting:adjustInterest'
+      contextId: adjustInterest
+      permitCode: ''
+      type: menu
+      fullName: 调息
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/LoanAccounting/AdjustInterest
+      param: ''
+    - topic: 会计分录
+      path: 'root:showcase:debtAccounting:bookKeeper'
+      contextId: bookKeeper
+      permitCode: ''
+      type: menu
+      fullName: 会计分录
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/LoanAccounting/BookKeeper
+      param: ''
+  - topic: 流程引擎
+    path: 'root:showcase:processEngine'
+    contextId: processEngine
+    permitCode: ''
+    type: menu
+    fullName: 流程引擎
+    icon: ''
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+    - topic: 标准流程
+      path: 'root:showcase:processEngine:creditList'
+      contextId: creditList
+      permitCode: ''
+      type: menu
+      fullName: 标准流程
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Workflow/CreditList
+      param: ''
+    - topic: 简式流程
+      path: 'root:showcase:processEngine:simpleWorkFlow'
+      contextId: simpleWorkFlow
+      permitCode: ''
+      type: menu
+      fullName: 简式流程
+      icon: ''
+      enabled: 'Y'
+      url: ''
+      param: ''
+    - topic: 流程设计
+      path: 'root:showcase:processEngine:workflowDesign'
+      contextId: workflowDesign
+      permitCode: ''
+      type: menu
+      fullName: 流程设计
+      icon: ''
+      enabled: 'Y'
+      url: ShowCase/Workflow/Design
+      param: ''
+  - topic: 报表
+    path: 'root:showcase:reportForm'
+    contextId: reportForm
+    permitCode: ''
+    type: menu
+    fullName: 报表
+    icon: ''
+    enabled: 'Y'
+    url: ShowCase/ReportForm
+    param: ''
+  - topic: 报告
+    path: 'root:showcase:tdReport'
+    contextId: tdReport
+    permitCode: ''
+    type: menu
+    fullName: 报告
+    icon: ''
+    enabled: 'Y'
+    url: ShowCase/TdReport
+    param: ''
+  - topic: 产品
+    path: 'root:showcase:policy'
+    contextId: policy
+    permitCode: ''
+    type: menu
+    fullName: 产品
+    icon: ''
+    enabled: 'Y'
+    url: ShowCase/Policy
+    param: ''
+  - topic: 文件管理
+    path: 'root:showcase:docList'
+    contextId: docList
+    permitCode: ''
+    type: menu
+    fullName: 文件管理
+    icon: ''
+    enabled: 'Y'
+    url: ShowCase/DocList
+    param: ''
+  - topic: 图表
+    path: 'root:showcase:chart'
+    contextId: chart
+    permitCode: ''
+    type: menu
+    fullName: 图表
+    icon: ''
+    enabled: 'Y'
+    url: ShowCase/Chart
+    param: ''

@@ -1,0 +1,45 @@
+{
+  "categoryCode": "WORK_FLOW",
+  "code": "AppAuthFlow",
+  "name": "应用实名认证流程",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "手机验证",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "证件上传",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0003",
+      "name": "信息确认",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0004",
+      "name": "营业执照认证",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0005",
+      "name": "人脸识别",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0006",
+      "name": "绑卡认证",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "categoryCode": "insure",
+  "code": "insStatus",
+  "name": "保单当前状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "未到期-专管员保管中",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    },
+    {
+      "code": "02",
+      "name": "逾期未移交-专管员保管中",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    },
+    {
+      "code": "03",
+      "name": "到期已移交-档案中心管理员保管中",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    },
+    {
+      "code": "04",
+      "name": "已被客户领取",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    },
+    {
+      "code": "05",
+      "name": "到期期满作废",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    },
+    {
+      "code": "06",
+      "name": "其他异常情况",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    }
+  ]
+}

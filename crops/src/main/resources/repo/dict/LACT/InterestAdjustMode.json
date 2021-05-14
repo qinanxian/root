@@ -1,0 +1,39 @@
+{
+  "code" : "InterestAdjustMode",
+  "name" : "调息方式",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "10",
+  "intro" : null,
+  "items" : [ {
+    "code" : "Rate",
+    "name" : "实际利率调息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Amount",
+    "name" : "按金额调息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Ratio",
+    "name" : "按比例调息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

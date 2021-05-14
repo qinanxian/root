@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "LargeCashAccountProp",
+  "name": "大额取现账户性质",
+  "intro": "大额取现账户性质",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "对私",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0",
+      "name": "对公",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

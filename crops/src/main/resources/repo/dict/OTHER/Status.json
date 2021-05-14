@@ -1,0 +1,27 @@
+{
+  "categoryCode": "OTHER",
+  "code": "status",
+  "name": "申请状态",
+  "intro": "01未完成 02通过 03拒绝",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "未完成",
+      "hotspot": "00",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "通过",
+      "hotspot": "00",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "拒绝",
+      "hotspot": "00",
+      "status": "1"
+    }
+  ]
+}

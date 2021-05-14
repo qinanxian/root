@@ -1,0 +1,29 @@
+{
+  "code" : "stockholderType",
+  "name" : "股东类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0034",
+  "intro" : "股东类型的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "法人股东",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "法人股东"
+  }, {
+    "code" : "20",
+    "name" : "自然人股东",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "自然人股东"
+  } ]
+}

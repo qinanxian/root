@@ -1,0 +1,181 @@
+{
+  "id": "customer-IndCustomerHouseList",
+  "pack": "customer",
+  "code": "IndCustomerHouseList",
+  "name": "自然人客户房产信息",
+  "dataModelType": "DataMap",
+  "dataModel": "CUST_HOUSE",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "CUST_ID=:custId",
+    "from": "CUST_HOUSE"
+  },
+  "elements": [
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "流水号",
+      "code": "serialNo",
+      "dataType": "String",
+      "column": "SERIAL_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "code": "custId",
+      "name": "客户编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "CUST_ID",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "房屋所有权人",
+      "code": "houseOwner",
+      "dataType": "String",
+      "column": "HOUSE_OWNER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "房屋性质",
+      "code": "houseNature",
+      "dataType": "String",
+      "column": "HOUSE_NATURE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "房屋面积",
+      "code": "houseFloorSpace",
+      "dataType": "Double",
+      "column": "HOUSE_FLOOR_SPACE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "房贷期限（月）",
+      "code": "houseLoanMonths",
+      "dataType": "Double",
+      "column": "HOUSE_LOAN_MONTHS",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "房贷金额",
+      "code": "houseLoanAmt",
+      "dataType": "Double",
+      "column": "HOUSE_LOAN_AMT",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-IndCustomerHouseList",
+      "name": "月还款额",
+      "code": "housePayPerTerm",
+      "dataType": "Double",
+      "column": "HOUSE_PAY_PER_TERM",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

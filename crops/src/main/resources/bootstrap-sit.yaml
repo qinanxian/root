@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.10.50.136:8848
+      config:
+        server-addr: 10.10.50.136:8848
+        file-extension: yaml
+        #group: DEVELOP_GROUP

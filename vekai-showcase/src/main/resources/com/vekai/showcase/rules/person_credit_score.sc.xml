@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scorecard weight-support="false" name=" person_credit_score" attr-col-width="200" attr-col-name="属性"
+           attr-col-category="个人信用" condition-col-width="220" condition-col-name="条件" score-col-width="180"
+           score-col-name="分值" scoring-type="sum" assign-target-type="none">
+    <remark><![CDATA[]]></remark>
+    <import-variable-library path="jcr:/CreditRiskManager/customer_credit.vl.xml"/>
+    <import-constant-library path="jcr:/CreditRiskManager/customer.cl.xml"/>
+    <card-cell type="attribute" row="2" col="1" var="age" var-label="年龄" datatype="Integer"/>
+    <card-cell type="condition" row="2" col="2">
+        <joint type="or">
+            <condition op="LessThenEquals">
+                <value content="25" type="Input"/>
+            </condition>
+            <condition op="GreaterThen">
+                <value content="55" type="Input"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="2" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="3" col="2">
+        <joint type="and">
+            <condition op="GreaterThen">
+                <value content="50" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="55" type="Input"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="3" col="3">
+        <value content="2" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="4" col="2">
+        <joint type="and">
+            <condition op="GreaterThen">
+                <value content="25" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="30" type="Input"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="4" col="3">
+        <value content="3" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="5" col="2">
+        <joint type="and">
+            <condition op="GreaterThen">
+                <value content="45" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="50" type="Input"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="5" col="3">
+        <value content="3" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="6" col="2">
+        <joint type="and">
+            <condition op="GreaterThen">
+                <value content="30" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="35" type="Input"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="6" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="7" col="2">
+        <joint type="and">
+            <condition op="GreaterThen">
+                <value content="35" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="45" type="Input"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="7" col="3">
+        <value content="5" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="8" col="1" var="degree" var-label="最高学历" datatype="String"/>
+    <card-cell type="condition" row="8" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="学历" const="V10" const-label="高级职称或博士学位" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="8" col="3">
+        <value content="5" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="9" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="学历" const="V20" const-label="硕士或双学士学位" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="9" col="3">
+        <value content="5" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="10" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="学历" const="V30" const-label="中级职称或学士学位" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="10" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="11" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="学历" const="V40" const-label="大专学历" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="11" col="3">
+        <value content="3" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="12" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="学历" const="V50" const-label="高中中专" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="12" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="13" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="学历" const="V90" const-label="其它" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="13" col="3">
+        <value content="0" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="14" col="1" var="gender" var-label="性别" datatype="String"/>
+    <card-cell type="condition" row="14" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="性别" const="2" const-label="女" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="14" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="15" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="性别" const="1" const-label="男" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="15" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="16" col="1" var="isLocalCensus" var-label="是否本地户籍" datatype="String"/>
+    <card-cell type="condition" row="16" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="是否" const="Y" const-label="是" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="16" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="17" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="是否" const="N" const-label="否" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="17" col="3">
+        <value content="2" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="18" col="1" var="companyNature" var-label="单位性质" datatype="String"/>
+    <card-cell type="condition" row="18" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="单位性质" const="V10" const-label="国家公务员,职业会计师,评估师,精算师" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="18" col="3">
+        <value content="5" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="19" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="单位性质" const="V20" const-label="国有独资垄断性企业(电信,水电气供应公司),金融业从业人员" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="19" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="20" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="单位性质" const="V30" const-label="大中型企业工作人员" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="20" col="3">
+        <value content="3" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="21" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="单位性质" const="V40" const-label="中小型企业工作人员" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="21" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="22" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="单位性质" const="V50" const-label="其它 （含法院工作人员、律师、警察、军人）" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="22" col="3">
+        <value content="0" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="23" col="1" var="marital" var-label="婚姻状况" datatype="String"/>
+    <card-cell type="condition" row="23" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="婚姻状况" const="1" const-label="已婚" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="23" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="24" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="婚姻状况" const="1" const-label="已婚" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="24" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="25" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="婚姻状况" const="9" const-label="其他" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="25" col="3">
+        <value content="0" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="26" col="1" var="salaryPayChannel" var-label="发薪方式" datatype="String"/>
+    <card-cell type="condition" row="26" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="发薪方式" const="V10" const-label="网银" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="26" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="27" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="发薪方式" const="V20" const-label="现金" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="27" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="28" col="1" var="houseStatus" var-label="房产状况" datatype="String"/>
+    <card-cell type="condition" row="28" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="房产状况" const="V10" const-label="申请地未结清按揭房产" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="28" col="3">
+        <value content="5" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="29" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="房产状况" const="V20" const-label="异地未结清按揭房产" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="29" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="30" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="房产状况" const="V30" const-label="其他" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="30" col="3">
+        <value content="2" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="31" col="1" var="carStatus" var-label="购车状况" datatype="String"/>
+    <card-cell type="condition" row="31" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="购车状况" const="V10" const-label="按揭购车" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="31" col="3">
+        <value content="3" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="32" col="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="购车状况" const="V20" const-label="无车辆" type="Constant"/>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="32" col="3">
+        <value content="0" type="Input"/>
+    </card-cell>
+    <card-cell type="attribute" row="33" col="1" var="debtRatio" var-label="负债率" datatype="Double"/>
+    <card-cell type="condition" row="33" col="2">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="0" type="Input">
+                </value>
+            </condition>
+            <condition op="LessThen">
+                <value content="30" type="Input">
+                </value>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="33" col="3">
+        <value content="5" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="34" col="2">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="30" type="Input">
+                </value>
+            </condition>
+            <condition op="LessThen">
+                <value content="45" type="Input">
+                </value>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="34" col="3">
+        <value content="4" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="35" col="2">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="45" type="Input">
+                </value>
+            </condition>
+            <condition op="LessThen">
+                <value content="60" type="Input">
+                </value>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="35" col="3">
+        <value content="3" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="36" col="2">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input">
+                </value>
+            </condition>
+            <condition op="LessThen">
+                <value content="75" type="Input">
+                </value>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="36" col="3">
+        <value content="2" type="Input"/>
+    </card-cell>
+    <card-cell type="condition" row="37" col="2">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="75" type="Input">
+                </value>
+            </condition>
+        </joint>
+    </card-cell>
+    <card-cell type="score" row="37" col="3">
+        <value content="1" type="Input"/>
+    </card-cell>
+    <attribute-row row-number="2">
+        <condition-row row-number="3"/>
+        <condition-row row-number="4"/>
+        <condition-row row-number="5"/>
+        <condition-row row-number="6"/>
+        <condition-row row-number="7"/>
+    </attribute-row>
+    <attribute-row row-number="8">
+        <condition-row row-number="9"/>
+        <condition-row row-number="10"/>
+        <condition-row row-number="11"/>
+        <condition-row row-number="12"/>
+        <condition-row row-number="13"/>
+    </attribute-row>
+    <attribute-row row-number="14">
+        <condition-row row-number="15"/>
+    </attribute-row>
+    <attribute-row row-number="16">
+        <condition-row row-number="17"/>
+    </attribute-row>
+    <attribute-row row-number="18">
+        <condition-row row-number="19"/>
+        <condition-row row-number="20"/>
+        <condition-row row-number="21"/>
+        <condition-row row-number="22"/>
+    </attribute-row>
+    <attribute-row row-number="23">
+        <condition-row row-number="24"/>
+        <condition-row row-number="25"/>
+    </attribute-row>
+    <attribute-row row-number="26">
+        <condition-row row-number="27"/>
+    </attribute-row>
+    <attribute-row row-number="28">
+        <condition-row row-number="29"/>
+        <condition-row row-number="30"/>
+    </attribute-row>
+    <attribute-row row-number="31">
+        <condition-row row-number="32"/>
+    </attribute-row>
+    <attribute-row row-number="33">
+        <condition-row row-number="34"/>
+        <condition-row row-number="35"/>
+        <condition-row row-number="36"/>
+        <condition-row row-number="37"/>
+    </attribute-row>
+</scorecard>

@@ -1,0 +1,27 @@
+{
+  "categoryCode": "OTHER",
+  "code": "Marrage",
+  "name": "婚姻情况",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "已婚",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "未婚",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "其他",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

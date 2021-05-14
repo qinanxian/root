@@ -1,0 +1,27 @@
+{
+  "categoryCode": "insure",
+  "code": "manRole",
+  "name": "管理角色",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "R01",
+      "name": "普通专管员",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "R02",
+      "name": "系统专管员",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "R03",
+      "name": "档案中心管理员",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

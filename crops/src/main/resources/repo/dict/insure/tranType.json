@@ -1,0 +1,21 @@
+{
+  "categoryCode": "insure",
+  "code": "tranType",
+  "name": "移交类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "T01",
+      "name": "到期移交",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "T02",
+      "name": "专管员离职移交",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

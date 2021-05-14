@@ -1,0 +1,9 @@
+{
+  "code" : "FnastatModelClass",
+  "name" : "报表分类",
+  "nameI18nCode" : null,
+  "categoryCode" : "REPORT",
+  "sortCode" : "2010",
+  "intro" : "报表分类",
+  "items" : [ ]
+}

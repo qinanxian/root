@@ -1,0 +1,302 @@
+{
+  "id": "codetodo-ParticularOpenTimeList",
+  "pack": "codetodo",
+  "code": "ParticularOpenTimeList",
+  "name": "特殊营业时间列表",
+  "managedByRR": false,
+  "tags": "特殊营业时间",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "NETWORK_NO = :netWorkId",
+    "from": "MSB_SPECIAL_BUSINESS_TIME"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "primaryKey": true
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "网点编号",
+      "code": "networkNo",
+      "dataType": "String",
+      "column": "NETWORK_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "开始日期",
+      "code": "startDate",
+      "dataType": "String",
+      "column": "START_DATE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "结束日期",
+      "code": "endDate",
+      "dataType": "String",
+      "column": "END_DATE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "业务类型",
+      "code": "businessType",
+      "dataType": "String",
+      "column": "BUSINESS_TYPE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "BusinessType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "是否营业",
+      "code": "isBusiness",
+      "dataType": "String",
+      "column": "IS_BUSINESS",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "IsBusiness"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "上午营业时间",
+      "code": "startTime",
+      "dataType": "String",
+      "column": "START_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "下午营业时间",
+      "code": "endTime",
+      "dataType": "String",
+      "column": "END_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ParticularOpenTimeList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "dataModel": "MSB_SPECIAL_BUSINESS_TIME",
+  "description": "",
+  "handler": "com.vekai.crops.codetodo.handler.DateWithoutTimeHandler"
+}

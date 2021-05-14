@@ -1,0 +1,49 @@
+{
+  "code" : "VoucherWord",
+  "name" : "凭证字",
+  "nameI18nCode" : null,
+  "categoryCode" : "FISCAL",
+  "sortCode" : "10",
+  "intro" : null,
+  "items" : [ {
+    "code" : "10",
+    "name" : "记",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "收、付、转",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "30",
+    "name" : "现收、现付、银收、银付",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "40",
+    "name" : "转",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

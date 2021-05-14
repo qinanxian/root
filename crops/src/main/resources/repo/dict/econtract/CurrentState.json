@@ -1,0 +1,27 @@
+{
+  "categoryCode": "econtract",
+  "code": "CurrentState",
+  "name": "申请状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "Succeed",
+      "name": "成功",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "Fail",
+      "name": "未展开",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "Scan",
+      "name": "已展开未完成",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

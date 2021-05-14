@@ -1,0 +1,2 @@
+<#macro label>
+</#macro>

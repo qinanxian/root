@@ -1,0 +1,14 @@
+{
+  "default": {
+    "db": "xdgcdb",
+    "authdb": "admin",
+    "address": [
+      {
+        "dbip": "127.0.0.1",
+        "dbport": "27017"
+      }
+    ],
+    "dbuser": "",
+    "dbpwd": ""
+  }
+}

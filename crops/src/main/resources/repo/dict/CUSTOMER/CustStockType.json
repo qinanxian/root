@@ -1,0 +1,69 @@
+{
+  "code" : "CustStockType",
+  "name" : "股票类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0030",
+  "intro" : "客户股票类型的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "A股深圳",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "B股深圳",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "30",
+    "name" : "A股上海",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "40",
+    "name" : "B股上海",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "50",
+    "name" : "H股",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "60",
+    "name" : "海外股",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

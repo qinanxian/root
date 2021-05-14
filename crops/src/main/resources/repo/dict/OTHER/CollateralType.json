@@ -1,0 +1,149 @@
+{
+  "code" : "CollateralType",
+  "name" : "押品类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "OTHER",
+  "sortCode" : "1000",
+  "intro" : null,
+  "items" : [ {
+    "code" : "M",
+    "name" : "抵押物",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M1",
+    "name" : "房产",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M1",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M2",
+    "name" : "土地使用权(包含土地附着物)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M2",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M3",
+    "name" : "在建工程",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M3",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M4",
+    "name" : "交通工具",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M4",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M5",
+    "name" : "机器设备",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M6",
+    "name" : "其他类",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "M6",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P",
+    "name" : "质押物",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P1",
+    "name" : "存单",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P1",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P2",
+    "name" : "票据",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P2",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P3",
+    "name" : "保单",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P3",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P4",
+    "name" : "国债",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P4",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P5",
+    "name" : "股权/股票",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "P6",
+    "name" : "其他权利",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "P6",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

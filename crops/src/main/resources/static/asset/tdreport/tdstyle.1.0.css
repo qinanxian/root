@@ -1,0 +1,584 @@
+html, body {
+    zoom: 1;
+    z-index: 99999;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.report-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.report-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0.7;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+table tr:hover {
+    background-color: #f9fcff;
+}
+
+.report-container-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -400px;
+    background-color: #f9f9f9;
+    padding: 0 24px;
+    width: 892px;
+    min-height: 100%;
+}
+
+.container .inner {
+    width: 100%;
+}
+
+.report-a-close {
+    position: fixed;
+    background-color: #fff;
+    width: 52px;
+    height: 50px;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 916px;
+    top: 0;
+}
+
+.report-a-close a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.header {
+    font-size: 14px;
+    overflow: hidden;
+    padding: 25px 0;
+    font-family: 'Microsoft Yahei';
+}
+
+.header-title {
+    margin: 0 10px 0 0;
+    vertical-align: top;
+    font-size: 24px;
+    display: inline-block;
+    border-left: 4px solid #352bc1;
+    height: 20px;
+    padding-left: 10px;
+    line-height: 20px;
+    color: #333;
+}
+
+.header-report-application {
+    display: inline-block;
+    color: #666;
+}
+
+/*公共的border*/
+.module {
+    margin-bottom: 8px;
+    background: #fff;
+}
+
+.module > div {
+    position: relative;
+    z-index: 997;
+    border: 1px solid #eee;
+    background: transparent;
+}
+
+.module-title {
+    padding: 20px 0 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.module-title h2 {
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #333;
+    border-left: 4px solid #352bc1;
+    margin-left: 24px;
+    padding-left: 12px;
+}
+
+/*个人基本信息*/
+.rpi-subitem {
+    overflow: hidden;
+    padding: 20px 24px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.address-analysis .rpi-subitem .p-hidden {
+    width: 400px;
+    height: 18px;
+    display: inline-block;
+    line-height: 18px;
+    overflow: hidden;
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+}
+
+/*查看详情*/
+.a-detail {
+    width: 480px;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .2);
+    overflow-y: scroll;
+    z-index: 9999;
+}
+
+.detail-a-close a {
+    text-decoration: none;
+    color: #999;
+}
+
+.detail-a-close {
+    text-align: right;
+    margin: 10px 10px 0 10px;
+}
+
+.detail-table {
+    overflow-y: scroll;
+}
+
+.detail-table table {
+    width: 96%;
+    margin: 10px 2%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.detail-table table td {
+    border: 1px solid #ccc;
+    height: 36px;
+    font-size: 15px;
+    line-height: 36px;
+    color: #666;
+}
+
+.label-span {
+    color: #666;
+    word-break: break-all;
+    display: inline-block;
+}
+
+.label {
+    color: #999;
+    font-size: 14px;
+}
+
+.jz, .table-href {
+    color: #2ea5ff;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.j-rpi-toggle-target {
+    display: none;
+}
+
+.table-href:hover {
+    opacity: .7;
+    text-decoration: underline;
+}
+
+/*报告头部信息*/
+.risk-score {
+    height: 178px;
+    position: relative;
+}
+
+.result-score-wrap {
+    width: 244px;
+    height: 122px;
+    position: absolute;
+    top: 50%;
+    left: 47px;
+    margin-top: -61px;
+}
+
+.result-score-canvas-main {
+    position: absolute;
+}
+
+.canvas-main {
+    display: block;
+    width: 244px;
+    height: 122px;
+}
+
+.result-score-canvas-bg {
+    position: absolute;
+}
+
+.result-score-text {
+    top: 60%;
+    left: 28px;
+    width: 64px;
+    margin-top: -42px;
+    position: absolute;
+}
+
+.result-score {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+.result-cat {
+    font-size: 14px;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.result-text {
+    margin-top: 60px;
+    margin-left: 325px;
+    float: left;
+}
+
+.result-text .result {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.result-text p {
+    line-height: 1;
+}
+
+.result-text a {
+    display: inline-block;
+    color: #2ea5ff;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 2px;
+    border-bottom: 1px solid #2ea5ff;
+    text-decoration: none;
+}
+
+.result-text .tip {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.result-cat.reject {
+    color: #ff6c5c;
+}
+
+.result-cat.accept {
+    color: #8cdb65;
+}
+
+.result-cat.review {
+    color: #f8d436;
+}
+
+.col1 {
+    width: 45%;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dimension-section, .risk-detail-section {
+    padding-top: 1px;
+    color: #666;
+}
+
+.dimension-title, .risk-detail-title {
+    display: inline-block;
+    cursor: pointer;
+    color: #2ea5ff !important;
+}
+
+.dimension-list, .risk-detail-list {
+    display: none;
+    list-style: none;
+}
+
+.risk-detail-list {
+    list-style-type: disc;
+}
+
+.dimension-item {
+    list-style-type: disc;
+}
+
+.header .report-application {
+    margin-bottom: 2px;
+}
+
+.person-info .left, .person-info .right {
+    display: inline-block;
+    width: 300px;
+    margin: 0 0 14px 0;
+    height: 18px;
+    line-height: 18px;
+}
+
+/*v4*/
+.description .rule-desc {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.description .rule-desc-detail {
+    width: 400px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* begin 侧面导航*/
+.left-nav {
+    position: fixed;
+    font-size: 14px;
+    overflow-y: auto;
+    width: 130px;
+    z-index: 997;
+    border-right: 1px solid #eee;
+    height: 100%;
+    background-color: #f9f9f9;
+    margin-left: -155px;
+}
+
+.left-nav .nav-tab {
+    color: #333;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.left-nav .current-tab {
+    color: white;
+    background-color: #325bc1 !important;
+}
+
+.nav-tab span {
+    display: block;
+    border-bottom: 1px solid #eee;
+    height: 100%;
+    min-height: 50px;
+}
+
+.nav-tab span a {
+    line-height: 29px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.nav-tab:hover:not(.current-tab) {
+    background-color: #eee;
+}
+
+.current-tab span {
+    border-bottom: none;
+}
+
+.current-tab:hover {
+    opacity: 0.8
+}
+
+/*end 侧标导航*/
+/*设备信息*/
+.device-info {
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #666;
+}
+
+.device-info td {
+    border: 1px solid #999;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.device-info td.device-value {
+    color: #333;
+    width: 300px;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 30px;
+    text-align: left;
+}
+
+.device-info td.device-title {
+    width: 130px;
+    text-align: center;
+}
+
+/*最底层字段p的样式*/
+.module-subtitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.module-subtitle h2 {
+    font-size: 16px;
+    margin: 0;
+    height: 16px;
+    color: #333;
+    line-height: 16px;
+}
+
+/*通用*/
+.p-field {
+    width: 418px;
+    display: inline-block;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+/*三方数据*/
+.p-field-data {
+    vertical-align: top;
+    width: 45%;
+    display: inline-block;
+    margin: 0 0 20px 20px;
+    font-size: 14px;
+}
+
+.p-field-title {
+    color: #666;
+}
+
+.p-field-value {
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*各模块报告的风险情况样式*/
+.table-wrap {
+    padding: 10px;
+}
+
+.risk-table {
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.risk-table th {
+    line-height: 40px;
+    color: #333;
+    border: 1px solid #999;
+    padding-left: 20px;
+}
+
+.risk-table .risk-col1 {
+    text-align: center;
+    width: 280px;
+}
+
+.risk-table .risk-col2 {
+    text-align: left;
+    width: 590px;
+}
+
+.risk-table td {
+    border: 1px solid #999;
+    color: #666;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+td.risk-col1 {
+    padding: 20px;
+}
+
+td.risk-col2 {
+    padding: 20px 0 0 0;
+}
+
+.description .v3-table td {
+    border: none;
+}
+
+.description {
+    margin: 0 20px 10px 20px;
+    font-size: 14px;
+}
+
+.description:first-child {
+    display: inline-block;
+}
+
+.table-mark {
+    color: #ff523f;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 40px !important;
+    padding: 0;
+}
+
+.name-list-ul {
+    color: #ff523f;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 40px !important;
+    margin-right: 20px !important;
+    padding: 0;
+}
+
+.overdue-ul li, .name-list-ul li {
+    margin-bottom: 10px;
+}
+
+.name-list-ul .name-list-value {
+    color: #666;
+}
+
+.dimension-sub-list li, .dimension-list li, .risk-detail-list li {
+    margin-top: 10px;
+}
+
+.platform-ul li {
+    margin-bottom: 10px;
+}
+
+/*法院详情*/
+.detail-table td {
+    border: 1px solid #999;
+    text-align: left;
+}
+
+hr.split-line {
+    border: 0.5px dashed #999;
+    margin-bottom: 20px;
+}

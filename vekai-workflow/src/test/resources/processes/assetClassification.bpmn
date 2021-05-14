@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="ASSET_CLASSIFICATION">
+  <process id="assetClassification" name="资产分类与减值" isExecutable="true">
+    <startEvent id="startevent" name="Start"></startEvent>
+    <endEvent id="endevent" name="End"></endEvent>
+    <userTask id="AssetManager" name="资产经理" activiti:candidateGroups="7" activiti:category="Start">
+      <documentation>资产巡视申请</documentation>
+    </userTask>
+    <userTask id="AssetDirector" name="资产总监" activiti:candidateGroups="11" activiti:category="Review">
+      <documentation>审核</documentation>
+    </userTask>
+    <sequenceFlow id="flow13" sourceRef="AssetManager" targetRef="AssetDirector"></sequenceFlow>
+    <userTask id="AssetPIC" name="资产部负责人" activiti:candidateGroups="12" activiti:category="FinalReview">
+      <documentation>审核</documentation>
+    </userTask>
+    <sequenceFlow id="flow14" sourceRef="AssetDirector" targetRef="AssetPIC"></sequenceFlow>
+    <sequenceFlow id="flow16" sourceRef="startevent" targetRef="AssetManager"></sequenceFlow>
+    <sequenceFlow id="flow17" sourceRef="AssetPIC" targetRef="endevent"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_assetClassification">
+    <bpmndi:BPMNPlane bpmnElement="assetClassification" id="BPMNPlane_assetClassification">
+      <bpmndi:BPMNShape bpmnElement="startevent" id="BPMNShape_startevent">
+        <omgdc:Bounds height="35.0" width="35.0" x="30.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent" id="BPMNShape_endevent">
+        <omgdc:Bounds height="35.0" width="35.0" x="510.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="AssetManager" id="BPMNShape_AssetManager">
+        <omgdc:Bounds height="55.0" width="105.0" x="102.0" y="190.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="AssetDirector" id="BPMNShape_AssetDirector">
+        <omgdc:Bounds height="55.0" width="105.0" x="242.0" y="190.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="AssetPIC" id="BPMNShape_AssetPIC">
+        <omgdc:Bounds height="55.0" width="105.0" x="372.0" y="190.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow13" id="BPMNEdge_flow13">
+        <omgdi:waypoint x="207.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="242.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow14" id="BPMNEdge_flow14">
+        <omgdi:waypoint x="347.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="372.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow16" id="BPMNEdge_flow16">
+        <omgdi:waypoint x="65.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="102.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow17" id="BPMNEdge_flow17">
+        <omgdi:waypoint x="477.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="510.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

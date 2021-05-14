@@ -1,0 +1,252 @@
+{
+  "id": "customer-CustInfoConfirm",
+  "pack": "customer",
+  "code": "CustInfoConfirm",
+  "name": "实名认证阶段获取用户信息",
+  "managedByRR": false,
+  "tags": "实名认证，获取用户信息",
+  "dataModelType": "DataMap",
+  "dataModel": "",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "cust.ID = wechat.customer_id and\ncust.ID = :customerId",
+    "from": "CUSTOMER_INFO cust, WECHAT_INFO wechat"
+  },
+  "elements": [
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "手机号",
+      "code": "tel",
+      "dataType": "String",
+      "column": "TEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "是否实名认证",
+      "code": "realAuth",
+      "dataType": "String",
+      "column": "REAL_AUTH",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "性别",
+      "code": "sex",
+      "dataType": "String",
+      "column": "SEX",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "年龄",
+      "code": "age",
+      "dataType": "Integer",
+      "column": "AGE",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "常住地址",
+      "code": "permanntAddr",
+      "dataType": "String",
+      "column": "PERMANNT_ADDR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "邮箱",
+      "code": "email",
+      "dataType": "String",
+      "column": "EMAIL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "昵称",
+      "code": "nickName",
+      "dataType": "String",
+      "column": "NICK_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "国家",
+      "code": "country",
+      "dataType": "String",
+      "column": "COUNTRY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "省份",
+      "code": "province",
+      "dataType": "String",
+      "column": "PROVINCE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustInfoConfirm",
+      "name": "城市",
+      "code": "city",
+      "dataType": "String",
+      "column": "CITY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

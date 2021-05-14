@@ -1,0 +1,29 @@
+{
+  "code" : "EnterpriseType",
+  "name" : "企业类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0027",
+  "intro" : "企业类型的码表",
+  "items" : [ {
+    "code" : "ENTERPRISE",
+    "name" : "企业单位",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "PUBLIC_INSTITUTION",
+    "name" : "事业单位",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

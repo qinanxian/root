@@ -1,0 +1,33 @@
+{
+  "categoryCode": "obiz",
+  "code": "ChaseReplyType",
+  "name": "催收响应类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "10",
+      "name": "准备归还",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "20",
+      "name": "态度诚恳，暂无力还款",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "30",
+      "name": "态度恶劣，恶意拖欠",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "40",
+      "name": "失联",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

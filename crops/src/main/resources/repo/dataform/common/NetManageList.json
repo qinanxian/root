@@ -1,0 +1,369 @@
+{
+  "id": "common-NetManageList",
+  "pack": "common",
+  "code": "NetManageList",
+  "name": "网点管理列表",
+  "managedByRR": false,
+  "tags": "网点，网点管理",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.crops.common.entity.NetworkInfoPO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "NETWORK_INFO"
+  },
+  "elements": [
+    {
+      "dataformId": "common-NetManageList",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "名称",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "市",
+      "code": "city",
+      "dataType": "String",
+      "column": "CITY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "区",
+      "code": "districts",
+      "dataType": "String",
+      "column": "DISTRICTS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "街道",
+      "code": "street",
+      "dataType": "String",
+      "column": "STREET",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "地址",
+      "code": "address",
+      "dataType": "String",
+      "column": "ADDRESS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "邮编",
+      "code": "code",
+      "dataType": "String",
+      "column": "CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "客服电话",
+      "code": "phone",
+      "dataType": "String",
+      "column": "PHONE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "工作时间",
+      "code": "workeHour",
+      "dataType": "String",
+      "column": "WORKE_HOUR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "经度",
+      "code": "longitude",
+      "dataType": "Double",
+      "column": "LONGITUDE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "纬度",
+      "code": "latitude",
+      "dataType": "Double",
+      "column": "LATITUDE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-NetManageList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "编号",
+      "code": "id",
+      "bindFor": "id",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "名称",
+      "code": "name",
+      "bindFor": "name",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "地址",
+      "code": "address",
+      "bindFor": "address",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0020"
+    }
+  ]
+}

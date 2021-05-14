@@ -1,0 +1,39 @@
+{
+  "code" : "BaseRateType",
+  "name" : "基准利率类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "10010",
+  "intro" : null,
+  "items" : [ {
+    "code" : "PBOCLoan",
+    "name" : "央行基准贷款利率",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "SHIBOR",
+    "name" : "上海银行间同业拆放利率",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "LIBOR",
+    "name" : "伦敦同业拆借利率",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,33 @@
+{
+  "categoryCode": "electroniccrontract",
+  "code": "RepayTypeData",
+  "name": "还款方式",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "monthly",
+      "name": "按月结息、到期还本",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "quarterly",
+      "name": "按季结息、到期还本",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "equalrepayment",
+      "name": "等额还本",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "equalprincipal",
+      "name": "等额本息",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

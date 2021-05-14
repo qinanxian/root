@@ -1,0 +1,72 @@
+{
+  "id": "insure-EditStaffWhiteInfo",
+  "pack": "insure",
+  "code": "EditStaffWhiteInfo",
+  "name": "保险职业人员白名单信息-修改",
+  "managedByRR": false,
+  "tags": "BX_STAFF_WHITE_LIST",
+  "dataModelType": "DataMap",
+  "dataModel": "BX_STAFF_WHITE_LIST",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "bx.OA_NO =:id",
+    "from": "BX_STAFF_WHITE_LIST bx"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-EditStaffWhiteInfo",
+      "name": "员工号",
+      "code": "oaNo",
+      "dataType": "String",
+      "column": "OA_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-EditStaffWhiteInfo",
+      "name": "员工名",
+      "code": "oaName",
+      "dataType": "String",
+      "column": "OA_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": false,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": []
+}

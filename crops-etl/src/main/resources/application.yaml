@@ -1,0 +1,63 @@
+tomcat:
+    access-log-enabled: false
+    protocol-header: x-forwarded-proto
+    remote-ip-header: x-forwarded-for
+
+spring:
+  profiles:
+    active: dev
+
+  autoconfigure:
+    exclude:
+      - org.activiti.spring.boot.SecurityAutoConfiguration
+      - org.activiti.spring.boot.JpaProcessEngineAutoConfiguration
+      - org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+      - org.apache.shiro.spring.config.web.autoconfigure.ShiroAnnotationProcessorAutoConfiguration
+      - org.springframework.boot.autoconfigure.quartz.QuartzAutoConfiguration
+
+  mvc:
+    favicon.enabled: false
+    dispatch-options-request: true
+    throw-exception-if-no-handler-found: true
+  aop:
+    auto: true
+    proxy-target-class: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #时间格式化
+    time-zone: Asia/Chongqing #时区设置
+  activiti:
+      checkProcessDefinitions: false
+      asyncExecutorEnabled: false
+  messages:
+    basename: /i18n/messages
+
+  datasource:
+    druid:
+      initial-size: 10
+      max-active: 30
+      #打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 25
+      filters: stat,wall,slf4j  #配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      use-global-data-source-stat: true #合并多个DruidDataSource的监控数据
+      StatViewServlet:
+        loginUsername: druid
+        loginPassword: druid
+
+mybatis:
+    configuration:
+        map-underscore-to-camel-case: true
+
+#日志配置
+logging:
+  config: classpath:logback-${spring.profiles.active}.xml
+
+security:
+  basic:
+    enable: false
+  ignored: /**
+
+com.vekai.crops.etl:
+  logFile: "/data/crops/log"
+  kettleSavePath: "/data/crops/kettle"

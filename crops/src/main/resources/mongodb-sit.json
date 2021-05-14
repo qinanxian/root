@@ -1,0 +1,14 @@
+{
+  "default": {
+    "db": "xdgcdb",
+    "authdb": "admin",
+    "address": [
+      {
+        "dbip": "10.10.50.224",
+        "dbport": "29034"
+      }
+    ],
+    "dbuser": "urcbfzd",
+    "dbpwd": "urcbfzd"
+  }
+}

@@ -1,0 +1,614 @@
+{
+  "id": "workflow-AuditMonitorSessionIdList",
+  "pack": "workflow",
+  "code": "AuditMonitorSessionIdList",
+  "name": "数据审计会话标识列表",
+  "tags": "数据审计，会话标识",
+  "description": "数据审计会话标识列表模版",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "AUTH_DATA_AUDIT",
+    "where": "SESSION_ID=:sessionId",
+    "orderBy": "CREATED_TIME DESC,REQUEST_ID DESC,SESSION_ID DESC"
+  },
+  "elements": [
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "code": "operation",
+      "name": "操作",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "'' as opreate",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "审计ID",
+      "code": "dataAuditId",
+      "dataType": "String",
+      "column": "DATA_AUDIT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "操作位置",
+      "code": "originLocation",
+      "dataType": "String",
+      "column": "ORIGIN_LOCATION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "会话标识",
+      "code": "sessionId",
+      "dataType": "String",
+      "column": "SESSION_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "请求标识",
+      "code": "requestId",
+      "dataType": "String",
+      "column": "REQUEST_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "操作类型",
+      "code": "actionType",
+      "dataType": "String",
+      "column": "ACTION_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "操作描述",
+      "code": "actionSummary",
+      "dataType": "String",
+      "column": "ACTION_SUMMARY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "数据表",
+      "code": "dataTable",
+      "dataType": "String",
+      "column": "DATA_TABLE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "对应的数据CLASS",
+      "code": "dataClass",
+      "dataType": "String",
+      "column": "DATA_CLASS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键",
+      "code": "primaryKey",
+      "dataType": "String",
+      "column": "PRIMARY_KEY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键值",
+      "code": "primaryKeyValue",
+      "dataType": "String",
+      "column": "PRIMARY_KEY_VALUE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键1",
+      "code": "primaryKey1",
+      "dataType": "String",
+      "column": "PRIMARY_KEY1",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键1值",
+      "code": "primaryKey1Value",
+      "dataType": "String",
+      "column": "PRIMARY_KEY1_VALUE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键2",
+      "code": "primaryKey2",
+      "dataType": "String",
+      "column": "PRIMARY_KEY2",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键2值",
+      "code": "primaryKey2Value",
+      "dataType": "String",
+      "column": "PRIMARY_KEY2_VALUE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键3",
+      "code": "primaryKey3",
+      "dataType": "String",
+      "column": "PRIMARY_KEY3",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键3值",
+      "code": "primaryKey3Value",
+      "dataType": "String",
+      "column": "PRIMARY_KEY3_VALUE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键4",
+      "code": "primaryKey4",
+      "dataType": "String",
+      "column": "PRIMARY_KEY4",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0170",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "主键4值",
+      "code": "primaryKey4Value",
+      "dataType": "String",
+      "column": "PRIMARY_KEY4_VALUE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0180",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "客户端IP",
+      "code": "clientAddress",
+      "dataType": "String",
+      "column": "CLIENT_ADDRESS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0190",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "UA信息",
+      "code": "userAgent",
+      "dataType": "String",
+      "column": "USER_AGENT",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0200",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "服务器地址",
+      "code": "hostAddress",
+      "dataType": "String",
+      "column": "HOST_ADDRESS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0210",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "服务器主机名",
+      "code": "hostName",
+      "dataType": "String",
+      "column": "HOST_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0220",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "请求URL",
+      "code": "requestUri",
+      "dataType": "String",
+      "column": "REQUEST_URI",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0230",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "请求参数",
+      "code": "requestQueryString",
+      "dataType": "String",
+      "column": "REQUEST_QUERY_STRING",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0240",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "上下文",
+      "code": "contextPath",
+      "dataType": "String",
+      "column": "CONTEXT_PATH",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0250",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0260",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "操作人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0270",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "操作时间",
+      "code": "createdTime",
+      "dataType": "String",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0280",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0290",
+      "validatorList": []
+    },
+    {
+      "dataformId": "workflow-AuditMonitorSessionIdList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0300",
+      "validatorList": []
+    }
+  ],
+  "dataModel": "AUTH_DATA_AUDIT",
+  "filters": []
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+  <process id="simple" name="简单测试流程" isExecutable="true">
+    <startEvent id="Start"></startEvent>
+    <userTask id="Task-1" name="任务1"></userTask>
+    <sequenceFlow id="sid-FD547B88-B1C9-44E2-B3F8-0B86BA1407F4" sourceRef="Start" targetRef="Task-1"></sequenceFlow>
+    <userTask id="Task-2" name="任务2"></userTask>
+    <sequenceFlow id="sid-8F0E32F6-1819-4774-8803-4F00ABA3605F" sourceRef="Task-1" targetRef="Task-2"></sequenceFlow>
+    <userTask id="Task-3" name="任务3"></userTask>
+    <sequenceFlow id="sid-7BCE0373-5ADD-4A2B-AE8E-D9529795B899" sourceRef="Task-2" targetRef="Task-3"></sequenceFlow>
+    <endEvent id="End"></endEvent>
+    <sequenceFlow id="sid-62C23294-A699-467B-BF55-F1D85E97B063" sourceRef="Task-3" targetRef="End"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_simple">
+    <bpmndi:BPMNPlane bpmnElement="simple" id="BPMNPlane_simple">
+      <bpmndi:BPMNShape bpmnElement="Start" id="BPMNShape_Start">
+        <omgdc:Bounds height="30.0" width="30.0" x="144.5" y="169.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="Task-1" id="BPMNShape_Task-1">
+        <omgdc:Bounds height="80.0" width="100.0" x="219.5" y="144.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="Task-2" id="BPMNShape_Task-2">
+        <omgdc:Bounds height="80.0" width="100.0" x="364.5" y="144.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="Task-3" id="BPMNShape_Task-3">
+        <omgdc:Bounds height="80.0" width="100.0" x="509.5" y="144.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="End" id="BPMNShape_End">
+        <omgdc:Bounds height="28.0" width="28.0" x="654.5" y="170.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="sid-62C23294-A699-467B-BF55-F1D85E97B063" id="BPMNEdge_sid-62C23294-A699-467B-BF55-F1D85E97B063">
+        <omgdi:waypoint x="609.5" y="184.0"></omgdi:waypoint>
+        <omgdi:waypoint x="654.5" y="184.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-8F0E32F6-1819-4774-8803-4F00ABA3605F" id="BPMNEdge_sid-8F0E32F6-1819-4774-8803-4F00ABA3605F">
+        <omgdi:waypoint x="319.5" y="184.0"></omgdi:waypoint>
+        <omgdi:waypoint x="364.5" y="184.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-7BCE0373-5ADD-4A2B-AE8E-D9529795B899" id="BPMNEdge_sid-7BCE0373-5ADD-4A2B-AE8E-D9529795B899">
+        <omgdi:waypoint x="464.5" y="184.0"></omgdi:waypoint>
+        <omgdi:waypoint x="509.5" y="184.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="sid-FD547B88-B1C9-44E2-B3F8-0B86BA1407F4" id="BPMNEdge_sid-FD547B88-B1C9-44E2-B3F8-0B86BA1407F4">
+        <omgdi:waypoint x="174.5" y="184.0"></omgdi:waypoint>
+        <omgdi:waypoint x="219.5" y="184.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

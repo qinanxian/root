@@ -1,0 +1,236 @@
+{
+  "id": "insure-TranRecord",
+  "pack": "insure",
+  "code": "TranRecord",
+  "name": "保单移交记录列表",
+  "managedByRR": false,
+  "tags": "BX_TRAN_RECORD",
+  "dataModelType": "DataMap",
+  "dataModel": "BX_TRAN_RECORD",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "bx.ORDER_ID =:id",
+    "from": "BX_TRAN_RECORD bx",
+    "orderBy": "bx.TRAN_TIME desc"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "移交ID",
+      "code": "tranId",
+      "dataType": "String",
+      "column": "TRAN_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "table": "bx",
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "保单ID",
+      "code": "orderId",
+      "dataType": "String",
+      "column": "ORDER_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "移交时间",
+      "code": "tranTime",
+      "dataType": "String",
+      "column": "TRAN_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "移交人oa",
+      "code": "tranOaNo",
+      "dataType": "String",
+      "column": "TRAN_OA_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "移交人",
+      "code": "tranName",
+      "dataType": "String",
+      "column": "TRAN_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "接受人",
+      "code": "revName",
+      "dataType": "String",
+      "column": "REV_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "接受人oa",
+      "code": "revOaNo",
+      "dataType": "String",
+      "column": "REV_OA_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-TranRecord",
+      "name": "移交类型",
+      "code": "tranType",
+      "dataType": "String",
+      "column": "TRAN_TYPE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "tranType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "bx",
+      "group": ""
+    }
+  ],
+  "filters": [
+    {
+      "name": "移交人",
+      "code": "tranName",
+      "bindFor": "tranName",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "接受人",
+      "code": "revName",
+      "bindFor": "revName",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    }
+  ]
+}

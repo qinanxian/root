@@ -1,0 +1,57 @@
+{
+  "categoryCode": "zry",
+  "code": "ApplicationStatus",
+  "name": "申贷状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "04",
+      "name": "初审未通",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "05",
+      "name": "审批通过",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "12",
+      "name": "开户成功",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "06",
+      "name": "备案成功  未签约、银行处理中",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "11",
+      "name": "审批拒绝",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "14",
+      "name": "备案失败",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "08",
+      "name": "签约成功",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "13",
+      "name": "签约失败",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

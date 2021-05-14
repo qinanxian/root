@@ -1,0 +1,27 @@
+${AnsiBackground.BLACK}${AnsiColor.BRIGHT_WHITE}启动中......
+${AnsiColor.BRIGHT_MAGENTA}
+        CCCCCCCCCCCCCRRRRRRRRRRRRRRRRR        OOOOOOOOO     PPPPPPPPPPPPPPPPP      SSSSSSSSSSSSSSS
+     CCC::::::::::::CR::::::::::::::::R     OO:::::::::OO   P::::::::::::::::P   SS:::::::::::::::S
+   CC:::::::::::::::CR::::::RRRRRR:::::R  OO:::::::::::::OO P::::::PPPPPP:::::P S:::::SSSSSS::::::S
+  C:::::CCCCCCCC::::CRR:::::R     R:::::RO:::::::OOO:::::::OPP:::::P     P:::::PS:::::S     SSSSSSS
+ C:::::C       CCCCCC  R::::R     R:::::RO::::::O   O::::::O  P::::P     P:::::PS:::::S
+C:::::C                R::::R     R:::::RO:::::O     O:::::O  P::::P     P:::::PS:::::S
+C:::::C                R::::RRRRRR:::::R O:::::O     O:::::O  P::::PPPPPP:::::P  S::::SSSS
+C:::::C                R:::::::::::::RR  O:::::O     O:::::O  P:::::::::::::PP    SS::::::SSSSS
+C:::::C                R::::RRRRRR:::::R O:::::O     O:::::O  P::::PPPPPPPPP        SSS::::::::SS
+C:::::C                R::::R     R:::::RO:::::O     O:::::O  P::::P                   SSSSSS::::S
+C:::::C                R::::R     R:::::RO:::::O     O:::::O  P::::P                        S:::::S
+ C:::::C       CCCCCC  R::::R     R:::::RO::::::O   O::::::O  P::::P                        S:::::S
+  C:::::CCCCCCCC::::CRR:::::R     R:::::RO:::::::OOO:::::::OPP::::::PP          SSSSSSS     S:::::S
+   CC:::::::::::::::CR::::::R     R:::::R OO:::::::::::::OO P::::::::P          S::::::SSSSSS:::::S
+     CCC::::::::::::CR::::::R     R:::::R   OO:::::::::OO   P::::::::P          S:::::::::::::::SS
+        CCCCCCCCCCCCCRRRRRRRR     RRRRRRR     OOOOOOOOO     PPPPPPPPPP           SSSSSSSSSSSSSSS
+
+${AnsiColor.RED}---------------------------------------------------------------------------------------------------
+${AnsiStyle.BOLD}${AnsiColor.RED}
+SPRING-BOOT-版本: ${spring-boot.formatted-version}
+应用程序-标题: ${application.title}
+应用程序-版本: ${application.formatted-version}
+
+${AnsiBackground.BLACK}
+${AnsiColor.BLACK}

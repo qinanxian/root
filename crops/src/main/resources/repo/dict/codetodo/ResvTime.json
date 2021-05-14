@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "ResvTime",
+  "name": "预约时间",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "上午 ",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "下午",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "codetodo-NetWorkList",
+  "pack": "codetodo",
+  "code": "NetWorkList",
+  "name": "网点列表",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "AUTH_ORG",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "AUTH_ORG B,\nMSB_NETWORK_INFO network\n",
+    "where": "network.NETWORK_NO = B.ID \nAND LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',B.SORT_CODE),'/'))>0"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "网点名称",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "所在地区",
+      "code": "districts",
+      "dataType": "String",
+      "column": "DISTRICTS",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "地址",
+      "code": "address",
+      "dataType": "String",
+      "column": "ADDRESS",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "邮编",
+      "code": "code",
+      "dataType": "String",
+      "column": "POST_CODE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "客服电话",
+      "code": "phone",
+      "dataType": "String",
+      "column": "PHONE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "经度",
+      "code": "longitude",
+      "dataType": "Double",
+      "column": "LONGITUDE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "6"
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "纬度",
+      "code": "latitude",
+      "dataType": "Double",
+      "column": "LATITUDE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "table": "B",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "6"
+    },
+    {
+      "dataformId": "codetodo-NetWorkList",
+      "name": "机构代号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "table": "B",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "tags": "码上办，网点列表",
+  "filters": [
+    {
+      "name": "网点名称",
+      "code": "name",
+      "bindFor": "name",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "地址",
+      "code": "address",
+      "bindFor": "address",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    }
+  ],
+  "handler": "com.vekai.crops.codetodo.handler.ParkAddressHandler"
+}

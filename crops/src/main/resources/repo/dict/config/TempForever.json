@@ -1,0 +1,21 @@
+{
+  "categoryCode": "config",
+  "code": "TempForever",
+  "name": "临时或永久",
+  "intro": "生成二维码类别",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "temp",
+      "name": "临时",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "forever",
+      "name": "永久",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

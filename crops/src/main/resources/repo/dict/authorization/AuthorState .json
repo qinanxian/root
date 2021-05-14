@@ -1,0 +1,21 @@
+{
+  "categoryCode": "authorization",
+  "code": "AuthorState ",
+  "name": "授权状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "Completed",
+      "name": "通过",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "Undone",
+      "name": "未完成",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

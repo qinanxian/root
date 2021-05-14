@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "IsBusiness",
+  "name": "是否营业",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "否",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "是",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

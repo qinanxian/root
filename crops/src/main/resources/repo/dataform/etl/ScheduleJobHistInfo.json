@@ -1,0 +1,293 @@
+{
+  "id": "etl-ScheduleJobHistInfo",
+  "pack": "etl",
+  "code": "ScheduleJobHistInfo",
+  "name": "ETL历史任务详情",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "ETL_SCHEDULE_JOB_HIST",
+    "where": "ID=:id"
+  },
+  "elements": [
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务编号",
+      "code": "jobId",
+      "dataType": "String",
+      "column": "JOB_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务名称",
+      "code": "jobName",
+      "dataType": "String",
+      "column": "JOB_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务分组",
+      "code": "jobGroup",
+      "dataType": "String",
+      "column": "JOB_GROUP",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "JobGroup"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "时间表达式",
+      "code": "cronExp",
+      "dataType": "String",
+      "column": "CRON_EXP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "ETL定义文件",
+      "code": "defineFile",
+      "dataType": "String",
+      "column": "DEFINE_FILE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务备注",
+      "code": "jobDesc",
+      "dataType": "String",
+      "column": "JOB_DESC",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务结果",
+      "code": "result",
+      "dataType": "String",
+      "column": "RESULT",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务启动",
+      "code": "startTime",
+      "dataType": "String",
+      "column": "START_TIME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务结束",
+      "code": "endTime",
+      "dataType": "String",
+      "column": "END_TIME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "任务总用时",
+      "code": "totalTime",
+      "dataType": "String",
+      "column": "TOTAL_TIME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "步骤度量",
+      "code": "stepStatus",
+      "dataType": "String",
+      "column": "STEP_STATUS",
+      "elementUIHint": {
+        "editStyle": "RichText",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 2,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "etl-ScheduleJobHistInfo",
+      "name": "错误信息",
+      "code": "zzErrorMsg",
+      "dataType": "String",
+      "column": "ZZ_ERROR_MSG",
+      "elementUIHint": {
+        "editStyle": "RichText",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 2,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": [],
+  "dataModel": "ETL_SCHEDULE_JOB_HIST",
+  "handler": ""
+}

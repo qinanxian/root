@@ -1,0 +1,49 @@
+{
+  "code" : "CollateralStoreStatus",
+  "name" : "押品在库状态",
+  "nameI18nCode" : null,
+  "categoryCode" : "OTHER",
+  "sortCode" : "1010",
+  "intro" : null,
+  "items" : [ {
+    "code" : "nostock",
+    "name" : "未入库",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1010",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "instock",
+    "name" : "入库",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1020",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "tmpoutstock",
+    "name" : "临时出库",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1030",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "outstock",
+    "name" : "结清出库",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1040",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

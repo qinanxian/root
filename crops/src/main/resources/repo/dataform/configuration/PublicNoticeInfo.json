@@ -1,0 +1,151 @@
+{
+  "id": "configuration-PublicNoticeInfo",
+  "pack": "configuration",
+  "code": "PublicNoticeInfo",
+  "name": "公告维护详情",
+  "tags": "公告，维护，详情",
+  "description": "公告维护详情模版",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "CMON_PUBLIC_NOTICE",
+    "where": "PUBLIC_NOTICE_ID=:id"
+  },
+  "elements": [
+    {
+      "dataformId": "configuration-PublicNoticeInfo",
+      "code": "noticeId",
+      "name": "公告id",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "PUBLIC_NOTICE_ID",
+      "table": "CMON_PUBLIC_NOTICE",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "configuration-PublicNoticeInfo",
+      "code": "title",
+      "name": "公告标题",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"400px\"}"
+      },
+      "sortCode": "0010",
+      "column": "TITLE",
+      "table": "CMON_PUBLIC_NOTICE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "configuration-PublicNoticeInfo",
+      "code": "content",
+      "name": "公告内容",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "CONTENT",
+      "table": "CMON_PUBLIC_NOTICE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "configuration-PublicNoticeInfo",
+      "code": "publishTime",
+      "name": "发布时间",
+      "group": "",
+      "dataType": "Date",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": false,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0030",
+      "column": "PUBLISH_TIME",
+      "table": "CMON_PUBLIC_NOTICE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2,
+      "defaultValue": ""
+    },
+    {
+      "dataformId": "configuration-PublicNoticeInfo",
+      "code": "status",
+      "name": "状态",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "EffectStatus"
+      },
+      "sortCode": "0040",
+      "column": "STATUS",
+      "table": "CMON_PUBLIC_NOTICE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    }
+  ],
+  "dataModel": "CMON_PUBLIC_NOTICE",
+  "filters": []
+}

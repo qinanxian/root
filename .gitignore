@@ -1,0 +1,19 @@
+!.gitignore
+
+# ===eclipse
+.project
+.classpath
+.settings/
+*/target/
+
+# Intellij
+.idea
+*.iml
+*/*.iml
+
+.DS_Store
+Thumbs.db
+.swp
+**/dbjson
+index.builder.json
+./vekai-showcase/src/main/java/com/wind/webservices/service

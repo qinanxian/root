@@ -1,0 +1,89 @@
+{
+  "code" : "Region",
+  "name" : "位置区域",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0005",
+  "intro" : "位置区域的码表",
+  "items" : [ {
+    "code" : "HB",
+    "name" : "华北地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "001",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "DB",
+    "name" : "东北地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "002",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "HD",
+    "name" : "华东地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "003",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "ZN",
+    "name" : "中南地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "004",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "XN",
+    "name" : "西南地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "005",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "XB",
+    "name" : "西北地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "006",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "GT",
+    "name" : "港澳台地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "007",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "JW",
+    "name" : "境外地区",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "008",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

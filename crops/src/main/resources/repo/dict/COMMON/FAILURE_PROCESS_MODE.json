@@ -1,0 +1,29 @@
+{
+  "code" : "FAILURE_PROCESS_MODE",
+  "name" : "未通过处理方式",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0055",
+  "intro" : "未通过处理方式的码表",
+  "items" : [ {
+    "code" : "WARNING",
+    "name" : "警告",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "警告"
+  }, {
+    "code" : "FORBID",
+    "name" : "禁止",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "禁止"
+  } ]
+}

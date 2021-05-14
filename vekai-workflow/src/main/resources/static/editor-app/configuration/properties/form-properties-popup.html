@@ -1,0 +1,69 @@
+
+<div class="modal" ng-controller="KisBpmFormPropertiesPopupCtrl">
+    <div class="modal-dialog modal-wide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">
+                    &times;
+                </button>
+                <h2>{{'PROPERTY.PROPERTY.EDIT.TITLE' | translate:property}}</h2>
+            </div>
+
+            <div class="modal-body"> 
+
+                <div class="row row-no-gutter" ng-controller="WorkflowTaskResource">
+                    <div class="col-md-{{12/allSubregions.length}}" ng-repeat="subregion in allSubregions">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="table-header-row">
+                                    <td class="table-data-header-cell " ng-bind="subregion.title"></td>
+                                    <td ng-hide="subregion.hidden==col.field  || subregion.expand==col.field " class="table-data-header-cell" ng-repeat="col in columnDefs" ng-bind="col.title"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-data-row" ng-repeat="item in subregion.data">
+                                    <td class="table-data-name-cell">
+                                        <i class="{{item.icon.indexOf('fa')===0 ? 'fa ro-icon '+item.icon : item.icon}}">
+                                        </i>
+                                        <span data-ng-bind="item.name">
+                                        </span>
+                                        <span data-ng-if="item.actionHint" style="color: #ddd;">
+                                            -
+                                        </span>
+                                        <span data-ng-bind="item.actionHint" style="color: #ddd;">
+                                        </span>
+                                    </td>
+                                    <td class="table-data-attr-cell" ng-hide="subregion.hidden=='readable'">
+                                        <input type="checkbox" ng-model="item.readable" />
+                                    </td>
+
+                                    <td class="table-data-attr-cell" ng-hide="subregion.hidden=='writable'">
+                                        <input type="checkbox" ng-model="item.readonly"/>
+                                    </td>
+
+                                    <!--任务下是否展开-->
+                                    <td class="table-data-attr-cell" ng-hide="subregion.expand=='required'">
+                                        <input type="checkbox" ng-model="item.required"/>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button ng-click="cancel()" class="btn btn-primary" translate>
+                    ACTION.CANCEL
+                </button>
+                <button ng-click="save()" class="btn btn-primary" translate>
+                    ACTION.SAVE
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,222 @@
+{
+  "id": "business-LimitApplyDetail",
+  "pack": "business",
+  "code": "LimitApplyDetail",
+  "name": "额度申请详情",
+  "managedByRR": false,
+  "tags": "额度，额度申请",
+  "dataModelType": "DataMap",
+  "dataModel": "BUSINESS_LIMIT",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "bl.CUSTOMER_ID = :custId and bl.CUSTOMER_ID = ci.ID",
+    "from": "BUSINESS_LIMIT bl,CUSTOMER_INFO ci"
+  },
+  "elements": [
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "客户编号",
+      "code": "customerId",
+      "dataType": "String",
+      "column": "CUSTOMER_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "ci",
+      "validatorList": []
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "ci",
+      "validatorList": []
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "额度金额（元）",
+      "code": "limitAmount",
+      "dataType": "Double",
+      "column": "LIMIT_AMOUNT",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "额度期数（月）",
+      "code": "limitTerm",
+      "dataType": "String",
+      "column": "LIMIT_TERM",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "月贷款利率（%）",
+      "code": "monthRate",
+      "dataType": "Double",
+      "column": "MONTH_RATE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "贷款用途",
+      "code": "loanPurpose",
+      "dataType": "String",
+      "column": "LOAN_PURPOSE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "还款方式",
+      "code": "repayType",
+      "dataType": "String",
+      "column": "REPAY_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "table": "bl"
+    },
+    {
+      "dataformId": "business-LimitApplyDetail",
+      "name": "起始日期",
+      "code": "startDate",
+      "dataType": "String",
+      "column": "START_DATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "table": "bl"
+    }
+  ],
+  "filters": []
+}

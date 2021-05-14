@@ -1,0 +1,21 @@
+{
+  "categoryCode": "obiz",
+  "code": "RepayType",
+  "name": "还款方式",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "等额本金",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "等额本息",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

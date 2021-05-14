@@ -1,0 +1,33 @@
+{
+  "categoryCode": "codetodo",
+  "code": "SelfBanktype",
+  "name": "自助银行业务类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "查询",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "转账",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0003",
+      "name": "取款",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0004",
+      "name": "改密码",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

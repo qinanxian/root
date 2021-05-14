@@ -1,0 +1,21 @@
+{
+  "categoryCode": "obiz",
+  "code": "OpporStatus",
+  "name": "商机状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "00",
+      "name": "初步意向",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "10",
+      "name": "已转化",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

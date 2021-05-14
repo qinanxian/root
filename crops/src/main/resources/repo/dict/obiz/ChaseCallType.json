@@ -1,0 +1,39 @@
+{
+  "categoryCode": "obiz",
+  "code": "ChaseCallType",
+  "name": "催收方式",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "SMS",
+      "name": "短信催收",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "EMAIL",
+      "name": "邮件催收",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "PHONE",
+      "name": "电话催收",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "VOICE",
+      "name": "语音催收",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "VISIT",
+      "name": "上门催收",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

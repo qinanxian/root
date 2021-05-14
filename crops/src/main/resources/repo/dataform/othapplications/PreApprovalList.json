@@ -1,0 +1,259 @@
+{
+  "id": "othapplications-PreApprovalList",
+  "pack": "othapplications",
+  "code": "PreApprovalList",
+  "name": "预授信信息列表管理",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_PRE_CREDIT_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "ZRY_PRE_CREDIT_INFO T1,\nZRY_FINANCING_ORDER_INFO T2,\nAUTH_ORG T3,\nAUTH_USER T4",
+    "where": "T1.LOAN_ID=T2.LOAN_ID and T2.OUTLETS=T3.ID and T2.CREDIT_OPERATOR=T4.CODE\nand LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',T3.SORT_CODE),'/'))>0",
+    "orderBy": "T1.CREATED_TIME desc",
+    "permitHint": "USER->CREATED_BY=:RANGE_USER,ORG->CREATED_BY IN (select USER_ID from AUTH_USER_ORG where ORG_ID IN (:RANGE_ORG))"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "申贷编号",
+      "code": "loanId",
+      "dataType": "String",
+      "column": "LOAN_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "T1",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "申贷状态",
+      "code": "loanStatus",
+      "dataType": "String",
+      "column": "LOAN_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeExpr": "ApplicationStatus",
+        "dictCodeMode": "DictCode"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "预授信额度",
+      "code": "preQuota",
+      "dataType": "String",
+      "column": "PRE_QUOTA",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "年化利率",
+      "code": "interestRate",
+      "dataType": "String",
+      "column": "INTEREST_RATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "贷款期限",
+      "code": "loanTerm",
+      "dataType": "String",
+      "column": "LOAN_TERM",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "回款账户名",
+      "code": "accountName",
+      "dataType": "String",
+      "column": "ACCOUNT_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "回款账户",
+      "code": "backAccount",
+      "dataType": "String",
+      "column": "BANK_ACCOUNT",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "开户银行",
+      "code": "bankBranch",
+      "dataType": "String",
+      "column": "BANK_BRANCH",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "信贷操作员名称",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "table": "T4",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-PreApprovalList",
+      "name": "确认状态",
+      "code": "confirmStatus",
+      "dataType": "String",
+      "column": "CONFIRM_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "ConfirmStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "table": "T1",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "申贷编号",
+      "code": "loanId",
+      "bindFor": "loanId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    },
+    {
+      "name": "申贷状态",
+      "code": "loanStatus",
+      "bindFor": "loanStatus",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0010"
+    },
+    {
+      "name": "确认状态",
+      "code": "confirmStatus",
+      "bindFor": "confirmStatus",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0020"
+    }
+  ]
+}

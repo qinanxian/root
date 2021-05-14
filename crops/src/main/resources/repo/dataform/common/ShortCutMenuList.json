@@ -1,0 +1,193 @@
+{
+  "id": "common-ShortCutMenuList",
+  "pack": "common",
+  "code": "ShortCutMenuList",
+  "name": "快捷菜单列表",
+  "tags": "快捷菜单列表",
+  "description": "快捷菜单列表模版",
+  "dataModelType": "DataMap",
+  "dataModel": "FOWK_MENU",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "FOWK_MENU",
+    "where": "ENABLED = 'Y' AND URL IS NOT null"
+  },
+  "elements": [
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "name",
+      "name": "菜单名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "NAME",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "id",
+      "name": "菜单编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": "0",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "ID",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "sortCode",
+      "name": "排序号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "SORT_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "url",
+      "name": "URL路径",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0030",
+      "column": "URL",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "param",
+      "name": "参数",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0040",
+      "column": "PARAM",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "icon",
+      "name": "图标",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0050",
+      "column": "ICON",
+      "validatorList": []
+    },
+    {
+      "dataformId": "common-ShortCutMenuList",
+      "code": "enabled",
+      "name": "启用",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0060",
+      "column": "ENABLED",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "菜单名称",
+      "code": "name",
+      "bindFor": "name",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    },
+    {
+      "name": "菜单编号",
+      "code": "id",
+      "bindFor": "id",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0010"
+    }
+  ],
+  "handler": "com.vekai.appframe.cmon.shortcutmenu.handler.ShortCutMenuListHandler"
+}

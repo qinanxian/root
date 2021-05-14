@@ -1,0 +1,39 @@
+{
+  "code" : "EXEC_TYPE",
+  "name" : "执行类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0056",
+  "intro" : "执行类型的码表",
+  "items" : [ {
+    "code" : "JAVA",
+    "name" : "Java",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "GROOVY",
+    "name" : "Groovy",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "SQL",
+    "name" : "Sql",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

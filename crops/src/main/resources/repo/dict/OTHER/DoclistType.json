@@ -1,0 +1,29 @@
+{
+  "code" : "DoclistType",
+  "name" : "文档清单类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "OTHER",
+  "sortCode" : "0050",
+  "intro" : "文档清单以及合同模板类别区分字段",
+  "items" : [ {
+    "code" : "CHECK_DOCLIST",
+    "name" : "文档资料检查清单",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "TEMPLATE_DOC",
+    "name" : "模板清单",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

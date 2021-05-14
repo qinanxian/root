@@ -1,0 +1,29 @@
+{
+  "code" : "ChargeupDirection",
+  "name" : "借贷方向",
+  "nameI18nCode" : null,
+  "categoryCode" : "FISCAL",
+  "sortCode" : "30",
+  "intro" : null,
+  "items" : [ {
+    "code" : "Debit",
+    "name" : "借",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Credit",
+    "name" : "贷",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

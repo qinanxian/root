@@ -1,0 +1,29 @@
+{
+  "code" : "YesNo",
+  "name" : "是否",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0006",
+  "intro" : "是否的码表",
+  "items" : [ {
+    "code" : "Y",
+    "name" : "是",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "是"
+  }, {
+    "code" : "N",
+    "name" : "否",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "2",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "否"
+  } ]
+}

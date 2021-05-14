@@ -1,0 +1,452 @@
+{
+  "id": "obiz-OpporIntentList",
+  "pack": "obiz",
+  "code": "OpporIntentList",
+  "name": "意向订单列表",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.crops.obiz.market.oppor.entity.ObizOpporIntent",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "OBIZ_OPPOR_INTENT",
+    "groupBy": "",
+    "orderBy": "OPPOR_ID DESC"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "流水号",
+      "code": "opporId",
+      "dataType": "String",
+      "column": "OPPOR_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"80px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "姓名",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"150px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "手机号",
+      "code": "custMobilePhone",
+      "dataType": "String",
+      "column": "CUST_MOBILE_PHONE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"150px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "身份证号",
+      "code": "custCertId",
+      "dataType": "String",
+      "column": "CUST_CERT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "年龄",
+      "code": "custAge",
+      "dataType": "Integer",
+      "column": "CUST_AGE",
+      "elementUIHint": {
+        "editStyle": "Integer",
+        "dataFormat": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"40px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "性别",
+      "code": "custGender",
+      "dataType": "String",
+      "column": "CUST_GENDER",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Gender",
+        "htmlStyle": "{\"width\":\"40px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "商机描述",
+      "code": "remarkNote",
+      "dataType": "String",
+      "column": "REMARK_NOTE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "证件类型",
+      "code": "custCertType",
+      "dataType": "String",
+      "column": "CUST_CERT_TYPE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "CertType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "出生日期",
+      "code": "custBirth",
+      "dataType": "Date",
+      "column": "CUST_BIRTH",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "位置",
+      "code": "custLocation",
+      "dataType": "String",
+      "column": "CUST_LOCATION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "联系地址",
+      "code": "custAddress",
+      "dataType": "String",
+      "column": "CUST_ADDRESS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "意向金额",
+      "code": "howMuchMoney",
+      "dataType": "Double",
+      "column": "HOW_MUCH_MONEY",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "来源渠道",
+      "code": "fromChannel",
+      "dataType": "String",
+      "column": "FROM_CHANNEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "商机状态",
+      "code": "opprStatus",
+      "dataType": "String",
+      "column": "OPPR_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "负责人",
+      "code": "holder",
+      "dataType": "String",
+      "column": "HOLDER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0170",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0180",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-OpporIntentList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0190",
+      "validatorList": [],
+      "group": null
+    }
+  ],
+  "filters": []
+}

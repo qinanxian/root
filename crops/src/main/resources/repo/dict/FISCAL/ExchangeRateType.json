@@ -1,0 +1,27 @@
+{
+  "code": "ExchangeRateType",
+  "categoryCode": "FISCAL",
+  "nameI18nCode": "",
+  "name": "汇率类型",
+  "intro": "",
+  "items": [
+    {
+      "code": "MEDIAL_RATE",
+      "name": "中间汇率",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "BUYING_RATE",
+      "name": "买入汇率",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "SELLING_RATE",
+      "name": "卖出汇率",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

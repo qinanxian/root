@@ -1,0 +1,189 @@
+{
+  "code" : "CertType",
+  "name" : "证件类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0018",
+  "intro" : "证件类型的码表",
+  "items" : [ {
+    "code" : "110",
+    "name" : "身份证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "110",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "身份证"
+  }, {
+    "code" : "115",
+    "name" : "户口簿",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "115",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "户口簿"
+  }, {
+    "code" : "120",
+    "name" : "港澳居民来往内地通行证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "120",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "港澳居民来往内地通行证"
+  }, {
+    "code" : "125",
+    "name" : "护照",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "125",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "护照"
+  }, {
+    "code" : "130",
+    "name" : "士兵证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "130",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "士兵证"
+  }, {
+    "code" : "135",
+    "name" : "军官证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "135",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "军官证"
+  }, {
+    "code" : "140",
+    "name" : "台湾同胞来往内地通行证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "140",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "台湾同胞来往内地通行证"
+  }, {
+    "code" : "145",
+    "name" : "临时身份证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "145",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "临时身份证"
+  }, {
+    "code" : "150",
+    "name" : "外国人居住证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "150",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "外国人居住证"
+  }, {
+    "code" : "155",
+    "name" : "警官证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "155",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "警官证"
+  }, {
+    "code" : "160",
+    "name" : "外国人居留证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "160",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "外国人居留证"
+  }, {
+    "code" : "165",
+    "name" : "香港身份证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "165299",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "香港身份证"
+  }, {
+    "code" : "170",
+    "name" : "澳门身份证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "170",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "澳门身份证"
+  }, {
+    "code" : "175",
+    "name" : "台湾身份证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "175",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "台湾身份证"
+  }, {
+    "code" : "210",
+    "name" : "组织机构代码证",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "210",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "组织机构代码证"
+  }, {
+    "code" : "215",
+    "name" : "统一社会信用代码",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "215",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "统一社会信用代码"
+  }, {
+    "code" : "220",
+    "name" : "境外机构客户证件",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "220",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "境外机构客户证件"
+  }, {
+    "code" : "225",
+    "name" : "其他证件",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "225",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "其他证件"
+  } ]
+}

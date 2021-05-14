@@ -1,0 +1,139 @@
+{
+  "code" : "Political",
+  "name" : "政治面貌",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0022",
+  "intro" : "政治面貌的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "中共党员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "中共党员"
+  }, {
+    "code" : "15",
+    "name" : "中共预备党员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "中共预备党员"
+  }, {
+    "code" : "20",
+    "name" : "共青团员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "共青团员"
+  }, {
+    "code" : "25",
+    "name" : "民革党员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "民革党员"
+  }, {
+    "code" : "30",
+    "name" : "民盟盟员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "民盟盟员"
+  }, {
+    "code" : "35",
+    "name" : "民建会员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "民建会员"
+  }, {
+    "code" : "40",
+    "name" : "民进会员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "民进会员"
+  }, {
+    "code" : "45",
+    "name" : "农工党党员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "45",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "农工党党员"
+  }, {
+    "code" : "50",
+    "name" : "致公党党员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "致公党党员"
+  }, {
+    "code" : "55",
+    "name" : "九三学社社员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "55",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "九三学社社员"
+  }, {
+    "code" : "60",
+    "name" : "台盟盟员",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "台盟盟员"
+  }, {
+    "code" : "65",
+    "name" : "无党派人士",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "65",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "无党派人士"
+  }, {
+    "code" : "70",
+    "name" : "群众",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "70",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "群众"
+  } ]
+}

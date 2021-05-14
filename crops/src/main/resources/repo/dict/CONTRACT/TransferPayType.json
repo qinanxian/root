@@ -1,0 +1,29 @@
+{
+  "code" : "TransferPayType",
+  "name" : "转账支付类型",
+  "nameI18nCode" : "",
+  "categoryCode" : "CONTRACT",
+  "sortCode" : null,
+  "intro" : "",
+  "items" : [ {
+    "code" : "LoanIssue",
+    "name" : "放款支付",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "RepayDuduct",
+    "name" : "还款代扣",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

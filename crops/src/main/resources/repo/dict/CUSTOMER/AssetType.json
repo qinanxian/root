@@ -1,0 +1,29 @@
+{
+  "code" : "AssetType",
+  "name" : "资产类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0029",
+  "intro" : "资产类型的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "固定资产",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "其他资产",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "categoryCode": "led",
+  "code": "ShiFou",
+  "name": "是否",
+  "intro": "1是0否",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0",
+      "name": "否",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "1",
+      "name": "是",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

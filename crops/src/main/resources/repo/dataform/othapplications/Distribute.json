@@ -1,0 +1,190 @@
+{
+  "id": "othapplications-Distribute",
+  "pack": "othapplications",
+  "code": "Distribute",
+  "name": "融资订单信息分发",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_FINANCING_ORDER_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "T1.LOAN_ID= :loanId",
+    "from": "ZRY_FINANCING_ORDER_INFO T1"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "loanId",
+      "name": "申贷编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "LOAN_ID",
+      "validatorList": [],
+      "table": "T1",
+      "primaryKey": true,
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "bidAmt",
+      "name": "融资标的金额",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0010",
+      "column": "BID_AMT",
+      "validatorList": [],
+      "table": "T1"
+    },
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "branch",
+      "name": "网点名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0020",
+      "column": "BRANCH",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "creditOperator",
+      "name": "信贷操作员id",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0030",
+      "column": "CREDIT_OPERATOR",
+      "validatorList": [],
+      "table": "T1",
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "creditOperatorname",
+      "name": "信贷操作员名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": false,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0040",
+      "table": "T1",
+      "column": "''",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "outlets",
+      "name": "网点",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": false,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0050",
+      "column": "OUTLETS",
+      "validatorList": [],
+      "table": "T1",
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Distribute",
+      "code": "distributionStatus",
+      "name": "分发状态",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0060",
+      "column": "DISTRIBUTION_STATUS",
+      "table": "T1",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

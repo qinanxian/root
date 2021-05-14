@@ -1,0 +1,49 @@
+{
+  "code" : "CustomerType",
+  "name" : "客户类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0013",
+  "intro" : "客户类型的码表",
+  "items" : [ {
+    "code" : "ENT",
+    "name" : "企业客户",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0005",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "企业客户"
+  }, {
+    "code" : "IND",
+    "name" : "自然人客户",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0010",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "自然人客户"
+  }, {
+    "code" : "TPO",
+    "name" : "第三方机构",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0015",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "第三方机构"
+  }, {
+    "code" : "GRO",
+    "name" : "集团客户",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0020",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "集团客户"
+  } ]
+}

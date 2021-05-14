@@ -1,0 +1,21 @@
+{
+  "categoryCode": "zry",
+  "code": "RepaymentStatus",
+  "name": "还款状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "还款中",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "已结清",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

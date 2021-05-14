@@ -1,0 +1,34 @@
+getUserMessages
+===
+* 查询特定用户的消息
+```sql
+SELECT 
+    M.MESSAGE_ID,
+    M.MESSAGE_TYE,
+    M.TITLE,
+    M.CONTENT,
+    M.SENDER,
+    R.RECEIVE_TYPE,
+    R.RECEIVE_USER_ID,
+    R.HAVE_READ,
+    R.LINK_URL,
+    R.LINK_URL_PARAM,
+    R.CREATED_BY,
+    R.CREATED_TIME
+FROM CMON_MESSAGE M,CMON_MESSAGE_RECEIVER R 
+WHERE M.MESSAGE_ID=R.MESSAGE_ID
+AND R.HAVE_READ=:haveRead
+AND R.RECEIVE_USER_ID=:userId
+ORDER BY R.CREATED_TIME DESC
+```
+
+updateUserMessageStatus
+===
+* 更改指定消息的状态
+```sql
+UPDATE CMON_MESSAGE_RECEIVER R 
+  SET R.HAVE_READ=:haveRead 
+  WHERE R.RECEIVE_USER_ID=:receiverUserId 
+  AND R.ID=:receiverId 
+```
+

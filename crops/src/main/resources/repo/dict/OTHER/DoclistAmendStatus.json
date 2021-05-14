@@ -1,0 +1,39 @@
+{
+  "code" : "DoclistAmendStatus",
+  "name" : "资料清单后补状态",
+  "nameI18nCode" : null,
+  "categoryCode" : "OTHER",
+  "sortCode" : "0051",
+  "intro" : "资料清单后补状态",
+  "items" : [ {
+    "code" : "10",
+    "name" : "初始化",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "后补中",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "30",
+    "name" : "后补完成",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,9 @@
+{
+  "code" : "MatchWriteOff",
+  "name" : "匹配核销状态",
+  "nameI18nCode" : "",
+  "categoryCode" : "CONTRACT",
+  "sortCode" : null,
+  "intro" : "",
+  "items" : [ ]
+}

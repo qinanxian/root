@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 会话权限的控制 -->
+    <!-- 会话ID生成器 -->
+    <bean id="sessionIdGenerator" class="org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator"/>
+    <!-- 会话Cookie模板 -->
+    <bean id="sessionIdCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg value="#{shiroAutoConfiguration.properties.cookieName}"/>
+        <property name="httpOnly" value="#{shiroAutoConfiguration.properties.cookHttpOnly}"/>
+        <property name="maxAge" value="#{shiroAutoConfiguration.properties.cookieMaxAge}"/>
+    </bean>
+    <!-- 会话DAO -->
+    <bean id="sessionDAO" class="org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO">
+        <property name="activeSessionsCacheName" value="#{shiroAutoConfiguration.properties.activeSessionsCacheName}"/>
+        <property name="sessionIdGenerator" ref="sessionIdGenerator"/>
+    </bean>
+    <!-- 会话验证调度器 -->
+    <bean id="sessionValidationScheduler" class="org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler">
+        <property name="sessionValidationInterval" value="#{shiroAutoConfiguration.properties.sessionValidationInterval}"/>
+        <property name="sessionManager" ref="sessionManager"/>
+    </bean>
+    <!-- 会话管理器 -->
+    <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <property name="globalSessionTimeout" value="#{shiroAutoConfiguration.properties.globalSessionTimeout}"/>
+        <property name="deleteInvalidSessions" value="#{shiroAutoConfiguration.properties.deleteInvalidSessions}"/>
+        <property name="sessionValidationSchedulerEnabled" value="#{shiroAutoConfiguration.properties.sessionValidationSchedulerEnabled}"/>
+        <property name="sessionIdCookieEnabled" value="#{shiroAutoConfiguration.properties.sessionIdCookieEnabled}"/>
+        <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/>
+        <property name="sessionDAO" ref="sessionDAO"/>
+        <property name="sessionIdCookie" ref="sessionIdCookie"/>
+    </bean>
+    <!-- 密码比对器(未加密的比对方式) -->
+    <!--<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher" >-->
+        <!--<property name="hashAlgorithmName" value="MD5"/>-->
+    <!--</bean>-->
+    <!--<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.SimpleCredentialsMatcher" />-->
+    <!--<bean id="credentialsMatcher" class="com.vekai.auth.shiro.ClearTextCredentialsMatcher" />-->
+    <!--<bean id="credentialsMatcher" class="com.vekai.auth.shiro.Md5HashCredentialsMatcher" />-->
+    <!-- 自定义的权限登录器 -->
+    <bean id="authRealm" class="com.vekai.auth.shiro.DatabaseRealm" >
+        <property name="authService" ref="authService"/><!-- authService是通过自动注解放入的,这里只需要引用即可 -->
+        <property name="credentialsMatcher" ref="credentialsMatcher"/>
+    </bean>
+    <!-- 核心安全管理器 -->
+    <!--<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">-->
+    <bean id="securityManager" class="com.vekai.auth.shiro.FisokWebSecurityManager">
+        <property name="realm" ref="authRealm"/>
+        <property name="sessionManager" ref="sessionManager"/>
+    </bean>
+    <!-- 相当于调用SecurityUtils.setSecurityManager(securityManager) -->
+    <!--<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">-->
+        <!--<property name="staticMethod" value="org.apache.shiro.SecurityUtils.setSecurityManager"/>-->
+        <!--<property name="arguments" ref="securityManager"/>-->
+    <!--</bean>-->
+    <!--
+        相当于调用SecurityUtils.setSecurityManager(securityManager)
+        切记，不能使用MethodInvokingFactoryBean,这个有返回值，会引起AOP失效
+        这个问题，我找了三个星期，才定位到这里
+     -->
+    <bean class="org.springframework.beans.factory.config.MethodInvokingBean">
+        <property name="staticMethod" value="org.apache.shiro.SecurityUtils.setSecurityManager"/>
+        <property name="arguments" ref="securityManager"/>
+    </bean>
+    <!-- 配置拦截器，用于shiro替换WEB的reqeust,session等对象 -->
+    <bean id="authorizationAttributeSourceAdvisor" class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <!-- Shiro生命周期处理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="#{shiroAutoConfiguration.properties.loginUrl}"/>
+        <property name="successUrl" value="#{shiroAutoConfiguration.properties.successUrl}"/>
+        <property name="unauthorizedUrl" value="#{shiroAutoConfiguration.properties.unauthorizedUrl}"/>
+        <property name="filterChainDefinitionMap" value="#{shiroAutoConfiguration.properties.filterChainDefinitionMap}"/>
+    </bean>
+</beans>

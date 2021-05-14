@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "AppraiseType",
+  "name": "评价类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "差评",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "好评",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

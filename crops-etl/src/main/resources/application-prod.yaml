@@ -1,0 +1,51 @@
+server:
+  port: 8010
+  sessionTimeout: 30
+  servlet:
+    contextPath: /
+
+
+endpoints:
+  sensitive: false
+  cors:
+    allowedOrigins: "*"
+    allowedHeaders: "*"
+    allowCredentials: true
+    exposedHeaders: WWW-Authenticate
+
+debug: true
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.8.139:1521/orcl
+    username: crops
+    password: B2PCFIXRuNJTB
+
+  redis:
+    database: 0
+    host: 192.168.8.139
+    port: 6379
+    password: crops
+    timeout: 1000
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+
+com.vekai:
+  base:
+    cache: Memory #Memory,EHCache,Memcached,Redis,MongoDB
+  batch:
+    logdao: DataTable #DataTable,Redis
+  auth:
+    enableJwtReplaceSession: false
+  runtime:
+    corsEnable: true
+  sql:
+    sql-dialect-type: ORACLE
+
+com.vekai.crops.etl:
+  kettleSavePath: "/data/crops/kettle"

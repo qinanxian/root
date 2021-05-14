@@ -1,0 +1,33 @@
+{
+  "categoryCode": "obiz",
+  "code": "OpporFromChannel",
+  "name": "商机来源渠道",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "10",
+      "name": "微信小程序",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "20",
+      "name": "H5页面渠道",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "30",
+      "name": "Web界面录入",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "40",
+      "name": "合作渠道",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

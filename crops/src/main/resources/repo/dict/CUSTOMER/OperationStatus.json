@@ -1,0 +1,89 @@
+{
+  "code" : "OperationStatus",
+  "name" : "企业经营状态",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0021",
+  "intro" : "企业经营状态的码表",
+  "items" : [ {
+    "code" : "EMPLOYED",
+    "name" : "在业",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "在业"
+  }, {
+    "code" : "WITHDRAW",
+    "name" : "吊销",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "吊销"
+  }, {
+    "code" : "CANCELLATION",
+    "name" : "注销",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "注销"
+  }, {
+    "code" : "IMMIGRATION",
+    "name" : "迁入",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "迁入"
+  }, {
+    "code" : "EMIGRATION",
+    "name" : "迁出",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "迁出"
+  }, {
+    "code" : "CLOSE_DOWN",
+    "name" : "停业",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "停业"
+  }, {
+    "code" : "LIQUIDATION",
+    "name" : "清算",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "清算"
+  }, {
+    "code" : "EXISTENCE",
+    "name" : "存续",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "存续"
+  } ]
+}

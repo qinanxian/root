@@ -1,0 +1,384 @@
+# *****************************************************************
+#     !!!注意!!!
+#    这不是一个真正的配置文件（请不要在程序中直接使用）
+#    这是一个rober体系下，完整配置的解读
+# *****************************************************************
+
+# =============================================================== #
+#  标准spring-boot配置文件解读
+# =============================================================== #
+# 参考地址：https://segmentfault.com/a/1190000004309751
+
+# =============================================================== #
+#  服务器配置
+# =============================================================== #
+#以内嵌服务器运行时，设置端口，下下文路径,会话超时
+server: { port: 8080,contextPath: /amix ,sessionTimeout: 30}
+
+# =============================================================== #
+#  DEBUG模式启动
+# =============================================================== #
+debug: true         #运行SpringBoot程序,可以看到控制台下打印出了自动配置的报告
+
+# =============================================================== #
+#  日志配置
+# =============================================================== #
+logging:
+  config: classpath:logback.xml
+
+# =============================================================== #
+#  Tomcat相关配置
+# =============================================================== #
+tomcat:
+    access-log-enabled: false
+    protocol-header: x-forwarded-proto
+    remote-ip-header: x-forwarded-for
+
+# =============================================================== #
+#  spring-boot标准配置
+# =============================================================== #
+spring:
+  datasource:     #数据源配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521/orcl
+    username: amixdb
+    password: amixpass
+    druid:
+      initial-size: 30
+      max-active: 50
+      #打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 25
+      filters: stat,wall,slf4j #配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      use-global-data-source-stat: true #合并多个DruidDataSource的监控数据
+      StatViewServlet:
+        loginUsername: druid
+        loginPassword: druid
+
+  redis:        #Redis配置
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+
+  profiles:
+    #启用，激活的配置文件是哪一个（用于支持多环境），该案例将和application-dev.yaml文件共同作用
+    active: dev
+    #将加入当前classpath目录下的其他application-shiro.yaml文件
+    include: ["shiro"]
+  application:
+    #当前应用的名称（特别注意：应用程序名可以用"-"分割，但绝对不能用"_"，否则会注册不成功以及找不到服务
+    name: MAIN-AMIX-APP
+
+  autoconfigure:
+    #配置要排除的Auto-configuration classes.（需要引入一些第三方自流注册包，但又不需要启用某些自动注册的子功能]
+    exclude: [org.activiti.spring.boot.SecurityAutoConfiguration,org.activiti.spring.boot.JpaProcessEngineAutoConfiguration,org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration]
+
+  mvc:
+    favicon.enabled: false                      #是否支持favicon.ico，默认为: true
+    dispatch-options-request: true              #前端跨域模式下，支持OPTIONS请求
+    throw-exception-if-no-handler-found: true   #当出现 404 错误时, 直接抛出异常
+  aop:
+    auto: true                #是否支持@EnableAspectJAutoProxy，默认为: true
+    proxy-target-class: true  #true为使用CGLIB代理，false为JDK基于接口的代理，默认为false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss  #时间格式化
+    time-zone: Asia/Chongqing         #时区设置
+  activiti:                           #参考：https://segmentfault.com/a/1190000014194516，https://blog.csdn.net/qq_21770005/article/details/79009272
+      checkProcessDefinitions: false  #是否检查更新流程定义
+      asyncExecutorEnabled: false     #设置true后将代替那些老的Job executor
+
+      #设置true后将代替那些老的Job executor
+      async-executor-enabled: false
+      job-executor-activate: false
+      #指示activiti在流程引擎启动就激活AsyncExecutor,异步
+      async-executor-activate:
+      #校验流程文件，默认校验resources下的processes文件夹里的流程文件
+      check-process-definitions:
+      #使用自定义mybatis-mapper
+      custom-mybatis-mappers:
+      custom-mybatis-xmlmappers:
+      #数据源指定,
+      database-schema:
+      #flase： 默认值。activiti在启动时，会对比数据库表中保存的版本，如果没有表或者版本不匹配，将抛出异常。
+      #true： activiti会对数据库中所有表进行更新操作。如果表不存在，则自动创建。
+      #create_drop： 在activiti启动时创建表，在关闭时删除表（必须手动关闭引擎，才能删除表）。
+      #drop-create： 在activiti启动时删除原来的旧表，然后在创建新表（不需要手动关闭引擎）
+      database-schema-update: false
+      db-history-used: false        #检测历史表是否存在
+      db-identity-used: false       #检测身份信息表是否存在
+      deployment-name:              #流程部署名称
+      history-level:                #记录历史等级 可配置的历史级别有none, acitivity, audit, all
+      jpa-enabled: false            #spring jpa使用
+      #邮件发送服务配置
+      mail-server-default-from:
+      mail-server-host:
+      mail-server-password:
+      mail-server-port:
+      mail-server-use-ssl:
+      mail-server-use-tls:
+      mail-server-user-name:
+      #自定义流程文件位置
+      process-definition-location-prefix:
+      process-definition-location-suffixes:
+      #activiti rest 配置
+      rest-api-enabled: false
+      rest-api-mapping:
+      rest-api-servlet-name:
+  messages:
+    basename: /i18n/messages      #国际化文件存储的classpath
+
+  #-----------------------------
+  # 以下是配置不同的模板引擎
+  # 参考：https://segmentfault.com/a/1190000004315890
+  #-----------------------------
+  #    Default Extensions are:
+  #    *.html - Thymeleaf
+  #    *.tpl - Groovy
+  #    *.ftl - Freemarker
+  #    *.vm - Velocity
+  freemarker:
+    cache: false
+    template-loader-path: ["classpath:/templates/","classpath:/webapp/"]
+    prefer-file-system-access: false  #不使用文件系统优先，而使用classpath下的资源文件优先，解决打jar包运行后，出现的异常问题
+    allow-request-override: false     #指定HttpServletRequest的属性是否可以覆盖controller的model的同名项
+    check-template-location: true     #check-template-location
+    charset: UTF-8
+    content-type: text/html
+    #request/session==true请求和会话属性都被复制到模板的属性集中，此时spring必须设置为true
+    expose-request-attributes: false    #设定所有request的属性在merge到模板的时候，是否要都添加到model中.
+    expose-session-attributes: false    #设定所有HttpSession的属性在merge到模板的时候，是否要都添加到model中.
+    expose-spring-macro-helpers: true   #设定是否以springMacroRequestContext的形式暴露RequestContext给Spring’s macro library使用
+    request-context-attribute: request  #request的模板变量名
+    prefix:
+    suffix: .ftl
+    classic_compatible: true      #“兼容传统模式”,避免空指针报错问题,https://www.cnblogs.com/Weagle/p/5417947.html
+
+
+# =============================================================== #
+#  微服务配置(只有在做分布式+微服务器才启用这种方式
+# =============================================================== #
+eureka:
+  client:
+    register-with-eureka: false #不向注册中心注册自己，启动服务注册,如果不做集群，高可用，则关闭它
+    fetch-registry: false       #由于注册中心职责就是维护服务实例，它并不需要去检索服务，设置成false
+    service-url:
+      defaultZone: "http://127.0.0.1:1111/rsc/eureka/" #注册中心地址
+
+  instance:
+    appname: "${spring.application.name}"                     #微服务实例名
+    instance-id: "${spring.application.name}:${server.port}"  #微服务实例ID
+    prefer-ip-address: true                                   #设置微服务调用地址为IP优先（缺省为false）
+    lease-renewal-interval-in-seconds: 5                      #心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 15                  #发呆时间，即服务续约到期时间（缺省为90s）
+
+# =============================================================== #
+#  设定全局跨域
+# =============================================================== #
+endpoints.cors:
+  allow-credentials: true               #Access-Control-Allow-Credentials
+  allowed-methods: GET,POST,PUT,DELETE  #Access-Control-Request-Method
+  allowed-headers: "*"                  #Access-Control-Allow-Headers
+  allowed-origins: "*"                  #Access-Control-Allow-Origin
+  exposed-headers: WWW-Authenticate     #Access-Control-Expose-Headers
+  max-age: 1800
+
+# =============================================================== #
+#  MyBaits配置
+# =============================================================== #
+mybatis:
+    configuration:
+        map-underscore-to-camel-case: true    #开启驼峰转换
+
+# =============================================================== #
+#  监控点安全控制
+# =============================================================== #
+management:
+  security:   #参考：https://www.jianshu.com/p/55ea7b8ee320
+    enabled: false  #关闭Actuator的敏感信息访问限制
+
+# =============================================================== #
+#  spring security是springboot支持的权限控制系统。
+# =============================================================== #
+security: #参考：https://blog.csdn.net/cl_andywin/article/details/53992353
+  basic:
+    authorize-mode: NONE  #授权模式，ROLE=成员必须是安全的角色，AUTHENTICATED=经过身份验证的用户，NONE=没有设置安全授权
+    enable: false         #是否开启基本的鉴权，默认为true
+  ignored: "/**"            #指定不鉴权的路径，多个的话以逗号分隔.
+
+# =============================================================== #
+#  ROBER技术体系下的配置
+# =============================================================== #
+com.vekai:
+  #基础服务模块（注释为'默认值'的表示默认值），可以不配置
+  base:
+    cache: Memory                   #缓存实现方式：Memory,EHCache,Memcached,Redis,MongoDB(com.vekai.base.autoconfigure.CacheConfiguration）
+    view-path: "/views"             #(默认值）后端模板引擎（如freemarker）存放的根目录（classpath)
+    number-format: "#"              #(默认值）后端模板引擎，数字格式
+    auto-includes: ["/base/macro/body.ftl","/base/macro/pagelet.ftl"]  #后端模板引擎自动引入的全局模板
+    multipart-max-file-size: 104857600 #(默认值）最大上传文件大小，100m（1024*1024*100）
+    devBaseDir: ${projectRoot}/amix/src/main/resources  #开发模式，资源基础路径
+    dictDataClasspath: repo/dict                        #数据字典文件所在classpath
+  batch:
+    logdao: Redis #DataTable,Redis
+
+  #运行时环境配置
+  runtime:
+    production-model: false         #(默认值）是否生产模式
+    temporaryDirectory: /tmp/rober            #（默认值）临时目录（如上传文件等需要创建临时文件的时候）
+    charset: "UTF-8"                          #系统取Charset.defaultCharset();
+    longDateFormat: "yyyy-MM-dd HH:mm:ss.SSS" #日期类型，长
+    shorDateFormat: "yyyy-MM-dd"              #日期类型，短
+    corsEnable: false                         #启用CROS(跨域），和springboot全局的配置重叠了，这里关闭掉
+    pathPattern: "/**"                        #启用CROS的基础路径
+    allowedHeaders: "*"                       #Access-Control-Allow-Headers
+    allowedMethods: ["*"]                     #Access-Control-Request-Method
+    allowedOrigins: "*"                       #Access-Control-Allow-Origin
+    staticResourceProxyUrl:                   #前后端分离部署时，URL前半部分，响应头为：header("Location","http://localhost:3004/amix-client/${后半部分}")
+    druid-login-username: rober               #druid连接池监控用户名
+    druid-login-password: r0ber               #druid连接澉监控密码
+    json-serialize-secret-mask: "***"         #JSON序列化，保密字段统一使显示文字
+    json-serialize-property-secrets:          #JSON序列化，保密字段（向前端输出后，显示为 ${secret-mask})
+      - com.vekai.auth.entity.User.password
+      - com.vekai.auth.entity.User.status
+    json-serialize-property-excludes:         #JSON序列化，需要排除的字段（向前端输出后，这些字段不输出)
+      - com.vekai.auth.entity.User.revision
+      - com.vekai.auth.entity.User.orgId
+
+  #api接口文档
+  swagger:
+    base-package: com.vekai
+    title: Fisok接口目录
+    description: Fisok集成框架接口目录
+    terms-of-service-url: http://rober.group
+    version: 1.0
+
+  #SQL配置
+  sql:
+    sql-dialect-type: MYSQL #数据库类型：ORACLE,MYSQL,MARIADB,DB2,SQLSERVER,SQLITE,H2,DERBY,POSTGRESQL,HSQL,HBASE
+    #流水号生成器
+    #流水号生成器类型：
+    #    UUID 标准的UUID
+    #    NANO_TIME 直接使用当前纳秒值
+    #    DEFAULT 默认流水号生成品器，每次加1
+    #    WITH_DATE_Y_CYCLE_BY_Y     [年]为前缀，按年循环，格式如: ${DATE}0000, 根据DATE格式化数字，20180001,20180002, 到下一年后四位重新从1开始，20190001,
+    #    WITH_DATE_YM_CYCLE_BY_Y    [年月]为前缀，按年循环，格式如: ${DATE}0000, 根据DATE格式化数字，2018050001,2018050002, 到下一年后四位重新从1开始，2019010001,
+    #    WITH_DATE_YM_CYCLE_BY_YM   [年月]为前缀，按月循环，格式如: ${DATE}0000, 根据DATE格式化数字，2018050001,2018050002, 到下一月后四位重新从1开始，2018060001,
+    #    WITH_DATE_YMD_CYCLE_BY_Y   [年月日]为前缀，按年循环，格式如: ${DATE}0000, 根据DATE格式化数字，201805160001,201805160002, 到下一年后四位重新从1开始，201901010001,
+    #    WITH_DATE_YMD_CYCLE_BY_YM  [年月日]为前缀，按月循环，格式如: ${DATE}0000, 根据DATE格式化数字，201805160001,201805160002, 到下一月后四位重新从1开始，201806010001,
+    #    WITH_DATE_YMD_CYCLE_BY_YMD [年月日]为前缀，按日循环，格式如: ${DATE}0000, 根据DATE格式化数字，201805160001,201805160002, 到下一日后四位重新从1开始，201805170001,
+    #流水号序号部分格式，使用格式化模板格式化数字
+    #如果需要记录顺序的，默认记录到数据表：FOWK_SERIAL_NUMBER
+    #流水号生成器，
+    #    默认名称：JavaBean情况下:"类全名.字段名"
+    #    DataMap情况下："表名.字段名",
+    #    也可以自定义名称，自定义规则。
+    serial-no:
+      generator-map:
+        "com.vekai.crops.customer.entity.CustomerPO.custId": "DEFAULT"
+        "com.vekai.crops.invest.plan.entity.IvstPlanPO.planId": "DEFAULT"
+        "com.vekai.crops.workflow.entity.WorkflowProcess.procId": "DEFAULT"
+        "com.vekai.crops.workflow.entity.WorkflowTask.taskId": "DEFAULT"
+        "com.vekai.crops.workflow.entity.WorkflowComment.commentId": "DEFAULT"
+        "com.vekai.crops.invest.loan.entity.IvstPlanLoanPO.loanId": "DEFAULT"
+        "IVST_MANAGE_TASK_ITEM.ITEM_ID": "DEFAULT"
+        "IVST_MANAGE_TASK_CHANGE_APPPLY.TASK_CHANGE_APPLY_ID": "DEFAULT"
+      template-map:
+        "com.vekai.crops.customer.entity.CustomerPO.custId": "PAC0000000"
+        "com.vekai.crops.invest.plan.entity.IvstPlanPO.planId": "PEP0000000"
+        "com.vekai.crops.workflow.entity.WorkflowProcess.procId": "L000000000"
+        "com.vekai.crops.workflow.entity.WorkflowTask.taskId": "T000000000"
+        "com.vekai.crops.workflow.entity.WorkflowComment.commentId": "C000000000"
+        "com.vekai.crops.invest.loan.entity.IvstPlanLoanPO.loanId": "ACC0000000"
+        "com.vekai.crops.invest.afterinvest.change.entity.IvstPlanChangeApply.planChangeApplyId": "PMN000000"
+        "IVST_MANAGE_TASK_ITEM.ITEM_ID": "TTN0000000"
+        "IVST_MANAGE_TASK_CHANGE_APPPLY.TASK_CHANGE_APPLY_ID": "MTC000000"
+
+    #显示模板
+    dataform:
+      dataFormMapperType: database              #dataform数据存储方式，xml,database
+      #以下属性目前没有启用，放在这里参考
+      devBaseDir: ${projectRoot}/amix/src/main/resources  #开发模式基础目录
+      dataformDataClasspath: repo/dataform                #显示模板所在classpath
+
+      dataformTagName: "dataform"               #freemarker标签名称
+      resourcePathTpl: "{0}/src/main/resources" #资源文件所在目录
+      authResourcePath: true                    #自动计算处理资源文件路径
+      resourcePath: "/dataform"                 #资源文件所在路径
+      autoIncludes:                             #dataform中的元素标签以及指令集
+      exportDir:                                #dataform导出目录
+      importDir:                                #dataform导入目录
+      dictionaryDir:                            #生成json文件目录
+      dataformDir:                              #生成json文件目录
+
+    #全文索引
+    search:
+      directory-mode: Memory              #索引存储方式：Disk,Memory
+      directory: /tmp/data/rober/search   #如果为Disk,则指定存储目录
+
+    #Office文件处理
+    office:
+      page-office:
+        enable: false
+        license-path: /data/amix/pageoffice/license/    #PageOffice授权文件所在目录
+        static-resource-url: /office/pageoffice/static  #PageOffice静态资源访问目录，如:${ctxPath}${staticResourceUrl}/posetup.exe
+
+    #工作流引擎
+    workflow:
+      #指定每个工作流的处理Handler，主要用于业务对工作流进行自定义操作处理
+      #KEY=工作流KEY,VALUE=Handler全路径
+      handler-mapping:
+        Simple: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler"]
+        judgeNetWork: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler","com.vekai.appframe.workflow.handler.JudgeNetWorkParamHandler"]
+
+    #通用功能
+    common:
+      file-storage-root: "/data/rober/file"                 #文件存储根目录
+      file-hist-storage-root: "/data/rober/file-historic"   #文件历史存储根目录
+      temporary-storage: "/data/rober/temporary"            #临时文件存储目录
+      file-buffer-size: 4096                                #进行文件流处理时的缓冲区大小
+
+    #用户及权限控制
+    auth:
+      authTagName: auth         #freemarker标签名
+      shiroTagName: shiro       #freemarker标签名
+      shiro:
+          login-url: "/logon"             #登录地址
+          success-url: "/"                #后端模板引擎使用，登录成功地址
+          unauthorized-url: "/403"        #未授权地址
+      accessControlStrategy:    #访问策略
+        #不需要授权的访问地址
+        anon: ["/","/ping/*","/nop","/base/global-profile.js","/office/pageoffice/**","/showcase/pageoffice/**", "/**/*.js", "/**/*.gif",
+               "/**/*.css", "/**/*.png", "/**/*.json", "/**/*.html", "/**/*.ttf", "/**/*.woff", "/editor-app/**",
+                "/icon/**", "/devtool/*Json", "/druid/**",
+               "/common/FileOperateController/show**File/**","/favicon.ico","/swagger-resources/**","/v2/api-docs"]
+        #需要授权的访问地址
+        authc: "/**"
+      cookieMaxAge: 180000
+      enableHashPwd: true                 #密码是否要做HASH
+      pwdHashAlgorithmName: SHA-256       #密码使用的HASH算法
+      hashSalted: false                   #是否加salt
+      hashIterations: 1                   #hash次数
+      enableJwtReplaceSession: false      #是否启用JWT,如果不用，则使用传统的SESSION
+      jwtSecretKey: roberinner            #JWT加密KEY
+      jwtIssuer: Amarsoft                 #JWT的签发者
+      authzFilterEnabled: true            #URL权限控制（权限关联到具体人）
+      authorizationCachingEnabled: false  #用户的权限是否作缓存
+      authenticationCachingEnabled: false #用户的身份认证信息（登录登录结果作缓存）
+      session:
+        activeSessionsCacheName: session        #会话缓存名称
+        globalSessionTimeout: 1800000           #会话过期时间
+        sessionValidationSchedulerEnabled: true #启用一个定时任务，用清理过期会话
+        sessionValidationInterval: 1800000      #启用一个定时任务，用清理过期会话，这里是间隔时间
+        deleteInvalidSessions: true             #删除过期会话
+        sessionIdCookieEnabled: true            #会话启用cookie
+        sessionIdCookieName: SRSSION            #Cookie名称
+        sessionIdCookieDomain: "127.0.0.1"      #Cookie的域名

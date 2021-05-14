@@ -1,0 +1,29 @@
+{
+  "code" : "AccountType",
+  "name" : "账号类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0033",
+  "intro" : "账号类型的码表",
+  "items" : [ {
+    "code" : "RECEIVABLE_ACCOUNT",
+    "name" : "收款账号",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "PAYABLE_ACCOUNT",
+    "name" : "付款账号",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

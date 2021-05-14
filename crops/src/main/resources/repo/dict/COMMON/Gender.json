@@ -1,0 +1,76 @@
+{
+  "code": "Gender",
+  "name": "性别",
+  "nameI18nCode": null,
+  "categoryCode": "COMMON",
+  "sortCode": "0007",
+  "intro": "性别的码表",
+  "items": [
+    {
+      "code": "0",
+      "name": "未知的性别",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "1",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "0",
+      "summary": null
+    },
+    {
+      "code": "1",
+      "name": "男",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "2",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "2",
+      "name": "女",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "3",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "1",
+      "summary": null
+    },
+    {
+      "code": "5",
+      "name": "女性改（变）为男性",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "4",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "0",
+      "summary": null
+    },
+    {
+      "code": "6",
+      "name": "男性改（变）为女性",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "5",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "0",
+      "summary": null
+    },
+    {
+      "code": "9",
+      "name": "未说明的性别",
+      "nameI18nCode": null,
+      "value": null,
+      "sortCode": "6",
+      "hotspot": 0,
+      "correlation": null,
+      "status": "0",
+      "summary": null
+    }
+  ]
+}

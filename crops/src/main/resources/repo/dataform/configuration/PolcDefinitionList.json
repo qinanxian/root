@@ -1,0 +1,233 @@
+{
+  "id": "configuration-PolcDefinitionList",
+  "pack": "configuration",
+  "code": "PolcDefinitionList",
+  "name": "产品政策列表",
+  "dataModelType": "JavaBean",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "POLC_DEFINITION",
+    "orderBy": "SORT_CODE ASC,POLICY_CODE ASC"
+  },
+  "elements": [
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "产品ID",
+      "code": "policyId",
+      "dataType": "String",
+      "column": "POLICY_ID",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "产品代码",
+      "code": "policyCode",
+      "dataType": "String",
+      "column": "POLICY_CODE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "产品名称",
+      "code": "policyName",
+      "dataType": "String",
+      "column": "POLICY_NAME",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "父产品代码",
+      "code": "parentPolicyCode",
+      "dataType": "String",
+      "column": "PARENT_POLICY_CODE",
+      "elementUIHint": {
+        "editStyle": "TreeSelect",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "select POLICY_CODE AS CODE,POLICY_NAME AS NAME,SORT_CODE AS SORT_CODE from POLC_DEFINITION ORDER BY SORT_CODE ASC"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "产品类型",
+      "code": "policyType",
+      "dataType": "String",
+      "column": "POLICY_TYPE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "PolicyType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "产品状态",
+      "code": "policyStatus",
+      "dataType": "String",
+      "column": "POLICY_STATUS",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "EffectStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "code": "sortCode",
+      "name": "排序码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0060",
+      "column": "SORT_CODE",
+      "table": "POLC_DEFINITION",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "Date",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [
+    {
+      "name": "产品代码",
+      "code": "policyCode",
+      "bindFor": "policyCode",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    },
+    {
+      "name": "产品名称",
+      "code": "policyName",
+      "bindFor": "policyName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "产品类型",
+      "code": "policyType",
+      "bindFor": "policyType",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0020"
+    },
+    {
+      "name": "产品状态",
+      "code": "policyStatus",
+      "bindFor": "policyStatus",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0030"
+    }
+  ],
+  "dataModel": "com.vekai.appframe.policy.entity.PolcDefinitionEntity",
+  "handler": "com.vekai.appframe.policy.handler.PolicyDefinitionListHandler"
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decision-tree>
+    <remark><![CDATA[]]></remark>
+    <import-parameter-library path="jcr:/测试项目/parameters.pl.xml"/>
+    <import-variable-library path="jcr:/测试项目/custom.vl.xml"/>
+    <import-constant-library path="jcr:/测试项目/constants.cl.xml"/>
+    <variable-tree-node>
+        <left var-category="会员" var="age" var-label="年龄" datatype="Integer" type="variable"/>
+        <condition-tree-node op="LessThen">
+            <value content="18" type="Input"/>
+            <variable-tree-node>
+                <left var-category="会员" var="married" var-label="婚否" datatype="Boolean" type="variable"/>
+                <condition-tree-node op="Equals">
+                    <value content="true" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="会员" var="gender" var-label="性别" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="1" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="5" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+                <condition-tree-node op="Equals">
+                    <value content="false" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="会员" var="gender" var-label="性别" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="3" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="6" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+            </variable-tree-node>
+        </condition-tree-node>
+        <condition-tree-node op="GreaterThenEquals">
+            <value content="18" type="Input"/>
+            <condition-tree-node op="LessThen">
+                <value content="30" type="Input"/>
+                <variable-tree-node>
+                    <left var-category="会员" var="married" var-label="婚否" datatype="Boolean" type="variable"/>
+                    <condition-tree-node op="Equals">
+                        <value content="true" type="Input"/>
+                        <variable-tree-node>
+                            <left var-category="会员" var="gender" var-label="性别" datatype="Boolean" type="variable"/>
+                            <condition-tree-node op="Equals">
+                                <value content="true" type="Input"/>
+                                <action-tree-node>
+                                    <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                        <value content="10" type="Input"/>
+                                    </var-assign>
+                                </action-tree-node>
+                            </condition-tree-node>
+                            <condition-tree-node op="Equals">
+                                <value content="false" type="Input"/>
+                                <action-tree-node>
+                                    <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                        <value content="9" type="Input"/>
+                                    </var-assign>
+                                </action-tree-node>
+                            </condition-tree-node>
+                        </variable-tree-node>
+                    </condition-tree-node>
+                    <condition-tree-node op="Equals">
+                        <value content="false" type="Input"/>
+                        <variable-tree-node>
+                            <left var-category="会员" var="gender" var-label="性别" datatype="Boolean" type="variable"/>
+                            <condition-tree-node op="Equals">
+                                <value content="true" type="Input"/>
+                                <action-tree-node>
+                                    <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                        <value content="12" type="Input"/>
+                                    </var-assign>
+                                </action-tree-node>
+                            </condition-tree-node>
+                            <condition-tree-node op="Equals">
+                                <value content="false" type="Input"/>
+                                <action-tree-node>
+                                    <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                        <value content="11" type="Input"/>
+                                    </var-assign>
+                                </action-tree-node>
+                            </condition-tree-node>
+                        </variable-tree-node>
+                    </condition-tree-node>
+                </variable-tree-node>
+            </condition-tree-node>
+            <condition-tree-node op="GreaterThenEquals">
+                <value content="30" type="Input"/>
+                <condition-tree-node op="LessThen">
+                    <value content="50" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="会员" var="married" var-label="婚否" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="3" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="3" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+                <condition-tree-node op="GreaterThenEquals">
+                    <value content="50" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="会员" var="married" var-label="婚否" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="0" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="会员" var="level" var-label="等级" datatype="Integer" type="variable">
+                                    <value content="2" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+            </condition-tree-node>
+        </condition-tree-node>
+    </variable-tree-node>
+</decision-tree>

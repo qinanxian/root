@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constant-library>
+    <category name="PersonDegree" label="学历">
+        <constant name="V10" label="高级职称或博士学位" type="String"/>
+        <constant name="V20" label="硕士或双学士学位" type="String"/>
+        <constant name="V30" label="中级职称或学士学位" type="String"/>
+        <constant name="V40" label="大专学历" type="String"/>
+        <constant name="V50" label="高中中专" type="String"/>
+        <constant name="V90" label="其它" type="String"/>
+    </category>
+    <category name="Gender" label="性别">
+        <constant name="1" label="男" type="String"/>
+        <constant name="2" label="女" type="String"/>
+        <constant name="0" label="未知" type="String"/>
+    </category>
+    <category name="YesNo" label="是否">
+        <constant name="Y" label="是" type="String"/>
+        <constant name="N" label="否" type="String"/>
+    </category>
+    <category name="CompanyNature" label="单位性质">
+        <constant name="V10" label="国家公务员,职业会计师,评估师,精算师" type="String"/>
+        <constant name="V20" label="国有独资垄断性企业(电信,水电气供应公司),金融业从业人员" type="String"/>
+        <constant name="V30" label="大中型企业工作人员" type="String"/>
+        <constant name="V40" label="中小型企业工作人员" type="String"/>
+        <constant name="V50" label="其它 （含法院工作人员、律师、警察、军人）" type="String"/>
+    </category>
+    <category name="Marital" label="婚姻状况">
+        <constant name="0" label="未婚" type="String"/>
+        <constant name="1" label="已婚" type="String"/>
+        <constant name="9" label="其他" type="String"/>
+    </category>
+    <category name="SalaryPayChannel" label="发薪方式">
+        <constant name="V10" label="网银" type="String"/>
+        <constant name="V20" label="现金" type="String"/>
+    </category>
+    <category name="HouseStatus" label="房产状况">
+        <constant name="V10" label="申请地未结清按揭房产" type="String"/>
+        <constant name="V20" label="异地未结清按揭房产" type="String"/>
+        <constant name="V30" label="其他" type="String"/>
+    </category>
+    <category name="CarStatus" label="购车状况">
+        <constant name="V10" label="按揭购车" type="String"/>
+        <constant name="V20" label="无车辆" type="String"/>
+    </category>
+</constant-library>

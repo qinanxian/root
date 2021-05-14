@@ -1,0 +1,29 @@
+{
+  "code" : "DemoBankCardType",
+  "name" : "银行卡类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "DEMO",
+  "sortCode" : "3050",
+  "intro" : "银行卡类型案例使用",
+  "items" : [ {
+    "code" : "DEBIT_CARD",
+    "name" : "借记卡",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0010",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "CREDIT_CARD",
+    "name" : "贷记卡",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0020",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

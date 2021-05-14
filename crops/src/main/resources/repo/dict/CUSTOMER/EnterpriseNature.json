@@ -1,0 +1,69 @@
+{
+  "code" : "EnterpriseNature",
+  "name" : "企业性质",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0020",
+  "intro" : "企业性质的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "央企",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "央企"
+  }, {
+    "code" : "15",
+    "name" : "地方国企",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "地方国企"
+  }, {
+    "code" : "20",
+    "name" : "地方政府融资平台",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "地方政府融资平台"
+  }, {
+    "code" : "25",
+    "name" : "外企",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "外企"
+  }, {
+    "code" : "30",
+    "name" : "私企",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "私企"
+  }, {
+    "code" : "35",
+    "name" : "其他",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "其他"
+  } ]
+}

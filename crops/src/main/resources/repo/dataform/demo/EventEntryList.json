@@ -1,0 +1,108 @@
+{
+  "id": "demo-EventEntryList",
+  "pack": "demo",
+  "code": "EventEntryList",
+  "name": "记账事件分录列表",
+  "tags": "记账事件分录列表",
+  "description": "记账事件分录列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_EVENT_ENTRY",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "EVENT_ID=:eventId",
+    "from": "FISC_EVENT_ENTRY"
+  },
+  "elements": [
+    {
+      "dataformId": "demo-EventEntryList",
+      "code": "entryCode",
+      "name": "科目代码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "ENTRY_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-EventEntryList",
+      "code": "entryName",
+      "name": "科目名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0001",
+      "column": "ENTRY_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-EventEntryList",
+      "code": "direction",
+      "name": "借贷方向",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "ChargeupDirection"
+      },
+      "sortCode": "0002",
+      "column": "DIRECTION",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "demo-EventEntryList",
+      "code": "occurAmt",
+      "name": "发生金额",
+      "group": "",
+      "dataType": "Double",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Currency",
+        "dataFormat": "Currency",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0003",
+      "column": "OCCUR_AMT",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": []
+}

@@ -1,0 +1,29 @@
+{
+  "code" : "InOutSideTable",
+  "name" : "表内或表处",
+  "nameI18nCode" : null,
+  "categoryCode" : "FISCAL",
+  "sortCode" : "70",
+  "intro" : null,
+  "items" : [ {
+    "code" : "IN",
+    "name" : "表内",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "OUT",
+    "name" : "表外",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

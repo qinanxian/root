@@ -1,0 +1,48 @@
+{
+  "categoryCode": "codetodo",
+  "code": "AppraiseLabel",
+  "name": "评价标签",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "服务态度好",
+      "hotspot": "1",
+      "status": "1",
+      "value": "好评",
+      "summary": "好评",
+      "correlation": "好评"
+    },
+    {
+      "code": "0002",
+      "name": "网点环境好",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0003",
+      "name": "排队时间短",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0004",
+      "name": "预约便捷",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0005",
+      "name": "产品丰富",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0006",
+      "name": "电话响应及时",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

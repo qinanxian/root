@@ -1,0 +1,109 @@
+{
+  "code" : "EducationLevel",
+  "name" : "最高学历",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0024",
+  "intro" : "最高学历的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "小学",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "小学"
+  }, {
+    "code" : "15",
+    "name" : "初中",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "初中"
+  }, {
+    "code" : "20",
+    "name" : "中专",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "中专"
+  }, {
+    "code" : "25",
+    "name" : "职高",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "职高"
+  }, {
+    "code" : "30",
+    "name" : "技校",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "技校"
+  }, {
+    "code" : "35",
+    "name" : "高中",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "高中"
+  }, {
+    "code" : "40",
+    "name" : "大学专科",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "大学专科"
+  }, {
+    "code" : "45",
+    "name" : "大学本科",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "45",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "大学本科"
+  }, {
+    "code" : "50",
+    "name" : "硕士研究生",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "硕士研究生"
+  }, {
+    "code" : "55",
+    "name" : "博士研究生",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "55",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "博士研究生"
+  } ]
+}

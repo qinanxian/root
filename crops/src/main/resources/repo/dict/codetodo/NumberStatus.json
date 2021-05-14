@@ -1,0 +1,33 @@
+{
+  "categoryCode": "codetodo",
+  "code": "NumberStatus",
+  "name": "取号状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "已取号",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "未取号",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "3",
+      "name": "已过期",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "4",
+      "name": "已撤销",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

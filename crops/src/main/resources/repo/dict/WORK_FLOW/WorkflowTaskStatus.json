@@ -1,0 +1,129 @@
+{
+  "code" : "WorkflowTaskStatus",
+  "name" : "流程任务状态",
+  "nameI18nCode" : null,
+  "categoryCode" : "WORK_FLOW",
+  "sortCode" : "1040",
+  "intro" : "流程任务状态的码表",
+  "items" : [ {
+    "code" : "completed",
+    "name" : "正常提交",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "backfront",
+    "name" : "退回",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "100",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "abolished",
+    "name" : "流程作废",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "retrieve",
+    "name" : "撤回",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "backorigin",
+    "name" : "驳回",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "backtrack",
+    "name" : "退回修改",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "forward",
+    "name" : "跳转",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "reject",
+    "name" : "流程否决",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "70",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "takeAdvice",
+    "name" : "征求他人意见",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "80",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "feedback",
+    "name" : "反馈意见",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "90",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "notify",
+    "name" : "邮件传阅",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "95",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "deliverTo",
+    "name" : "转他人处理",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "95",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "othapplications-CustWishesInfo",
+  "pack": "othapplications",
+  "code": "CustWishesInfo",
+  "name": "客户意愿详情",
+  "managedByRR": false,
+  "tags": "ELECTRONIC_INTEND",
+  "dataModelType": "DataMap",
+  "dataModel": "ELECTRONIC_INTEND",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "ELECTRONIC_INTEND ",
+    "where": "ID = :custId"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-CustWishesInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-CustWishesInfo",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-CustWishesInfo",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-CustWishesInfo",
+      "name": "企业名称",
+      "code": "enterpriseName",
+      "dataType": "String",
+      "column": "ENTERPRISE_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-CustWishesInfo",
+      "name": "经办人和法人是否一致",
+      "code": "areConsistent",
+      "dataType": "String",
+      "column": "ARE_CONSISTENT",
+      "elementUIHint": {
+        "editStyle": "CheckBox",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "AreConsistent"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": []
+}

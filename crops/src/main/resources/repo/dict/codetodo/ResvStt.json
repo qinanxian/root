@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "ResvStt",
+  "name": "预约状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "正常",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0",
+      "name": "撤销",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

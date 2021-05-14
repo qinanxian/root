@@ -1,0 +1,59 @@
+{
+  "code" : "Channel",
+  "name" : "来源渠道",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0015",
+  "intro" : "来源渠道的码表",
+  "items" : [ {
+    "code" : "AGENCY",
+    "name" : "代理商",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "代理商"
+  }, {
+    "code" : "FUND_INTERMEDIARY",
+    "name" : "资金中介",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "资金中介"
+  }, {
+    "code" : "RECOMMENDATION",
+    "name" : "综金推荐",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "综金推荐"
+  }, {
+    "code" : "OTHER",
+    "name" : "其他",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "其他"
+  }, {
+    "code" : "DIRECT_SELLING",
+    "name" : "直销",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "直销"
+  } ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "othapplications-QueryUserName",
+  "pack": "othapplications",
+  "code": "QueryUserName",
+  "name": "获取网点操作员",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "AUTH_USER",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "T1.ORG_ID=T2.ID \r\nAND LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',T2.SORT_CODE),'/'))>0\r\n    ",
+    "from": "AUTH_USER T1,AUTH_ORG T2"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-QueryUserName",
+      "code": "id",
+      "name": "ID",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "ID",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "decimalDigits": 2,
+      "table": "T1"
+    },
+    {
+      "dataformId": "othapplications-QueryUserName",
+      "name": "机构",
+      "code": "orgId",
+      "dataType": "String",
+      "column": "ORG_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-QueryUserName",
+      "code": "name",
+      "name": "操作信贷员",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "NAME",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-QueryUserName",
+      "name": "手机号",
+      "code": "phone",
+      "dataType": "String",
+      "column": "PHONE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-QueryUserName",
+      "name": "名称",
+      "code": "names",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "T2",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

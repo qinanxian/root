@@ -1,0 +1,21 @@
+{
+  "categoryCode": "OTHER",
+  "code": "IsModify",
+  "name": "是否申请修改合同",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0",
+      "name": "否",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "1",
+      "name": "是",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "id": "codetodo-LargeCashWhiteList",
+  "pack": "codetodo",
+  "code": "LargeCashWhiteList",
+  "name": "大额预约网点人员白名单列表",
+  "managedByRR": false,
+  "tags": "MSB_BUSI_DEYY_WHITE_LIST",
+  "dataModelType": "DataMap",
+  "dataModel": "MSB_BUSI_DEYY_WHITE_LIST",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "MSB_BUSI_DEYY_WHITE_LIST bw,\nAUTH_ORG B",
+    "orderBy": "bw.CREATED_TIME desc",
+    "where": "bw.ORG_NO = B.ID \r\nAND LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',B.SORT_CODE),'/'))>0"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "机构号",
+      "code": "orgNo",
+      "dataType": "String",
+      "column": "ORG_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": ""
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "primaryKey": true
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "机构名称",
+      "code": "orgName",
+      "dataType": "String",
+      "column": "ORG_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"220px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "员工OA号",
+      "code": "oaNo",
+      "dataType": "String",
+      "column": "OA_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"220px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "员工姓名",
+      "code": "oaName",
+      "dataType": "String",
+      "column": "OA_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"220px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "员工手机号",
+      "code": "mobileNo",
+      "dataType": "String",
+      "column": "MOBILE_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"220px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "轮休情况",
+      "code": "dayoffFlag",
+      "dataType": "String",
+      "column": "DAYOFF_FLAG",
+      "elementUIHint": {
+        "editStyle": "CheckBox",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "dayoffFlag",
+        "htmlStyle": "{\"minWidth\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "String",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "bw"
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "table": "bw"
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "table": "bw"
+    },
+    {
+      "dataformId": "codetodo-LargeCashWhiteList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "String",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "table": "bw",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [
+    {
+      "name": "机构号",
+      "code": "orgNo",
+      "bindFor": "orgNo",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "机构名称",
+      "code": "orgName",
+      "bindFor": "orgName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "员工OA号",
+      "code": "oaNo",
+      "bindFor": "oaNo",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0020"
+    },
+    {
+      "name": "员工姓名",
+      "code": "oaName",
+      "bindFor": "oaName",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0030"
+    }
+  ],
+  "handler": "com.vekai.crops.codetodo.handler.GetWhiteInfoHandler"
+}

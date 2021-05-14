@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule-set>
+    <import-variable-library path="jcr:/测试项目/loan.vl.xml"/>
+    <remark><![CDATA[]]></remark>
+    <rule name="rule">
+        <remark><![CDATA[]]></remark>
+        <if>
+            <and>
+                <atom op="GreaterThenEquals">
+                    <left var-category="贷款人" var="age" var-label="年龄" datatype="Integer" type="variable"/>
+                    <value content="25" type="Input"/>
+                </atom>
+                <atom op="Equals">
+                    <left var-category="贷款人" var="married" var-label="婚否" datatype="Boolean" type="variable"/>
+                    <value content="true" type="Input"/>
+                </atom>
+                <atom op="Equals">
+                    <left var-category="贷款人" var="authorization" var-label="是否有配偶《征信查询授权书》" datatype="Boolean" type="variable"/>
+                    <value content="true" type="Input"/>
+                </atom>
+                <or>
+                    <atom op="Equals">
+                        <left var-category="贷款人" var="register" var-label="是否本地户籍" datatype="Boolean" type="variable"/>
+                        <value content="true" type="Input"/>
+                    </atom>
+                    <and>
+                        <atom op="Equals">
+                            <left var-category="贷款人" var="register" var-label="是否本地户籍" datatype="Boolean" type="variable"/>
+                            <value content="false" type="Input"/>
+                        </atom>
+                        <atom op="Equals">
+                            <left var-category="贷款人" var="houseProperty" var-label="是否有当地房产证明" datatype="Boolean" type="variable"/>
+                            <value content="true" type="Input"/>
+                        </atom>
+                    </and>
+                </or>
+                <or>
+                    <and>
+                        <atom op="Equals">
+                            <left var-category="贷款人" var="register" var-label="是否本地户籍" datatype="Boolean" type="variable"/>
+                            <value content="true" type="Input"/>
+                        </atom>
+                        <atom op="GreaterThenEquals">
+                            <left var-category="贷款人" var="manageTime" var-label="经营时间" datatype="Integer" type="variable"/>
+                            <value content="1" type="Input"/>
+                        </atom>
+                    </and>
+                    <and>
+                        <atom op="Equals">
+                            <left var-category="贷款人" var="register" var-label="是否本地户籍" datatype="Boolean" type="variable"/>
+                            <value content="false" type="Input"/>
+                        </atom>
+                        <atom op="GreaterThenEquals">
+                            <left var-category="贷款人" var="manageTime" var-label="经营时间" datatype="Integer" type="variable"/>
+                            <value content="2" type="Input"/>
+                        </atom>
+                    </and>
+                </or>
+            </and>
+        </if>
+        <then>
+            <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                <value content="true" type="Input"/>
+            </var-assign>
+        </then>
+        <else>
+            <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                <value content="false" type="Input"/>
+            </var-assign>
+        </else>
+    </rule>
+</rule-set>

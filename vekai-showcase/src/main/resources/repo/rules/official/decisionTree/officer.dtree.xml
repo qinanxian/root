@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decision-tree>
+    <remark><![CDATA[]]></remark>
+    <import-variable-library path="jcr:/测试项目/loan.vl.xml"/>
+    <variable-tree-node>
+        <left var-category="贷款人" var="officer" var-label="是否军官武警" datatype="Boolean" type="variable"/>
+        <condition-tree-node op="Equals">
+            <value content="true" type="Input"/>
+            <variable-tree-node>
+                <left var-category="贷款人" var="officerLevel" var-label="军官武警等级" datatype="String" type="variable"/>
+                <condition-tree-node op="Equals">
+                    <value content="列兵" type="Input"/>
+                    <action-tree-node>
+                        <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                            <value content="false" type="Input"/>
+                        </var-assign>
+                    </action-tree-node>
+                </condition-tree-node>
+                <condition-tree-node op="Equals">
+                    <value content="少尉及以上含“校”" type="Input"/>
+                    <variable-tree-node>
+                        <left var-category="贷款人" var="houseProperty" var-label="是否有当地房产证明" datatype="Boolean" type="variable"/>
+                        <condition-tree-node op="Equals">
+                            <value content="false" type="Input"/>
+                            <action-tree-node>
+                                <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                    <value content="false" type="Input"/>
+                                </var-assign>
+                            </action-tree-node>
+                        </condition-tree-node>
+                        <condition-tree-node op="Equals">
+                            <value content="true" type="Input"/>
+                            <variable-tree-node>
+                                <left var-category="贷款人" var="married" var-label="婚否" datatype="Boolean" type="variable"/>
+                                <condition-tree-node op="Equals">
+                                    <value content="true" type="Input"/>
+                                    <variable-tree-node>
+                                        <left var-category="贷款人" var="spouseNoOfficer" var-label="是否配偶非军职" datatype="Boolean" type="variable"/>
+                                        <condition-tree-node op="Equals">
+                                            <value content="true" type="Input"/>
+                                            <variable-tree-node>
+                                                <left var-category="贷款人" var="spouseProperty" var-label="是否有配偶收入证明" datatype="Boolean" type="variable"/>
+                                                <condition-tree-node op="Equals">
+                                                    <value content="true" type="Input"/>
+                                                    <variable-tree-node>
+                                                        <left var-category="贷款人" var="marriageCertificate" var-label="是否有婚姻关系证明" datatype="Boolean" type="variable"/>
+                                                        <condition-tree-node op="Equals">
+                                                            <value content="true" type="Input"/>
+                                                            <action-tree-node>
+                                                                <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                                                                    <value content="true" type="Input"/>
+                                                                </var-assign>
+                                                            </action-tree-node>
+                                                        </condition-tree-node>
+                                                    </variable-tree-node>
+                                                </condition-tree-node>
+                                            </variable-tree-node>
+                                        </condition-tree-node>
+                                    </variable-tree-node>
+                                </condition-tree-node>
+                            </variable-tree-node>
+                        </condition-tree-node>
+                    </variable-tree-node>
+                </condition-tree-node>
+            </variable-tree-node>
+        </condition-tree-node>
+    </variable-tree-node>
+</decision-tree>

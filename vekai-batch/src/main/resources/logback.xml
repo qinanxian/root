@@ -1,0 +1,20 @@
+<configuration scan="true" scanPeriod="1800 seconds" debug="false">
+    <!--<include resource="org/springframework/boot/logging/logback/base.xml" />-->
+	<timestamp key="byDay" datePattern="yyyy-MM-dd" />
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%date %-5level] %msg  \t\t\t\t{@ %logger} %n</pattern>
+			<!--<pattern>%d{yyyy-MM-dd HH:mm:ss} %level [%thread] %caller{1} - %msg%n</pattern>-->
+		</encoder>
+	</appender>
+    <appender name="SQLOut" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[SQL日志] %msg \t\t\t\t\t\t\t\t[%date %-5level]{@ %logger}%n</pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+
+</configuration>

@@ -1,0 +1,21 @@
+{
+  "categoryCode": "electroniccrontract",
+  "code": "PaymentData ",
+  "name": "资金支付方式",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "self",
+      "name": "自主支付",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "renewal",
+      "name": "续贷业务支付",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

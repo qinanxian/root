@@ -1,0 +1,270 @@
+{
+  "id": "obiz-FunderList",
+  "pack": "obiz",
+  "code": "FunderList",
+  "name": "资金方列表",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "OBIZ_FUNDER",
+    "groupBy": "",
+    "orderBy": "UPDATED_TIME ASC"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "资金方ID",
+      "code": "funderId",
+      "dataType": "String",
+      "column": "FUNDER_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "资金方名称",
+      "code": "funderName",
+      "dataType": "String",
+      "column": "FUNDER_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "年利率",
+      "code": "interestRate",
+      "dataType": "Double",
+      "column": "INTEREST_RATE",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "还款方式",
+      "code": "paymentMode",
+      "dataType": "String",
+      "column": "PAYMENT_MODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "服务费率(‰)",
+      "code": "serviceFeeRate",
+      "dataType": "Double",
+      "column": "SERVICE_FEE_RATE",
+      "elementUIHint": {
+        "editStyle": "Integer",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Right"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": "0.001",
+      "limitedLength": 0,
+      "decimalDigits": "0",
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "管理费率(‰)",
+      "code": "manageFeeRate",
+      "dataType": "Double",
+      "column": "MANAGE_FEE_RATE",
+      "elementUIHint": {
+        "editStyle": "Integer",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Right"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": "0.001",
+      "limitedLength": 0,
+      "decimalDigits": "0",
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "资金方状态",
+      "code": "funderStatus",
+      "dataType": "String",
+      "column": "FUNDER_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-FunderList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "Date",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [],
+  "dataModel": "OBIZ_FUNDER"
+}

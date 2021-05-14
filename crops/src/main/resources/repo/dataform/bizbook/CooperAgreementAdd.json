@@ -1,0 +1,142 @@
+{
+  "id": "bizbook-CooperAgreementAdd",
+  "pack": "bizbook",
+  "code": "CooperAgreementAdd",
+  "name": "合作协议新增",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.crops.agreement.entity.BizCooperAgreement",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "BIZ_COOPER_AGREEMENT"
+  },
+  "elements": [
+    {
+      "dataformId": "bizbook-CooperAgreementAdd",
+      "name": "协议ID",
+      "code": "agreementId",
+      "dataType": "String",
+      "column": "AGREEMENT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "bizbook-CooperAgreementAdd",
+      "name": "授信客户号",
+      "code": "custId",
+      "dataType": "String",
+      "column": "CUST_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-CooperAgreementAdd",
+      "name": "授信客户名",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-CooperAgreementAdd",
+      "name": "协议起始日",
+      "code": "beginDate",
+      "dataType": "Date",
+      "column": "BEGIN_DATE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-CooperAgreementAdd",
+      "name": "协议到期日",
+      "code": "expiryDate",
+      "dataType": "Date",
+      "column": "EXPIRY_DATE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "bizbook-CooperAgreementAdd",
+      "name": "协议状态",
+      "code": "agreementStatus",
+      "dataType": "String",
+      "column": "AGREEMENT_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.agreement.handler.CooperAgreementAddHandler"
+}

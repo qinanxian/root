@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decision-table>
+    <remark><![CDATA[]]></remark>
+    <import-variable-library path="jcr:/测试项目/custom.vl.xml"/>
+    <cell row="4" col="0" rowspan="4">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="18" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="30" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="0" rowspan="4">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="18" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="1" rowspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="3" rowspan="1">
+        <value content="1" type="Input"/>
+    </cell>
+    <cell row="2" col="1" rowspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="2" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="2" col="3" rowspan="1">
+        <value content="3" type="Input"/>
+    </cell>
+    <cell row="1" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="1" col="3" rowspan="1">
+        <value content="5" type="Input"/>
+    </cell>
+    <cell row="3" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="3" col="3" rowspan="1">
+        <value content="6" type="Input"/>
+    </cell>
+    <cell row="6" col="1" rowspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="6" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="6" col="3" rowspan="1">
+        <value content="12" type="Input"/>
+    </cell>
+    <cell row="4" col="1" rowspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="4" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="4" col="3" rowspan="1">
+        <value content="10" type="Input"/>
+    </cell>
+    <cell row="5" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="5" col="3" rowspan="1">
+        <value content="9" type="Input"/>
+    </cell>
+    <cell row="7" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="7" col="3" rowspan="1">
+        <value content="11" type="Input"/>
+    </cell>
+    <cell row="8" col="0" rowspan="4">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="30" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="50" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="8" col="1" rowspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="8" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="8" col="3" rowspan="1">
+        <value content="20" type="Input"/>
+    </cell>
+    <cell row="9" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="9" col="3" rowspan="1">
+        <value content="15" type="Input"/>
+    </cell>
+    <cell row="10" col="1" rowspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="10" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="10" col="3" rowspan="1">
+        <value content="22" type="Input"/>
+    </cell>
+    <cell row="11" col="2" rowspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="11" col="3" rowspan="1">
+        <value content="18" type="Input"/>
+    </cell>
+    <row num="0" height="40"/>
+    <row num="2" height="40"/>
+    <row num="1" height="40"/>
+    <row num="3" height="40"/>
+    <row num="6" height="40"/>
+    <row num="4" height="40"/>
+    <row num="5" height="40"/>
+    <row num="7" height="40"/>
+    <row num="8" height="40"/>
+    <row num="9" height="40"/>
+    <row num="10" height="40"/>
+    <row num="11" height="40"/>
+    <col num="0" width="120" type="Criteria" var-category="会员" var-label="年龄" var="age" datatype="Integer"/>
+    <col num="1" width="120" type="Criteria" var-category="会员" var-label="婚否" var="married" datatype="Boolean"/>
+    <col num="2" width="120" type="Criteria" var-category="会员" var-label="性别" var="gender" datatype="Boolean"/>
+    <col num="3" width="200" type="Assignment" var-category="会员" var-label="等级" var="level" datatype="Integer"/>
+</decision-table>

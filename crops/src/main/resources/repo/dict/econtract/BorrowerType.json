@@ -1,0 +1,21 @@
+{
+  "categoryCode": "econtract",
+  "code": "BorrowerType",
+  "name": "企业或个人",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "penson",
+      "name": "个人",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "enterprise",
+      "name": "企业",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

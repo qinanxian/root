@@ -1,0 +1,57 @@
+{
+  "categoryCode": "OTHER",
+  "code": "Relate",
+  "name": "关系",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "配偶",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "父母",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "子女",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "04",
+      "name": "兄弟姐妹",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "05",
+      "name": "朋友",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "06",
+      "name": "同事",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "07",
+      "name": "同学",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "08",
+      "name": "其他",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

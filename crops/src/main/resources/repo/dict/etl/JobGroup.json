@@ -1,0 +1,27 @@
+{
+  "categoryCode": "etl",
+  "code": "JobGroup",
+  "name": "任务分组",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "etl1",
+      "name": "ETL-1",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "etl2",
+      "name": "ETL-2",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "timer",
+      "name": "定时任务",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

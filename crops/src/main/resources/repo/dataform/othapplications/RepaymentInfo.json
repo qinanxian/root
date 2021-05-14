@@ -1,0 +1,112 @@
+{
+  "id": "othapplications-RepaymentInfo",
+  "pack": "othapplications",
+  "code": "RepaymentInfo",
+  "name": "还款信息",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_REPAYMENT_INFO",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "CONTRACT_ID= :contractId",
+    "from": "ZRY_REPAYMENT_INFO",
+    "orderBy": "REPAMENT_DATE desc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-RepaymentInfo",
+      "code": "repamentQuota",
+      "name": "还款金额",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0000",
+      "column": "REPAMENT_QUOTA",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-RepaymentInfo",
+      "code": "repamentStatus",
+      "name": "还款状态",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true,
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "RepaymentStatus"
+      },
+      "sortCode": "0010",
+      "column": "REPAMENT_STATUS",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-RepaymentInfo",
+      "code": "repamentDate",
+      "name": "还款日期",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Label",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "REPAMENT_DATE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-RepaymentInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": []
+}

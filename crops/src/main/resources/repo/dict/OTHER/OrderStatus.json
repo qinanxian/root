@@ -1,0 +1,33 @@
+{
+  "categoryCode": "OTHER",
+  "code": "OrderStatus",
+  "name": "卡单状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "01",
+      "name": "审批中",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "02",
+      "name": "通过",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "03",
+      "name": "拒绝",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "04",
+      "name": "退回重填",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

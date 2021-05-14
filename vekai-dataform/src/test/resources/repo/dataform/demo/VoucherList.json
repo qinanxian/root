@@ -1,0 +1,306 @@
+{
+  "id": "demo-VoucherList",
+  "pack": "demo",
+  "code": "VoucherList",
+  "name": "记账凭证列表",
+  "tags": "记账凭证列表",
+  "description": "记账凭证列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_VOUCHER",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "BOOK_CODE=:bookCode",
+    "from": "FISC_VOUCHER",
+    "orderBy": "VOUCHER_ID DESC"
+  },
+  "elements": [
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "voucherSeqNo",
+      "name": "序号",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "VOUCHER_SEQ_NO",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "voucherId",
+      "name": "凭证编号",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0001",
+      "column": "VOUCHER_ID",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "periodYear",
+      "name": "年份",
+      "group": null,
+      "dataType": "Integer",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Integer",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "colspan": 1
+      },
+      "sortCode": "0002",
+      "column": "PERIOD_YEAR",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "periodTerm",
+      "name": "期间",
+      "group": null,
+      "dataType": "Integer",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Integer",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "colspan": 1
+      },
+      "sortCode": "0003",
+      "column": "PERIOD_TERM",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "voucherGenerateDate",
+      "name": "凭证生成日期",
+      "group": null,
+      "dataType": "Date",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"120px\"}"
+      },
+      "sortCode": "0004",
+      "column": "VOUCHER_GENERATE_DATE",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "wordNo",
+      "name": "字号",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "colspan": 1
+      },
+      "sortCode": "0005",
+      "column": "''",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "voucherWord",
+      "name": "凭证字",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0006",
+      "column": "VOUCHER_WORD",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "voucherNo",
+      "name": "凭证号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0007",
+      "column": "VOUCHER_NO",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "entryNote",
+      "name": "摘要",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "colspan": 1
+      },
+      "sortCode": "0008",
+      "column": "ENTRY_NOTE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "currency",
+      "name": "币种",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Currency"
+      },
+      "sortCode": "0009",
+      "column": "CURRENCY",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherList",
+      "code": "debitAmt",
+      "name": "金额",
+      "group": null,
+      "dataType": "Double",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Currency",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "DEBIT_AMT",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "2"
+    }
+  ],
+  "filters": [
+    {
+      "name": "凭证编号",
+      "code": "voucherId",
+      "bindFor": "voucherId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "年份",
+      "code": "periodYear",
+      "bindFor": "periodYear",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0001"
+    },
+    {
+      "name": "期间",
+      "code": "periodTerm",
+      "bindFor": "periodTerm",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0002"
+    },
+    {
+      "name": "摘要",
+      "code": "entryNote",
+      "bindFor": "entryNote",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0003"
+    },
+    {
+      "name": "金额",
+      "code": "debitAmt",
+      "bindFor": "debitAmt",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Range",
+      "sortCode": "0004"
+    },
+    {
+      "name": "凭证号",
+      "code": "voucherNo",
+      "bindFor": "voucherNo",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0005"
+    }
+  ]
+}

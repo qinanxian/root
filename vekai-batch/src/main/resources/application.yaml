@@ -1,0 +1,22 @@
+server:
+  context-path: /rsc  #register services center
+  port: 1111
+  sessionTimeout: 30
+
+
+spring:
+  profiles:
+    include: ["dev"]
+  autoconfigure:
+    exclude: [org.activiti.spring.boot.SecurityAutoConfiguration,org.activiti.spring.boot.JpaProcessEngineAutoConfiguration,org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration]
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #不向注册中心注册自己
+    fetch-registry: false       #由于注册中心职责就是维护服务实例，它并不需要去检索服务，设置成false
+    service-url:
+      defaultZone: "http://${eureka.instance.hostname}:${server.port}${server.context-path}/eureka"
+

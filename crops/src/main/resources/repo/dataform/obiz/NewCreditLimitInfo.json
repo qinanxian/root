@@ -1,0 +1,189 @@
+{
+  "id": "obiz-NewCreditLimitInfo",
+  "pack": "obiz",
+  "code": "NewCreditLimitInfo",
+  "name": "创建新申请",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "OBIZ_CREDIT_LIMIT"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "name": "申请产品",
+      "code": "policyId",
+      "dataType": "String",
+      "column": "POLICY_ID",
+      "elementUIHint": {
+        "editStyle": "Cascader",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT POLICY_ID AS CODE,POLICY_NAME AS NAME,SORT_CODE AS SORT_CODE FROM polc_definition where POLICY_STATUS='VALID' AND POLICY_CODE LIKE 'L-%' order by SORT_CODE ASC",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "code": "custId",
+      "name": "授信客户号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 2,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "CUST_ID",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "name": "授信客户",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "name": "授信额度",
+      "code": "limitSum",
+      "dataType": "Double",
+      "column": "LIMIT_SUM",
+      "elementUIHint": {
+        "editStyle": "Currency",
+        "dataFormat": "Currency",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Right"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "name": "额度号",
+      "code": "limitId",
+      "dataType": "String",
+      "column": "LIMIT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "name": "显示模板",
+      "code": "dataformId",
+      "dataType": "String",
+      "column": "DATAFORM_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-NewCreditLimitInfo",
+      "name": "额度状态",
+      "code": "limitStatus",
+      "dataType": "String",
+      "column": "LIMIT_STATUS",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "CreditLimitStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "defaultValue": "DRAFT",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.obiz.creditlimit.handler.NewCreditLimitInfoHandler",
+  "dataModel": "OBIZ_CREDIT_LIMIT"
+}

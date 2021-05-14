@@ -1,0 +1,105 @@
+{
+  "id": "insure-NetWorkList",
+  "pack": "insure",
+  "code": "NetWorkList",
+  "name": "网点列表",
+  "managedByRR": false,
+  "tags": "BX_NET_COMPANY_REL",
+  "dataModelType": "DataMap",
+  "dataModel": "BX_NET_COMPANY_REL",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "bx.COM_ID = :id",
+    "from": "BX_NET_COMPANY_REL bx"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-NetWorkList",
+      "name": "保险公司编号",
+      "code": "comId",
+      "dataType": "String",
+      "column": "COM_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "bx",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-NetWorkList",
+      "name": "网点编号",
+      "code": "netId",
+      "dataType": "String",
+      "column": "NET_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "bx",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-NetWorkList",
+      "name": "网点名称/二级支行",
+      "code": "netName",
+      "dataType": "String",
+      "column": "NET_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": [
+    {
+      "name": "网点名称",
+      "code": "netName",
+      "bindFor": "netName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "code" : "RateAppearMode",
+  "name" : "利率表现形式",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "10050",
+  "intro" : null,
+  "items" : [ {
+    "code" : "Indication",
+    "name" : "明示利率",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Implication",
+    "name" : "隐含利率",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

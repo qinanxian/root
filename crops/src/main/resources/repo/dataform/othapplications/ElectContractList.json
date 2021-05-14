@@ -1,0 +1,257 @@
+{
+  "id": "othapplications-ElectContractList",
+  "pack": "othapplications",
+  "code": "ElectContractList",
+  "name": "电子合同列表",
+  "managedByRR": false,
+  "tags": "ELECTRONIC_CONTRACT",
+  "dataModelType": "DataMap",
+  "dataModel": "ELECTRONIC_CONTRACT",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "ELECTRONIC_CONTRACT elect,\nAUTH_ORG B",
+    "where": "elect.MANAGER_CODE = B.ID \r\nAND LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',B.SORT_CODE),'/'))>0",
+    "orderBy": "elect.TIME desc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "name": "贷款金额",
+      "code": "loanAmt",
+      "dataType": "Double",
+      "column": "LOAN_AMT",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "name": "状态",
+      "code": "state",
+      "dataType": "String",
+      "column": "STATE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "StateData"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "name": "归属客户经理",
+      "code": "oa",
+      "dataType": "String",
+      "column": "OA",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "code": "pdfFileId",
+      "name": "PDF文件id",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0060",
+      "column": "PDF_FILE_ID",
+      "table": "elect",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-ElectContractList",
+      "code": "pdfFileName",
+      "name": "PDF电子合同",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0070",
+      "column": "''",
+      "table": "elect",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": [
+    {
+      "name": "姓名",
+      "code": "certName",
+      "bindFor": "certName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "身份证号",
+      "code": "certId",
+      "bindFor": "certId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "归属客户经理",
+      "code": "oa",
+      "bindFor": "oa",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0020"
+    },
+    {
+      "name": "状态",
+      "code": "state",
+      "bindFor": "state",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0030"
+    }
+  ]
+}

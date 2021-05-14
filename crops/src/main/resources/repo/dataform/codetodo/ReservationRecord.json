@@ -1,0 +1,296 @@
+{
+  "id": "codetodo-ReservationRecord",
+  "pack": "codetodo",
+  "code": "ReservationRecord",
+  "name": "预约取号记录",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "MSB_RECORD_INFO,WECHAT_INFO,CUSTOMER_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "T1.NETWORK_NO IN(SELECT A.NETWORK_NO FROM MSB_RECORD_INFO A,AUTH_ORG B\r\n\t\t\tWHERE\r\n\t\t\tA.NETWORK_NO = B.CODE AND\r\n\t\t\tLOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',B.SORT_CODE),'/'))>0) AND\r\n T1.NETWORK_NO=T4.ID and T1.CUSTOMER_ID= T2.CUSTOMER_ID  and t2.CUSTOMER_ID= T3.ID and T1.RECORD_TYPE= :recordType",
+    "from": "MSB_RECORD_INFO T1,WECHAT_INFO T2,CUSTOMER_INFO T3,AUTH_ORG T4",
+    "orderBy": "T1.CREATED_TIME Desc"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "序号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "昵称",
+      "code": "nickName",
+      "dataType": "String",
+      "column": "NICK_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "T2",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "证件号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "T3",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "客户类型",
+      "code": "isVip",
+      "dataType": "String",
+      "column": "IS_VIP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "IsVip"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "T3",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "手机",
+      "code": "tel",
+      "dataType": "String",
+      "column": "TEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "T3",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "业务类型",
+      "code": "businessType",
+      "dataType": "String",
+      "column": "BUSINESS_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "BusinessType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "取号网点",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "table": "T4",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "取号网点",
+      "code": "networkNo",
+      "dataType": "String",
+      "column": "NETWORK_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "取号状态",
+      "code": "recordStatus",
+      "dataType": "String",
+      "column": "RECORD_STATUS",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "NumberStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "table": "T1",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "预约日期",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "预约时间段",
+      "code": "appointTime",
+      "dataType": "String",
+      "column": "APPOINT_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "T1"
+    },
+    {
+      "dataformId": "codetodo-ReservationRecord",
+      "name": "取号类别",
+      "code": "recordType",
+      "dataType": "String",
+      "column": "RECORD_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "NumberType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "table": "T1",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "网点名称",
+      "code": "name",
+      "bindFor": "name",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "业务类型",
+      "code": "businessType",
+      "bindFor": "businessType",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0010"
+    }
+  ]
+}

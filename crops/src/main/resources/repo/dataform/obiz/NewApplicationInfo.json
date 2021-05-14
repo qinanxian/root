@@ -1,0 +1,228 @@
+{
+  "id": "obiz-NewApplicationInfo",
+  "pack": "obiz",
+  "code": "NewApplicationInfo",
+  "name": "创建个人业务新申请",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "OBIZ_APPLICATION"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "申请产品",
+      "code": "policyId",
+      "dataType": "String",
+      "column": "POLICY_ID",
+      "elementUIHint": {
+        "editStyle": "Cascader",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT POLICY_ID AS CODE,POLICY_NAME AS NAME,SORT_CODE AS SORT_CODE FROM polc_definition where POLICY_STATUS='VALID' AND POLICY_CODE LIKE 'B-I-%' order by SORT_CODE ASC",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "贷款人",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "身份证号",
+      "code": "custCertId",
+      "dataType": "String",
+      "column": "CUST_CERT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "手机号",
+      "code": "custCellphone",
+      "dataType": "String",
+      "column": "CUST_CELLPHONE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "申请金额",
+      "code": "applyAmt",
+      "dataType": "Double",
+      "column": "APPLY_AMT",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "申请号",
+      "code": "applicationId",
+      "dataType": "String",
+      "column": "APPLICATION_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "主贷人客户号",
+      "code": "custId",
+      "dataType": "String",
+      "column": "CUST_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "主贷人证件类型",
+      "code": "custCertType",
+      "dataType": "String",
+      "column": "CUST_CERT_TYPE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "obiz-NewApplicationInfo",
+      "name": "是否草稿",
+      "code": "isDraft",
+      "dataType": "String",
+      "column": "IS_DRAFT",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "defaultValue": "Y",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.obiz.application.handler.NewApplicationInfoHandler"
+}

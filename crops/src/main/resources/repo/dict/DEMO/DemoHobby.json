@@ -1,0 +1,39 @@
+{
+  "code" : "DemoHobby",
+  "name" : "爱好",
+  "nameI18nCode" : null,
+  "categoryCode" : "DEMO",
+  "sortCode" : "20",
+  "intro" : null,
+  "items" : [ {
+    "code" : "10",
+    "name" : "打球",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "跑步",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "30",
+    "name" : "游泳",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

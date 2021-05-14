@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule-set>
+    <import-variable-library path="jcr:/测试项目/loan.vl.xml"/>
+    <remark><![CDATA[]]></remark>
+    <rule name="rule">
+        <remark><![CDATA[]]></remark>
+        <if>
+            <and>
+                <atom op="GreaterThenEquals">
+                    <left var-category="贷款人" var="age" var-label="年龄" datatype="Integer" type="variable"/>
+                    <value content="18" type="Input"/>
+                </atom>
+                <or>
+                    <and>
+                        <atom op="GreaterThenEquals">
+                            <left var-category="贷款人" var="entryTime" var-label="现单位入职时间" datatype="Integer" type="variable"/>
+                            <value content="3" type="Input"/>
+                        </atom>
+                        <atom op="LessThen">
+                            <left var-category="贷款人" var="entryTime" var-label="现单位入职时间" datatype="Integer" type="variable"/>
+                            <value content="6" type="Input"/>
+                        </atom>
+                        <or>
+                            <atom op="Equals">
+                                <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                                <value content="北京" type="Input"/>
+                            </atom>
+                            <atom op="Equals">
+                                <left var-category="贷款人" var="workplace" var-label="工作地点" datatype="String" type="variable"/>
+                                <value content="上海" type="Input"/>
+                            </atom>
+                        </or>
+                    </and>
+                    <atom op="GreaterThenEquals">
+                        <left var-category="贷款人" var="entryTime" var-label="现单位入职时间" datatype="Integer" type="variable"/>
+                        <value content="6" type="Input"/>
+                    </atom>
+                </or>
+                <and>
+                    <atom op="NotEquals">
+                        <left var-category="贷款人" var="loanName" var-label="已贷款名称" datatype="String" type="variable"/>
+                        <value content="信义贷" type="Input"/>
+                    </atom>
+                    <atom op="NotEquals">
+                        <left var-category="贷款人" var="loanName" var-label="已贷款名称" datatype="String" type="variable"/>
+                        <value content="鹿城贷" type="Input"/>
+                    </atom>
+                </and>
+            </and>
+        </if>
+        <then>
+            <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                <value content="true" type="Input"/>
+            </var-assign>
+        </then>
+        <else>
+            <var-assign var-category="贷款人" var="loan" var-label="是否可以贷款" datatype="Boolean" type="variable">
+                <value content="false" type="Input"/>
+            </var-assign>
+        </else>
+    </rule>
+</rule-set>

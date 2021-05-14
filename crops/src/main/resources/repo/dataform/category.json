@@ -1,0 +1,85 @@
+{
+  "desc": "该文件为自动生成和维护，请勿手动修改",
+  "modules": [
+    {
+      "code": "bizbook",
+      "name": ""
+    },
+    {
+      "code": "common",
+      "name": ""
+    },
+    {
+      "code": "configuration",
+      "name": ""
+    },
+    {
+      "code": "credit",
+      "name": ""
+    },
+    {
+      "code": "customer",
+      "name": ""
+    },
+    {
+      "code": "demo",
+      "name": ""
+    },
+    {
+      "code": "system",
+      "name": ""
+    },
+    {
+      "code": "thirdpart",
+      "name": ""
+    },
+    {
+      "code": "workflow",
+      "name": ""
+    },
+    {
+      "code": "loan",
+      "name": ""
+    },
+    {
+      "code": "fiscal",
+      "name": "财务记账"
+    },
+    {
+      "code": "obiz",
+      "name": "主营业务"
+    },
+    {
+      "code": "product",
+      "name": ""
+    },
+    {
+      "code": "application",
+      "name": ""
+    },
+    {
+      "code": "business",
+      "name": ""
+    },
+    {
+      "code": "app",
+      "name": ""
+    },
+    {
+      "code": "etl",
+      "name": ""
+    },
+    {
+      "code": "codetodo",
+      "name": "码上办"
+    },
+    {
+      "code": "othapplications",
+      "name": ""
+    },
+    {
+      "code": "insure",
+      "name": "保险需求"
+    }
+  ]
+}

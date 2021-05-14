@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<variable-library>
+    <category name="贷款人" type="Custom" clazz="com.bstek.entity.PeopleInfo">
+        <var act="InOut" name="age" label="年龄" type="Integer"/>
+        <var act="InOut" name="authorization" label="是否有配偶《征信查询授权书》" type="Boolean"/>
+        <var act="InOut" name="background" label="本科及以上学历" type="Boolean"/>
+        <var act="InOut" name="cash" label="是否工资现金发放客户" type="Boolean"/>
+        <var act="InOut" name="entrepreneur" label="是否企业主" type="Boolean"/>
+        <var act="InOut" name="entryTime" label="现单位入职时间" type="Integer"/>
+        <var act="InOut" name="highRiskArea" label="是否高风险地区" type="Boolean"/>
+        <var act="InOut" name="houseLoan" label="房贷记录" type="Boolean"/>
+        <var act="InOut" name="houseProperty" label="是否有当地房产证明" type="Boolean"/>
+        <var act="InOut" name="industryCategory" label="行业分类" type="String"/>
+        <var act="InOut" name="level" label="客户等级(1-4)" type="Integer"/>
+        <var act="InOut" name="loan" label="是否可以贷款" type="Boolean"/>
+        <var act="InOut" name="loanMoney" label="贷款金额" type="Integer"/>
+        <var act="InOut" name="loanName" label="已贷款名称" type="String"/>
+        <var act="InOut" name="manageTime" label="经营时间" type="Integer"/>
+        <var act="InOut" name="marriageCertificate" label="是否有婚姻关系证明" type="Boolean"/>
+        <var act="InOut" name="married" label="婚否" type="Boolean"/>
+        <var act="InOut" name="name" label="姓名" type="String"/>
+        <var act="InOut" name="officer" label="是否军官武警" type="Boolean"/>
+        <var act="InOut" name="officerLevel" label="军官武警等级" type="String"/>
+        <var act="InOut" name="proofIncome" label="收入证明：工作流水/税单" type="Boolean"/>
+        <var act="InOut" name="record" label="人行记录是否为空" type="Boolean"/>
+        <var act="InOut" name="register" label="是否本地户籍" type="Boolean"/>
+        <var act="InOut" name="schoolOrHospitalOfficer" label="是否学校/医院的军官" type="Boolean"/>
+        <var act="InOut" name="socialSecurity" label="是否一年无断档社保" type="Boolean"/>
+        <var act="InOut" name="spouseNoOfficer" label="是否配偶非军职" type="Boolean"/>
+        <var act="InOut" name="spouseProperty" label="是否有配偶收入证明" type="Boolean"/>
+        <var act="InOut" name="statement" label="是否有一年个人/对公的银行流水或税单" type="Boolean"/>
+        <var act="InOut" name="timeLimit" label="贷款期限" type="Integer"/>
+        <var act="InOut" name="workplace" label="工作地点" type="String"/>
+    </category>
+</variable-library>

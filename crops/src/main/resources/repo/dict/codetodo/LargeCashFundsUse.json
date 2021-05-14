@@ -1,0 +1,39 @@
+{
+  "categoryCode": "codetodo",
+  "code": "LargeCashFundsUse",
+  "name": "大额取现资金用途",
+  "intro": "大额取现资金用途",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "工资、奖金及其他福利费支出",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "企业备用金",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "3",
+      "name": "个人经营性支出",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "4",
+      "name": "个人消费性支出",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "9",
+      "name": "其他",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

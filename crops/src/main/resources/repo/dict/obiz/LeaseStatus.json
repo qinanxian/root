@@ -1,0 +1,27 @@
+{
+  "categoryCode": "obiz",
+  "code": "LeaseStatus",
+  "name": "放款状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "STARTED",
+      "name": "发起放款",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "SUCCESS",
+      "name": "放款成功",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "FAILED",
+      "name": "放款失败",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

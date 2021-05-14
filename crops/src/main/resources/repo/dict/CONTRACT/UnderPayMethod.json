@@ -1,0 +1,29 @@
+{
+  "code" : "UnderPayMethod",
+  "name" : "合同下业务支付方式",
+  "nameI18nCode" : null,
+  "categoryCode" : "CONTRACT",
+  "sortCode" : "10040",
+  "intro" : null,
+  "items" : [ {
+    "code" : "10",
+    "name" : "自主支付",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "受托支持",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "system-UserAddOrg",
+  "pack": "system",
+  "code": "UserAddOrg",
+  "name": "用户添加机构",
+  "dataModelType": "JavaBean",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "AUTH_USER_ORG AUO"
+  },
+  "elements": [
+    {
+      "dataformId": "system-UserAddOrg",
+      "name": "机构ID",
+      "code": "orgId",
+      "dataType": "String",
+      "column": "ORG_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "AUO",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UserAddOrg",
+      "name": "用户ID",
+      "code": "userId",
+      "dataType": "String",
+      "column": "USER_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "AUO",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UserAddOrg",
+      "name": "机构名",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "table": "",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-UserAddOrg",
+      "name": "是否主机构",
+      "code": "isMain",
+      "dataType": "String",
+      "column": "IS_MAIN",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": false,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "YesNo"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "table": "AUO",
+      "defaultValue": "N"
+    }
+  ],
+  "tags": "用户添加机构",
+  "description": "用户添加机构",
+  "filters": [],
+  "dataModel": "com.vekai.auth.entity.UserOrg",
+  "handler": ""
+}

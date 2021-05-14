@@ -1,0 +1,246 @@
+{
+  "id": "othapplications-FilingContractInfo",
+  "pack": "othapplications",
+  "code": "FilingContractInfo",
+  "name": "备案合同信息详情",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_FILING_CONTRACT_INFO",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "ZRY_FILING_CONTRACT_INFO",
+    "where": "LOAN_ID= :loanId"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "loanId",
+      "name": "申贷编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "LOAN_ID",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "bidNum",
+      "name": "融资标的ID",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0010",
+      "column": "BID_NUM",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "contractId",
+      "name": "合同编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0020",
+      "column": "CONTRACT_ID",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "proofDocCode",
+      "name": "统一社会信用代码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0030",
+      "column": "PROOF_DOC_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "contractName",
+      "name": "合同名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0040",
+      "column": "CONTRACT_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "contractAmount",
+      "name": "合同金额",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0050",
+      "column": "CONTRACT_AMOUNT",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "bankBranch",
+      "name": "开户银行",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0060",
+      "column": "BANK_BRANCH",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "purchasename",
+      "name": "采购人名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0070",
+      "column": "PURCHASENAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "signDate",
+      "name": "签订日期",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "sortCode": "0080",
+      "column": "SIGN_DATE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractInfo",
+      "code": "lockState",
+      "name": "锁定状态",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "LockState",
+        "readonly": true
+      },
+      "sortCode": "0090",
+      "column": "LOCK_STATE",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

@@ -1,0 +1,6 @@
+
+#spring:
+#  autoconfigure.exclude: org.apache.shiro.spring.config.web.autoconfigure.ShiroAnnotationProcessorAutoConfiguration
+shiro:
+  loginUrl: /public/logon
+#  successUrl: http://localhost:3004

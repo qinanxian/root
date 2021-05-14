@@ -1,0 +1,27 @@
+{
+  "categoryCode": "codetodo",
+  "code": "GeneralBusinessTime",
+  "name": "营业时间",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "周一至周五",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "周六",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0003",
+      "name": "周日",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

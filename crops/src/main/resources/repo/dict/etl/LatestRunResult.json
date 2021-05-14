@@ -1,0 +1,21 @@
+{
+  "categoryCode": "etl",
+  "code": "LatestRunResult",
+  "name": "上次运行结果",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "succeed",
+      "name": "成功",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "failed",
+      "name": "失败",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "id": "othapplications-FilingContractList",
+  "pack": "othapplications",
+  "code": "FilingContractList",
+  "name": "备案合同信息管理列表",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_FILING_CONTRACT_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "ZRY_FILING_CONTRACT_INFO"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "loanId",
+      "name": "申贷编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "LOAN_ID",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "bidNum",
+      "name": "融资标的ID",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "BID_NUM",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "contractId",
+      "name": "合同编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "CONTRACT_ID",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "proofDocCode",
+      "name": "统一社会信用代码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0030",
+      "column": "PROOF_DOC_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "contractName",
+      "name": "合同名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0040",
+      "column": "CONTRACT_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "contractAmount",
+      "name": "合同金额",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0050",
+      "column": "CONTRACT_AMOUNT",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "bankBranch",
+      "name": "开户银行",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0060",
+      "column": "BANK_BRANCH",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "purchasename",
+      "name": "采购人名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0070",
+      "column": "PURCHASENAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "signDate",
+      "name": "签订日期",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0080",
+      "column": "SIGN_DATE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FilingContractList",
+      "code": "lockState",
+      "name": "锁定状态",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "LockState"
+      },
+      "sortCode": "0090",
+      "column": "LOCK_STATE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": [
+    {
+      "name": "申贷编号",
+      "code": "loanId",
+      "bindFor": "loanId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    }
+  ]
+}

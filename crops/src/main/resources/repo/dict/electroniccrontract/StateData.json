@@ -1,0 +1,21 @@
+{
+  "categoryCode": "electroniccrontract",
+  "code": "StateData",
+  "name": "确认状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0",
+      "name": "未完成",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "1",
+      "name": "已完成",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

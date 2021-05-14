@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<variable-library>
+    <category name="个人信用" type="Custom" clazz="com.vekai.showcase.rules.bom.PersonCreditBOM">
+        <var act="InOut" name="activeCreditCardCount" label="正在使用的信用卡数量" type="Integer"/>
+        <var act="InOut" name="activeCreditCardTotalAmt" label="未销户信用卡总额度" type="Double"/>
+        <var act="InOut" name="age" label="年龄" type="Integer"/>
+        <var act="InOut" name="applyCreditCardCountIn6m" label="半年内是否申请信用卡" type="String"/>
+        <var act="InOut" name="birth" label="出生日期" type="Date"/>
+        <var act="InOut" name="carStatus" label="购车状况" type="String"/>
+        <var act="InOut" name="companyNature" label="单位性质" type="String"/>
+        <var act="InOut" name="createdBy" label="创建人" type="String"/>
+        <var act="InOut" name="createdTime" label="创建时间" type="Date"/>
+        <var act="InOut" name="creditOverdraftRatio" label="信用卡透支比例" type="Double"/>
+        <var act="InOut" name="creditReportQueryCount" label="信用报告查询情况" type="String"/>
+        <var act="InOut" name="debtRatio" label="负债率" type="Double"/>
+        <var act="InOut" name="degree" label="最高学历" type="String"/>
+        <var act="InOut" name="gender" label="性别" type="String"/>
+        <var act="InOut" name="houseStatus" label="房产状况" type="String"/>
+        <var act="InOut" name="id" label="评级号" type="String"/>
+        <var act="InOut" name="incomeAmt" label="收入" type="Double"/>
+        <var act="InOut" name="isLocalCensus" label="是否本地户籍" type="String"/>
+        <var act="InOut" name="jobGrade" label="职称" type="String"/>
+        <var act="InOut" name="marital" label="婚姻状况" type="String"/>
+        <var act="InOut" name="overdue12mSeries2" label="不良信用连二" type="String"/>
+        <var act="InOut" name="overdue12mTotal3" label="不良信用累三" type="String"/>
+        <var act="InOut" name="overdue24mSeries3" label="不良信用连三" type="String"/>
+        <var act="InOut" name="overdue24mTotal6" label="不良信用累六" type="String"/>
+        <var act="InOut" name="personName" label="姓名" type="String"/>
+        <var act="InOut" name="repaymentStatus" label="贷款还款情况" type="String"/>
+        <var act="InOut" name="revision" label="乐观锁" type="Integer"/>
+        <var act="InOut" name="salaryPayChannel" label="发薪方式" type="String"/>
+        <var act="InOut" name="updatedBy" label="更新人" type="String"/>
+        <var act="InOut" name="updatedTime" label="更新时间" type="Date"/>
+    </category>
+</variable-library>

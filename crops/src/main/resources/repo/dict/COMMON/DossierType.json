@@ -1,0 +1,27 @@
+{
+  "categoryCode": "COMMON",
+  "code": "DossierType",
+  "name": "资料库种类",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "DOSSER",
+      "name": "附件清单",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "INQUIRE",
+      "name": "调查报告",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "CONTRACT_DOC",
+      "name": "合同文本",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

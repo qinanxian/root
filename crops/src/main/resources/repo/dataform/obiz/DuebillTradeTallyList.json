@@ -1,0 +1,492 @@
+{
+  "id": "obiz-DuebillTradeTallyList",
+  "pack": "obiz",
+  "code": "DuebillTradeTallyList",
+  "name": "借据流水列表",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "DUEBILL_ID=:duebillId",
+    "from": "OBIZ_TRADE_TALLY",
+    "orderBy": "TRADE_ID ASC"
+  },
+  "elements": [
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "流水号",
+      "code": "tradeId",
+      "dataType": "String",
+      "column": "TRADE_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "发生时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "Date",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "交易事件",
+      "code": "tradeEvent",
+      "dataType": "String",
+      "column": "TRADE_EVENT",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "select EVENT_DEF AS CODE,EVENT_NAME AS NAME from CONF_FISC_EVENT"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "交易类型",
+      "code": "tradeType",
+      "dataType": "String",
+      "column": "TRADE_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "交易摘要",
+      "code": "tradeIntro",
+      "dataType": "String",
+      "column": "TRADE_INTRO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "申请号",
+      "code": "applicationId",
+      "dataType": "String",
+      "column": "APPLICATION_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "业务编号",
+      "code": "businessNo",
+      "dataType": "String",
+      "column": "BUSINESS_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "合同号",
+      "code": "contractId",
+      "dataType": "String",
+      "column": "CONTRACT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "借据号",
+      "code": "duebillId",
+      "dataType": "String",
+      "column": "DUEBILL_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "客户号",
+      "code": "custId",
+      "dataType": "String",
+      "column": "CUST_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "客户名",
+      "code": "custName",
+      "dataType": "String",
+      "column": "CUST_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "测算表ID",
+      "code": "lactLoanId",
+      "dataType": "String",
+      "column": "LACT_LOAN_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "银行卡号",
+      "code": "bankCardNo",
+      "dataType": "String",
+      "column": "BANK_CARD_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "开户行",
+      "code": "bankCardIssuer",
+      "dataType": "String",
+      "column": "BANK_CARD_ISSUER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "开户名",
+      "code": "bankCardOwner",
+      "dataType": "String",
+      "column": "BANK_CARD_OWNER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "交易金额",
+      "code": "tradeAmt",
+      "dataType": "Double",
+      "column": "TRADE_AMT",
+      "elementUIHint": {
+        "dataFormat": "Double",
+        "editStyle": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "科目代码",
+      "code": "entryCode",
+      "dataType": "String",
+      "column": "ENTRY_CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "科目名",
+      "code": "entryName",
+      "dataType": "String",
+      "column": "ENTRY_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0170",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "借贷方向",
+      "code": "direction",
+      "dataType": "String",
+      "column": "DIRECTION",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "ChargeupDirection"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0180",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "数据来源",
+      "code": "dataFrom",
+      "dataType": "String",
+      "column": "DATA_FROM",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0190",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0200",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0210",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0220",
+      "validatorList": []
+    },
+    {
+      "dataformId": "obiz-DuebillTradeTallyList",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0230",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

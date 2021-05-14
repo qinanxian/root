@@ -1,0 +1,27 @@
+{
+  "categoryCode": "obiz",
+  "code": "DuebillStatus",
+  "name": "借据状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "READY",
+      "name": "待生效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "EFFECT",
+      "name": "已生效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "CLOSED",
+      "name": "已结清",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

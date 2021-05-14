@@ -1,0 +1,32 @@
+import java.text.SimpleDateFormat
+import java.text.ParseException
+import java.lang.Number
+import java.math.BigDecimal
+
+def to_date(_date,format){
+    return (new SimpleDateFormat(format)).parse(_date)
+}
+def to_number(_value){
+    if(_value instanceof String){
+        return Double.valueOf(_value)
+    }else if(_value instanceof Number){
+        return ((Number)_value).doubleValue()
+    }
+    return _value;
+}
+def is_in_str(_str, _strs){
+    strs = _strs.split(',')
+    return (_str in strs)
+}
+def starts_with(str1,str2){
+    return str1.startsWith(str2)
+}
+def min(Number ...args){
+    args.min()
+}
+def max(Number ...args){
+    args.max()
+}
+def abs(Number arg){
+    Math.abs(arg.doubleValue())
+}

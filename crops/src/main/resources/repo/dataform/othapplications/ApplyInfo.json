@@ -1,0 +1,73 @@
+{
+  "id": "othapplications-ApplyInfo",
+  "pack": "othapplications",
+  "code": "ApplyInfo",
+  "name": "应用详情",
+  "managedByRR": false,
+  "tags": "详情",
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_APPLY_PRODUCT",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "QCFQ_APPLY_PRODUCT",
+    "where": "PRODUCT_NAME = :productName",
+    "orderBy": ""
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-ApplyInfo",
+      "name": "序号",
+      "code": "productId",
+      "dataType": "String",
+      "column": "PRODUCT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "enable": false,
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "0",
+      "defaultValue": ""
+    },
+    {
+      "dataformId": "othapplications-ApplyInfo",
+      "name": "产品名称",
+      "code": "productName",
+      "dataType": "String",
+      "column": "PRODUCT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "0"
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.othApplications.qcfq.handler.ApplyHandler"
+}

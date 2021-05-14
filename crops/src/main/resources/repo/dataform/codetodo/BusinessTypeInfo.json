@@ -1,0 +1,260 @@
+{
+  "id": "codetodo-BusinessTypeInfo",
+  "pack": "codetodo",
+  "code": "BusinessTypeInfo",
+  "name": "业务类型详情",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "MSB_BUSINESS_TYPE",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "ID = :businessTypeId",
+    "from": "MSB_BUSINESS_TYPE"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "业务类型名称",
+      "code": "businessTypeName",
+      "dataType": "String",
+      "column": "BUSINESS_TYPE_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": false,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "htmlStyle": "{\"width\":\"216.6px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "温馨提示",
+      "code": "tip",
+      "dataType": "String",
+      "column": "TIP",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "htmlStyle": "{\"minHeight\":\"90px\",\"minWidth\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "业务可办理渠道",
+      "code": "channel",
+      "dataType": "String",
+      "column": "CHANNEL",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "htmlStyle": "{\"minHeight\":\"90px\",\"minWidth\":\"300px\",\"margin-bottom\":\"3px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "业务图标",
+      "code": "businessIcon",
+      "dataType": "String",
+      "column": "BUSINESS_ICON",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"216.6px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "删除标识",
+      "code": "deleteFlag",
+      "dataType": "String",
+      "column": "DELETE_FLAG",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "IsDeleted",
+        "readonly": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "乐观锁",
+      "code": "revision",
+      "dataType": "Integer",
+      "column": "REVISION",
+      "elementUIHint": {
+        "dataFormat": "Integer",
+        "editStyle": "Integer",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "创建人",
+      "code": "createdBy",
+      "dataType": "String",
+      "column": "CREATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "创建时间",
+      "code": "createdTime",
+      "dataType": "Date",
+      "column": "CREATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "更新人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-BusinessTypeInfo",
+      "name": "更新时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.codetodo.handler.BusinessTypeHandler"
+}

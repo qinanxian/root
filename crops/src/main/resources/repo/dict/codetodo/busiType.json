@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "busiType",
+  "name": "应用类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "BT01",
+      "name": "内部应用",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "BT02",
+      "name": "外部应用",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "othapplications-UpdateRepaymentInfo",
+  "pack": "othapplications",
+  "code": "UpdateRepaymentInfo",
+  "name": "修改还款信息",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ZRY_REPAYMENT_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "ID = :id",
+    "from": "ZRY_REPAYMENT_INFO"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-UpdateRepaymentInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "primaryKey": true
+    },
+    {
+      "dataformId": "othapplications-UpdateRepaymentInfo",
+      "name": "申贷编号",
+      "code": "loanId",
+      "dataType": "String",
+      "column": "LOAN_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-UpdateRepaymentInfo",
+      "name": "采购合同编号",
+      "code": "contractId",
+      "dataType": "String",
+      "column": "CONTRACT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-UpdateRepaymentInfo",
+      "name": "还款金额",
+      "code": "repamentQuota",
+      "dataType": "String",
+      "column": "REPAMENT_QUOTA",
+      "elementUIHint": {
+        "editStyle": "Currency",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "eventExpr": "",
+        "htmlStyle": "{\"minWidth\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-UpdateRepaymentInfo",
+      "name": "还款状态",
+      "code": "repamentStatus",
+      "dataType": "String",
+      "column": "REPAMENT_STATUS",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "RepaymentStatus",
+        "htmlStyle": "{\"minWidth\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-UpdateRepaymentInfo",
+      "name": "还款日期",
+      "code": "repamentDate",
+      "dataType": "String",
+      "column": "REPAMENT_DATE",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"200px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": []
+}

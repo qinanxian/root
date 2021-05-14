@@ -1,0 +1,27 @@
+{
+  "categoryCode": "codetodo",
+  "code": "RealType",
+  "name": "图片表的关联类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "一般网点",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "自助银行",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0003",
+      "name": "业务类型",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

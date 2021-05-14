@@ -1,0 +1,29 @@
+{
+  "code" : "CurrencyUnit",
+  "name" : "金额单位",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "00100392",
+  "intro" : "金额单位",
+  "items" : [ {
+    "code" : "Y",
+    "name" : "元",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0010",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "1"
+  }, {
+    "code" : "L",
+    "name" : "万元",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0030",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "10000"
+  } ]
+}

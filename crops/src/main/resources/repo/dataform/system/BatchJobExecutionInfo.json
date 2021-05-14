@@ -1,0 +1,246 @@
+{
+  "id": "system-BatchJobExecutionInfo",
+  "pack": "system",
+  "code": "BatchJobExecutionInfo",
+  "name": "作业执行详情",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "BATCH_JOB_EXECUTION BJE",
+    "where": "BJE.JOB_INSTANCE_ID =:jobExecutionId ",
+    "orderBy": ""
+  },
+  "elements": [
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "执行器ID",
+      "code": "jobExecutionId",
+      "dataType": "String",
+      "column": "JOB_EXECUTION_ID",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "开始执行时间",
+      "code": "startTime",
+      "dataType": "String",
+      "column": "START_TIME",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "Date",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "执行器结束时间",
+      "code": "endTime",
+      "dataType": "String",
+      "column": "END_TIME",
+      "table": "BJE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "执行的状态",
+      "code": "status",
+      "dataType": "String",
+      "column": "STATUS",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "作业实例ID",
+      "code": "jobInstanceId",
+      "dataType": "String",
+      "column": "JOB_INSTANCE_ID",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "版本号",
+      "code": "version",
+      "dataType": "String",
+      "column": "VERSION",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "执行器退出代码",
+      "code": "exitCode",
+      "dataType": "String",
+      "column": "EXIT_CODE",
+      "table": "BJE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "执行器退出信息",
+      "code": "exitMessage",
+      "dataType": "String",
+      "column": "EXIT_MESSAGE",
+      "table": "BJE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "创建时间",
+      "code": "createTime",
+      "dataType": "Date",
+      "column": "CREATE_TIME",
+      "table": "BJE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-BatchJobExecutionInfo",
+      "name": "更新时间",
+      "code": "lastUpdated",
+      "dataType": "String",
+      "column": "LAST_UPDATED",
+      "table": "BJE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    }
+  ],
+  "dataModel": "",
+  "filters": []
+}

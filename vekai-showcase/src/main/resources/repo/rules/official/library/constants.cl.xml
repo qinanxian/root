@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constant-library>
+    <category name="gender" label="性别">
+        <constant name="true" label="男" type="String"/>
+        <constant name="false" label="女" type="String"/>
+    </category>
+    <category name="result" label="血压评点结果">
+        <constant name="咨询再保公司" label="咨询再保公司" type="String"/>
+        <constant name="咨询首席核保师" label="咨询首席核保师" type="String"/>
+        <constant name="拒保" label="拒保" type="String"/>
+        <constant name="延期" label="延期" type="String"/>
+        <constant name="0" label="0" type="String"/>
+        <constant name="25" label="25" type="String"/>
+        <constant name="50" label="50" type="String"/>
+        <constant name="75" label="75" type="String"/>
+        <constant name="100" label="100" type="String"/>
+        <constant name="125" label="125" type="String"/>
+        <constant name="150" label="150" type="String"/>
+        <constant name="175" label="175" type="String"/>
+        <constant name="200" label="200" type="String"/>
+    </category>
+</constant-library>

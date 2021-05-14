@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "IsDeleted",
+  "name": "是否删除",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "已删除",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "未删除",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

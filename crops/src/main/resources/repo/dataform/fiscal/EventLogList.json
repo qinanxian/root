@@ -1,0 +1,134 @@
+{
+  "id": "fiscal-EventLogList",
+  "pack": "fiscal",
+  "code": "EventLogList",
+  "name": "事件日志列表",
+  "tags": "事件日志列表",
+  "description": "事件日志列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_EVENT",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "FISC_EVENT E",
+    "orderBy": "EVENT_ID desc",
+    "where": "EXISTS\n        (SELECT 1 FROM FISC_EVENT_PARAM P\n        WHERE P.EVENT_ID=E.EVENT_ID\n        AND P.ITEM_CODE='contractId'\n        AND P.STR_VALUE=:contractId)"
+  },
+  "elements": [
+    {
+      "dataformId": "fiscal-EventLogList",
+      "code": "eventId",
+      "name": "事件编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": ""
+      },
+      "sortCode": "0000",
+      "column": "EVENT_ID",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "fiscal-EventLogList",
+      "code": "eventName",
+      "name": "事件名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": ""
+      },
+      "sortCode": "0001",
+      "column": "EVENT_NAME",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "fiscal-EventLogList",
+      "code": "occurTime",
+      "name": "业务发生时间",
+      "group": "",
+      "dataType": "Date",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "DateTime",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": ""
+      },
+      "sortCode": "0002",
+      "column": "OCCUR_TIME",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "fiscal-EventLogList",
+      "code": "eventSummary",
+      "name": "事件摘要",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0003",
+      "column": "EVENT_SUMMARY",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "事件编号",
+      "code": "eventId",
+      "bindFor": "eventId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "事件名称",
+      "code": "eventName",
+      "bindFor": "eventName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0001"
+    }
+  ]
+}

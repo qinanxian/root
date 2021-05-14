@@ -1,0 +1,39 @@
+{
+  "categoryCode": "OTHER",
+  "code": "Time_Limit",
+  "name": "时间选项",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "12个月",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "24个月",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "3",
+      "name": "36个月",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "4",
+      "name": "48个月",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "5",
+      "name": "60个月",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

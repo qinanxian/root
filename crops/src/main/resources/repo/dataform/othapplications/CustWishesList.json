@@ -1,0 +1,261 @@
+{
+  "id": "othapplications-CustWishesList",
+  "pack": "othapplications",
+  "code": "CustWishesList",
+  "name": "客户意愿列表",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "ELECTRONIC_INTEND",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "ELECTRONIC_INTEND elect,\nAUTH_ORG B",
+    "where": "elect.MANAGER_CODE = B.ID \r\nAND LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',B.SORT_CODE),'/'))>0",
+    "orderBy": "elect.CREATION_TIME desc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null,
+      "primaryKey": true,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "code": "borrowerType",
+      "name": "借款人类型",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "BorrowerType"
+      },
+      "sortCode": "0010",
+      "column": "BORROWER_TYPE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "企业名称",
+      "code": "enterpriseName",
+      "dataType": "String",
+      "column": "ENTERPRISE_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "申请状态",
+      "code": "currentState",
+      "dataType": "String",
+      "column": "CURRENT_STATE",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "CurrentState"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": null,
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "经办人和法人是否一致",
+      "code": "areConsistent",
+      "dataType": "String",
+      "column": "ARE_CONSISTENT",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Center",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "AreConsistent"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "table": "elect"
+    },
+    {
+      "dataformId": "othapplications-CustWishesList",
+      "name": "申请时间",
+      "code": "creationTime",
+      "dataType": "String",
+      "column": "CREATION_TIME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "elect"
+    }
+  ],
+  "filters": [
+    {
+      "name": "姓名",
+      "code": "certName",
+      "bindFor": "certName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "身份证号",
+      "code": "certId",
+      "bindFor": "certId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "借款人类型",
+      "code": "borrowerType",
+      "bindFor": "borrowerType",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0020"
+    },
+    {
+      "name": "申请状态",
+      "code": "currentState",
+      "bindFor": "currentState",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Equal",
+      "sortCode": "0030"
+    }
+  ],
+  "tags": "ELECTRONIC_INTEND"
+}

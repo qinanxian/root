@@ -1,0 +1,99 @@
+{
+  "code" : "CustBondType",
+  "name" : "债券类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0031",
+  "intro" : "客户债券类型",
+  "items" : [ {
+    "code" : "10",
+    "name" : "国债",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "普通金融债",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "30",
+    "name" : "普通企业债",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "40",
+    "name" : "可转换企业债",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "50",
+    "name" : "地方政府债券",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "60",
+    "name" : "可交换公司债券",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "70",
+    "name" : "政策性金融债",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "70",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "80",
+    "name" : "央行票据",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "80",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "90",
+    "name" : "其他债券",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "90",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

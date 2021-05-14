@@ -1,0 +1,153 @@
+{
+  "id": "othapplications-Cooper",
+  "pack": "othapplications",
+  "code": "Cooper",
+  "name": "合作机构",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_COOPER_ORG",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "QCFQ_COOPER_ORG\r\n",
+    "groupBy": "",
+    "orderBy": "CREATED_TIME asc"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-Cooper",
+      "name": "担保公司ID",
+      "code": "comId",
+      "dataType": "String",
+      "column": "COM_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Cooper",
+      "name": "担保公司",
+      "code": "comName",
+      "dataType": "String",
+      "column": "COM_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeTreeLeafOnly": false,
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-Cooper",
+      "name": "放款账号",
+      "code": "account",
+      "dataType": "String",
+      "column": "ACCOUNT",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-Cooper",
+      "name": "开户行",
+      "code": "orgName",
+      "dataType": "String",
+      "column": "ORG_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": ""
+    },
+    {
+      "dataformId": "othapplications-Cooper",
+      "name": "人行分",
+      "code": "score",
+      "dataType": "String",
+      "column": "SCORE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "担保公司",
+      "code": "comName",
+      "bindFor": "comName",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "开户行",
+      "code": "orgName",
+      "bindFor": "orgName",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    }
+  ]
+}

@@ -1,0 +1,1828 @@
+topic: 智能业务平台
+path: root
+contextId: root
+permitCode: root
+type: start
+fullName: 智能业务平台管理平台
+icon: ''
+properties:
+  permitCopyTpl:
+    - topic: 数据权限
+      type: datascope
+      icon: fa-table
+      children:
+        - topic: 所有数据
+          type: datascope
+          icon: fa-th
+          permitCode: AllDataList
+        - topic: 本机构及下属机构
+          type: datascope
+          icon: fa-sitemap
+          permitCode: MyOrgBranchDataList
+        - topic: 本机构数据
+          type: datascope
+          icon: fa-building-o
+          permitCode: MyOrgDataList
+        - topic: 本人数据
+          type: datascope
+          icon: fa-user-secret
+          permitCode: OnlyMyDataList
+    - topic: 操作权限
+      type: action
+      icon: fa-hand-pointer-o
+      children:
+        - topic: 修改
+          type: action
+          icon: fa-pencil
+          permitCode: Editable
+        - topic: 操作
+          type: action
+          icon: fa-file-text-o
+          permitCode: Operateable
+children:
+  - topic: 首页
+    path: root.home
+    contextId: home
+    permitCode: ''
+    type: menu
+    fullName: 首页
+    icon: fa-home
+    enabled: 'Y'
+    url: ShowCase/DashBoard/WorkStatistic
+    param: ''
+  - topic: 客户管理
+    path: root.0230138df5b1f03ec
+    contextId: 0230138df5b1f03ec
+    permitCode: ''
+    type: menu
+    fullName: ''
+    icon: roic-customer
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 个人客户管理列表
+        path: root.0230138df5b1f03ec.0230138dfc02f8d6c
+        contextId: 0230138dfc02f8d6c
+        permitCode: AllDataList
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: Customer/Custom
+        param: ''
+  - topic: 应用管理
+    path: root.0231247e5adcbdafc
+    contextId: 0231247e5adcbdafc
+    permitCode: ''
+    type: menu
+    fullName: 应用管理
+    icon: roic-operation
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 应用列表
+        path: root.0231247e5adcbdafc.0231247e6234c7acc
+        contextId: 0231247e6234c7acc
+        permitCode: AllDataList
+        type: menu
+        fullName: 应用列表
+        icon: ''
+        enabled: 'Y'
+        url: Application/Application
+        param: ''
+  - topic: 系统设置
+    path: root.123bbd3abb1374e6e
+    contextId: 123bbd3abb1374e6e
+    permitCode: ''
+    type: menu
+    fullName: 系统设置
+    icon: roic-setting
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 网点管理
+        path: root.123bbd3abb1374e6e.023bbd3ac51b9f9f6
+        contextId: 023bbd3ac51b9f9f6
+        permitCode: AllDataList
+        type: menu
+        fullName: 网点管理
+        icon: ''
+        enabled: 'Y'
+        url: SystemConfig/NetManage
+        param: ''
+  - topic: 业务管理
+    path: root.02508e8c155af202e
+    contextId: 02508e8c155af202e
+    permitCode: ''
+    type: menu
+    fullName: 业务管理
+    icon: roic-grant
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 业务申请
+        path: root.02508e8c155af202e.0250940e2a45e0b47
+        contextId: 0250940e2a45e0b47
+        permitCode: ''
+        type: menu
+        fullName: 业务申请
+        icon: ''
+        enabled: 'Y'
+        url: LoanBook/BusinessApply
+        param: ''
+      - topic: 白名单录入
+        path: root.02508e8c155af202e.12508e8c243b54510
+        contextId: 12508e8c243b54510
+        permitCode: MyOrgBranchDataList
+        type: menu
+        fullName: 白名单录入
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 待录入
+            path: root.02508e8c155af202e.12508e8c243b54510.0250948dac5119592
+            contextId: 0250948dac5119592
+            permitCode: ''
+            type: menu
+            fullName: 待录入
+            icon: ''
+            enabled: 'Y'
+            url: LoanBook/WhiteEntrying
+            param: ''
+          - topic: 已录入
+            path: root.02508e8c155af202e.12508e8c243b54510.1250948dd805df8e7
+            contextId: 1250948dd805df8e7
+            permitCode: ''
+            type: menu
+            fullName: 已录入
+            icon: ''
+            enabled: 'Y'
+            url: LoanBook/WhiteEntryed
+            param: ''
+  - topic: 码上办
+    path: root.02e44036d55873030
+    contextId: 02e44036d55873030
+    permitCode: ''
+    type: menu
+    fullName: 码上办
+    icon: fa-steam-square
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 网点列表
+        path: root.02e44036d55873030.02e44036da9e0914f
+        contextId: 02e44036da9e0914f
+        permitCode: AllDataList
+        type: menu
+        fullName: 网点列表
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/NetWork
+        param: ''
+      - topic: 网点可办业务类型维护
+        path: root.02e44036d55873030.02fe10d72b439af00
+        contextId: 02fe10d72b439af00
+        permitCode: ''
+        type: menu
+        fullName: 网点可办业务类型维护
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/AccessableBusinessType
+        param: ''
+      - topic: 评价记录
+        path: root.02e44036d55873030.02ff995a7592af94b
+        contextId: 02ff995a7592af94b
+        permitCode: ''
+        type: menu
+        fullName: 评价记录
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/AppraiseRecord
+        param: ''
+      - topic: 网点关注统计
+        path: root.02e44036d55873030.0308527d8c301a7bd
+        contextId: 0308527d8c301a7bd
+        permitCode: ''
+        type: menu
+        fullName: 网点关注统计
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/Attention
+        param: ''
+      - topic: 立即取号记录
+        path: root.02e44036d55873030.130d596d1a88a4790
+        contextId: 130d596d1a88a4790
+        permitCode: ''
+        type: menu
+        fullName: 立即取号记录
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/AccessRecords
+        param: ''
+      - topic: 预约取号记录
+        path: root.02e44036d55873030.130d682aecc108ef1
+        contextId: 130d682aecc108ef1
+        permitCode: ''
+        type: menu
+        fullName: 预约取号记录
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/Reservation
+        param: ''
+      - topic: 自助银行信息管理
+        path: root.02e44036d55873030.130e549ce3ef79da8
+        contextId: 130e549ce3ef79da8
+        permitCode: ''
+        type: menu
+        fullName: 自助银行信息管理
+        icon: ''
+        enabled: 'Y'
+        url: CodeToDo/SelfServiceBank
+        param: ''
+      - topic: 业务办理
+        path: root.02e44036d55873030.05d4161c04e0362c7
+        contextId: 05d4161c04e0362c7
+        permitCode: ''
+        type: menu
+        fullName: 业务办理
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 业务办理菜单配置
+            path: root.02e44036d55873030.05d4161c04e0362c7.05d4161c0d9b0eca2
+            contextId: 05d4161c0d9b0eca2
+            permitCode: ''
+            type: menu
+            fullName: 业务办理菜单配置
+            icon: ''
+            enabled: 'Y'
+            url: CodeToDo/MenuConfig
+            param: ''
+          - topic: 年度节假日配置
+            path: root.02e44036d55873030.05d4161c04e0362c7.16650fd845e5e3f2a
+            contextId: 16650fd845e5e3f2a
+            permitCode: ''
+            type: menu
+            fullName: 年度节假日配置
+            icon: ''
+            enabled: 'Y'
+            url: CodeToDo/HolidayConfiguration
+            param: ''
+          - topic: 大额取现预约
+            path: root.02e44036d55873030.05d4161c04e0362c7.05d9106342eaf5ecf
+            contextId: 05d9106342eaf5ecf
+            permitCode: ''
+            type: menu
+            fullName: 大额取现预约
+            icon: ''
+            enabled: 'Y'
+            url: ''
+            param: ''
+            children:
+              - topic: 预约记录
+                path: >-
+                  root.02e44036d55873030.05d4161c04e0362c7.05d9106342eaf5ecf.05d910634d9d9a888
+                contextId: 05d910634d9d9a888
+                permitCode: ''
+                type: menu
+                fullName: 预约记录
+                icon: ''
+                enabled: 'Y'
+                url: CodeToDo/LargeCashRecord
+                param: ''
+              - topic: 网点人员白名单
+                path: >-
+                  root.02e44036d55873030.05d4161c04e0362c7.05d9106342eaf5ecf.25d910635f8196367
+                contextId: 25d910635f8196367
+                permitCode: ''
+                type: menu
+                fullName: 网点人员白名单
+                icon: ''
+                enabled: 'Y'
+                url: CodeToDo/LargeCashWhite
+                param: ''
+          - topic: 企业预约
+            path: root.02e44036d55873030.05d4161c04e0362c7.15f8cac020ee826c8
+            contextId: 15f8cac020ee826c8
+            permitCode: ''
+            type: menu
+            fullName: 企业预约
+            icon: ''
+            enabled: 'Y'
+            url: ''
+            param: ''
+            children:
+              - topic: 网点人员白名单
+                path: >-
+                  root.02e44036d55873030.05d4161c04e0362c7.15f8cac020ee826c8.05f8cac0263751cb0
+                contextId: 05f8cac0263751cb0
+                permitCode: Editable
+                type: menu
+                fullName: 网点人员白名单
+                icon: ''
+                enabled: 'Y'
+                url: CodeToDo/EnterpriseWhiteList
+                param: ''
+              - topic: 企业预约开户记录
+                path: >-
+                  root.02e44036d55873030.05d4161c04e0362c7.15f8cac020ee826c8.15f8cac02daa696ce
+                contextId: 15f8cac02daa696ce
+                permitCode: Operateable
+                type: menu
+                fullName: 企业预约开户记录
+                icon: ''
+                enabled: 'Y'
+                url: CodeToDo/AccountOpeningRecord
+                param: ''
+  - topic: 任务调度
+    path: root.292ae405f5c8bed9
+    contextId: 292ae405f5c8bed9
+    permitCode: ''
+    type: menu
+    fullName: 任务调度
+    icon: roic-logistic
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 任务调度
+        path: root.292ae405f5c8bed9.292af78b2e5347d4
+        contextId: 292af78b2e5347d4
+        permitCode: ''
+        type: menu
+        fullName: 任务调度
+        icon: ''
+        enabled: 'Y'
+        url: /EtlManage/ScheduleJobList
+        param: ''
+      - topic: 任务监控
+        path: root.292ae405f5c8bed9.292b02593faf107d
+        contextId: 292b02593faf107d
+        permitCode: ''
+        type: menu
+        fullName: 任务监控
+        icon: ''
+        enabled: 'Y'
+        url: /EtlManage/ScheduleJobHistList
+        param: ''
+      - topic: ETL配置
+        path: root.292ae405f5c8bed9.292b0286df1e987d
+        contextId: 292b0286df1e987d
+        permitCode: ''
+        type: menu
+        fullName: ETL配置
+        icon: ''
+        enabled: 'Y'
+        url: /EtlManage/EtlConfig
+        param: ''
+      - topic: 任务控制台
+        path: root.292ae405f5c8bed9.292b02a0a9b50932
+        contextId: 292b02a0a9b50932
+        permitCode: ''
+        type: menu
+        fullName: 任务控制台
+        icon: ''
+        enabled: 'Y'
+        url: /EtlManage/TaskConsole
+        param: ''
+  - topic: 组织架构
+    path: root.b4aca5bf6feb9b98
+    contextId: b4aca5bf6feb9b98
+    permitCode: ''
+    type: menu
+    fullName: ''
+    icon: fa-sitemap
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 公司信息
+        path: root.b4aca5bf6feb9b98.b4acaaf87811feee
+        contextId: b4acaaf87811feee
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: System/Organization/CorpManager
+        param: ''
+      - topic: 机构部门
+        path: root.b4aca5bf6feb9b98.b4acab3a75e23eda
+        contextId: b4acab3a75e23eda
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: System/Organization/OrgManager
+        param: ''
+      - topic: 用户
+        path: root.b4aca5bf6feb9b98.b4acab426989f888
+        contextId: b4acab426989f888
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: System/Organization/UserManager
+        param: ''
+      - topic: 角色
+        path: root.b4aca5bf6feb9b98.b4acabcb7a54614c
+        contextId: b4acabcb7a54614c
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: System/Organization/RoleManager
+        param: ''
+  - topic: 开发运维
+    path: root.b4acc25b6fde4158
+    contextId: b4acc25b6fde4158
+    permitCode: ''
+    type: menu
+    fullName: ''
+    icon: roic-operation
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 系统及参数
+        path: root.b4acc25b6fde4158.b4acc376b63bae07
+        contextId: b4acc376b63bae07
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 菜单（旧）
+            path: root.b4acc25b6fde4158.b4acc376b63bae07.b4acd7ceeaaeca97
+            contextId: b4acd7ceeaaeca97
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: System/SystemManage/MenuConfig
+            param: ''
+          - topic: 菜单及权限
+            path: root.b4acc25b6fde4158.b4acc376b63bae07.b4acd9771a0b10d9
+            contextId: b4acd9771a0b10d9
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/SystemManage/PilotConfig
+            param: ''
+          - topic: 显示模板
+            path: root.b4acc25b6fde4158.b4acc376b63bae07.b4acd97f21eed202
+            contextId: b4acd97f21eed202
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/SystemManage/DataFormConfig
+            param: ''
+          - topic: 数据字典
+            path: root.b4acc25b6fde4158.b4acc376b63bae07.b4acd98784f34cfe
+            contextId: b4acd98784f34cfe
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Dictionary/DictManager
+            param: ''
+          - topic: 参数设置
+            path: root.b4acc25b6fde4158.b4acc376b63bae07.b4acec0c1feb96f5
+            contextId: b4acec0c1feb96f5
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Param/ParamManager
+            param: ''
+          - topic: 工作台位置
+            path: root.b4acc25b6fde4158.b4acc376b63bae07.b4acf38fc4479d1e
+            contextId: b4acf38fc4479d1e
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Dashboard/DashboardManager
+            param: ''
+      - topic: 工作流
+        path: root.b4acc25b6fde4158.b4acc90681b19f0b
+        contextId: b4acc90681b19f0b
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 流程设计
+            path: root.b4acc25b6fde4158.b4acc90681b19f0b.b4ad16c5c2cf5692
+            contextId: b4ad16c5c2cf5692
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Workflow/Designer
+            param: ''
+          - topic: 流程资源
+            path: root.b4acc25b6fde4158.b4acc90681b19f0b.b4ad16fd9437ee05
+            contextId: b4ad16fd9437ee05
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Workflow/Resources
+            param: ''
+      - topic: 简式流程
+        path: root.b4acc25b6fde4158.b4acc91ced07ba96
+        contextId: b4acc91ced07ba96
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 审批表单
+            path: root.b4acc25b6fde4158.b4acc91ced07ba96.b4ad20e9df6ceaf3
+            contextId: b4ad20e9df6ceaf3
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Liteflow/Form
+            param: ''
+          - topic: 预设模板
+            path: root.b4acc25b6fde4158.b4acc91ced07ba96.b4ad211663c8d9d1
+            contextId: b4ad211663c8d9d1
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/Liteflow/Template
+            param: ''
+      - topic: 规则及报表
+        path: root.b4acc25b6fde4158.b4ad447bfc2c4332
+        contextId: b4ad447bfc2c4332
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 报表开发
+            path: root.b4acc25b6fde4158.b4ad447bfc2c4332.b4ad46ef8e5e6198
+            contextId: b4ad46ef8e5e6198
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/RuleAndReport/ReportDevelop
+            param: ''
+          - topic: 规则开发
+            path: root.b4acc25b6fde4158.b4ad447bfc2c4332.b4ad472f2c49f37c
+            contextId: b4ad472f2c49f37c
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/RuleAndReport/RuleDevelop
+            param: ''
+      - topic: 系统监控
+        path: root.b4acc25b6fde4158.b4acc9254c4982c1
+        contextId: b4acc9254c4982c1
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 资源监控
+            path: root.b4acc25b6fde4158.b4acc9254c4982c1.b4ad2d923d436be3
+            contextId: b4ad2d923d436be3
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/SystemMonitor/ResourceMonitor
+            param: ''
+          - topic: 系统日志
+            path: root.b4acc25b6fde4158.b4acc9254c4982c1.b4ad385daf35d8f3
+            contextId: b4ad385daf35d8f3
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ''
+            param: ''
+          - topic: 运行环境
+            path: root.b4acc25b6fde4158.b4acc9254c4982c1.b4ad38769b1ab2df
+            contextId: b4ad38769b1ab2df
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ''
+            param: ''
+          - topic: 缓存
+            path: root.b4acc25b6fde4158.b4acc9254c4982c1.b4ad3ceb0e028814
+            contextId: b4ad3ceb0e028814
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ''
+            param: ''
+          - topic: 批量控制台
+            path: root.b4acc25b6fde4158.b4acc9254c4982c1.b4ad31f52bea830a
+            contextId: b4ad31f52bea830a
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: BatchJobConsole
+            param: ''
+          - topic: 开发控制台
+            path: root.b4acc25b6fde4158.b4acc9254c4982c1.b4ad5816193bc5d6
+            contextId: b4ad5816193bc5d6
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: System/DevTools
+            param: ''
+  - topic: 参考案例
+    path: root.b4ad63fa54e20a23
+    contextId: b4ad63fa54e20a23
+    permitCode: ''
+    type: menu
+    fullName: ''
+    icon: roic-showcase
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 入门
+        path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a
+        contextId: b4ad6be04d04ed4a
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 你好
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adae4ac40ee207
+            contextId: b4adae4ac40ee207
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/HelloWord
+            param: ''
+          - topic: 按钮及调用
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adae81909c5c06
+            contextId: b4adae81909c5c06
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/ButtonCase
+            param: ''
+          - topic: 多栏栅格
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adae8a11cc0c2a
+            contextId: b4adae8a11cc0c2a
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/GridLayout
+            param: ''
+          - topic: 消息及交互
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adae92e4943beb
+            contextId: b4adae92e4943beb
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/MessageCase
+            param: ''
+          - topic: 表单及数据
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adb6694a4e0e1e
+            contextId: b4adb6694a4e0e1e
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/FormWithData
+            param: ''
+          - topic: 面板及分组
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adb67b091a51cf
+            contextId: b4adb67b091a51cf
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/PanelCase
+            param: ''
+          - topic: 全局对象注入
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adb9c5b829ae16
+            contextId: b4adb9c5b829ae16
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/AnnotationCase
+            param: ''
+          - topic: 加载动画
+            path: root.b4ad63fa54e20a23.b4ad6be04d04ed4a.b4adb9cd5d8e8919
+            contextId: b4adb9cd5d8e8919
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Guide/Loading
+            param: ''
+      - topic: 列表
+        path: root.b4ad63fa54e20a23.b4ad6f968c4d9677
+        contextId: b4ad6f968c4d9677
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 简单列表
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4ade3841cac6d71
+            contextId: b4ade3841cac6d71
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/BaseSimpleTable
+            param: ''
+          - topic: 可编辑列表
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4ade3b7172b2320
+            contextId: b4ade3b7172b2320
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/EditDataTable
+            param: ''
+          - topic: 可编辑列表有校验
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4ade3c79c14c0d2
+            contextId: b4ade3c79c14c0d2
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/EditDataTableWithValidate
+            param: ''
+          - topic: 列表主要功能展示
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4ade3bfe219fa73
+            contextId: b4ade3bfe219fa73
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/DataTableFuncCase
+            param: ''
+          - topic: 固定行或列
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.be3eee5d2a7ef19c
+            contextId: be3eee5d2a7ef19c
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/FixedHeaderColumnCase
+            param: ''
+          - topic: 列表搜索器定制
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4ade3d89cc9d841
+            contextId: b4ade3d89cc9d841
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/CustomizeSearchFilter
+            param: ''
+          - topic: 当前用户权限内限制
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4adf12c2651b295
+            contextId: b4adf12c2651b295
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ShowCase/DataTable/UserRangeDataListCase
+            param: ''
+          - topic: 树图表格
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4adf17b2f3515ab
+            contextId: b4adf17b2f3515ab
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/TreeTableCase
+            param: ''
+          - topic: 列表分组
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4adf18324608a3a
+            contextId: b4adf18324608a3a
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/GroupDataTableCase
+            param: ''
+          - topic: 条目列表
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.b4adf18b26a0465b
+            contextId: b4adf18b26a0465b
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ShowCase/DataList/ListItemCase
+            param: ''
+          - topic: 自定义表头及内容
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc11c22ab966944b
+            contextId: bc11c22ab966944b
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ShowCase/DataTable/DataListView
+            param: ''
+          - topic: 自定义渲染
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.be3f016c670cc6bc
+            contextId: be3f016c670cc6bc
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/CustomizeRenderCase
+            param: ''
+          - topic: 按钮及数据权限
+            path: root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96
+            contextId: bc29b1dc1949cc96
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DataTable/DataRangePermitList
+            param: ''
+            children:
+              - topic: 数据权限
+                path: >-
+                  root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.0bc29be3e2c651a2d
+                contextId: 0bc29be3e2c651a2d
+                permitCode: ''
+                type: datascope
+                fullName: 数据权限
+                icon: fa-table
+                children:
+                  - topic: 所有数据
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.0bc29be3e2c651a2d.0bc29be3ed83d451a
+                    contextId: 0bc29be3ed83d451a
+                    permitCode: AllDataList
+                    type: datascope
+                    fullName: 所有数据
+                    icon: fa-th
+                  - topic: 本机构及下属机构
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.0bc29be3e2c651a2d.1bc29be3fa76c1126
+                    contextId: 1bc29be3fa76c1126
+                    permitCode: MyOrgBranchDataList
+                    type: datascope
+                    fullName: 本机构及下属机构
+                    icon: fa-sitemap
+                  - topic: 本机构数据
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.0bc29be3e2c651a2d.2bc29be40c548fdf4
+                    contextId: 2bc29be40c548fdf4
+                    permitCode: MyOrgDataList
+                    type: datascope
+                    fullName: 本机构数据
+                    icon: fa-building-o
+                  - topic: 本人数据
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.0bc29be3e2c651a2d.3bc29be417d4d707e
+                    contextId: 3bc29be417d4d707e
+                    permitCode: OnlyMyDataList
+                    type: datascope
+                    fullName: 本人数据
+                    icon: fa-user-secret
+              - topic: 操作权限
+                path: >-
+                  root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.1bc29be422bff8287
+                contextId: 1bc29be422bff8287
+                permitCode: ''
+                type: action
+                fullName: 操作权限
+                icon: fa-hand-pointer-o
+                children:
+                  - topic: 修改
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.1bc29be422bff8287.0bc29be42a209cbe9
+                    contextId: 0bc29be42a209cbe9
+                    permitCode: Editable
+                    type: action
+                    fullName: 修改
+                    icon: fa-pencil
+                  - topic: 操作
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.1bc29be422bff8287.1bc29be42ea83d8e6
+                    contextId: 1bc29be42ea83d8e6
+                    permitCode: Operateable
+                    type: action
+                    fullName: 操作
+                    icon: fa-file-text-o
+                  - topic: 下载数据
+                    path: >-
+                      root.b4ad63fa54e20a23.b4ad6f968c4d9677.bc29b1dc1949cc96.1bc29be422bff8287.bc29c1543833e561
+                    contextId: bc29c1543833e561
+                    permitCode: Export
+                    type: action
+                    fullName: ''
+                    icon: fa-download
+      - topic: 详情
+        path: root.b4ad63fa54e20a23.b4ad6f9e4d370458
+        contextId: b4ad6f9e4d370458
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 简单详情
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae1e6a88bfc097
+            contextId: b4ae1e6a88bfc097
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/Simple
+            param: ''
+          - topic: 详情MapData
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae1e98bb949f31
+            contextId: b4ae1e98bb949f31
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/MapDataInfoCase
+            param: ''
+          - topic: 详情有分组
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae1e9f69bdceb5
+            contextId: b4ae1e9f69bdceb5
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/Group
+            param: ''
+          - topic: 详情二列
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae1ea75de8989f
+            contextId: b4ae1ea75de8989f
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/ColumnTwo
+            param: ''
+          - topic: 详情三列
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae1eafa77ba746
+            contextId: b4ae1eafa77ba746
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/ColumnThree
+            param: ''
+          - topic: 详情四列
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae1eb6a1a2cd56
+            contextId: b4ae1eb6a1a2cd56
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/ColumnFour
+            param: ''
+          - topic: 详情阅读模式
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae297910e0776c
+            contextId: b4ae297910e0776c
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/ReadingInfoCase
+            param: ''
+          - topic: 详情主要功能展示
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae2980cf18a37c
+            contextId: b4ae2980cf18a37c
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/MainFunction
+            param: ''
+          - topic: 模板和数据分离使用
+            path: root.b4ad63fa54e20a23.b4ad6f9e4d370458.b4ae2988c9152fad
+            contextId: b4ae2988c9152fad
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DetailInfo/MetaSeparateData
+            param: ''
+      - topic: 布局及组件
+        path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6
+        contextId: b4ad6fa76a0b41b6
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 自定义菜单
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae4917793282fe
+            contextId: b4ae4917793282fe
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ShowCase/Layout/MenuCase
+            param: ''
+          - topic: Fieldset分组
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae49447db37cfb
+            contextId: b4ae49447db37cfb
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/FieldsetCase
+            param: ''
+          - topic: 树图导航
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae494ba9bbf2fa
+            contextId: b4ae494ba9bbf2fa
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/TreeViewCase
+            param: ''
+          - topic: 步骤条导航
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae495be46ec080
+            contextId: b4ae495be46ec080
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/Step
+            param: ''
+          - topic: 标签页
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae496417ee9af4
+            contextId: b4ae496417ee9af4
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/TabsCase
+            param: ''
+          - topic: 业务集中检查
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae496cdabd3752
+            contextId: b4ae496cdabd3752
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/DetectorCase
+            param: ''
+          - topic: 嵌入组件块
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae5318710acc38
+            contextId: b4ae5318710acc38
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/EmbedBlockCase
+            param: ''
+          - topic: 图标库
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae5321c750dcb9
+            contextId: b4ae5321c750dcb9
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/Icon
+            param: ''
+          - topic: 文件及图片的上传下载
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae532be1842e6f
+            contextId: b4ae532be1842e6f
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/FileOperateCase
+            param: ''
+          - topic: IFRAME的使用场景
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae5a72e634d0a1
+            contextId: b4ae5a72e634d0a1
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/IframeCase
+            param: ''
+          - topic: 图表
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae5abf1840ae3f
+            contextId: b4ae5abf1840ae3f
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/ChartsCase
+            param: ''
+          - topic: 图片查看
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4ae5ee295eda7d7
+            contextId: b4ae5ee295eda7d7
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Layout/ImageCase
+            param: ''
+          - topic: 里程碑
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.b4aea1d1e25427f8
+            contextId: b4aea1d1e25427f8
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/BaseService/MileStone
+            param: ''
+          - topic: 文档编辑
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.bca2dcc464007cd8
+            contextId: bca2dcc464007cd8
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DocEditorCase
+            param: ''
+          - topic: ALS兼容
+            path: root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.c211064909b43dcc
+            contextId: c211064909b43dcc
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ''
+            param: ''
+            children:
+              - topic: 公司客户管理
+                path: >-
+                  root.b4ad63fa54e20a23.b4ad6fa76a0b41b6.c211064909b43dcc.c2110c064b74ff9d
+                contextId: c2110c064b74ff9d
+                permitCode: ''
+                type: menu
+                fullName: ''
+                icon: ''
+                enabled: 'Y'
+                url: ShowCase/ALSCompat/EntCustomerList
+                param: ''
+      - topic: 基础服务
+        path: root.b4ad63fa54e20a23.b4ad6fb0704c1e0e
+        contextId: b4ad6fb0704c1e0e
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'N'
+        url: ''
+        param: ''
+        children:
+          - topic: rest调用
+            path: root.b4ad63fa54e20a23.b4ad6fb0704c1e0e.b4aea9af20cdd1a4
+            contextId: b4aea9af20cdd1a4
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ''
+            param: ''
+          - topic: rest传参场景
+            path: root.b4ad63fa54e20a23.b4ad6fb0704c1e0e.b4aea9dd92af6d40
+            contextId: b4aea9dd92af6d40
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ''
+            param: ''
+          - topic: 国际化支持
+            path: root.b4ad63fa54e20a23.b4ad6fb0704c1e0e.b4aea9e4a3029e42
+            contextId: b4aea9e4a3029e42
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ''
+            param: ''
+      - topic: OFFICE
+        path: root.b4ad63fa54e20a23.b4ad6fb8ad2d5cee
+        contextId: b4ad6fb8ad2d5cee
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: OFFICE使用案例
+            path: root.b4ad63fa54e20a23.b4ad6fb8ad2d5cee.b4aec775eed97ec6
+            contextId: b4aec775eed97ec6
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Office/WebOfficeCase
+            param: ''
+          - topic: 其他格式附件展示
+            path: root.b4ad63fa54e20a23.b4ad6fb8ad2d5cee.b4aec7afb32a5ea6
+            contextId: b4aec7afb32a5ea6
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'N'
+            url: ''
+            param: ''
+          - topic: LIST页面导出EXCEL
+            path: root.b4ad63fa54e20a23.b4ad6fb8ad2d5cee.b4aec7b7feaa2d06
+            contextId: b4aec7b7feaa2d06
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Office/DataList2ExcelCase
+            param: ''
+          - topic: LIST页面导入EXCEL
+            path: root.b4ad63fa54e20a23.b4ad6fb8ad2d5cee.b4aecd0923d84b1c
+            contextId: b4aecd0923d84b1c
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Office/DataListFromExcel
+            param: ''
+          - topic: INFO页面导入
+            path: root.b4ad63fa54e20a23.b4ad6fb8ad2d5cee.b4aecf1825e150d1
+            contextId: b4aecf1825e150d1
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Office/DetailInfoFromExcel
+            param: ''
+      - topic: 债权核算
+        path: root.b4ad63fa54e20a23.b4ad6fc0a5411530
+        contextId: b4ad6fc0a5411530
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 贷款咨询
+            path: root.b4ad63fa54e20a23.b4ad6fc0a5411530.b4aedf4055acb253
+            contextId: b4aedf4055acb253
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/LoanAccounting/PaymentCalc
+            param: ''
+          - topic: 调息
+            path: root.b4ad63fa54e20a23.b4ad6fc0a5411530.b4aedf6ceaa259ed
+            contextId: b4aedf6ceaa259ed
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/LoanAccounting/AdjustInterest
+            param: ''
+          - topic: 会计分录
+            path: root.b4ad63fa54e20a23.b4ad6fc0a5411530.b4aedf744bcdf4c9
+            contextId: b4aedf744bcdf4c9
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/LoanAccounting/BookKeeper
+            param: ''
+      - topic: 流程引擎
+        path: root.b4ad63fa54e20a23.b4ad845158a0a221
+        contextId: b4ad845158a0a221
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 标准流程
+            path: root.b4ad63fa54e20a23.b4ad845158a0a221.b4aeedf260eec2e3
+            contextId: b4aeedf260eec2e3
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/Workflow/CreditList
+            param: ''
+      - topic: 驾驶仓
+        path: root.b4ad63fa54e20a23.bdff707f59f4f6e3
+        contextId: bdff707f59f4f6e3
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 动态数字
+            path: root.b4ad63fa54e20a23.bdff707f59f4f6e3.bdff7ff9a205fe93
+            contextId: bdff7ff9a205fe93
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DashBoard/DynamicStatistic
+            param: ''
+          - topic: 工作及业务统计
+            path: root.b4ad63fa54e20a23.bdff707f59f4f6e3.c08447ac8c635761
+            contextId: c08447ac8c635761
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DashBoard/WorkStatistic
+            param: ''
+          - topic: 带地图统计
+            path: root.b4ad63fa54e20a23.bdff707f59f4f6e3.bdff887449a91ca9
+            contextId: bdff887449a91ca9
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DashBoard/WithMap
+            param: ''
+      - topic: 其他
+        path: root.b4ad63fa54e20a23.b4ad84afceab27c6
+        contextId: b4ad84afceab27c6
+        permitCode: ''
+        type: menu
+        fullName: ''
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 报表
+            path: root.b4ad63fa54e20a23.b4ad84afceab27c6.b4ad939d11f9ac3f
+            contextId: b4ad939d11f9ac3f
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/ReportForm
+            param: ''
+          - topic: 同盾报告
+            path: root.b4ad63fa54e20a23.b4ad84afceab27c6.b4ad93d03841bc72
+            contextId: b4ad93d03841bc72
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/TdReport
+            param: ''
+          - topic: 文件及分组
+            path: root.b4ad63fa54e20a23.b4ad84afceab27c6.b4ad93d6c07f63f3
+            contextId: b4ad93d6c07f63f3
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/DocList
+            param: ''
+          - topic: 汽车业务监控台
+            path: root.b4ad63fa54e20a23.b4ad84afceab27c6.b7df5e5f2f2c43ba
+            contextId: b7df5e5f2f2c43ba
+            permitCode: ''
+            type: menu
+            fullName: ''
+            icon: ''
+            enabled: 'Y'
+            url: ShowCase/BizDashboard
+            param: ''
+  - topic: 其他应用
+    path: root.039063df18e34f4ef
+    contextId: 039063df18e34f4ef
+    permitCode: ''
+    type: menu
+    fullName: 其他应用
+    icon: roic-partner
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 客户意愿
+        path: root.039063df18e34f4ef.039063df1dfef7c66
+        contextId: 039063df1dfef7c66
+        permitCode: ''
+        type: menu
+        fullName: 客户意愿
+        icon: ''
+        enabled: 'Y'
+        url: OthApplications/CustWishes
+        param: ''
+      - topic: 电子合同
+        path: root.039063df18e34f4ef.139063df24bde4714
+        contextId: 139063df24bde4714
+        permitCode: ''
+        type: menu
+        fullName: 电子合同
+        icon: ''
+        enabled: 'Y'
+        url: OthApplications/ElectContract
+        param: ''
+      - topic: 电子授权
+        path: root.039063df18e34f4ef.048c5adde7a0b48e9
+        contextId: 048c5adde7a0b48e9
+        permitCode: ''
+        type: menu
+        fullName: 电子授权
+        icon: ''
+        enabled: 'Y'
+        url: OthApplications/ElectAuthor
+        param: ''
+      - topic: 上门面签
+        path: root.039063df18e34f4ef.051b6b0a8916be40e
+        contextId: 051b6b0a8916be40e
+        permitCode: ''
+        type: menu
+        fullName: 上门面签
+        icon: ''
+        enabled: 'Y'
+        url: OthApplications/DoorSignatrue
+        param: ''
+      - topic: 政融易
+        path: root.039063df18e34f4ef.15260684acb5f101a
+        contextId: 15260684acb5f101a
+        permitCode: ''
+        type: menu
+        fullName: 政融易
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 融资订单信息管理
+            path: root.039063df18e34f4ef.15260684acb5f101a.15261aa61934f42c0
+            contextId: 15261aa61934f42c0
+            permitCode: ''
+            type: menu
+            fullName: 融资订单信息管理
+            icon: ''
+            enabled: 'Y'
+            url: OthApplications/Financing
+            param: ''
+            children:
+              - topic: 操作权限
+                path: >-
+                  root.039063df18e34f4ef.15260684acb5f101a.15261aa61934f42c0.156420993a114187f
+                contextId: 156420993a114187f
+                permitCode: ''
+                type: action
+                fullName: 操作权限
+                icon: fa-hand-pointer-o
+                children:
+                  - topic: 修改
+                    path: >-
+                      root.039063df18e34f4ef.15260684acb5f101a.15261aa61934f42c0.156420993a114187f.0564209958acec30f
+                    contextId: 0564209958acec30f
+                    permitCode: Editable
+                    type: action
+                    fullName: 修改
+                    icon: fa-pencil
+                  - topic: 操作
+                    path: >-
+                      root.039063df18e34f4ef.15260684acb5f101a.15261aa61934f42c0.156420993a114187f.156420996d14d8a75
+                    contextId: 156420996d14d8a75
+                    permitCode: Operateable
+                    type: action
+                    fullName: 操作
+                    icon: fa-file-text-o
+          - topic: 预授信信息管理
+            path: root.039063df18e34f4ef.15260684acb5f101a.153e900f357fa43e1
+            contextId: 153e900f357fa43e1
+            permitCode: ''
+            type: menu
+            fullName: 预授信信息管理
+            icon: ''
+            enabled: 'Y'
+            url: OthApplications/PreApproval
+            param: ''
+            children:
+              - topic: 操作权限
+                path: >-
+                  root.039063df18e34f4ef.15260684acb5f101a.153e900f357fa43e1.15647dfe887dc7e35
+                contextId: 15647dfe887dc7e35
+                permitCode: ''
+                type: action
+                fullName: 操作权限
+                icon: fa-hand-pointer-o
+                children:
+                  - topic: 修改
+                    path: >-
+                      root.039063df18e34f4ef.15260684acb5f101a.153e900f357fa43e1.15647dfe887dc7e35.05647dfe8e6ffbac7
+                    contextId: 05647dfe8e6ffbac7
+                    permitCode: Editable
+                    type: action
+                    fullName: 修改
+                    icon: fa-pencil
+                  - topic: 操作
+                    path: >-
+                      root.039063df18e34f4ef.15260684acb5f101a.153e900f357fa43e1.15647dfe887dc7e35.15647dfe949883751
+                    contextId: 15647dfe949883751
+                    permitCode: Operateable
+                    type: action
+                    fullName: 操作
+                    icon: fa-file-text-o
+          - topic: 备案合同信息管理
+            path: root.039063df18e34f4ef.15260684acb5f101a.15537b29d2f166b56
+            contextId: 15537b29d2f166b56
+            permitCode: ''
+            type: menu
+            fullName: 备案合同信息管理
+            icon: ''
+            enabled: 'Y'
+            url: OthApplications/FilingContract
+            param: ''
+      - topic: 保险管理
+        path: root.039063df18e34f4ef.0562c9a29a9421060
+        contextId: 0562c9a29a9421060
+        permitCode: ''
+        type: menu
+        fullName: 保险管理
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 保险公司配置
+            path: root.039063df18e34f4ef.0562c9a29a9421060.0562c9a2a3a1923ab
+            contextId: 0562c9a2a3a1923ab
+            permitCode: ''
+            type: menu
+            fullName: 保险公司配置
+            icon: ''
+            enabled: 'Y'
+            url: Insure/Company
+            param: ''
+          - topic: 保单管理员配置
+            path: root.039063df18e34f4ef.0562c9a29a9421060.056cbdffe203a5dd0
+            contextId: 056cbdffe203a5dd0
+            permitCode: ''
+            type: menu
+            fullName: 保单管理员配置
+            icon: ''
+            enabled: 'Y'
+            url: Insure/Manager
+            param: ''
+          - topic: 保单信息管理
+            path: root.039063df18e34f4ef.0562c9a29a9421060.156cbe00073a8a6a6
+            contextId: 156cbe00073a8a6a6
+            permitCode: ''
+            type: menu
+            fullName: 保单信息管理
+            icon: ''
+            enabled: 'Y'
+            url: Insure/Order
+            param: ''
+          - topic: 保险执业人员白名单
+            path: root.039063df18e34f4ef.0562c9a29a9421060.05aada6f0c8cb5419
+            contextId: 05aada6f0c8cb5419
+            permitCode: ''
+            type: menu
+            fullName: 保险执业人员白名单
+            icon: ''
+            enabled: 'Y'
+            url: Insure/StaffWhite
+            param: ''
+          - topic: 网点营销保险查询
+            path: root.039063df18e34f4ef.0562c9a29a9421060.05ac0ea1c6e0517de
+            contextId: 05ac0ea1c6e0517de
+            permitCode: ''
+            type: menu
+            fullName: 网点营销保险查询
+            icon: ''
+            enabled: 'Y'
+            url: Insure/CheckAll
+            param: ''
+      - topic: 汽车分期
+        path: root.039063df18e34f4ef.06cc67e2a8dd2e8d7
+        contextId: 06cc67e2a8dd2e8d7
+        permitCode: ''
+        type: menu
+        fullName: 数据权限
+        icon: ''
+        enabled: 'Y'
+        url: ''
+        param: ''
+        children:
+          - topic: 申请产品
+            path: root.039063df18e34f4ef.06cc67e2a8dd2e8d7.06cc67e2ae2438c1e
+            contextId: 06cc67e2ae2438c1e
+            permitCode: AllDataList
+            type: menu
+            fullName: 所有数据
+            icon: ''
+            enabled: 'Y'
+            url: Qcfq/Apply
+            param: ''
+          - topic: 合作机构
+            path: root.039063df18e34f4ef.06cc67e2a8dd2e8d7.16cc67e2b3c3c7fa7
+            contextId: 16cc67e2b3c3c7fa7
+            permitCode: ''
+            type: menu
+            fullName: 合作机构
+            icon: ''
+            enabled: 'Y'
+            url: Qcfq/Cooper
+            param: ''
+          - topic: 期限利率配置
+            path: root.039063df18e34f4ef.06cc67e2a8dd2e8d7.26cc67e2b9ff3dec3
+            contextId: 26cc67e2b9ff3dec3
+            permitCode: ''
+            type: menu
+            fullName: 期限利率配置
+            icon: ''
+            enabled: 'Y'
+            url: Qcfq/Para
+            param: ''
+          - topic: 业务信息
+            path: root.039063df18e34f4ef.06cc67e2a8dd2e8d7.36cc67e2be26029a3
+            contextId: 36cc67e2be26029a3
+            permitCode: ''
+            type: menu
+            fullName: 业务信息
+            icon: ''
+            enabled: 'Y'
+            url: Qcfq/Business
+            param: ''
+          - topic: 卡单信息管理
+            path: root.039063df18e34f4ef.06cc67e2a8dd2e8d7.06cc6bdb1af9ca2cd
+            contextId: 06cc6bdb1af9ca2cd
+            permitCode: ''
+            type: menu
+            fullName: 卡单信息管理
+            icon: ''
+            enabled: 'Y'
+            url: Qcfq/Card
+            param: ''
+  - topic: 报表统计
+    path: root.15b123f93d8d4a542
+    contextId: 15b123f93d8d4a542
+    permitCode: ''
+    type: menu
+    fullName: 报表统计
+    icon: roic-report-sheet
+    enabled: 'Y'
+    url: ''
+    param: ''
+    children:
+      - topic: 马上消费
+        path: root.15b123f93d8d4a542.15b12e4e4e22b924f
+        contextId: 15b12e4e4e22b924f
+        permitCode: ''
+        type: menu
+        fullName: 马上消费
+        icon: roic-vouch
+        enabled: 'Y'
+        url: ReportStatistics/ConsumeNow
+        param: ''

@@ -1,0 +1,29 @@
+{
+  "code" : "InterestCalcMode",
+  "name" : "利率计算模式",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "10020",
+  "intro" : null,
+  "items" : [ {
+    "code" : "D",
+    "name" : "日",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "M",
+    "name" : "月",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

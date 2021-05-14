@@ -1,0 +1,45 @@
+{
+  "categoryCode": "codetodo",
+  "code": "NegativeLabel",
+  "name": "评价差评标签",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "服务态度差",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "网点环境差",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0003",
+      "name": "排队时间长",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0004",
+      "name": "预约不便捷",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0005",
+      "name": "产品少",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0006",
+      "name": "电话无人接听",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

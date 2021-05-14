@@ -1,0 +1,29 @@
+{
+  "code" : "WorkflowType",
+  "name" : "流程类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "WORK_FLOW",
+  "sortCode" : "1010",
+  "intro" : "流程类型的码表",
+  "items" : [ {
+    "code" : "full",
+    "name" : "完整流程",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "full",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "完整流程"
+  }, {
+    "code" : "lite",
+    "name" : "简式流程",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "lite",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "简式流程"
+  } ]
+}

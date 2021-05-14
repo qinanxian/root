@@ -1,0 +1,49 @@
+{
+  "code" : "EnterpriseScale",
+  "name" : "企业规模",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0019",
+  "intro" : "企业规模的码表",
+  "items" : [ {
+    "code" : "MEDIUM",
+    "name" : "中型",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "中型"
+  }, {
+    "code" : "SMALL",
+    "name" : "小型",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "小型"
+  }, {
+    "code" : "MINIATURE",
+    "name" : "微型",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "微型"
+  }, {
+    "code" : "LARGE",
+    "name" : "大型",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "大型"
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "categoryCode": "OTHER",
+  "code": "ProductSelect",
+  "name": "选择产品",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "乘用车",
+      "name": "乘用车",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "二手车",
+      "name": "二手车",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

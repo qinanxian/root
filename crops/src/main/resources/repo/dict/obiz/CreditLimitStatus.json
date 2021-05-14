@@ -1,0 +1,33 @@
+{
+  "categoryCode": "obiz",
+  "code": "CreditLimitStatus",
+  "name": "授信额度状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "DRAFT",
+      "name": "草稿",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "NORMAL",
+      "name": "正常",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "FORZEN",
+      "name": "冻结",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "EXPIRED",
+      "name": "过期",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

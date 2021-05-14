@@ -1,0 +1,59 @@
+{
+  "code" : "PBOCLoanBaseRateGrade",
+  "name" : "人行基准利率档次",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "50",
+  "intro" : null,
+  "items" : [ {
+    "code" : "6",
+    "name" : "人行贷款利率六个月以下",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "12",
+    "name" : "人行贷款利率六个月至一年",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "36",
+    "name" : "人行贷款利率一至三年",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "60",
+    "name" : "人行贷款利率三至五年",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "360",
+    "name" : "人行贷款利率五年以上",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

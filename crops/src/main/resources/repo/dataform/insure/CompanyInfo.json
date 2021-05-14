@@ -1,0 +1,146 @@
+{
+  "id": "insure-CompanyInfo",
+  "pack": "insure",
+  "code": "CompanyInfo",
+  "name": "新增保险公司/保险公司详情",
+  "managedByRR": false,
+  "tags": "BX_COMPANY_INFO",
+  "dataModelType": "DataMap",
+  "dataModel": "BX_COMPANY_INFO",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "bx.COM_ID = :id",
+    "from": "BX_COMPANY_INFO bx"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-CompanyInfo",
+      "name": "编号",
+      "code": "comId",
+      "dataType": "String",
+      "column": "COM_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-CompanyInfo",
+      "name": "保险公司名称",
+      "code": "comName",
+      "dataType": "String",
+      "column": "COM_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "reading": false,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"350px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-CompanyInfo",
+      "name": "保险公司代码",
+      "code": "comCode",
+      "dataType": "String",
+      "column": "COM_CODE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "reading": false,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-CompanyInfo",
+      "name": "保险公司描述",
+      "code": "comDesc",
+      "dataType": "String",
+      "column": "COM_DESC",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "reading": false,
+        "colspan": 2,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"610px\",\"minHeight\":\"50px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-CompanyInfo",
+      "name": "删除标识",
+      "code": "flag",
+      "dataType": "String",
+      "column": "FLAG",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": []
+}

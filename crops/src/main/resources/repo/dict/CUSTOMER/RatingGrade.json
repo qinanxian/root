@@ -1,0 +1,39 @@
+{
+  "code" : "RatingGrade",
+  "name" : "评级等级",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0088",
+  "intro" : null,
+  "items" : [ {
+    "code" : "1",
+    "name" : "1",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "2",
+    "name" : "2",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "2",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "3",
+    "name" : "3",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "3",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

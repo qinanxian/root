@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<variable-library>
+    <category name="借据" type="Custom" clazz="com.vekai.showcase.rules.bom.LoanDuebillBom">
+        <var act="InOut" name="contractId" label="合同号" type="String"/>
+        <var act="InOut" name="createdBy" label="创建人" type="String"/>
+        <var act="InOut" name="createdTime" label="创建时间" type="Date"/>
+        <var act="InOut" name="duebillId" label="借据号" type="String"/>
+        <var act="InOut" name="fiveClassfication" label="五级分类" type="String"/>
+        <var act="InOut" name="overdueDays" label="逾期天数" type="String"/>
+        <var act="InOut" name="putoutId" label="出账号" type="String"/>
+        <var act="InOut" name="revision" label="乐观锁" type="Integer"/>
+        <var act="InOut" name="updatedBy" label="更新人" type="String"/>
+        <var act="InOut" name="updatedTime" label="更新时间" type="Date"/>
+        <var act="InOut" name="vouchType" label="担保方式" type="String"/>
+    </category>
+</variable-library>

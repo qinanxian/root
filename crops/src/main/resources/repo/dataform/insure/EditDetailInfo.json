@@ -1,0 +1,170 @@
+{
+  "id": "insure-EditDetailInfo",
+  "pack": "insure",
+  "code": "EditDetailInfo",
+  "name": "保单修改详细记录信息",
+  "managedByRR": false,
+  "tags": "AUTH_DATA_AUDIT_ITEM",
+  "dataModelType": "DataMap",
+  "dataModel": "AUTH_DATA_AUDIT_ITEM",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "bx.DATA_AUDIT_ID =:dataAuditId and  bx.COLUMN_NAME NOT IN('ATTRIBUT1','ATTRIBUT2')  AND  bx.ITEM_NAME <> '' AND bx.ITEM_NAME IS NOT null ",
+    "from": "AUTH_DATA_AUDIT_ITEM bx\r\n"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-EditDetailInfo",
+      "name": "编号",
+      "code": "auditItemId",
+      "dataType": "String",
+      "column": "AUDIT_ITEM_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "bx",
+      "primaryKey": true
+    },
+    {
+      "dataformId": "insure-EditDetailInfo",
+      "name": "字段名称",
+      "code": "itemName",
+      "dataType": "String",
+      "column": "ITEM_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-EditDetailInfo",
+      "name": "字段代码",
+      "code": "columnName",
+      "dataType": "String",
+      "column": "COLUMN_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-EditDetailInfo",
+      "name": "数据类型",
+      "code": "dataType",
+      "dataType": "String",
+      "column": "DATA_TYPE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-EditDetailInfo",
+      "name": "修改前的值",
+      "code": "valueStrOld",
+      "dataType": "String",
+      "column": "VALUE_STR_OLD",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-EditDetailInfo",
+      "name": "修改后的值",
+      "code": "valueStr",
+      "dataType": "String",
+      "column": "VALUE_STR",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "bx",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": []
+}

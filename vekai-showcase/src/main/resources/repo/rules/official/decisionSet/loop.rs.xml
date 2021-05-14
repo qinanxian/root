@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule-set>
+    <import-parameter-library path="jcr:/测试项目/parameters.pl.xml"/>
+    <import-variable-library path="jcr:/测试项目/custom.vl.xml"/>
+    <remark><![CDATA[]]></remark>
+    <loop-rule name="rule-loop-test">
+        <remark><![CDATA[]]></remark>
+        <loop-target>
+            <value var-category="会员" var="orders" var-label="订单" datatype="List" type="Variable"/>
+        </loop-target>
+        <loop-start>
+            <var-assign var-category="参数" var="total" var-label="总价" datatype="String" type="parameter">
+                <value content="0" type="Input"/>
+            </var-assign>
+        </loop-start>
+        <units>
+            <unit name="Condition Unit">
+                <if>
+                    <and>
+                        <atom op="GreaterThen">
+                            <left var-category="订单" var="price" var-label="价格" datatype="Float" type="variable"/>
+                            <value content="10" type="Input"/>
+                        </atom>
+                        <atom op="GreaterThen">
+                            <left var-category="订单" var="amount" var-label="数量" datatype="Integer" type="variable"/>
+                            <value content="0" type="Input"/>
+                        </atom>
+                    </and>
+                </if>
+                <then>
+                    <var-assign var-category="参数" var="total" var-label="总价" datatype="String" type="parameter">
+                        <value var-category="参数" var="total" var-label="总价" datatype="String" type="Parameter">
+                            <complex-arith type="Add">
+                                <value var-category="订单" var="price" var-label="价格" datatype="Float" type="Variable"/>
+                            </complex-arith>
+                        </value>
+                    </var-assign>
+                    <execute-method bean="urule.loopAction" bean-label="循环操作" method-label="中断循环" method-name="breakLoop"/>
+                </then>
+                <else/>
+            </unit>
+        </units>
+        <loop-end>
+            <console-print>
+                <value content="用户" type="Input">
+                    <complex-arith type="Add">
+                        <value var-category="会员" var="name" var-label="名称" datatype="String" type="Variable">
+                            <complex-arith type="Add">
+                                <value content="的订单名称：" type="Input">
+                                    <complex-arith type="Add">
+                                        <value var-category="参数" var="total" var-label="总价" datatype="String" type="Parameter"/>
+                                    </complex-arith>
+                                </value>
+                            </complex-arith>
+                        </value>
+                    </complex-arith>
+                </value>
+            </console-print>
+        </loop-end>
+    </loop-rule>
+</rule-set>

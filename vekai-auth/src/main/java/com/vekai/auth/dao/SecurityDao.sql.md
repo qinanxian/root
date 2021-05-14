@@ -1,0 +1,39 @@
+getUserPermits
+===
+* 查询用户下的所有权限
+```sql
+SELECT * 
+FROM AUTH_ROLE_PERMIT A 
+WHERE EXISTS
+  (SELECT 1 FROM 
+  AUTH_USER_ROLE B 
+  WHERE A.ROLE_ID=B.ROLE_ID 
+  AND B.USER_ID =:userId)
+ORDER BY PERMIT_CODE ASC
+```
+
+getRolePermits
+===
+* 查询角色下的所有权限
+```sql
+SELECT *
+FROM AUTH_ROLE_PERMIT 
+WHERE ROLE_ID=:roleId 
+ORDER BY PERMIT_CODE ASC
+```
+
+getSubOrgList
+===
+* 查询一个机构的下的所有子机构
+```sql
+SELECT * FROM AUTH_ORG M
+WHERE EXISTS 
+(
+    SELECT 1  
+    FROM AUTH_ORG C 
+    WHERE C.ID=:orgId 
+    AND M.SORT_CODE LIKE CONCAT(C.SORT_CODE, '%')
+)
+ORDER BY SORT_CODE ASC,CODE ASC,ID ASC
+
+```

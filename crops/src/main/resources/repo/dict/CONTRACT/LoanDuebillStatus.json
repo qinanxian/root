@@ -1,0 +1,29 @@
+{
+  "code" : "LoanDuebillStatus",
+  "name" : "借据状态",
+  "nameI18nCode" : "",
+  "categoryCode" : "CONTRACT",
+  "sortCode" : null,
+  "intro" : "",
+  "items" : [ {
+    "code" : "10",
+    "name" : "存续",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "结清",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

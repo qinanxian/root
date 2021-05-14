@@ -1,0 +1,100 @@
+{
+  "id": "demo-VoucherAssistList",
+  "pack": "demo",
+  "code": "VoucherAssistList",
+  "name": "辅助核算列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_VOUCHER_ASSIST",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "VOUCHER_ENTRY_ID=:voucherEntryId",
+    "from": "FISC_VOUCHER_ASSIST"
+  },
+  "elements": [
+    {
+      "dataformId": "demo-VoucherAssistList",
+      "code": "itemCode",
+      "name": "辅助代码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "ITEM_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistList",
+      "code": "itemName",
+      "name": "辅助名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0001",
+      "column": "ITEM_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistList",
+      "code": "dataText",
+      "name": "值",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0002",
+      "column": "DATA_TEXT",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistList",
+      "code": "entryAssistId",
+      "name": "凭证辅助编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0003",
+      "column": "ENTRY_ASSIST_ID",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

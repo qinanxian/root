@@ -1,0 +1,33 @@
+{
+  "categoryCode": "obiz",
+  "code": "ContractStatus",
+  "name": "合同状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "READY",
+      "name": "待生效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "ENABLE",
+      "name": "有效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "DISABLED",
+      "name": "失效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "IN_CHANGE",
+      "name": "变更中",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

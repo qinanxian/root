@@ -1,0 +1,277 @@
+{
+  "id": "othapplications-FinancingList",
+  "pack": "othapplications",
+  "code": "FinancingList",
+  "name": "融资订单信息列表",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "ZRY_FINANCING_ORDER_INFO T1,\nAUTH_ORG T2",
+    "where": "T1.OUTLETS=T2.ID and LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',T2.SORT_CODE),'/'))>0",
+    "orderBy": "T1.CREATED_TIME desc",
+    "permitHint": "USER->CREATED_BY=:RANGE_USER,ORG->CREATED_BY IN (select USER_ID from AUTH_USER_ORG where ORG_ID IN (:RANGE_ORG))"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "loanId",
+      "name": "申贷编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "LOAN_ID",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "bidName",
+      "name": "融资标的名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "BID_NAME",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "bidAmt",
+      "name": "融资标的金额",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "BID_AMT",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "paidAmt",
+      "name": "合同已付款",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0030",
+      "column": "PAID_AMT",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "advanceAmt",
+      "name": "合同预付款",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0040",
+      "column": "ADVANCE_AMT",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "isBid",
+      "name": "融资标的类型",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "FinancingBid"
+      },
+      "sortCode": "0050",
+      "column": "IS_BID",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "purchaseName",
+      "name": "采购人",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0060",
+      "column": "PURCHASE_NAME",
+      "table": "T1",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "distributionStatus",
+      "name": "分发状态",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "DistributionStatus"
+      },
+      "sortCode": "0070",
+      "column": "DISTRIBUTION_STATUS",
+      "table": "T1",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "outlets",
+      "name": "网点",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0080",
+      "column": "OUTLETS",
+      "validatorList": [],
+      "table": "T1"
+    },
+    {
+      "dataformId": "othapplications-FinancingList",
+      "code": "companyId",
+      "name": "企业ID",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0090",
+      "column": "COMPANY_ID",
+      "validatorList": [],
+      "table": "T1"
+    }
+  ],
+  "dataModel": "ZRY_FINANCING_ORDER_INFO",
+  "filters": [
+    {
+      "name": "申贷编号",
+      "code": "loanId",
+      "bindFor": "loanId",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    },
+    {
+      "name": "分发状态",
+      "code": "distributionStatus",
+      "bindFor": "distributionStatus",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0010"
+    },
+    {
+      "name": "融资标的名称",
+      "code": "bidName",
+      "bindFor": "bidName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0020"
+    }
+  ]
+}

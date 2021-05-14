@@ -1,0 +1,27 @@
+{
+  "categoryCode": "COMMON",
+  "code": "LandmarkItemStatus",
+  "name": "里程碑节点状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "init",
+      "name": "未开始",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "doing",
+      "name": "进行中",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "done",
+      "name": "已完成",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "demo-BookList",
+  "pack": "demo",
+  "code": "BookList",
+  "name": "帐套列表",
+  "tags": "帐套列表",
+  "description": "帐套列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_BOOK",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "FISC_BOOK"
+  },
+  "elements": [
+    {
+      "dataformId": "demo-BookList",
+      "code": "bookCode",
+      "name": "代码",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "BOOK_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-BookList",
+      "code": "bookName",
+      "name": "名称",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"250px\"}"
+      },
+      "sortCode": "0001",
+      "column": "BOOK_NAME",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "demo-BookList",
+      "code": "mainCorpName",
+      "name": "主体公司名称",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"350px\"}",
+        "colspan": 1
+      },
+      "sortCode": "0002",
+      "column": "MAIN_CORP_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-BookList",
+      "code": "currentYear",
+      "name": "当前会计年度",
+      "group": null,
+      "dataType": "Integer",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Integer",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "colspan": 1,
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Currency"
+      },
+      "sortCode": "0003",
+      "column": "CURRENT_YEAR",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-BookList",
+      "code": "currentTerm",
+      "name": "当前会计期间",
+      "group": null,
+      "dataType": "Integer",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Integer",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "colspan": 1
+      },
+      "sortCode": "0004",
+      "column": "CURRENT_TERM",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-BookList",
+      "code": "gaapName",
+      "name": "科目准则",
+      "group": null,
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0005",
+      "column": "GAAP_NAME",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "账套名称",
+      "code": "bookName",
+      "bindFor": "bookName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0000"
+    },
+    {
+      "name": "主体公司名称",
+      "code": "mainCorpName",
+      "bindFor": "mainCorpName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0001"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<constant-library>
+    <category name="FiveClassfication" label="五级分类结果">
+        <constant name="A" label="正常" type="String"/>
+        <constant name="B" label="关注" type="String"/>
+        <constant name="C" label="次级" type="String"/>
+        <constant name="D" label="可疑" type="String"/>
+        <constant name="E" label="损失" type="String"/>
+    </category>
+</constant-library>

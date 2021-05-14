@@ -1,0 +1,79 @@
+{
+  "code" : "InterestAdjustStartType",
+  "name" : "调起起始类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "10",
+  "intro" : null,
+  "items" : [ {
+    "code" : "OnDemand",
+    "name" : "即期调息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fixed",
+    "name" : "固定利率不调息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fixed30D",
+    "name" : "30天以内不调",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fixed31D",
+    "name" : "31天以内不调",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fixed1M",
+    "name" : "调息日下月对应日内不调息",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fixed90D",
+    "name" : "90天内不调",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Fixed180D",
+    "name" : "180天内不调",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "70",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

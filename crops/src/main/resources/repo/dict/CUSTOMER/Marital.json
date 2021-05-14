@@ -1,0 +1,59 @@
+{
+  "code" : "Marital",
+  "name" : "婚姻状况",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0023",
+  "intro" : "婚姻状况的码表",
+  "items" : [ {
+    "code" : "MARRIED",
+    "name" : "已婚",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "已婚"
+  }, {
+    "code" : "WIDOWED",
+    "name" : "丧偶",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "丧偶"
+  }, {
+    "code" : "DIVORCE",
+    "name" : "离婚",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "离婚"
+  }, {
+    "code" : "UNSPECIFIED",
+    "name" : "未说明",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "未说明"
+  }, {
+    "code" : "UNMARRIED",
+    "name" : "未婚",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "5",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "未婚"
+  } ]
+}

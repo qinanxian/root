@@ -1,0 +1,184 @@
+{
+  "id": "insure-UpdateRecord",
+  "pack": "insure",
+  "code": "UpdateRecord",
+  "name": "保单修改记录列表",
+  "managedByRR": false,
+  "tags": "AUTH_DATA_AUDIT",
+  "dataModelType": "DataMap",
+  "dataModel": "AUTH_DATA_AUDIT",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "bx.ORIGIN_LOCATION IN ('insure-EditOrderInfo','insure-RecInsureUpdateInfo','insure-SelfRecInsureInfo') AND bx.DATA_TABLE='BX_ORDER_INFO' AND bx.PRIMARY_KEY_VALUE =:id",
+    "from": "AUTH_DATA_AUDIT bx",
+    "orderBy": "bx.UPDATED_TIME desc"
+  },
+  "elements": [
+    {
+      "dataformId": "insure-UpdateRecord",
+      "name": "修改记录ID",
+      "code": "dataAuditId",
+      "dataType": "String",
+      "column": "DATA_AUDIT_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "table": "bx",
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-UpdateRecord",
+      "name": "操作描述",
+      "code": "actionSummary",
+      "dataType": "String",
+      "column": "ACTION_SUMMARY",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-UpdateRecord",
+      "name": "保单ID",
+      "code": "primaryKeyValue",
+      "dataType": "String",
+      "column": "PRIMARY_KEY_VALUE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-UpdateRecord",
+      "name": "操作服务器IP",
+      "code": "hostAddress",
+      "dataType": "String",
+      "column": "HOST_ADDRESS",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "insure-UpdateRecord",
+      "name": "修改人",
+      "code": "updatedBy",
+      "dataType": "String",
+      "column": "UPDATED_BY",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT ID AS CODE ,NAME AS NAME FROM AUTH_USER"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "table": "bx",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "insure-UpdateRecord",
+      "name": "修改时间",
+      "code": "updatedTime",
+      "dataType": "Date",
+      "column": "UPDATED_TIME",
+      "elementUIHint": {
+        "editStyle": "DatePicker",
+        "dataFormat": "Date",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "table": "bx",
+      "group": ""
+    }
+  ],
+  "filters": [
+    {
+      "name": "修改时间",
+      "code": "updatedTime",
+      "bindFor": "updatedTime",
+      "enabled": true,
+      "quick": false,
+      "comparePattern": "Range",
+      "sortCode": "0000"
+    }
+  ]
+}

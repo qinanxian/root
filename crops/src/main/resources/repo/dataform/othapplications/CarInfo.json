@@ -1,0 +1,161 @@
+{
+  "id": "othapplications-CarInfo",
+  "pack": "othapplications",
+  "code": "CarInfo",
+  "name": "车辆信息详情",
+  "managedByRR": false,
+  "tags": "车辆",
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_CAR_INFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "ORDER_ID = :orderId",
+    "from": "QCFQ_CAR_INFO"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "车辆ID",
+      "code": "carId",
+      "dataType": "String",
+      "column": "CAR_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "车辆名称",
+      "code": "carName",
+      "dataType": "String",
+      "column": "CAR_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "所在地",
+      "code": "location",
+      "dataType": "String",
+      "column": "LOCATION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "评估价值（万）",
+      "code": "value",
+      "dataType": "String",
+      "column": "VALUE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "车架号",
+      "code": "frameNo",
+      "dataType": "String",
+      "column": "FRAME_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "发动机号",
+      "code": "engineNo",
+      "dataType": "String",
+      "column": "ENGINE_NO",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-CarInfo",
+      "name": "所属卡单",
+      "code": "orderId",
+      "dataType": "String",
+      "column": "ORDER_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": []
+}

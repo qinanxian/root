@@ -1,0 +1,149 @@
+{
+  "id": "othapplications-ParaInfo",
+  "pack": "othapplications",
+  "code": "ParaInfo",
+  "name": "期限利率详情",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_PARA_CONFIG",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "id = :id",
+    "from": "QCFQ_PARA_CONFIG"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-ParaInfo",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-ParaInfo",
+      "name": "期限",
+      "code": "timeLimit",
+      "dataType": "String",
+      "column": "TIME_LIMIT",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Time_Limit",
+        "suffix": "月",
+        "htmlStyle": "{\"width\":\"183px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-ParaInfo",
+      "name": "年数",
+      "code": "years",
+      "dataType": "Integer",
+      "column": "YEARS",
+      "elementUIHint": {
+        "editStyle": "Integer",
+        "dataFormat": "Integer",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "tips": "请输入整数",
+        "htmlStyle": "{\"width\":\"183px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "0"
+    },
+    {
+      "dataformId": "othapplications-ParaInfo",
+      "name": "客户承担费率",
+      "code": "rate",
+      "dataType": "Double",
+      "column": "RATE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "reading": false,
+        "required": true,
+        "colspan": 4,
+        "textAlign": "Left",
+        "suffix": "%",
+        "tips": "",
+        "htmlStyle": "{\"width\":\"183px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-ParaInfo",
+      "name": "利率",
+      "code": "intRate",
+      "dataType": "Double",
+      "column": "INT_RATE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "suffix": "%",
+        "htmlStyle": "{\"width\":\"183px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.othApplications.qcfq.handler.ParaHandler"
+}

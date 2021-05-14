@@ -1,0 +1,33 @@
+{
+  "categoryCode": "zry",
+  "code": "DistributionStatus",
+  "name": "分发状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "YES",
+      "name": "已分发",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "NO",
+      "name": "未分发",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "WAIT",
+      "name": "待分发",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "FAIL",
+      "name": "发送失败",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

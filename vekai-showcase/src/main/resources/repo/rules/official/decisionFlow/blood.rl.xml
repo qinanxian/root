@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule-flow id="blood" debug="true">
+    <import-variable-library path="jcr:/测试项目/custom.vl.xml"/>
+    <start name="开始1" x="39" y="76" width="40" height="70">
+        <connection g="" type="line" to="规则1"/>
+    </start>
+    <rule name="规则1" x="129" y="76" width="40" height="70" file="jcr:/测试项目/blood_pressure.dtree.xml" version="LATEST">
+        <connection g="" type="line" to="决策1"/>
+    </rule>
+    <decision name="决策1" x="285" y="76" width="40" height="70" decision-type="Criteria">
+        <item connection="c4" condition-type="config">
+            <if>
+                <and>
+                    <atom op="Equals">
+                        <left var-category="投保人" var="result" var-label="中间结果" datatype="Integer" type="variable"/>
+                        <value content="1" type="Input"/>
+                    </atom>
+                </and>
+            </if>
+        </item>
+        <item connection="c0" condition-type="config">
+            <if>
+                <and>
+                    <atom op="Equals">
+                        <left var-category="投保人" var="result" var-label="中间结果" datatype="Integer" type="variable"/>
+                        <value content="2" type="Input"/>
+                    </atom>
+                </and>
+            </if>
+        </item>
+        <item connection="c1" condition-type="config">
+            <if>
+                <and>
+                    <atom op="Equals">
+                        <left var-category="投保人" var="result" var-label="中间结果" datatype="Integer" type="variable"/>
+                        <value content="3" type="Input"/>
+                    </atom>
+                </and>
+            </if>
+        </item>
+        <item connection="c2" condition-type="config">
+            <if>
+                <and>
+                    <atom op="Equals">
+                        <left var-category="投保人" var="result" var-label="中间结果" datatype="Integer" type="variable"/>
+                        <value content="4" type="Input"/>
+                    </atom>
+                </and>
+            </if>
+        </item>
+        <item connection="c3" condition-type="config">
+            <if>
+                <and>
+                    <atom op="Equals">
+                        <left var-category="投保人" var="result" var-label="中间结果" datatype="Integer" type="variable"/>
+                        <value content="5" type="Input"/>
+                    </atom>
+                </and>
+            </if>
+        </item>
+        <item connection="c5" condition-type="config">
+            <if>
+                <and>
+                    <atom op="Equals">
+                        <left var-category="投保人" var="result" var-label="中间结果" datatype="Integer" type="variable"/>
+                        <value content="6" type="Input"/>
+                    </atom>
+                </and>
+            </if>
+        </item>
+        <connection g="" type="line" to="规则3" name="c0"/>
+        <connection g="" type="line" to="规则4" name="c1"/>
+        <connection g="" type="line" to="规则5" name="c2"/>
+        <connection g="" type="line" to="规则6" name="c3"/>
+        <connection g="" type="line" to="规则2" name="c4"/>
+        <connection g="" type="line" to="规则7" name="c5"/>
+    </decision>
+    <rule name="规则3" x="180" y="244" width="40" height="70" file="jcr:/测试项目/bloodPressure-2.ct.xml" version="LATEST"/>
+    <rule name="规则4" x="267" y="244" width="40" height="70" file="jcr:/测试项目/bloodPressure-3.ct.xml" version="LATEST"/>
+    <rule name="规则5" x="377" y="244" width="40" height="70" file="jcr:/测试项目/bloodPressure-4.ct.xml" version="LATEST"/>
+    <rule name="规则6" x="456" y="244" width="40" height="70" file="jcr:/测试项目/bloodPressure-5.ct.xml" version="LATEST"/>
+    <rule name="规则2" x="67" y="244" width="40" height="70" file="jcr:/测试项目/bloodPressure-1.ct.xml" version="LATEST"/>
+    <rule name="规则7" x="536" y="244" width="40" height="70" file="jcr:/测试项目/bloodPressure-6.ct.xml" version="LATEST"/>
+</rule-flow>

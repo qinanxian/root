@@ -1,0 +1,45 @@
+{
+  "code": "WorkflowResourceLocation",
+  "categoryCode": "WORK_FLOW",
+  "nameI18nCode": "",
+  "name": "  流程资源位置",
+  "intro": "",
+  "items": [
+    {
+      "code": "L_Button",
+      "name": "左_正文按钮",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "L_Fieldset",
+      "name": "左_正文",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "L_Link",
+      "name": "左_超链接",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "R_Flow_Button",
+      "name": "右_流程按钮",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "R_Sign_Fieldset",
+      "name": "右_意见区域",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "R_Sign_Button",
+      "name": "右_签署按钮",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

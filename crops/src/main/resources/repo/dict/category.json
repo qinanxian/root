@@ -1,0 +1,93 @@
+{
+  "desc": "该文件为自动生成和维护，请勿手动修改",
+  "dicts": [
+    {
+      "code": "CUSTOMER",
+      "name": "客户管理"
+    },
+    {
+      "code": "LACT",
+      "name": "债权核算"
+    },
+    {
+      "code": "FISCAL",
+      "name": "财务记账"
+    },
+    {
+      "code": "REPORT",
+      "name": "统计报表"
+    },
+    {
+      "code": "WORK_FLOW",
+      "name": "工作流"
+    },
+    {
+      "code": "COMMON",
+      "name": "通用功能"
+    },
+    {
+      "code": "OTHER",
+      "name": "其他"
+    },
+    {
+      "code": "DEMO",
+      "name": "参考案例"
+    },
+    {
+      "code": "CREDIT",
+      "name": ""
+    },
+    {
+      "code": "CONTRACT",
+      "name": ""
+    },
+    {
+      "code": "obiz",
+      "name": "主营业务"
+    },
+    {
+      "code": "bizbook",
+      "name": "业务台账"
+    },
+    {
+      "code": "etl",
+      "name": ""
+    },
+    {
+      "code": "codetodo",
+      "name": "码上办"
+    },
+    {
+      "code": "config",
+      "name": ""
+    },
+    {
+      "code": "led",
+      "name": "乐e贷"
+    },
+    {
+      "code": "econtract",
+      "name": "客户意愿"
+    },
+    {
+      "code": "electroniccrontract",
+      "name": ""
+    },
+    {
+      "code": "authorization",
+      "name": "电子授权"
+    },
+    {
+      "code": "doorsgin",
+      "name": "上门面签"
+    },
+    {
+      "code": "insure",
+      "name": "保险需求"
+    },
+    {
+      "code": "zry",
+      "name": ""
+    }
+  ]
+}

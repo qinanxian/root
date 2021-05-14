@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>root</artifactId>
+        <groupId>com.vekai</groupId>
+        <version>3.2.2-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.fisok</groupId>
+    <artifactId>ide-web</artifactId>
+    <description>
+        FISOK的WEB处理层，处理WEB环境初始化及配置信息等
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.fisok</groupId>
+            <artifactId>ida-raw</artifactId>
+            <version>${vekai.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

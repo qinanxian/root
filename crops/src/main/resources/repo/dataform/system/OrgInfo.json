@@ -1,0 +1,410 @@
+{
+  "id": "system-OrgInfo",
+  "pack": "system",
+  "code": "OrgInfo",
+  "name": "系统管理机构详情",
+  "description": "系统管理机构详情",
+  "sortCode": "3020",
+  "classification": null,
+  "tags": "系统管理机构详情",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.auth.entity.Org",
+  "query": {
+    "select": "SELECT",
+    "selectItems": [],
+    "from": "AUTH_ORG",
+    "where": "ID=:orgId",
+    "groupBy": null,
+    "having": null,
+    "orderBy": null
+  },
+  "handler": "com.vekai.appframe.auth.handler.OrgInfoHandler",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "elements": [
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构号",
+      "code": "code",
+      "dataType": "String",
+      "column": "CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构名",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构路径全称",
+      "code": "fullName",
+      "dataType": "String",
+      "column": "FULL_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构简称",
+      "code": "shortName",
+      "dataType": "String",
+      "column": "SHORT_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "上级机构",
+      "code": "parentId",
+      "dataType": "String",
+      "column": "PARENT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构ID",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构级别",
+      "code": "orgLevel",
+      "dataType": "String",
+      "column": "ORG_LEVEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构类型",
+      "code": "orgType",
+      "dataType": "String",
+      "column": "ORG_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "所在地区",
+      "code": "districts",
+      "dataType": "String",
+      "column": "DISTRICTS",
+      "elementUIHint": {
+        "editStyle": "AddressPicker",
+        "dataFormat": "String",
+        "visible": false,
+        "required": false,
+        "colspan": 2,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"568px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "邮编",
+      "code": "postCode",
+      "dataType": "String",
+      "column": "POST_CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "客服电话",
+      "code": "phone",
+      "dataType": "String",
+      "column": "PHONE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "工作时间",
+      "code": "workeHour",
+      "dataType": "String",
+      "column": "WORKE_HOUR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "经度",
+      "code": "longitude",
+      "dataType": "Double",
+      "column": "LONGITUDE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minwidth\":\"180px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "6"
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "纬度",
+      "code": "latitude",
+      "dataType": "Double",
+      "column": "LATITUDE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minwidth\":\"180px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "6"
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "负责人",
+      "code": "leader",
+      "dataType": "String",
+      "column": "LEADER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "机构说明",
+      "code": "remark",
+      "dataType": "String",
+      "column": "REMARK",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "排序代码",
+      "code": "sortCode",
+      "dataType": "String",
+      "column": "SORT_CODE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"340px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "system-OrgInfo",
+      "name": "详细地址",
+      "code": "address",
+      "dataType": "String",
+      "column": "ADDRESS",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 4,
+        "textAlign": "Left",
+        "htmlStyle": "{\"minWidth\":\"568px\",\"minHeight\":\"50px\"}",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0170",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [],
+  "properties": {},
+  "revision": 0,
+  "createdBy": null,
+  "createdTime": null,
+  "updatedBy": null,
+  "updatedTime": null,
+  "managedByRR": false
+}

@@ -1,0 +1,366 @@
+{
+  "id": "business-BusinessApplyDetail",
+  "pack": "business",
+  "code": "BusinessApplyDetail",
+  "name": "业务申请详情",
+  "managedByRR": false,
+  "tags": "业务，业务申请",
+  "dataModelType": "DataMap",
+  "dataModel": "BUSINESS_APPLY",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "apply.ID = :applyId and apply.CUSTOMER_ID = cust.ID",
+    "from": "BUSINESS_APPLY apply,CUSTOMER_INFO cust"
+  },
+  "elements": [
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "编号",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "姓名",
+      "code": "certName",
+      "dataType": "String",
+      "column": "CERT_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "cust",
+      "validatorList": []
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "身份证号",
+      "code": "certId",
+      "dataType": "String",
+      "column": "CERT_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "cust",
+      "validatorList": []
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "手机号",
+      "code": "tel",
+      "dataType": "String",
+      "column": "TEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "cust",
+      "validatorList": []
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "客户编号",
+      "code": "customerId",
+      "dataType": "String",
+      "column": "CUSTOMER_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "较LPR加/减基点(BP)",
+      "code": "bp",
+      "dataType": "String",
+      "column": "BP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "最长期限(年)",
+      "code": "maxTerm",
+      "dataType": "String",
+      "column": "MAX_TERM",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "产品代码",
+      "code": "productCode",
+      "dataType": "String",
+      "column": "PRODUCT_CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "贷款用途",
+      "code": "loanPurpose",
+      "dataType": "String",
+      "column": "LOAN_PURPOSE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "还款方式",
+      "code": "repayType",
+      "dataType": "String",
+      "column": "REPAY_TYPE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "RepayType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0090",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "客户经理",
+      "code": "custManager",
+      "dataType": "String",
+      "column": "CUST_MANAGER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0100",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "机构号",
+      "code": "orgId",
+      "dataType": "String",
+      "column": "ORG_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0110",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "白名单有效日期",
+      "code": "whiteValidity",
+      "dataType": "String",
+      "column": "WHITE_VALIDITY",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0120",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "是否公职人员",
+      "code": "isOffice",
+      "dataType": "String",
+      "column": "IS_OFFICE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0130",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "录入状态",
+      "code": "enterStatus",
+      "dataType": "String",
+      "column": "ENTER_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "ShiFou"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0140",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "客户渠道标识",
+      "code": "channel",
+      "dataType": "String",
+      "column": "CHANNEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0150",
+      "validatorList": [],
+      "table": "apply"
+    },
+    {
+      "dataformId": "business-BusinessApplyDetail",
+      "name": "起始日期",
+      "code": "startDate",
+      "dataType": "String",
+      "column": "START_DATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0160",
+      "validatorList": [],
+      "table": "apply"
+    }
+  ],
+  "filters": []
+}

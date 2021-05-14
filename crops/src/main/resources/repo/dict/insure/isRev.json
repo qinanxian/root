@@ -1,0 +1,23 @@
+{
+  "categoryCode": "insure",
+  "code": "isRev",
+  "name": "是否收到保单",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "是",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    },
+    {
+      "code": "0",
+      "name": "否",
+      "hotspot": "1",
+      "status": "1",
+      "summary": ""
+    }
+  ]
+}

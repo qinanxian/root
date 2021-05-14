@@ -1,0 +1,33 @@
+{
+  "categoryCode": "obiz",
+  "code": "AppStatus",
+  "name": "业务状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "CREATED",
+      "name": "新建",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "IN_PROCESS",
+      "name": "审批中",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "ENABLED",
+      "name": "生效",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "DISABLED",
+      "name": "失效",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

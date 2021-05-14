@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "NumberType",
+  "name": "取号类别",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "立即取号",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "预约取号",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

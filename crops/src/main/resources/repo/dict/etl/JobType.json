@@ -1,0 +1,21 @@
+{
+  "categoryCode": "etl",
+  "code": "JobType",
+  "name": "任务类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "kettle",
+      "name": "Kettle",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "java",
+      "name": "Java",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

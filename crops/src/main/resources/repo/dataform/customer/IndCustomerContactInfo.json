@@ -1,0 +1,158 @@
+{
+  "id": "customer-IndCustomerContactInfo",
+  "pack": "customer",
+  "code": "IndCustomerContactInfo",
+  "name": "个人客户联系人详情",
+  "dataModelType": "DataMap",
+  "dataModel": "CUST_CONTACT",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "CUST_CONTACT",
+    "where": "SERIAL_NO=:serialNo"
+  },
+  "elements": [
+    {
+      "dataformId": "customer-IndCustomerContactInfo",
+      "name": "流水号",
+      "code": "serialNo",
+      "dataType": "String",
+      "column": "SERIAL_NO",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "customer-IndCustomerContactInfo",
+      "name": "客户号",
+      "code": "custId",
+      "dataType": "String",
+      "column": "CUST_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "customer-IndCustomerContactInfo",
+      "name": "与联系人关系",
+      "code": "relationship",
+      "dataType": "String",
+      "column": "RELATIONSHIP",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "customer-IndCustomerContactInfo",
+      "name": "联系人姓名",
+      "code": "contactName",
+      "dataType": "String",
+      "column": "CONTACT_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "customer-IndCustomerContactInfo",
+      "name": "联系人手机号",
+      "code": "contactCellphone",
+      "dataType": "String",
+      "column": "CONTACT_CELLPHONE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "customer-IndCustomerContactInfo",
+      "name": "联系人电话",
+      "code": "contactTelephone",
+      "dataType": "String",
+      "column": "CONTACT_TELEPHONE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

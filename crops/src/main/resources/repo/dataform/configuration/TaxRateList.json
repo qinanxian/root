@@ -1,0 +1,136 @@
+{
+  "id": "configuration-TaxRateList",
+  "pack": "configuration",
+  "code": "TaxRateList",
+  "name": "核算配置税率维护列表",
+  "tags": "税率维护列表",
+  "description": "核算配置税率维护列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FNAT_TAX_RATE",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "FNAT_TAX_RATE",
+    "where": "STATUS='VALID'"
+  },
+  "elements": [
+    {
+      "dataformId": "configuration-TaxRateList",
+      "name": "标识号",
+      "code": "taxRateId",
+      "dataType": "String",
+      "column": "TAX_RATE_ID",
+      "table": "FNAT_TAX_RATE",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "configuration-TaxRateList",
+      "name": "税率类型",
+      "code": "taxRateType",
+      "dataType": "String",
+      "column": "TAX_RATE_TYPE",
+      "table": "FNAT_TAX_RATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "TaxRateType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-TaxRateList",
+      "name": "生效日期",
+      "code": "effectDate",
+      "dataType": "Date",
+      "column": "EFFECT_DATE",
+      "table": "FNAT_TAX_RATE",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-TaxRateList",
+      "name": "税率 / %",
+      "code": "taxRate",
+      "dataType": "Double",
+      "column": "TAX_RATE",
+      "table": "FNAT_TAX_RATE",
+      "elementUIHint": {
+        "editStyle": "Double",
+        "dataFormat": "Double",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "suffix": ""
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": "0.01",
+      "limitedLength": 0,
+      "decimalDigits": "2",
+      "group": ""
+    },
+    {
+      "dataformId": "configuration-TaxRateList",
+      "name": "状态",
+      "code": "status",
+      "dataType": "String",
+      "column": "STATUS",
+      "table": "FNAT_TAX_RATE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "EffectStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.appframe.taxrate.handler.TaxRateListHandler"
+}

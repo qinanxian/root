@@ -1,0 +1,109 @@
+{
+  "code" : "CreditWorkflowStatus",
+  "name" : "授信流程状态",
+  "nameI18nCode" : null,
+  "categoryCode" : "CREDIT",
+  "sortCode" : "10020",
+  "intro" : "授信流程状态的码表",
+  "items" : [ {
+    "code" : "new",
+    "name" : "新增",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "05",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "presubmit",
+    "name" : "待提交",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "abolished",
+    "name" : "流程作废",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "approving",
+    "name" : "审批中",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "retrieve",
+    "name" : "追回",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "backorigin",
+    "name" : "驳回",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "backtrack",
+    "name" : "退回修改",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "60",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "reject",
+    "name" : "流程否决",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "70",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "takeAdvice",
+    "name" : "征求他人意见",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "80",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "finished",
+    "name" : "批准",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "90",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

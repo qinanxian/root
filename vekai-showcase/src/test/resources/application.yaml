@@ -1,0 +1,183 @@
+tomcat:
+    access-log-enabled: false
+    protocol-header: x-forwarded-proto
+    remote-ip-header: x-forwarded-for
+
+spring:
+  profiles:
+    active: dev
+    include: ["shiro"]
+  application:
+    name: MAIN-AMIX-APP
+
+  autoconfigure:
+    exclude: [org.activiti.spring.boot.SecurityAutoConfiguration,org.activiti.spring.boot.JpaProcessEngineAutoConfiguration,org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration]
+
+  mvc:
+    favicon.enabled: false
+    dispatch-options-request: true
+    throw-exception-if-no-handler-found: true
+  aop:
+    auto: true
+    proxy-target-class: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #时间格式化
+    time-zone: Asia/Chongqing #时区设置
+  activiti:
+      checkProcessDefinitions: false
+      asyncExecutorEnabled: false
+  messages:
+    basename: /i18n/messages
+
+  batch:
+    job:
+      names: #启动时要执行的Job，默认执行全部Job
+      enabled: false #是否自动执行定义的Job，默认是
+    initializer:
+      enabled: false #是否初始化Spring Batch的数据库，默认为是
+
+  ##############################
+  # 以下是配置不同的模板引擎
+  ##############################
+  #    Default Extensions are:
+  #    *.html - Thymeleaf
+  #    *.tpl - Groovy
+  #    *.ftl - Freemarker
+  #    *.vm - Velocity
+
+  freemarker:
+    cache: false
+    template-loader-path: ["classpath:/templates/","classpath:/webapp/"]
+    prefer-file-system-access: false  #不使用文件系统优先，而使用classpath下的资源文件优先，解决打jar包运行后，出现的异常问题
+    allow-request-override: false     #指定HttpServletRequest的属性是否可以覆盖controller的model的同名项
+    check-template-location: true     #check-template-location
+    charset: UTF-8
+    content-type: text/html
+    #request/session==true请求和会话属性都被复制到模板的属性集中，此时spring必须设置为true
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    request-context-attribute: request
+    prefix:
+    suffix: .ftl
+    classic_compatible: true
+
+  datasource:
+    druid:
+      initial-size: 10
+      max-active: 30
+      #打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 25
+      filters: stat,wall,slf4j #配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      use-global-data-source-stat: true #合并多个DruidDataSource的监控数据
+      StatViewServlet:
+        loginUsername: druid
+        loginPassword: druid
+
+mybatis:
+    configuration:
+        map-underscore-to-camel-case: true
+
+#日志配置
+logging:
+  config: classpath:logback.xml
+
+
+management:
+  security:
+    enabled: false  #否则actuator的监控会报401
+
+
+security:
+  basic:
+    enable: false
+  ignored: /**
+
+#Fisok的相关配置信息
+com.vekai:
+  base:
+    cache: Memory #Memory,EHCache,Memcached,Redis,MongoDB
+    devBaseDir: ${projectRoot}/amix/src/main/resources
+    dictDataClasspath: repo/dict
+  search:
+    directory-mode: Disk
+  common:
+    file-storage-root: /data/amix #图片附件等文件保存基准路径地址
+    file-hist-storage-root: /data/amix/file-historic
+    temporary-storage: /data/amix/temporary
+  office:
+    page-office:
+      license-path: /data/amix/pageoffice/license/
+      staticResourceUrl: /office/pageoffice/static
+  dataform:
+    devBaseDir: ${projectRoot}/amix/src/main/resources
+    dataformDataClasspath: repo/dataform
+    dataFormMapperType: json
+  auth:
+    authzFilterEnabled: false
+    enableHashPwd: false
+    accessControlStrategy:
+      anon: ["/","/ping/*","/nop","/base/global-profile.js","/office/pageoffice/**","/showcase/pageoffice/**", "/**/*.js",
+            "/**/*.gif","/**/*.png","/**/*.jpeg","/**/*.jpg",
+             "/**/*.css",  "/**/*.json", "/**/*.html", "/**/*.ttf", "/**/*.woff", "/editor-app/**","/workflow/design/**",
+             "/icon/**", "/devtool/*Json", "/druid/**",
+             "/common/FileOperateController/show**File/**","/favicon.ico","/swagger-resources/**","/v2/api-docs",
+             "/ureport/**","/urule/**",
+             ]
+      authc: /**
+    shiro:
+        login-url: "/logon"             #登录地址
+        success-url: "/"                #登录成功地址
+        unauthorized-url: "/403"        #未授权地址
+  sql:
+      serial-no:
+        generator-map:
+          "com.amarsoft.amix.customer.entity.CustomerPO.custId": "DEFAULT"
+          "com.amarsoft.amix.invest.plan.entity.IvstPlanPO.planId": "DEFAULT"
+          "com.amarsoft.amix.workflow.entity.WorkflowProcess.procId": "DEFAULT"
+          "com.amarsoft.amix.workflow.entity.WorkflowTask.taskId": "DEFAULT"
+          "com.amarsoft.amix.workflow.entity.WorkflowComment.commentId": "DEFAULT"
+          "com.amarsoft.amix.invest.loan.entity.IvstPlanLoanPO.loanId": "DEFAULT"
+          "IVST_MANAGE_TASK_ITEM.ITEM_ID": "DEFAULT"
+          "IVST_MANAGE_TASK_CHANGE_APPPLY.TASK_CHANGE_APPLY_ID": "DEFAULT"
+        template-map:
+          "com.amarsoft.amix.customer.entity.CustomerPO.custId": "PAC0000000"
+          "com.amarsoft.amix.invest.plan.entity.IvstPlanPO.planId": "PEP0000000"
+          "com.amarsoft.amix.workflow.entity.WorkflowProcess.procId": "L000000000"
+          "com.amarsoft.amix.workflow.entity.WorkflowTask.taskId": "T000000000"
+          "com.amarsoft.amix.workflow.entity.WorkflowComment.commentId": "C000000000"
+          "com.amarsoft.amix.invest.loan.entity.IvstPlanLoanPO.loanId": "ACC0000000"
+          "com.amarsoft.amix.invest.afterinvest.change.entity.IvstPlanChangeApply.planChangeApplyId": "PMN000000"
+          "IVST_MANAGE_TASK_ITEM.ITEM_ID": "TTN0000000"
+          "IVST_MANAGE_TASK_CHANGE_APPPLY.TASK_CHANGE_APPLY_ID": "MTC000000"
+  workflow:
+    handler-mapping:
+      DemoCredit : ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler", "com.amarsoft.amix.showcase.workflow.handler.WKFLCreditHandler"]
+      parallelgatewayTest01: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler"]
+      Simple: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler"]
+      leaveRecordFlow: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler"]
+      must: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler"]
+      judgeNetWork: ["com.vekai.workflow.handler.impl.WorkflowDBProcHandler","com.vekai.appframe.workflow.handler.JudgeNetWorkParamHandler"]
+      ivstPlanEstablishment: ["com.amarsoft.amix.invest.plan.handler.establishment.PlanEstablishmentProcHandler"]
+      dueDiligenceAndDecisionFlow: ["com.amarsoft.amix.invest.plan.handler.duediligence.DueDiligenceAndDecisionProcHandler"]
+      ivstExecuteTaskFlow: ["com.amarsoft.amix.invest.executetask.handler.ExecuteTaskProcHandler"]
+      multiInstance: ["com.vekai.appframe.workflow.handler.MultiInstanceHandler"]
+      financeFundEstablishmentFlow: ["com.amarsoft.amix.finance.plan.handler.establishment.FundEstablishmentProcHandler"]
+      financeFundGpManagerFilingFlow: ["com.amarsoft.amix.finance.plan.handler.gpmanagerfiling.FundGpManagerFilingProcHandler"]
+      ivstContractApply: ["com.amarsoft.amix.invest.contract.handler.contractapply.ContractApplyProcHandler"]
+      ivstPlanLoanDocListMakingFlow: ["com.amarsoft.amix.invest.loan.handler.PlanLoanDocListMakingProcHandler"]
+      ivstContractSupplement: ["com.amarsoft.amix.invest.contract.handler.supplement.ContractSupplementProcHandler"]
+      planTransfer: ["com.amarsoft.amix.invest.handover.handler.IvstPlanHandoverProcHandler"]
+      manageTaskDesign: ["com.amarsoft.amix.invest.afterinvest.managetask.handler.ManageTaskProcHandler"]
+      manageTaskTrack: ["com.amarsoft.amix.invest.afterinvest.managetask.handler.ManageTaskTrackProcHandler"]
+      manageTaskChange: ["com.amarsoft.amix.invest.afterinvest.managetask.handler.ManageTaskChangeProcHandler"]
+
+      ivstPlanLoanFlow: ["com.amarsoft.amix.invest.loan.handler.PlanLoanProcHandler"]
+      ivstCorpGovernanceFlow: ["com.amarsoft.amix.invest.afterinvest.corpgovernance.handler.CorpGovernanceProcHandler"]
+      ivstPlanChangeAfterInvestFlow: ["com.amarsoft.amix.invest.afterinvest.change.handler.PlanChangeProcHandler"]
+
+  #规则引擎属性配置
+    urule:
+      sample1: abcdef1

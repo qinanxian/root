@@ -1,0 +1,4650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<crosstab assign-target-type="variable" var-category="投保人" var="bloodPrePoint" var-label="血压评分" datatype="String">
+    <remark><![CDATA[]]></remark>
+    <header rowspan="1" colspan="2"><![CDATA[LEFT && TOP]]></header>
+    <import-variable-library path="jcr:/测试项目/custom.vl.xml"/>
+    <row number="1" type="top" bundle-data-type="variable" var-category="投保人" var="shrinkPre" var-label="收缩压" datatype="Double"/>
+    <row number="2" type="left"/>
+    <row number="3" type="left"/>
+    <row number="4" type="left"/>
+    <row number="5" type="left"/>
+    <row number="6" type="left"/>
+    <row number="7" type="left"/>
+    <row number="8" type="left"/>
+    <row number="9" type="left"/>
+    <row number="10" type="left"/>
+    <row number="11" type="left"/>
+    <row number="12" type="left"/>
+    <row number="13" type="left"/>
+    <row number="14" type="left"/>
+    <row number="15" type="left"/>
+    <row number="16" type="left"/>
+    <row number="17" type="left"/>
+    <row number="18" type="left"/>
+    <row number="19" type="left"/>
+    <row number="20" type="left"/>
+    <row number="21" type="left"/>
+    <row number="22" type="left"/>
+    <row number="23" type="left"/>
+    <row number="24" type="left"/>
+    <row number="25" type="left"/>
+    <row number="26" type="left"/>
+    <row number="27" type="left"/>
+    <row number="28" type="left"/>
+    <row number="29" type="left"/>
+    <row number="30" type="left"/>
+    <row number="31" type="left"/>
+    <row number="32" type="left"/>
+    <row number="33" type="left"/>
+    <row number="34" type="left"/>
+    <row number="35" type="left"/>
+    <row number="36" type="left"/>
+    <row number="37" type="left"/>
+    <row number="38" type="left"/>
+    <row number="39" type="left"/>
+    <row number="40" type="left"/>
+    <row number="41" type="left"/>
+    <row number="42" type="left"/>
+    <row number="43" type="left"/>
+    <row number="44" type="left"/>
+    <row number="45" type="left"/>
+    <row number="46" type="left"/>
+    <row number="47" type="left"/>
+    <row number="48" type="left"/>
+    <row number="49" type="left"/>
+    <row number="50" type="left"/>
+    <row number="51" type="left"/>
+    <row number="52" type="left"/>
+    <row number="53" type="left"/>
+    <row number="54" type="left"/>
+    <row number="55" type="left"/>
+    <row number="56" type="left"/>
+    <row number="57" type="left"/>
+    <row number="58" type="left"/>
+    <row number="59" type="left"/>
+    <row number="60" type="left"/>
+    <row number="61" type="left"/>
+    <row number="62" type="left"/>
+    <row number="63" type="left"/>
+    <row number="64" type="left"/>
+    <row number="65" type="left"/>
+    <row number="66" type="left"/>
+    <column number="1" type="left" bundle-data-type="variable" var-category="投保人" var="age" var-label="年龄" datatype="Integer"/>
+    <column number="2" type="left" bundle-data-type="variable" var-category="投保人" var="diastolicPre" var-label="舒张压" datatype="Double"/>
+    <column number="3" type="top"/>
+    <column number="4" type="top"/>
+    <column number="5" type="top"/>
+    <column number="6" type="top"/>
+    <column number="7" type="top"/>
+    <column number="8" type="top"/>
+    <column number="9" type="top"/>
+    <column number="10" type="top"/>
+    <column number="11" type="top"/>
+    <column number="12" type="top"/>
+    <column number="13" type="top"/>
+    <column number="14" type="top"/>
+    <column number="15" type="top"/>
+    <column number="16" type="top"/>
+    <column number="17" type="top"/>
+    <column number="18" type="top"/>
+    <column number="19" type="top"/>
+    <column number="20" type="top"/>
+    <column number="21" type="top"/>
+    <condition-cell row="1" col="3" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="100" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="4" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="100" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="130" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="5" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="130" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="135" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="6" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="135" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="7" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="140" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="145" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="8" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="145" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="150" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="9" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="150" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="155" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="10" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="155" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="160" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="11" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="160" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="165" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="12" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="165" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="170" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="13" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="170" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="175" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="14" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="175" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="180" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="15" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="180" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="185" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="16" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="185" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="190" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="17" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="190" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="195" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="18" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="195" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="200" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="19" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="200" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="210" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="20" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="210" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="240" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="1" col="21" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="240" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="2" col="1" rowspan="13" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="16" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="40" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="2" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="60" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="2" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="2" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="3" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="3" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="3" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="4" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="65" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="80" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="12">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="13">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="5" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="80" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="85" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="5" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="8">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="12">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="13">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="6" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="85" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="6" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="7">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="8">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="10">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="12">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="13">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="14">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="15">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="6" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="7" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="95" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="7" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="4">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="5">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="6">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="7">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="8">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="9">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="10">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="11">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="12">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="13">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="14">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="15">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="7" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="8" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="95" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="100" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="8" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="4">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="5">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="6">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="7">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="8">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="9">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="10">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="11">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="12">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="13">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="14">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="15">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="8" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="9" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="100" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="105" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="9" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="4">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="5">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="6">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="7">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="8">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="9">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="10">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="11">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="12">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="13">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="14">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="15">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="9" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="10" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="105" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="110" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="10" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="7">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="8">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="9">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="10">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="11">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="12">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="10" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="11" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="110" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="115" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="11" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="7">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="8">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="9">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="11" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="12" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="115" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="120" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="12" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="7">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="8">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="9">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="12" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="13" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="120" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="13" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="13" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="14" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="14" col="3">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="14" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="15" col="1" rowspan="13" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="40" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="50" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="15" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="60" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="15" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="15" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="16" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="16" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="16" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="17" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="65" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="80" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="17" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="17" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="18" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="80" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="85" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="18" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="10">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="18" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="19" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="85" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="19" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="8">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="14">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="19" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="20" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="95" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="20" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="6">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="7">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="8">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="14">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="15">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="20" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="21" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="95" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="100" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="21" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="4">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="5">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="6">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="7">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="8">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="9">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="10">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="11">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="12">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="13">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="14">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="15">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="16">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="21" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="22" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="100" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="105" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="22" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="4">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="5">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="6">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="7">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="8">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="9">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="10">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="11">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="12">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="13">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="14">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="15">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="16">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="22" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="23" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="105" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="110" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="23" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="7">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="8">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="9">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="10">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="11">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="12">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="13">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="14">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="15">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="23" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="24" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="110" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="115" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="24" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="7">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="8">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="9">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="24" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="25" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="115" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="120" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="25" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="7">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="8">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="9">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="25" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="26" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="120" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="26" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="26" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="27" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="27" col="3">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="27" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="28" col="1" rowspan="13" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="50" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="60" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="28" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="60" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="28" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="28" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="29" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="29" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="29" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="30" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="65" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="80" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="30" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="11">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="30" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="31" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="80" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="85" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="31" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="11">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="31" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="32" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="85" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="32" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="10">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="14">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="32" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="33" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="95" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="33" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="9">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="14">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="33" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="34" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="95" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="100" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="34" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="4">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="5">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="6">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="7">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="8">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="10">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="14">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="15">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="16">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="34" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="35" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="100" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="105" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="35" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="4">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="5">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="6">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="7">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="8">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="9">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="10">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="11">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="12">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="13">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="14">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="15">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="16">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="35" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="36" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="105" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="110" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="36" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="7">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="8">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="9">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="10">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="11">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="12">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="13">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="14">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="15">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="16">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="36" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="37" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="110" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="115" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="37" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="7">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="8">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="9">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="10">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="11">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="12">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="37" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="38" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="115" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="120" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="38" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="7">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="8">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="9">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="38" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="39" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="120" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="39" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="39" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="40" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="40" col="3">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="40" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="41" col="1" rowspan="13" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="41" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="60" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="41" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="41" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="42" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="42" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="42" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="43" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="65" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="80" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="43" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="11">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="12">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="13">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="43" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="44" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="80" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="85" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="44" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="11">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="12">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="13">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="44" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="45" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="85" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="45" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="11">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="13">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="14">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="15">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="45" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="46" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="95" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="46" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="10">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="14">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="15">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="46" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="47" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="95" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="100" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="47" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="6">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="7">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="8">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="14">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="16">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="47" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="48" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="100" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="105" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="48" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="4">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="5">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="6">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="7">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="8">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="9">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="10">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="11">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="12">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="14">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="16">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="17">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="48" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="49" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="105" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="110" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="49" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="4">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="5">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="6">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="7">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="8">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="9">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="10">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="11">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="12">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="13">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="14">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="15">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="16">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="17">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="49" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="50" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="110" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="115" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="50" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="4">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="5">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="6">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="7">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="8">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="9">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="10">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="11">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="12">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="13">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="14">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="15">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="16">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="50" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="51" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="115" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="120" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="51" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="7">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="8">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="9">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="51" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="52" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="120" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="52" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="52" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="53" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="53" col="3">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="53" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="54" col="1" rowspan="13" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="54" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="LessThen">
+                <value content="60" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="54" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="54" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="55" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="60" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="65" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="55" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="4">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="5">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="6">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="7">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="8">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="9">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="10">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="11">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="12">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="13">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="14">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="15">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="16">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="17">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="18">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="19">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="20">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="55" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="56" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="65" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="80" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="56" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="11">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="12">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="13">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="56" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="57" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="80" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="85" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="57" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="11">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="12">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="13">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="14">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="15">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="57" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="58" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="85" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="58" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="10">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="11">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="13">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="14">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="15">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="58" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="59" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="95" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="59" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="7">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="8">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="9">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="10">
+        <value content="15" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="11">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="12">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="14">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="15">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="16">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="59" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="60" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="95" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="100" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="60" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="4">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="5">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="6">
+        <value content="0" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="7">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="8">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="9">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="10">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="11">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="12">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="13">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="14">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="16">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="17">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="60" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="61" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="100" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="105" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="61" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="4">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="5">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="6">
+        <value content="25" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="7">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="8">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="9">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="10">
+        <value content="50" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="11">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="12">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="13">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="14">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="15">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="16">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="17">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="61" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="62" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="105" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="110" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="62" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="4">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="5">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="6">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="7">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="8">
+        <value content="75" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="9">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="10">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="11">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="12">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="13">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="14">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="15">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="16">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="17">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="18">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="62" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="63" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="110" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="115" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="63" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="4">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="5">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="6">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="7">
+        <value content="100" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="8">
+        <value content="125" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="9">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="10">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="11">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="12">
+        <value content="150" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="13">
+        <value content="175" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="14">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="15">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="16">
+        <value content="200" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="19">
+        <value content="咨询首席核保师" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="63" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="64" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="115" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="120" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="64" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="4">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="5">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="6">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="7">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="8">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="9">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="10">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="11">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="12">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="13">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="14">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="15">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="16">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="17">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="18">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="19">
+        <value content="延期" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="64" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="65" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="120" type="Input"/>
+            </condition>
+            <condition op="LessThen">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="65" col="3">
+        <value content="咨询再保公司" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="65" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <condition-cell row="66" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="140" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="66" col="3">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="4">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="5">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="6">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="7">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="8">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="9">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="10">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="11">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="12">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="13">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="14">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="15">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="16">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="17">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="18">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="19">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="20">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+    <value-cell row="66" col="21">
+        <value content="拒保" type="Input"/>
+    </value-cell>
+</crosstab>

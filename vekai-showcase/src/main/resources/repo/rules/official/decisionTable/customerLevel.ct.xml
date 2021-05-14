@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<crosstab assign-target-type="variable" var-category="贷款人" var="level" var-label="客户等级(1-4)" datatype="Integer">
+    <remark><![CDATA[]]></remark>
+    <header rowspan="2" colspan="1"><![CDATA[LEFT && TOP]]></header>
+    <import-variable-library path="jcr:/测试项目/loan.vl.xml"/>
+    <row number="1" type="top" bundle-data-type="variable" var-category="贷款人" var="background" var-label="本科及以上学历" datatype="Boolean"/>
+    <row number="2" type="top" bundle-data-type="variable" var-category="贷款人" var="houseLoan" var-label="房贷记录" datatype="Boolean"/>
+    <row number="3" type="left"/>
+    <row number="4" type="left"/>
+    <row number="5" type="left"/>
+    <column number="1" type="left" bundle-data-type="variable" var-category="贷款人" var="industryCategory" var-label="行业分类" datatype="String"/>
+    <column number="2" type="top"/>
+    <column number="3" type="top"/>
+    <column number="4" type="top"/>
+    <column number="5" type="top"/>
+    <condition-cell row="1" col="2" rowspan="1" colspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="3" col="1" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="优质行业" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="3" col="2">
+        <value content="1" type="Input"/>
+    </value-cell>
+    <condition-cell row="1" col="4" rowspan="1" colspan="2">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="3" col="4">
+        <value content="1" type="Input"/>
+    </value-cell>
+    <condition-cell row="2" col="2" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="2" col="4" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="true" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <condition-cell row="2" col="3" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="3" col="3">
+        <value content="1" type="Input"/>
+    </value-cell>
+    <condition-cell row="2" col="5" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="false" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="3" col="5">
+        <value content="2" type="Input"/>
+    </value-cell>
+    <condition-cell row="4" col="1" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="其他行业" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="4" col="2">
+        <value content="1" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="3">
+        <value content="2" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="4">
+        <value content="2" type="Input"/>
+    </value-cell>
+    <value-cell row="4" col="5">
+        <value content="3" type="Input"/>
+    </value-cell>
+    <condition-cell row="5" col="1" rowspan="1" colspan="1">
+        <joint type="and">
+            <condition op="Equals">
+                <value content="潜在高风险" type="Input"/>
+            </condition>
+        </joint>
+    </condition-cell>
+    <value-cell row="5" col="2">
+        <value content="2" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="3">
+        <value content="3" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="4">
+        <value content="3" type="Input"/>
+    </value-cell>
+    <value-cell row="5" col="5">
+        <value content="4" type="Input"/>
+    </value-cell>
+</crosstab>

@@ -1,0 +1,190 @@
+{
+  "id": "demo-VoucherEntryList",
+  "pack": "demo",
+  "code": "VoucherEntryList",
+  "name": "凭证科目列表",
+  "tags": "凭证科目列表",
+  "description": "凭证科目列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_VOUCHER_ENTRY",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "VOUCHER_ID=:voucherId",
+    "from": "FISC_VOUCHER_ENTRY",
+    "orderBy": "VOUCHER_ENTRY_ID ASC"
+  },
+  "elements": [
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "entryCode",
+      "name": "科目代码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "ENTRY_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "subject",
+      "name": "科目",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0001",
+      "column": "''",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "entryName",
+      "name": "科目名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0002",
+      "column": "ENTRY_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "assistName",
+      "name": "辅助对象",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0003",
+      "column": "ASSIST_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "direction",
+      "name": "方向",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "ChargeupDirection"
+      },
+      "sortCode": "0004",
+      "column": "DIRECTION",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "currency",
+      "name": "本位币",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "Currency"
+      },
+      "sortCode": "0005",
+      "column": "CURRENCY",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "occurAmt",
+      "name": "本位币金额",
+      "group": "",
+      "dataType": "Double",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "editStyle": "Currency",
+        "dataFormat": "Currency",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0006",
+      "column": "OCCUR_AMT",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "demo-VoucherEntryList",
+      "code": "voucherEntryId",
+      "name": "凭证科目编号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0007",
+      "column": "VOUCHER_ENTRY_ID",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

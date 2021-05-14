@@ -1,0 +1,239 @@
+{
+  "code" : "RelationShip",
+  "name" : "关联关系",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0037",
+  "intro" : "关联关系的码表",
+  "items" : [ {
+    "code" : "1",
+    "name" : "高管",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "1",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "高管"
+  }, {
+    "code" : "100",
+    "name" : "法人代表(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "100",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "101",
+    "name" : "公司董事长(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "101",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "102",
+    "name" : "公司总经理/厂长/CEO(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "102",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "103",
+    "name" : "财务主管/CFO(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "103",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "104",
+    "name" : "授权经办人(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "104",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "105",
+    "name" : "部门经理(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "105",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "106",
+    "name" : "董事(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "106",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "107",
+    "name" : "监事(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "107",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "108",
+    "name" : "实际控制人(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "108",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "199",
+    "name" : "其他(高管)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "199",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "2",
+    "name" : "投资",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "2",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "投资"
+  }, {
+    "code" : "200",
+    "name" : "资金(投资)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "200",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "201",
+    "name" : "技术(投资)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "201",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "202",
+    "name" : "实物(投资)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "202",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "203",
+    "name" : "权利(投资)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "203",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "299",
+    "name" : "其他(投资)",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "299",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "3",
+    "name" : "家庭关系",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "3",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "家庭关系"
+  }, {
+    "code" : "300",
+    "name" : "配偶",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "300",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "301",
+    "name" : "父母",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "301",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "302",
+    "name" : "子女",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "302",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "304",
+    "name" : "其他姻亲",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "304",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "399",
+    "name" : "其他血亲",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "399",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

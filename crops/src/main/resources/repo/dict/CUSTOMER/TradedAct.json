@@ -1,0 +1,89 @@
+{
+  "code" : "TradedAct",
+  "name" : "交易饰演角色",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0014",
+  "intro" : "交易饰演角色的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "评审对象",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "评审对象"
+  }, {
+    "code" : "15",
+    "name" : "承租人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "承租人"
+  }, {
+    "code" : "20",
+    "name" : "供应商-进口代理",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "供应商-进口代理"
+  }, {
+    "code" : "25",
+    "name" : "供应商-卖方",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "供应商-卖方"
+  }, {
+    "code" : "30",
+    "name" : "担保方",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "担保方"
+  }, {
+    "code" : "35",
+    "name" : "债务人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "债务人"
+  }, {
+    "code" : "40",
+    "name" : "债权人",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "债权人"
+  }, {
+    "code" : "45",
+    "name" : "其他",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "45",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "其他"
+  } ]
+}

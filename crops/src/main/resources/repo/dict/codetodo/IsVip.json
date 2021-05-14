@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "IsVip",
+  "name": "是否VIP(水晶VIP及以上)",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0",
+      "name": "普通会员",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "1",
+      "name": "VIP",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

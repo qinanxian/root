@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<variable-library>
+    <category name="会员" type="Custom" clazz="com.bstek.entity.Customer">
+        <var act="InOut" name="age" label="年龄" type="Integer"/>
+        <var act="InOut" name="birthday" label="出生日期" type="Date"/>
+        <var act="InOut" name="car" label="是否有车" type="Boolean"/>
+        <var act="InOut" name="gender" label="性别" type="Boolean"/>
+        <var act="InOut" name="house" label="是否有房" type="Boolean"/>
+        <var act="InOut" name="level" label="等级" type="Integer"/>
+        <var act="InOut" name="married" label="婚否" type="Boolean"/>
+        <var act="InOut" name="mobile" label="手机号" type="String"/>
+        <var act="InOut" name="name" label="名称" type="String"/>
+        <var act="InOut" name="orders" label="订单" type="List"/>
+    </category>
+    <category name="订单" type="Custom" clazz="com.bstek.entity.Order">
+        <var act="InOut" name="amount" label="数量" type="Integer"/>
+        <var act="InOut" name="name" label="名称" type="String"/>
+        <var act="InOut" name="price" label="价格" type="Float"/>
+    </category>
+    <category name="血压寿险评点" type="Custom" clazz="com.bstek.entity.BloodPressure">
+        <var act="InOut" name="age" label="年龄" type="Integer"/>
+        <var act="InOut" name="cholesterin" label="总胆固醇" type="String"/>
+        <var act="InOut" name="diastolicPressure" label="舒张压" type="String"/>
+        <var act="InOut" name="gender" label="性别" type="Boolean"/>
+        <var act="InOut" name="lipoprotein" label="低密度脂蛋白" type="String"/>
+        <var act="InOut" name="name" label="名称" type="String"/>
+        <var act="InOut" name="result" label="最后结果" type="String"/>
+        <var act="InOut" name="result1" label="结果1" type="String"/>
+        <var act="InOut" name="systolicPressure" label="收缩压" type="String"/>
+    </category>
+    <category name="投保人" type="Custom" clazz="com.bstek.entity.InsuredPerson">
+        <var act="InOut" name="age" label="年龄" type="Integer"/>
+        <var act="InOut" name="bloodLipFalg" label="血脂中度及以下" type="Boolean"/>
+        <var act="InOut" name="bloodLipPoint" label="血脂评分" type="String"/>
+        <var act="InOut" name="bloodPrePoint" label="血压评分" type="String"/>
+        <var act="InOut" name="cholesterol" label="胆固醇" type="Double"/>
+        <var act="InOut" name="cholesterolLevel" label="胆固醇级别" type="String"/>
+        <var act="InOut" name="diastolicPre" label="舒张压" type="Double"/>
+        <var act="InOut" name="gender" label="性别" type="Boolean"/>
+        <var act="InOut" name="id" label="编号" type="String"/>
+        <var act="InOut" name="lipoprotein" label="脂蛋白" type="Double"/>
+        <var act="InOut" name="lipoproteinLevel" label="脂蛋白级别" type="String"/>
+        <var act="InOut" name="name" label="姓名" type="String"/>
+        <var act="InOut" name="queryOne" label="因风湿热心脏已经受累，并明确诊断风湿性心脏病" type="Boolean"/>
+        <var act="InOut" name="queryPoint" label="问卷评分" type="String"/>
+        <var act="InOut" name="queryThree" label="痊愈时间距今是否超过6个月，且心脏未受累，心功能正常" type="Boolean"/>
+        <var act="InOut" name="queryTwo" label="风湿热是否仅发作一次" type="Boolean"/>
+        <var act="InOut" name="result" label="中间结果" type="Integer"/>
+        <var act="InOut" name="shrinkPre" label="收缩压" type="Double"/>
+        <var act="InOut" name="totalPoint" label="胆固醇总评分" type="String"/>
+    </category>
+</variable-library>

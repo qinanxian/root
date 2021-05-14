@@ -1,0 +1,189 @@
+{
+  "id": "system-UnrelatedUserListForOrgManage",
+  "pack": "system",
+  "code": "UnrelatedUserListForOrgManage",
+  "name": "未关联当前机构的用户列表",
+  "description": "",
+  "sortCode": "3030",
+  "classification": null,
+  "tags": "",
+  "dataModelType": "JavaBean",
+  "dataModel": "com.vekai.auth.entity.User",
+  "query": {
+    "select": "SELECT",
+    "selectItems": [],
+    "from": "AUTH_USER AU",
+    "where": "NOT EXISTS(SELECT 1 FROM AUTH_USER_ORG UO, AUTH_ORG AO WHERE AO.ID=AU.ORG_ID AND UO.USER_ID=AU.ID AND UO.ORG_ID=:orgId) AND AU.ORG_ID <> :orgId",
+    "groupBy": null,
+    "having": null,
+    "orderBy": "AU.ID ASC"
+  },
+  "handler": null,
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "elements": [
+    {
+      "dataformId": "system-UnrelatedUserListForOrgManage",
+      "name": "用户ID",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UnrelatedUserListForOrgManage",
+      "name": "用户代码",
+      "code": "code",
+      "dataType": "String",
+      "column": "CODE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UnrelatedUserListForOrgManage",
+      "name": "用户名",
+      "code": "name",
+      "dataType": "String",
+      "column": "NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UnrelatedUserListForOrgManage",
+      "name": "机构",
+      "code": "orgId",
+      "dataType": "String",
+      "column": "ORG_ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UnrelatedUserListForOrgManage",
+      "name": "邮件",
+      "code": "email",
+      "dataType": "String",
+      "column": "EMAIL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "table": "AU",
+      "validatorList": []
+    },
+    {
+      "dataformId": "system-UnrelatedUserListForOrgManage",
+      "name": "状态",
+      "code": "status",
+      "dataType": "String",
+      "column": "STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "UserStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "table": "AU",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "dataformId": "system-UnrelatedRoleListForUserManage",
+      "code": "id",
+      "name": "角色ID",
+      "bindFor": "id",
+      "enabled": true,
+      "quick": true,
+      "sortCode": "1010",
+      "comparePattern": "Contain"
+    },
+    {
+      "dataformId": "system-UnrelatedRoleListForUserManage",
+      "code": "code",
+      "name": "角色代号",
+      "bindFor": "code",
+      "enabled": true,
+      "quick": true,
+      "sortCode": "1020",
+      "comparePattern": "Contain"
+    },
+    {
+      "dataformId": "system-UnrelatedRoleListForUserManage",
+      "code": "name",
+      "name": "角色名",
+      "bindFor": "name",
+      "enabled": true,
+      "quick": true,
+      "sortCode": "1030",
+      "comparePattern": "Contain"
+    }
+  ],
+  "properties": {},
+  "revision": 0,
+  "createdBy": null,
+  "createdTime": null,
+  "updatedBy": null,
+  "updatedTime": null,
+  "managedByRR": false
+}

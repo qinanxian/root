@@ -1,0 +1,27 @@
+{
+  "categoryCode": "authorization",
+  "code": "FaceState",
+  "name": "人脸识别状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "成功",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0",
+      "name": "失败",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "3",
+      "name": "发起人脸中",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

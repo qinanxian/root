@@ -1,0 +1,27 @@
+{
+  "categoryCode": "codetodo",
+  "code": "SpecialTime",
+  "name": "特殊时间(不可取号)",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "15",
+      "name": "15",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "16",
+      "name": "16",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "17",
+      "name": "17",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "configuration-PolcDefinitionBaseDetailInfo",
+  "pack": "configuration",
+  "code": "PolcDefinitionBaseDetailInfo",
+  "name": "产品基础信息",
+  "dataModelType": "DataMap",
+  "dataModel": "POLC_DEFINITION",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "POLC_DEFINITION",
+    "where": "POLICY_ID=:policyId"
+  },
+  "elements": [
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "产品代码",
+      "code": "policyCode",
+      "dataType": "String",
+      "column": "POLICY_CODE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": "",
+      "primaryKey": true
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "排序码",
+      "code": "sortCode",
+      "dataType": "String",
+      "column": "SORT_CODE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "产品名称",
+      "code": "policyName",
+      "dataType": "String",
+      "column": "POLICY_NAME",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "产品类型",
+      "code": "policyType",
+      "dataType": "String",
+      "column": "POLICY_TYPE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "PolicyType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "产品状态",
+      "code": "policyStatus",
+      "dataType": "String",
+      "column": "POLICY_STATUS",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "EffectStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "启用日期",
+      "code": "issueDate",
+      "dataType": "Date",
+      "column": "ISSUE_DATE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "过期日期",
+      "code": "expiryDate",
+      "dataType": "Date",
+      "column": "EXPIRY_DATE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "父产代码",
+      "code": "parentPolicyCode",
+      "dataType": "String",
+      "column": "PARENT_POLICY_CODE",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": []
+    },
+    {
+      "dataformId": "configuration-PolcDefinitionBaseDetailInfo",
+      "name": "产品描述",
+      "code": "policyDesc",
+      "dataType": "String",
+      "column": "POLICY_DESC",
+      "table": "POLC_DEFINITION",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "TextArea",
+        "visible": true,
+        "colspan": 2,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0080",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

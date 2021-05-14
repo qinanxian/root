@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<parameter-library>
+    <parameter name="total" label="总价" type="String" act="InOut"/>
+    <parameter name="money" label="建议额度" type="Integer" act="InOut"/>
+</parameter-library>

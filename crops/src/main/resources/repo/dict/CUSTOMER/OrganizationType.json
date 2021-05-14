@@ -1,0 +1,99 @@
+{
+  "code" : "OrganizationType",
+  "name" : "组织类型",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "0017",
+  "intro" : "组织类型的码表",
+  "items" : [ {
+    "code" : "10",
+    "name" : "国有",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "国有"
+  }, {
+    "code" : "15",
+    "name" : "集体",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "15",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "集体"
+  }, {
+    "code" : "20",
+    "name" : "个体工商户",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "个体工商户"
+  }, {
+    "code" : "25",
+    "name" : "联营",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "25",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "联营"
+  }, {
+    "code" : "30",
+    "name" : "股份有限",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "股份有限"
+  }, {
+    "code" : "35",
+    "name" : "有限责任",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "35",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "有限责任"
+  }, {
+    "code" : "40",
+    "name" : "私营",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "40",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "私营"
+  }, {
+    "code" : "45",
+    "name" : "股份合作",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "45",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "股份合作"
+  }, {
+    "code" : "50",
+    "name" : "其他",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "50",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "其他"
+  } ]
+}

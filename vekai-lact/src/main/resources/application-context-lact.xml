@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!-- 核算交易引擎 -->
+    <bean class="com.vekai.lact.core.LactEngine">
+        <property name="transactions">
+            <list>
+                <ref bean="LACTS10"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- /* ============================================== */ -->
+    <!-- /* 核算【交易引擎】以及【交易】配置 */ -->
+    <!-- /* ============================================== */ -->
+    <bean id="LACTS10" class="com.vekai.lact.core.transaction.impl.LactTransactionImpl" scope="prototype">
+        <property name="code" value="LACTS10"/>
+        <property name="name" value="贷款核算"/>
+        <property name="loaders">
+            <list>
+                <bean class="com.vekai.lact.core.loader.impl.GlobalPropertyLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.DefaultValueFillLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.InterestRateGradeLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.ExecInterestRateCalcLoader" scope="prototype"/>
+            </list>
+        </property>
+        <property name="handlers">
+            <list>
+                <bean class="com.vekai.lact.core.handler.impl.PaymentScheduleListGenHandler" scope="prototype"/>
+                <bean class="com.vekai.lact.core.handler.impl.PaymentScheduleInterestRateCalcHandler"
+                      scope="prototype"/>
+                <ref bean="paymentScheduleCalcHandler"/>
+                <bean class="com.vekai.lact.core.handler.impl.StatisPaymentScheduleHandlerImpl" scope="prototype"/>
+                <bean class="com.vekai.lact.core.handler.impl.ConsolePrintHandlerImpl" scope="prototype"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="LACTS20" class="com.vekai.lact.core.transaction.impl.LactTransactionImpl" scope="prototype">
+        <property name="code" value="LACTS20"/>
+        <property name="name" value="提前还款"/>
+        <property name="loaders">
+            <list>
+                <bean class="com.vekai.lact.core.loader.impl.GlobalPropertyLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.DefaultValueFillLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.InterestRateGradeLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.ExecInterestRateCalcLoader" scope="prototype"/>
+            </list>
+        </property>
+        <property name="handlers">
+            <list>
+                <bean class="com.vekai.lact.core.handler.impl.PaymentScheduleListGenHandler" scope="prototype"/>
+                <bean class="com.vekai.lact.core.handler.impl.PaymentScheduleInterestRateCalcHandler"
+                      scope="prototype"/>
+                <ref bean="paymentScheduleCalcHandler"/>
+                <bean class="com.vekai.lact.core.handler.impl.StatisPaymentScheduleHandlerImpl" scope="prototype"/>
+                <bean class="com.vekai.lact.core.handler.impl.ConsolePrintHandlerImpl" scope="prototype"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="LACTS24" class="com.vekai.lact.core.transaction.impl.LactTransactionImpl" scope="prototype">
+        <property name="code" value="LACTS24"/>
+        <property name="name" value="调息处理"/>
+        <property name="loaders">
+            <list>
+                <bean class="com.vekai.lact.core.loader.impl.GlobalPropertyLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.DefaultValueFillLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.InterestRateGradeLoader" scope="prototype"/>
+                <bean class="com.vekai.lact.core.loader.impl.ExecInterestRateCalcLoader" scope="prototype"/>
+            </list>
+        </property>
+        <property name="handlers">
+            <list>
+                <bean class="com.vekai.lact.core.handler.impl.PaymentScheduleListGenHandler" scope="prototype"/>
+                <bean class="com.vekai.lact.core.handler.impl.PaymentScheduleInterestRateCalcHandler"
+                      scope="prototype"/>
+                <ref bean="paymentScheduleCalcHandler"/>
+                <bean class="com.vekai.lact.core.handler.impl.StatisPaymentScheduleHandlerImpl" scope="prototype"/>
+                <bean class="com.vekai.lact.core.handler.impl.ConsolePrintHandlerImpl" scope="prototype"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- 等额本息还款计算器 -->
+    <bean id="equalLoanCalculator" class="com.vekai.lact.core.payment.impl.EqualLoanCalculatorImpl" scope="prototype">
+        <property name="multiplePrimaryEquationSolver">
+            <!-- 使用高斯消元法进行计算多元一次方程组 -->
+            <bean class="com.vekai.fnat.math.MultiplePrimaryEquationGaussLiminanImpl" scope="prototype"/>
+        </property>
+    </bean>
+
+    <bean id="paymentScheduleCalcHandler" class="com.vekai.lact.core.handler.impl.PaymentScheduleCalcHandlerImpl"
+          scope="prototype">
+        <property name="calculators">
+            <map>
+                <entry key="EqualLoan" value-ref="equalLoanCalculator"/>
+                <entry key="EqualPrincipal">
+                    <bean class="com.vekai.lact.core.payment.impl.EqualPrincipalCalculatorImpl"/>
+                </entry>
+                <entry key="EachInterest">
+                    <bean class="com.vekai.lact.core.payment.impl.EachInterestCalculatorImpl"/>
+                </entry>
+                <entry key="OneTime">
+                    <bean class="com.vekai.lact.core.payment.impl.EachInterestCalculatorImpl"/>
+                </entry>
+                <entry key="ImplicationCustomize">
+                    <bean class="com.vekai.lact.core.payment.impl.ImplicationCustomizeCalculatorImpl"/>
+                </entry>
+                <entry key="DeterminatePrincipal">
+                    <bean class="com.vekai.lact.core.payment.impl.DeterminatePrincipalCalculatorImpl"/>
+                </entry>
+                <entry key="DeterminateLoan">
+                    <bean class="com.vekai.lact.core.payment.impl.DeterminateLoanCalculatorImpl"/>
+                </entry>
+            </map>
+        </property>
+
+    </bean>
+
+</beans>

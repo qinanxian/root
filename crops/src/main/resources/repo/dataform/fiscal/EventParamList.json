@@ -1,0 +1,100 @@
+{
+  "id": "fiscal-EventParamList",
+  "pack": "fiscal",
+  "code": "EventParamList",
+  "name": "事件参数列表",
+  "tags": "事件参数列表",
+  "description": "事件参数列表",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_EVENT_PARAM",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "where": "EVENT_ID=:eventId",
+    "from": "FISC_EVENT_PARAM"
+  },
+  "elements": [
+    {
+      "dataformId": "fiscal-EventParamList",
+      "code": "itemCode",
+      "name": "事件参数代码",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "ITEM_CODE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "fiscal-EventParamList",
+      "code": "itemName",
+      "name": "事件参数名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0001",
+      "column": "ITEM_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "fiscal-EventParamList",
+      "code": "dataType",
+      "name": "数据类型",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": false,
+        "dataFormat": "String",
+        "textAlign": "Left",
+        "editStyle": "Select",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "DataType"
+      },
+      "sortCode": "0002",
+      "column": "DATA_TYPE",
+      "validatorList": []
+    },
+    {
+      "dataformId": "fiscal-EventParamList",
+      "code": "dataText",
+      "name": "数值",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "elementUIHint": {
+        "visible": true,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0003",
+      "column": "DATA_TEXT",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

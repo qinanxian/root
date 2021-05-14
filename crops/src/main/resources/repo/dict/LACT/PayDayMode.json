@@ -1,0 +1,21 @@
+{
+  "code": "PayDayMode",
+  "categoryCode": "LACT",
+  "nameI18nCode": "",
+  "name": "还款时点",
+  "intro": "",
+  "items": [
+    {
+      "code": "FIXED_DAY",
+      "name": "指定日",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "MONTH_END",
+      "name": "月末",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

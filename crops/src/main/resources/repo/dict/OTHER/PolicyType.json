@@ -1,0 +1,15 @@
+{
+  "categoryCode": "OTHER",
+  "code": "PolicyType",
+  "name": "产品类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "STANDARD_POLICY",
+      "name": "标准产品",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

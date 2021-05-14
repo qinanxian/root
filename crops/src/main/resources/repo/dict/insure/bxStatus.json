@@ -1,0 +1,27 @@
+{
+  "categoryCode": "insure",
+  "code": "bxStatus",
+  "name": "客户经理保单确认",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0",
+      "name": "客户经理未确认",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "1",
+      "name": "客户经理已确认",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "2",
+      "name": "客户经理已拒绝",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

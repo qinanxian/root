@@ -1,0 +1,133 @@
+<configuration scan="true" scanPeriod="1800 seconds" debug="false">
+    <!--<include resource="org/springframework/boot/logging/logback/base.xml" />-->
+	<timestamp key="byDay" datePattern="yyyy-MM-dd" />
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%date %-5level] %msg  \t\t\t\t{@ %logger} %n</pattern>
+			<!--<pattern>%d{yyyy-MM-dd HH:mm:ss} %level [%thread] %caller{1} - %msg%n</pattern>-->
+		</encoder>
+	</appender>
+    <appender name="SQLOut" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[SQL日志] %msg \t\t\t\t\t\t\t\t[%date %-5level]{@ %logger}%n</pattern>
+		</encoder>
+	</appender>
+    <!--<appender name="DBOut" class="com.vekai.batch.logger.LoggerDBAppender">-->
+    <!--</appender>-->
+
+    <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
+        <graylogHost>82.18.0.174</graylogHost>
+        <graylogPort>12201</graylogPort>
+        <maxChunkSize>508</maxChunkSize>
+        <useCompression>true</useCompression>
+        <encoder class="de.siegmar.logbackgelf.GelfEncoder">
+            <includeRawMessage>false</includeRawMessage>
+            <includeMarker>true</includeMarker>
+            <includeMdcData>true</includeMdcData>
+            <includeCallerData>false</includeCallerData>
+            <includeRootCauseData>false</includeRootCauseData>
+            <includeLevelName>true</includeLevelName>
+            <shortPatternLayout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%m%nopex</pattern>
+            </shortPatternLayout>
+            <fullPatternLayout class="ch.qos.logback.classic.PatternLayout">
+                <pattern>%m%n</pattern>
+            </fullPatternLayout>
+            <staticField>app_name:crops</staticField>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="GELF" />
+    </root>
+
+    <logger name="com.alibaba.nacos.client.naming" level="WARN" additivity="true" />
+    <logger name="org.springframework.beans.factory.support" level="INFO" additivity="true" />
+    <logger name="org.springframework.jdbc.datasource" level="INFO" additivity="true" />
+    <logger name="org.springframework.jdbc.core" level="INFO" additivity="true" />
+    <logger name="com.vekai.sql.core" level="DEBUG" additivity="true" />
+    <logger name="druid.sql" level="INFO" additivity="true" />
+    <logger name="org.apache.commons.beanutils" level="WARN" additivity="true" />
+    <logger name="springfox" level="INFO" additivity="true" />
+    <logger name="com.vekai.batch" level="TRACE" additivity="true" />
+    <logger name="com.vekai.showcase" level="DEBUG" additivity="true" />
+
+    <logger name="org.springframework.beans.factory" level="INFO" />
+    <logger name="org.springframework.core.env" level="INFO" />
+    <logger name="org.springfrawork.jdbc.datasource" level="INFO" />
+    <logger name="org.springframework.jdbc.core.BeanPropertyRowMapper" level="INFO" />
+    <logger name="org.springframework.web.servlet.view.freemarker.FreeMarkerView" level="INFO" />
+    <logger name="org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper" level="INFO" />
+    <logger name="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource" level="INFO" />
+    <logger name="org.hibernate.internal.SessionFactoryImpl" level="INFO" />
+    
+    <!--<logger name="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" level="WARN" />-->
+	<!--spring boot 暂时关闭一些日志 -->
+    <logger name="org.springframework.aop.framework.CglibAopProxy" level="WARN" />
+    <logger name="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" level="INFO" />
+    <logger name="org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory" level="WARN" />
+    <logger name="org.springframework.test" level="WARN" />
+    <logger name="org.springframework.core" level="WARN" />
+    <logger name="org.springframework.context.annotation" level="WARN" />
+    <logger name="org.springframework.web.servlet.handler" level="WARN" />
+    <logger name="org.springframework.boot.context" level="WARN" />
+    <logger name="org.springframework.web.context.support" level="WARN" />
+    <logger name="com.baomidou.mybatisplus" level="WARN" />
+    <logger name="com.vekai.base" level="TRACE" />
+	<!-- 自动bean注入日志,暂时提高,关闭 -->
+    <logger name="org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer" level="WARN" />
+    <logger name="com.alibaba.druid.pool" level="WARN" />
+    <logger name="org.apache.commons.beanutils.ConvertUtils" level="INFO" />
+    <logger name="org.apache.commons.beanutils.BeanUtils" level="WARN" />
+    <logger name="org.apache.commons.beanutils.converters.ArrayConverter" level="WARN" />
+    <logger name="org.apache.commons.beanutils.converters.LongConverter" level="WARN" />
+    <logger name="org.apache.commons.beanutils.converters.ShortConverter" level="WARN" />
+    <logger name="org.apache.commons.beanutils.converters.ByteConverter" level="WARN" />
+    <logger name="org.apache.commons.beanutils.converters.BooleanConverter" level="WARN" />
+    <logger name="org.apache.commons.beanutils.converters" level="WARN" />
+    <logger name="org.apache.ibatis.session.defaults.DefaultSqlSession" level="WARN" />
+    <logger name="org.springframework.jdbc.datasource.DataSourceUtils" level="WARN" />
+    <!-- 事务记录 -->
+    <logger name="org.apache.ibatis.session.defaults.DefaultSqlSession" level="WARN" />
+    <logger name="org.mybatis.spring.SqlSessionUtils" level="WARN" />
+    <logger name="org.mybatis.spring.transaction.SpringManagedTransaction" level="WARN" />
+    <logger name="com.vekai.lact.core.handler" level="DEBUG" />
+    <logger name="com.vekai.sql" level="DEBUG" additivity="false">
+        <appender-ref ref="SQLOut" />
+    </logger>
+    <!-- JdbcTemplate查询参数日志 -->
+    <logger name="org.springframework.jdbc.core.JdbcTemplate" level="DEBUG" additivity="false">
+        <appender-ref ref="SQLOut" />
+    </logger>
+    <logger name="org.springframework.jdbc.core.StatementCreatorUtils" level="DEBUG" additivity="DEBUG" >
+        <appender-ref ref="SQLOut" />
+    </logger>
+
+    <!-- org.apache.shiro.session.UnknownSessionException 默认不输出来，会话没有太正常了-->
+    <logger name="org.apache.shiro.mgt.DefaultSecurityManager" level="INFO" additivity="false" />
+    <logger name="org.eclipse.jetty.server.HttpChannel" level="INFO" additivity="false" />
+    <logger name="org.eclipse.jetty.http.HttpParser" level="INFO" additivity="false" />
+    <logger name="org.eclipse.jetty.io.WriteFlusher" level="INFO" additivity="false" />
+    <logger name="org.eclipse.jetty.io" level="INFO" additivity="false" />
+
+
+
+    <!-- 不同环境下,可以配置不同的日志策略 -->
+    <!--<logger name="org.springframework.web" level="INFO"/>-->
+    <!--<logger name="org.springboot.sample" level="TRACE" />-->
+    <!--&lt;!&ndash; 测试环境+开发环境. 多个使用逗号隔开. &ndash;&gt;-->
+    <!--<springProfile name="test,dev">-->
+        <!--<logger name="org.springframework.web" level="INFO"/>-->
+        <!--<logger name="org.springboot.sample" level="INFO" />-->
+        <!--<logger name="com.kfit" level="info" />-->
+    <!--</springProfile>-->
+    <!--&lt;!&ndash; 生产环境. &ndash;&gt;-->
+    <!--<springProfile name="prod">-->
+        <!--<logger name="org.springframework.web" level="ERROR"/>-->
+        <!--<logger name="org.springboot.sample" level="ERROR" />-->
+        <!--<logger name="com.kfit" level="ERROR" />-->
+    <!--</springProfile>-->
+
+
+</configuration>

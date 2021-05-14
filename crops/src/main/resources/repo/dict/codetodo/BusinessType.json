@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "BusinessType",
+  "name": "业务类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "0001",
+      "name": "对私业务",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0002",
+      "name": "对公业务",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

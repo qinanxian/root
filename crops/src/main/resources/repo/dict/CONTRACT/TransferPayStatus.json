@@ -1,0 +1,39 @@
+{
+  "code" : "TransferPayStatus",
+  "name" : "转账状态",
+  "nameI18nCode" : "",
+  "categoryCode" : "CONTRACT",
+  "sortCode" : null,
+  "intro" : "",
+  "items" : [ {
+    "code" : "Ready",
+    "name" : "准备",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Success",
+    "name" : "成功到账",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "InProgress",
+    "name" : "转账中",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : null,
+    "hotspot" : 1,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

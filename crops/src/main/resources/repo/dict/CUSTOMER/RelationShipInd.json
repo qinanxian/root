@@ -1,0 +1,27 @@
+{
+  "categoryCode": "CUSTOMER",
+  "code": "RelationShipInd",
+  "name": "自然人关系",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "KIN",
+      "name": "亲属",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "FRIEND",
+      "name": "朋友",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "WORKMATE",
+      "name": "同事",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

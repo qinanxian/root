@@ -1,0 +1,21 @@
+{
+  "categoryCode": "zry",
+  "code": "CerStatus",
+  "name": "证件文明类型",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "3",
+      "name": "营业执照",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "4",
+      "name": "组织机构代码证",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

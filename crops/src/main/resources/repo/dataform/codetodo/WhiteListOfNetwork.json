@@ -1,0 +1,192 @@
+{
+  "id": "codetodo-WhiteListOfNetwork",
+  "pack": "codetodo",
+  "code": "WhiteListOfNetwork",
+  "name": "网点人员白名单",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "MSB_BUSI_QYYY_WHITE_LIST",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "MSB_BUSI_QYYY_WHITE_LIST T1,AUTH_ORG T2",
+    "groupBy": "",
+    "orderBy": "T1.CREATED_TIME desc",
+    "where": "T1.ORG_NO=T2.CODE AND LOCATE(CONCAT(CONCAT('/',:userOrg),'/'),CONCAT(CONCAT('/',T2.SORT_CODE),'/'))>0"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-WhiteListOfNetwork",
+      "code": "whiteId",
+      "name": "白名单ID",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0000",
+      "column": "WHITE_ID",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-WhiteListOfNetwork",
+      "code": "orgNo",
+      "name": "机构号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0010",
+      "column": "ORG_NO",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-WhiteListOfNetwork",
+      "code": "orgName",
+      "name": "机构名称",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "sortCode": "0020",
+      "column": "ORG_NAME",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-WhiteListOfNetwork",
+      "code": "oaNo",
+      "name": "员工OA号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0030",
+      "column": "OA_NO",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-WhiteListOfNetwork",
+      "code": "oaName",
+      "name": "员工姓名",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0040",
+      "column": "OA_NAME",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-WhiteListOfNetwork",
+      "code": "mobileNo",
+      "name": "员工手机号",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "visible": true,
+        "colspan": 1,
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "textAlign": "Left"
+      },
+      "sortCode": "0050",
+      "column": "MOBILE_NO",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "机构号",
+      "code": "orgNo",
+      "bindFor": "orgNo",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    },
+    {
+      "name": "机构名称",
+      "code": "orgName",
+      "bindFor": "orgName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0010"
+    },
+    {
+      "name": "员工OA号",
+      "code": "oaNo",
+      "bindFor": "oaNo",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0020"
+    },
+    {
+      "name": "员工姓名",
+      "code": "oaName",
+      "bindFor": "oaName",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Contain",
+      "sortCode": "0030"
+    }
+  ],
+  "handler": ""
+}

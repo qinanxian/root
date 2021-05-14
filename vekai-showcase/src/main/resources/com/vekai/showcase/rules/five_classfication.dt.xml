@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decision-table>
+    <remark><![CDATA[]]></remark>
+    <import-constant-library path="jcr:/CreditRiskManager/credit_plan.cl.xml"/>
+    <import-constant-library path="jcr:/CreditRiskManager/postloan.cl.xml"/>
+    <import-variable-library path="jcr:/CreditRiskManager/postloan.vl.xml"/>
+    <cell row="9" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="11" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="13" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="1" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="30" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="11" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="E" const-label="损失" type="Constant"/>
+    </cell>
+    <cell row="11" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="361" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="0" rowspan="6">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="担保方式" const="00" const-label="信用" type="Constant"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="LessThenEquals">
+                <value content="0" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="0" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="0" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="2" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="31" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="2" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="C" const-label="次级" type="Constant"/>
+    </cell>
+    <cell row="2" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="4" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="181" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="360" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="4" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="D" const-label="可疑" type="Constant"/>
+    </cell>
+    <cell row="6" col="0" rowspan="6">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="担保方式" const="10" const-label="保证" type="Constant"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="17" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="4" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="6" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="LessThenEquals">
+                <value content="0" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="17" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="D" const-label="可疑" type="Constant"/>
+    </cell>
+    <cell row="6" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="17" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="361" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="15" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="6" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="8" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="31" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="15" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="B" const-label="关注" type="Constant"/>
+    </cell>
+    <cell row="8" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="B" const-label="关注" type="Constant"/>
+    </cell>
+    <cell row="15" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="91" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="180" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="13" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="8" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="13" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="10" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="12" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="12" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="LessThenEquals">
+                <value content="0" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="10" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="181" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="360" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="12" col="0" rowspan="6">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="担保方式" const="20" const-label="抵押" type="Constant"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="10" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="D" const-label="可疑" type="Constant"/>
+    </cell>
+    <cell row="1" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="1" type="Input"/>
+            </condition>
+            <condition op="GreaterThenEquals">
+                <value content="30" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="1" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="B" const-label="关注" type="Constant"/>
+    </cell>
+    <cell row="3" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="91" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="180" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="1" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="3" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="D" const-label="可疑" type="Constant"/>
+    </cell>
+    <cell row="3" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="5" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="361" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="5" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="E" const-label="损失" type="Constant"/>
+    </cell>
+    <cell row="16" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="5" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="7" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="1" type="Input"/>
+            </condition>
+            <condition op="GreaterThenEquals">
+                <value content="30" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="16" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="C" const-label="次级" type="Constant"/>
+    </cell>
+    <cell row="7" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="16" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="181" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="360" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="14" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="9" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="91" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="180" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="7" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="14" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="B" const-label="关注" type="Constant"/>
+    </cell>
+    <cell row="9" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="C" const-label="次级" type="Constant"/>
+    </cell>
+    <cell row="12" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="14" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="31" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="18" col="0" rowspan="6">
+        <joint type="and">
+            <condition op="Equals">
+                <value const-category="担保方式" const="30" const-label="质押" type="Constant"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="18" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="LessThenEquals">
+                <value content="0" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="18" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="18" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="21" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="91" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="180" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="21" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="B" const-label="关注" type="Constant"/>
+    </cell>
+    <cell row="21" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="20" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="31" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="90" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="20" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="20" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="19" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="1" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="30" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="19" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="A" const-label="正常" type="Constant"/>
+    </cell>
+    <cell row="19" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="23" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="361" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="23" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="D" const-label="可疑" type="Constant"/>
+    </cell>
+    <cell row="23" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <cell row="22" col="1" rowspan="1">
+        <joint type="and">
+            <condition op="GreaterThenEquals">
+                <value content="181" type="Input"/>
+            </condition>
+            <condition op="LessThenEquals">
+                <value content="360" type="Input"/>
+            </condition>
+        </joint>
+    </cell>
+    <cell row="22" col="2" rowspan="1">
+        <value const-category="五级分类结果" const="C" const-label="次级" type="Constant"/>
+    </cell>
+    <cell row="22" col="3" rowspan="1">
+        <value var-category="借据" var="fiveClassfication" var-label="五级分类" datatype="String" type="Variable"/>
+    </cell>
+    <row num="0" height="40"/>
+    <row num="3" height="40"/>
+    <row num="2" height="40"/>
+    <row num="1" height="40"/>
+    <row num="4" height="40"/>
+    <row num="5" height="40"/>
+    <row num="6" height="40"/>
+    <row num="11" height="40"/>
+    <row num="10" height="40"/>
+    <row num="9" height="40"/>
+    <row num="8" height="40"/>
+    <row num="7" height="40"/>
+    <row num="12" height="40"/>
+    <row num="17" height="40"/>
+    <row num="16" height="40"/>
+    <row num="15" height="40"/>
+    <row num="14" height="40"/>
+    <row num="13" height="40"/>
+    <row num="18" height="40"/>
+    <row num="21" height="40"/>
+    <row num="20" height="40"/>
+    <row num="19" height="40"/>
+    <row num="23" height="40"/>
+    <row num="22" height="40"/>
+    <col num="0" width="120" type="Criteria" var-category="借据" var-label="担保方式" var="vouchType" datatype="String"/>
+    <col num="2" width="200" type="Assignment"/>
+    <col num="3" width="200" type="Assignment"/>
+    <col num="1" width="120" type="Criteria" var-category="借据" var-label="逾期天数" var="overdueDays" datatype="String"/>
+</decision-table>

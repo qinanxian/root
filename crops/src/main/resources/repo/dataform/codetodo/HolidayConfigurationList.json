@@ -1,0 +1,115 @@
+{
+  "id": "codetodo-HolidayConfigurationList",
+  "pack": "codetodo",
+  "code": "HolidayConfigurationList",
+  "name": "年度节假日配置",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "SYS_HOLIDAY_CONFIG",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "SYS_HOLIDAY_CONFIG",
+    "groupBy": "",
+    "orderBy": "HOLYDAY asc"
+  },
+  "elements": [
+    {
+      "dataformId": "codetodo-HolidayConfigurationList",
+      "name": "编号",
+      "code": "holyId",
+      "dataType": "String",
+      "column": "HOLY_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-HolidayConfigurationList",
+      "name": "年份",
+      "code": "holyYear",
+      "dataType": "String",
+      "column": "HOLY_YEAR",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "codetodo-HolidayConfigurationList",
+      "name": "时间",
+      "code": "holyday",
+      "dataType": "String",
+      "column": "HOLYDAY",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "codetodo-HolidayConfigurationList",
+      "name": "备注",
+      "code": "beizhu",
+      "dataType": "String",
+      "column": "BEIZHU",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    }
+  ],
+  "filters": [
+    {
+      "name": "时间",
+      "code": "holyday",
+      "bindFor": "holyday",
+      "enabled": true,
+      "quick": true,
+      "comparePattern": "Equal",
+      "sortCode": "0000"
+    }
+  ]
+}

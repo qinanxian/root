@@ -1,0 +1,230 @@
+{
+  "title": "示例项目",
+  "describe": "这是一个示例项目",
+  "version":"3.0.0",
+  "dbConn": [
+    {
+      "name": "demodb",
+      "properties": {
+        "driver": "com.mysql.jdbc.Driver",
+        "url": "jdbc:mysql://127.0.0.1:3306/demodb?useUnicode=true&useSSL=false&characterEncoding=UTF-8",
+        "username": "dbuser",
+        "password": "******"
+      }
+    }
+  ],
+  "profile": {
+    "default":{
+      "db":"MYSQL",
+      "dbConn":"demodb",
+      "entityInitFields":[{
+        "defKey": "CREATED_BY",
+        "defName": "创建人",
+        "comment": "",
+        "type": "string",
+        "len":32,
+        "scale":0,
+        "primaryKey": true,
+        "notNull": true,
+        "autoIncrement":true,
+        "defaultValue":"",
+        "hideInGraph":false
+      },{
+        "defKey": "CREATED_TIME",
+        "defName": "创建时间",
+        "comment": "",
+        "type": "date",
+        "len":0,
+        "scale":0,
+        "primaryKey": true,
+        "notNull": true,
+        "autoIncrement":true,
+        "defaultValue":"",
+        "hideInGraph":false
+      }]
+    },
+    "javaHome":"",
+    "sql":{"delimiter":";"},
+    "dataTypeSupport":["JAVA","MYSQL","ORACLE","SQLServer","DB2","PostgreSQL","Hive"],
+    "codeTemplate":[
+      {"applyFor":"JAVA",  "referURL":"", "type":"appCode","content":"代码模板内容"},
+      {"applyFor":"MYSQL", "referURL":"", "type":"dbDDL","createTable":"代码模板内容","updateTable":"","dropTable":"","createField":"","updateField":"","dropField":"","createIndex":"","dropIndex":""},
+      {"applyFor":"ORACLE","referURL":"", "type":"dbDDL","createTable":"代码模板内容","updateTable":"","dropTable":"","createField":"","updateField":"","dropField":"","createIndex":"","dropIndex":""}
+    ],
+    "generatorDoc":{
+      "docTemplate":""
+    }
+  },
+  "entities": [
+    {
+      "defKey":"AUTH_USER",
+      "defName":"用户表",
+      "comment":"用户登录数据表",
+      "headers":[ /*这里的name要作国际化*/
+        {"name":"字段名称"  ,"refKey":"defName", "hideInGraph":false},
+        {"name":"字段代码"  ,"refKey":"defKey",   "hideInGraph":false},
+        {"name":"数据类型","refKey":"domainKey","hideInGraph":false},
+        {"name":"数据库类型","refKey":"$dbType","hideInGraph":false},
+        {"name":"长度","refKey":"len","hideInGraph":false},
+        {"name":"小数位数","refKey":"scale","hideInGraph":false},
+        {"name":"主键","refKey":"primaryKey","hideInGraph":false},
+        {"name":"不为空","refKey":"notNull","hideInGraph":false},
+        {"name":"自增","refKey":"autoIncrement","hideInGraph":false},
+        {"name":"默认值","refKey":"defaultValue","hideInGraph":false},
+        {"name":"关系图","refKey":"hideInGraph","hideInGraph":false}
+      ],
+      /*Hive的分区语句，就是一个字串*/
+      "partitionBy":"",
+      "fields":[{
+        "defKey": "CUST_ID",
+        "defName": "客户号",
+        "comment": "标识唯一的一个客户",
+        "type": "string",
+        "len":32,
+        "scale":0,
+        "primaryKey": true,
+        "notNull": true,
+        "autoIncrement":true,
+        "defaultValue":"",
+        "hideInGraph":false
+      },{
+        "defKey": "CUST_NAME",
+        "defName": "客户名",
+        "comment": "",
+        "type": "string",
+        "len":90,
+        "scale":0,
+        "primaryKey": false,
+        "notNull": true
+      },{
+        "defKey": "CREATED_TIME",
+        "defName": "创建时间",
+        "comment": "",
+        "type": "date",
+        "len":90,
+        "scale":0,
+        "primaryKey": false,
+        "notNull": false,
+        "hideInGraph":true
+      }],
+      "indexs": [
+        {
+          "name": "PK_CUST_BASE_CUST_D",
+          "isUnique": true,
+          "fields": [
+            "CUST_ID"
+          ]
+        },
+        {
+          "name": "IDX_2",
+          "isUnique": false,
+          "fields": [
+            "CUST_NAME",
+            "CUST_TYPE"
+          ]
+        }
+      ],
+      "correlation":[
+        {"myField":"USER_ID","refEntity":"AUTH_USER_BASE","refField":"USER_ID"}
+      ]
+    }
+  ],
+  "views":[
+    {
+      "defKey":"CUST_ENT_VIEW",
+      "defName":"公司客户视图",
+      "comment":"",
+      "headers":[ /*这里的name要作国际化*/
+        {"name":"字段名称"  ,"refKey":"defName", "hideInGraph":false},
+        {"name":"字段代码"  ,"refKey":"defKey",   "hideInGraph":false},
+        {"name":"数据类型","refKey":"domainKey","hideInGraph":false},
+        {"name":"数据库类型","refKey":"$dbType","hideInGraph":false},
+        {"name":"长度","refKey":"len","hideInGraph":false},
+        {"name":"小数位数","refKey":"scale","hideInGraph":false},
+        {"name":"主键","refKey":"primaryKey","hideInGraph":false},
+        {"name":"不为空","refKey":"notNull","hideInGraph":false},
+        {"name":"自增","refKey":"autoIncrement","hideInGraph":false},
+        {"name":"默认值","refKey":"defaultValue","hideInGraph":false},
+        {"name":"关系图","refKey":"hideInGraph","hideInGraph":false}
+      ],
+      /*Hive的分区语句，就是一个字串*/
+      "partitionBy":"",
+      "fields":[{
+        "defKey": "CUST_ID",
+        "defName": "客户号",
+        "comment": "标识唯一的一个客户",
+        "type": "string",
+        "len":32,
+        "scale":0,
+        "primaryKey": true,
+        "notNull": true,
+        "autoIncrement":true,
+        "defaultValue":"",
+        "hideInGraph":false,
+        "entityRef":"CUST_BASE",
+        "entityFieldRef":"CUST_ID"
+      },{
+        "defKey": "CUST_NAME",
+        "defName": "客户名",
+        "comment": "",
+        "type": "string",
+        "len":90,
+        "scale":0,
+        "primaryKey": false,
+        "notNull": true
+      },{
+        "defKey": "CREATED_TIME",
+        "defName": "创建时间",
+        "comment": "",
+        "type": "date",
+        "len":90,
+        "scale":0,
+        "primaryKey": false,
+        "notNull": false,
+        "hideInGraph":true
+      }],
+      "indexs": [
+        {
+          "name": "PK_CUST_BASE_CUST_D",
+          "isUnique": true,
+          "fields": [
+            "CUST_ID"
+          ]
+        },
+        {
+          "name": "IDX_2",
+          "isUnique": false,
+          "fields": [
+            "CUST_NAME",
+            "CUST_TYPE"
+          ]
+        }
+      ],
+      "correlation":[
+        {"MyField":"USER_ID","RefEntity":"AUTH_USER_BASE","RefField":"USER_ID"}
+      ]
+    }
+  ],
+  "viewGroup": [{
+      "defKey": "OrgAndUser",
+      "defName": "组织架构",
+      "entityRefs":["AUTH_USER","AUTH_ORG"],
+      /*支持多张图*/
+      "graphCanvas":[{"nodes":[],"edges":[],"associations":[]}]
+    }],
+  "dataTypeMapping": {
+    "referURL":"",
+    "mapping":[
+      {"defKey":"string","defName":"字串","java": "String","oracle": "VARCHAR2","mysql": "VARCHAR"},
+      {"defKey":"double","defName":"小数","java": "Double","oracle": "DECIMAL","mysql": "NUMBER"},
+      {"defKey":"int",   "defName":"整数","java": "Double","oracle": "INT","mysql": "INT"},
+      {"defKey":"date",  "defName":"日期","java": "Date","oracle": "DATE","mysql": "DATETIME"}
+    ]
+  },
+  "domains": [
+    {"defKey":"IdOrKey","defName":"标识号","applyFor":"string","len":32,"scale":0},
+    {"defKey":"Name",   "defName":"名字",  "applyFor":"string","len":90,"scale":0},
+    {"defKey":"Int",    "defName":"整数",  "applyFor":"int","len":0,"scale":0},
+    {"defKey":"Money",  "defName":"金额",  "applyFor":"double","len":32,"scale":8}
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "etl-ScheduleJobInfo",
+  "pack": "etl",
+  "code": "ScheduleJobInfo",
+  "name": "ETL任务详情",
+  "dataModelType": "DataMap",
+  "formUIHint": {
+    "columnNumber": 2,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "from": "ETL_SCHEDULE_JOB",
+    "where": "JOB_ID=:jobId"
+  },
+  "elements": [
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "编号",
+      "code": "jobId",
+      "dataType": "String",
+      "column": "JOB_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "名称",
+      "code": "jobName",
+      "dataType": "String",
+      "column": "JOB_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "code": "JobType",
+      "name": "类型",
+      "group": "",
+      "dataType": "String",
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "limitedLength": 0,
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "JobType"
+      },
+      "sortCode": "0020",
+      "column": "JOB_TYPE",
+      "validatorList": [],
+      "multiplier": 1,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "分组",
+      "code": "jobGroup",
+      "dataType": "String",
+      "column": "JOB_GROUP",
+      "elementUIHint": {
+        "editStyle": "Select",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "JobGroup"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "时间表达式",
+      "code": "cronExp",
+      "dataType": "String",
+      "column": "CRON_EXP",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "定义文件",
+      "code": "defineFile",
+      "dataType": "String",
+      "column": "DEFINE_FILE",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": false
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "当前状态",
+      "code": "jobStatus",
+      "dataType": "String",
+      "column": "JOB_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    },
+    {
+      "dataformId": "etl-ScheduleJobInfo",
+      "name": "备注",
+      "code": "jobDesc",
+      "dataType": "String",
+      "column": "JOB_DESC",
+      "elementUIHint": {
+        "editStyle": "TextArea",
+        "dataFormat": "String",
+        "visible": true,
+        "colspan": 2,
+        "textAlign": "Left",
+        "eventExpr": "",
+        "htmlStyle": "{\"width\":\"300px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0070",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    }
+  ],
+  "filters": [],
+  "dataModel": "ETL_SCHEDULE_JOB",
+  "handler": "com.vekai.crops.etl.handler.ScheduleJobInfoHandler",
+  "managedByRR": false
+}

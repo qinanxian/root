@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>root</artifactId>
+        <groupId>com.vekai</groupId>
+        <version>3.2.2-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <description>
+    ## 手动安装pageoffice
+    mvn install:install-file -DgroupId=com.zhuozheng -DartifactId=page-office -Dversion=4.3.0.2 -Dpackaging=jar -Dfile=/Users/asher/Downloads/page-office-4.3.0.2.jar
+    ## 手动安装aspose
+    mvn install:install-file -DgroupId=com.aspose    -DartifactId=words       -Dversion=16.8.0 -Dpackaging=jar -Dfile=/Users/asher/Downloads/words-16.8.0.jar
+    </description>
+
+
+    <groupId>com.vekai</groupId>
+    <artifactId>vekai-office</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>cn.fisok</groupId>
+            <artifactId>ida-raw</artifactId>
+            <version>${vekai.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.fisok</groupId>
+            <artifactId>ide-web</artifactId>
+            <version>${vekai.version}</version>
+        </dependency>
+
+        <!--page-office-->
+        <!--<dependency>-->
+            <!--<groupId>com.zhuozheng</groupId>-->
+            <!--<artifactId>page-office</artifactId>-->
+            <!--<version>4.5.0.4</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.aspose</groupId>-->
+            <!--<artifactId>words</artifactId>-->
+            <!--<version>16.8.0</version>-->
+        <!--</dependency>-->
+
+    </dependencies>
+
+
+</project>

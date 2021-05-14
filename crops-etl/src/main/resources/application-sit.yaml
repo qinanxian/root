@@ -1,0 +1,115 @@
+server:
+  port: 8081
+  sessionTimeout: 30
+  servlet:
+    contextPath: /
+
+eureka:
+  client:
+    register-with-eureka: false #不向注册中心注册自己，启动服务注册,如果不做集群，高可用，则关闭它
+    fetch-registry: false       #由于注册中心职责就是维护服务实例，它并不需要去检索服务，设置成false
+    service-url:
+      defaultZone: "http://127.0.0.1:1111/rsc/eureka/"
+
+  instance:
+    appname: "${spring.application.name}"
+    instance-id: "${spring.application.name}:${server.port}"
+    prefer-ip-address: true                       # 设置微服务调用地址为IP优先（缺省为false）
+    lease-renewal-interval-in-seconds: 5          # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-expiration-duration-in-seconds: 15      # 发呆时间，即服务续约到期时间（缺省为90s）
+
+#RAW相关配置
+cn.fisok:
+  raw:
+    charset: UTF-8
+    run-model: Dev
+    temporary-directory: "/tmp/fisok/raw"
+    long-date-format: "yyyy-MM-dd HH:mm:ss.SSS"
+    shor-date-format: "yyyy-MM-dd"
+    json-serialize-secret-mask: "***"         #JSON序列化，保密字段统一使显示文字
+    json-serialize-property-secrets:          #JSON序列化，保密字段（向前端输出后，显示为 ${secret-mask})
+      - cn.fisok.auth.entity.User.password
+      - cn.fisok.auth.entity.User.status
+    json-serialize-property-excludes:         #JSON序列化，需要排除的字段（向前端输出后，这些字段不输出)
+      - cn.fisok.auth.entity.User.revision
+      - cn.fisok.auth.entity.User.orgId
+  web:
+    cross:
+      cors-enable: true
+  sqloy:
+    #    sql-dialect-type: db2  #这个属性已经取消，系统通过自动识别dbType
+    datasource:
+      master:
+        initial-size: 10
+        max-active: 100
+        min-idle: 10
+        max-wait: 60000
+        pool-prepared-statements: true
+        max-open-prepared-statements: -1  #-1 要启用PSCache，必须配置大于0，当大于0时，poolPreparedStatements自动触发修改为true。在Druid中，不会存在Oracle下PSCache占用内存过多的问题，可以把这个数值配置大一些，比如说100
+        max-pool-prepared-statement-per-connection-size: 20
+        validation-query: "select 1 from SYSIBM.SYSDUMMY1" # 用来检测连接是否有效的sql，要求是一个查询语句。如果validationQuery为null，testOnBorrow、testOnReturn、testWhileIdle都不会其作用。
+        test-on-borrow:                 #true,申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+        test-while-idle: true
+        test-on-return: false
+        time-between-eviction-runs-millis: 60000  #有两个含义：1) Destroy线程会检测连接的间隔时间2) testWhileIdle的判断依据，详细看testWhileIdle属性的说明
+        min-evictable-idle-time-millis: 300000
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.ibm.db2.jcc.DB2Driver
+        url: jdbc:db2://10.10.51.77:32007/xdgcdb:currentSchema=NULLID;
+        username: urcbxdgc
+        password: urcbxdgc
+    serial-number:
+      sn-cursor-record-type: DBTable  #流水号生成器记录方式：DBTable|Mybatis|Redis
+      default-generator: SN_GENRATOR_AUTO_INCREMENT  #默认流水号生成器,36进制+2位随机数
+      default-template: 0000      #默认流水号数字格式模板
+      generator-map:              #指定每个属性使用哪个流水号生成器: DEFAULT|UUID|NANO_TIME36|DATE_CYCLE_Y|DATE_CYCLE_YM|DATE_CYCLE_YMD
+        # "com.vekai.crops.customer.entity.CustomerPO.custId": "DEFAULT"
+        "com.vekai.crops.workflow.entity.WorkflowProcess.procId": "UUID"
+        "com.vekai.crops.workflow.entity.WorkflowTask.taskId": "NANO_TIME36"
+        "com.vekai.crops.invest.loan.entity.IvstPlanLoanPO.loanId": "DATE_CYCLE_YMD"
+      template-map:               #指定每个属性，生成的流水号格式
+        # "com.vekai.crops.customer.entity.CustomerPO.custId": "KH000000"
+        "com.vekai.crops.workflow.entity.WorkflowProcess.procId": "L000000000"
+        "com.vekai.crops.workflow.entity.WorkflowTask.taskId": "T000000000"
+        "com.vekai.crops.workflow.entity.WorkflowComment.commentId": "C000000000"
+
+
+ods:
+  datasource:
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    url: jdbc:db2://10.10.51.77:32007/xdgcdb:currentSchema=NULLID;
+    username: urcbxdgc
+    password: urcbxdgc
+
+
+erdm:
+  datasource:
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    url: jdbc:db2://10.10.51.77:32007/xdgcdb:currentSchema=NULLID;
+    username: urcbxdgc
+    password: urcbxdgc
+
+endpoints:
+  sensitive: false
+  cors:
+    allowedOrigins: "*"
+    allowedHeaders: "*"
+    allowCredentials: true
+    exposedHeaders: WWW-Authenticate
+
+debug: true
+
+com.vekai:
+  base:
+    cache: Memory #Memory,EHCache,Memcached,Redis,MongoDB
+  batch:
+    logdao: DataTable #DataTable,Redis
+  auth:
+    enableJwtReplaceSession: false
+  runtime:
+    corsEnable: true
+  sql:
+    sql-dialect-type: DB2
+
+com.vekai.crops.etl:
+  kettleSavePath: "/data/crops/kettle"

@@ -1,0 +1,233 @@
+{
+  "id": "demo-VoucherAssistInfo",
+  "pack": "demo",
+  "code": "VoucherAssistInfo",
+  "name": "凭证辅助详情",
+  "tags": "凭证辅助详情",
+  "description": "凭证辅助详情",
+  "dataModelType": "DataMap",
+  "dataModel": "FISC_VOUCHER_ASSIST",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "elements": [
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "科目辅助ID",
+      "code": "entryAssistId",
+      "dataType": "String",
+      "column": "ENTRY_ASSIST_ID",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "凭证ID",
+      "code": "voucherId",
+      "dataType": "String",
+      "column": "VOUCHER_ID",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0001",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "凭证科目ID",
+      "code": "voucherEntryId",
+      "dataType": "String",
+      "column": "VOUCHER_ENTRY_ID",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0002",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "模板科目ID",
+      "code": "gaapEntryId",
+      "dataType": "String",
+      "column": "GAAP_ENTRY_ID",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0003",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "账套科目ID",
+      "code": "bookEntryId",
+      "dataType": "String",
+      "column": "BOOK_ENTRY_ID",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0004",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "事件辅助ID",
+      "code": "eventAssistId",
+      "dataType": "String",
+      "column": "EVENT_ASSIST_ID",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0005",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "辅助项代码",
+      "code": "itemCode",
+      "dataType": "String",
+      "column": "ITEM_CODE",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0006",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "辅助项名称",
+      "code": "itemName",
+      "dataType": "String",
+      "column": "ITEM_NAME",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0007",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "数据类型",
+      "code": "dataType",
+      "dataType": "String",
+      "column": "DATA_TYPE",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "readonly": true,
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "DataType"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0008",
+      "validatorList": []
+    },
+    {
+      "dataformId": "demo-VoucherAssistInfo",
+      "name": "显示数值",
+      "code": "dataText",
+      "dataType": "String",
+      "column": "DATA_TEXT",
+      "table": "FISC_VOUCHER_ASSIST",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "required": true
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0009",
+      "validatorList": []
+    }
+  ],
+  "query": {
+    "select": "select",
+    "where": "ENTRY_ASSIST_ID=:entryAssistId",
+    "from": "FISC_VOUCHER_ASSIST"
+  },
+  "filters": []
+}

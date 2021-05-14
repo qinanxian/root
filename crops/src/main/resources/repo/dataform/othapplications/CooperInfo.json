@@ -1,0 +1,148 @@
+{
+  "id": "othapplications-CooperInfo",
+  "pack": "othapplications",
+  "code": "CooperInfo",
+  "name": "合作机构详情单",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "QCFQ_COOPER_ORG",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DetailInfo"
+  },
+  "query": {
+    "select": "select",
+    "where": "com_id = :comId",
+    "from": "QCFQ_COOPER_ORG"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-CooperInfo",
+      "name": "担保公司ID",
+      "code": "comId",
+      "dataType": "String",
+      "column": "COM_ID",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": false,
+        "required": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": [],
+      "primaryKey": true,
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-CooperInfo",
+      "name": "担保公司",
+      "code": "comName",
+      "dataType": "String",
+      "column": "COM_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2,
+      "group": ""
+    },
+    {
+      "dataformId": "othapplications-CooperInfo",
+      "name": "放款账号",
+      "code": "account",
+      "dataType": "String",
+      "column": "ACCOUNT",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "tips": "",
+        "note": "请输入16-19位银行卡号"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-CooperInfo",
+      "name": "开户行",
+      "code": "orgName",
+      "dataType": "String",
+      "column": "ORG_NAME",
+      "elementUIHint": {
+        "editStyle": "Text",
+        "dataFormat": "String",
+        "visible": true,
+        "readonly": true,
+        "required": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "htmlStyle": "{\"width\":\"180px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": [],
+      "table": "",
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": 2
+    },
+    {
+      "dataformId": "othapplications-CooperInfo",
+      "name": "人行分",
+      "code": "score",
+      "dataType": "Integer",
+      "column": "SCORE",
+      "elementUIHint": {
+        "editStyle": "Integer",
+        "dataFormat": "Integer",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "tips": "",
+        "note": "请输入正整数",
+        "htmlStyle": "{\"width\":\"182px\"}"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": [],
+      "multiplier": 1,
+      "limitedLength": 0,
+      "decimalDigits": "0",
+      "group": ""
+    }
+  ],
+  "filters": [],
+  "handler": "com.vekai.crops.othApplications.qcfq.handler.CooperHandler"
+}

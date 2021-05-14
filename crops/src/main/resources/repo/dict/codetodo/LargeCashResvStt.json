@@ -1,0 +1,21 @@
+{
+  "categoryCode": "codetodo",
+  "code": "LargeCashResvStt",
+  "name": "大额取现预约状态",
+  "intro": "大额取现预约状态",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "1",
+      "name": "正常",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "0",
+      "name": "撤销",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

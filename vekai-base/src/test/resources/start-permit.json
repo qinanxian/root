@@ -1,0 +1,170 @@
+{
+  "id" : "root",
+  "topic" : "金融风险平台",
+  "fullName" : "金融风险综合管理平台",/*保留*/
+  "shortName" : "金融风险平台",/*删除*/
+  "expanded" : true,
+  "contextId" : "root",
+  "globalId" : "root",    /*改为permitCode*/
+  "type" : "start",
+  "icon" : "",
+  "properties" :{
+    "permitCopyTpl": []
+  } ,
+  "children" : [ {
+    "id" : "root:customer",
+    "topic" : "客户管理",
+    "expanded" : false,
+    "type" : "menu",
+    "globalId" : "root:customer",
+    "contextId" : "customer",
+    "shortName" : "客户管理",
+    "fullName" : "vdvvdv",
+    "enabled" : "Y",
+    "icon" : "roic-asset",
+    "url" : "",
+    "param" : "",
+    "children" : [ {
+      "id" : "root:customer:ent",
+      "topic" : "法人客户",
+      "expanded" : false,
+      "type" : "menu",
+      "permitId" : "",
+      "contextId" : "ent",
+      "shortName" : "法人客户",
+      "fullName" : "法人客户",
+      "enabled" : "N",
+      "icon" : "user",
+      "url" : "/Customer/Enterprise",
+      "param" : "",
+      "label" : "法人客户",
+      "children" : [ {
+        "id" : "root:customer:ent:$datascope-all",
+        "topic" : "所有数据",
+        "expanded" : false,
+        "type" : "datascope",
+        "globalId" : "",
+        "contextId" : "$datascope-all",
+        "shortName" : "所有数据"
+      }, {
+        "id" : "root:customer:ent:$datascope-orgself",
+        "topic" : "本机构数据",
+        "expanded" : false,
+        "type" : "datascope",
+        "globalId" : "root:customer:ent:$datascope-orgself",
+        "contextId" : "$datascope-orgself",
+        "shortName" : "本机构数据"
+      }, {
+        "id" : "root:customer:ent:$datascope-subordinate",
+        "topic" : "本机构及下属机构",
+        "expanded" : false,
+        "type" : "datascope",
+        "globalId" : "root:customer:ent:$datascope-subordinate",
+        "contextId" : "$datascope-subordinate",
+        "shortName" : "本机构及下属机构"
+      }, {
+        "id" : "root:customer:ent:$datascope-self",
+        "topic" : "本人数据",
+        "expanded" : false,
+        "type" : "datascope",
+        "globalId" : "root:customer:ent:$datascope-self",
+        "contextId" : "$datascope-self",
+        "shortName" : "本人数据"
+      }, {
+        "id" : "root:customer:ent:$action-write",
+        "topic" : "写",
+        "expanded" : false,
+        "type" : "action",
+        "globalId" : "root:customer:ent:$action-write",
+        "contextId" : "$action-write",
+        "shortName" : "写"
+      }, {
+        "id" : "root:customer:ent:$action-read",
+        "topic" : "读",
+        "expanded" : false,
+        "type" : "action",
+        "globalId" : "root:customer:ent:$action-read",
+        "contextId" : "$action-read",
+        "shortName" : "读"
+      } ]
+    }, {
+      "id" : "root:customer:ind",
+      "topic" : "个人客户",
+      "expanded" : false,
+      "type" : "menu",
+      "globalId" : "root:customer:ind",
+      "contextId" : "ind",
+      "shortName" : "个人客户",
+      "fullName" : "个人客户",
+      "enabled" : "N",
+      "icon" : "",
+      "url" : "/Customer/Individual",
+      "param" : ""
+    } ]
+  }, {
+    "id" : "root:plan",
+    "topic" : "项目管理",
+    "expanded" : false,
+    "type" : "menu",
+    "globalId" : "root:plan",
+    "contextId" : "plan",
+    "shortName" : "项目管理",
+    "fullName" : "",
+    "enabled" : "N",
+    "icon" : "fa-home",
+    "url" : "home",
+    "param" : ""
+  }, {
+    "id" : "root:contract",
+    "topic" : "合同管理",
+    "expanded" : false,
+    "type" : "menu",
+    "globalId" : "root:contract",
+    "contextId" : "contract",
+    "shortName" : "合同管理",
+    "fullName" : "",
+    "enabled" : "Y",
+    "icon" : "fa-home",
+    "url" : "home",
+    "param" : ""
+  }, {
+    "id" : "root:configuration",
+    "topic" : "业务配置",
+    "expanded" : false,
+    "type" : "menu",
+    "globalId" : "root:configuration",
+    "contextId" : "configuration",
+    "shortName" : "业务配置",
+    "fullName" : "",
+    "enabled" : "Y",
+    "icon" : "fa-home",
+    "url" : "home",
+    "param" : ""
+  }, {
+    "id" : "root:system",
+    "topic" : "系统管理",
+    "expanded" : false,
+    "type" : "menu",
+    "globalId" : "root:system",
+    "contextId" : "system",
+    "shortName" : "系统管理",
+    "fullName" : "",
+    "enabled" : "Y",
+    "icon" : "fa-home",
+    "url" : "",
+    "param" : ""
+  }, {
+    "id" : "root:showcase",
+    "topic" : "参考案例",
+    "expanded" : false,
+    "type" : "menu",
+    "globalId" : "root:showcase",
+    "contextId" : "showcase",
+    "shortName" : "参考案例",
+    "fullName" : "",
+    "enabled" : "Y",
+    "icon" : "fa-home",
+    "url" : "home",
+    "param" : ""
+  } ]
+}

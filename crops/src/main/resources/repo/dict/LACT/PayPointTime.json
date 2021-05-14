@@ -1,0 +1,29 @@
+{
+  "code" : "PayPointTime",
+  "name" : "付款时点",
+  "nameI18nCode" : null,
+  "categoryCode" : "LACT",
+  "sortCode" : "10040",
+  "intro" : null,
+  "items" : [ {
+    "code" : "Prepay",
+    "name" : "先付",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "Postpay",
+    "name" : "后付",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

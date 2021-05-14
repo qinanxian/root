@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vekai.auth.mapper.UserRoleMapper">
+    <resultMap id="UserRoleResultMap" type="java.util.HashMap">
+        <id column="ID" property="id" jdbcType="INTEGER" javaType="Long"/>
+        <result column="USER_ID" property="userId" jdbcType="VARCHAR" javaType="String"/>
+        <result column="ROLE_ID" property="roleId" />
+        <result column="ORG_ID" property="orgId" />
+        <result column="POSITION_TYPE" property="positionType" />
+        <result column="REVISION" property="revision" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+    </resultMap>
+
+    <insert id="insert" parameterType="java.util.HashMap">
+        insert into AUTH_USER_ROLE
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">ID,</if>
+            <if test="userId != null">USER_ID,</if>
+            <if test="roleId != null">ROLE_ID,</if>
+            <if test="orgId != null">ORG_ID,</if>
+            <if test="positionType != null">POSITION_TYPE,</if>
+            <if test="revision != null">REVISION,</if>
+            <if test="createdBy != null">CREATED_BY,</if>
+            <if test="createdTime != null">CREATED_TIME,</if>
+            <if test="updatedBy != null">UPDATED_BY,</if>
+            <if test="updatedTime != null">UPDATED_TIME,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="roleId != null">#{roleId},</if>
+            <if test="orgId != null">#{orgId},</if>
+            <if test="positionType != null">#{positionType},</if>
+            <if test="revision != null">#{revision},</if>
+            <if test="createdBy != null">#{createdBy},</if>
+            <if test="createdTime != null">#{createdTime},</if>
+            <if test="updatedBy != null">#{updatedBy},</if>
+            <if test="updatedTime != null">#{updatedTime},</if>
+        </trim>
+    </insert>
+
+    <!--<delete id="delete" parameterType="java.util.HashMap">-->
+        <!--delete from AUTH_USER_ROLE where USER_ID=#{userId} and ROLE_ID=#{roleId}-->
+    <!--</delete>-->
+
+    <select id="selectCountByUserIdAndRoleId" resultType="java.lang.Integer">
+        SELECT count(1) from AUTH_USER_ROLE UR where USER_ID=#{userId} and ROLE_ID=#{roleId}
+    </select>
+
+    <select id="selectCountByUserCodeAndRoleCode" resultType="java.lang.Integer">
+        SELECT
+            count(1)
+        FROM
+            AUTH_USER_ROLE UR
+        WHERE
+            EXISTS(SELECT 1 FROM AUTH_USER U WHERE UR.USER_ID = U.ID AND U.CODE = #{userCode})
+                AND EXISTS(SELECT 1 FROM AUTH_ROLE R WHERE UR.ROLE_ID = R.ID AND R.CODE = #{roleCode})
+    </select>
+
+
+</mapper>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vekai.auth.mapper.RoleMapper">
+    <resultMap id="RoleResultMap" type="com.vekai.auth.entity.Role">
+        <id column="ID" property="id" jdbcType="VARCHAR" javaType="String"/>
+        <result column="CODE" property="code" jdbcType="VARCHAR" javaType="String"/>
+        <result column="NAME" property="name" />
+        <result column="TYPE" property="type" />
+        <result column="STATUS" property="status" />
+        <result column="SUMMARY" property="summary" />
+        <result column="REVISION" property="revision" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="UPDATED_BY" property="updatedBy" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+    </resultMap>
+    <sql id="allColumns">
+        ID,CODE,NAME,TYPE,STATUS,SUMMARY,REVISION,CREATED_BY,CREATED_TIME,UPDATED_BY,UPDATED_TIME
+    </sql>
+
+    <select id="selectById" resultMap="RoleResultMap" parameterType="java.lang.String">
+        select
+        <include refid="allColumns" />
+        from AUTH_ROLE
+        where ID=#{id}
+    </select>
+    <select id="selectByCode" resultMap="RoleResultMap" parameterType="java.lang.String">
+        select
+        <include refid="allColumns" />
+        from AUTH_ROLE
+        where CODE=#{code}
+    </select>
+
+    <insert id="insert" parameterType="com.vekai.auth.entity.Role">
+        insert into AUTH_ROLE
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">ID,</if>
+            <if test="code != null">CODE,</if>
+            <if test="name != null">NAME,</if>
+            <if test="type != null">TYPE,</if>
+            <if test="status != null">STATUS,</if>
+            <if test="summary != null">SUMMARY,</if>
+            <if test="revision != null">REVISION,</if>
+            <if test="createdBy != null">CREATED_BY,</if>
+            <if test="createdTime != null">CREATED_TIME,</if>
+            <if test="updatedBy != null">UPDATED_BY,</if>
+            <if test="updatedTime != null">UPDATED_TIME,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="code != null">#{code},</if>
+            <if test="name != null">#{name},</if>
+            <if test="type != null">#{type},</if>
+            <if test="status != null">#{status},</if>
+            <if test="summary != null">#{summary},</if>
+            <if test="revision != null">#{revision},</if>
+            <if test="createdBy != null">#{createdBy},</if>
+            <if test="createdTime != null">#{createdTime},</if>
+            <if test="updatedBy != null">#{updatedBy},</if>
+            <if test="updatedTime != null">#{updatedTime},</if>
+        </trim>
+    </insert>
+
+    <update id="update" parameterType="com.vekai.auth.entity.Role">
+        update AUTH_ROLE
+        <trim prefix="set" suffixOverrides=",">
+            <if test="id != null">ID=#{id},</if>
+            <if test="code != null">CODE=#{code},</if>
+            <if test="name != null">NAME=#{name},</if>
+            <if test="type != null">TYPE=#{type},</if>
+            <if test="status != null">STATUS=#{status},</if>
+            <if test="summary != null">SUMMARY=#{summary},</if>
+            <if test="revision != null">REVISION=#{revision},</if>
+            <if test="createdBy != null">CREATED_BY=#{createdBy},</if>
+            <if test="createdTime != null">CREATED_TIME=#{createdTime},</if>
+            <if test="updatedBy != null">UPDATED_BY=#{updatedBy},</if>
+            <if test="updatedTime != null">UPDATED_TIME=#{updatedTime},</if>
+        </trim>
+        where ID=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.String">
+        delete from AUTH_ROLE where ID=#{id}
+    </delete>
+</mapper>

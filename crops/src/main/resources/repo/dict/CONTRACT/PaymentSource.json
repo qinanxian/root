@@ -1,0 +1,19 @@
+{
+  "code" : "PaymentSource",
+  "name" : "还款来源",
+  "nameI18nCode" : null,
+  "categoryCode" : "CONTRACT",
+  "sortCode" : "10100",
+  "intro" : null,
+  "items" : [ {
+    "code" : "10",
+    "name" : "销售收入",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

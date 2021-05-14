@@ -1,0 +1,49 @@
+{
+  "code" : "FnastatPeriod",
+  "name" : "报表周期",
+  "nameI18nCode" : null,
+  "categoryCode" : "CUSTOMER",
+  "sortCode" : "1111",
+  "intro" : "财报周期",
+  "items" : [ {
+    "code" : "MR",
+    "name" : "月报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0110",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "YR",
+    "name" : "年报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0120",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "QR",
+    "name" : "季报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0130",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "SYR",
+    "name" : "半年报",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "0140",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "categoryCode": "doorsgin",
+  "code": "doorSignStatus",
+  "name": "面签状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "Succeed",
+      "name": "已完成",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "Fail",
+      "name": "未完成",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

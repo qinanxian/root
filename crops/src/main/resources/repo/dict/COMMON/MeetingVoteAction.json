@@ -1,0 +1,39 @@
+{
+  "code" : "MeetingVoteAction",
+  "name" : "投票意见",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0008",
+  "intro" : "投票意见的码表",
+  "items" : [ {
+    "code" : "FAVOT",
+    "name" : "赞成",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "NEGATIVE",
+    "name" : "反对",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "ABSTAIN",
+    "name" : "弃权",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

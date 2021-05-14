@@ -1,0 +1,27 @@
+{
+  "categoryCode": "etl",
+  "code": "JobStatus",
+  "name": "任务状态",
+  "intro": "",
+  "nameI18nCode": "",
+  "items": [
+    {
+      "code": "NORMAL",
+      "name": "调度正常",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "PAUSED",
+      "name": "调度暂停",
+      "hotspot": "1",
+      "status": "1"
+    },
+    {
+      "code": "RUNNING",
+      "name": "运行中",
+      "hotspot": "1",
+      "status": "1"
+    }
+  ]
+}

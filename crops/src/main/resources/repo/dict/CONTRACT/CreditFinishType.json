@@ -1,0 +1,39 @@
+{
+  "code" : "CreditFinishType",
+  "name" : "合同终结原因",
+  "nameI18nCode" : null,
+  "categoryCode" : "CONTRACT",
+  "sortCode" : "10020",
+  "intro" : null,
+  "items" : [ {
+    "code" : "10",
+    "name" : "正常终结",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "20",
+    "name" : "资产保全终结",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  }, {
+    "code" : "30",
+    "name" : "内部核销",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "30",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : null
+  } ]
+}

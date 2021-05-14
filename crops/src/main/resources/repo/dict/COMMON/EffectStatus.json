@@ -1,0 +1,29 @@
+{
+  "code" : "EffectStatus",
+  "name" : "有效失效",
+  "nameI18nCode" : null,
+  "categoryCode" : "COMMON",
+  "sortCode" : "0025",
+  "intro" : "有效失效",
+  "items" : [ {
+    "code" : "VALID",
+    "name" : "有效",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "10",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "有效"
+  }, {
+    "code" : "INVALID",
+    "name" : "失效",
+    "nameI18nCode" : null,
+    "value" : null,
+    "sortCode" : "20",
+    "hotspot" : 0,
+    "correlation" : null,
+    "status" : "1",
+    "summary" : "失效"
+  } ]
+}
