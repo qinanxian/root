@@ -66,6 +66,25 @@
     },
     {
       "dataformId": "customer-CustomList",
+      "name": "客户标签",
+      "code": "customerLabel",
+      "dataType": "String",
+      "column": "CUSTOMER_LABEL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "customer-CustomList",
       "name": "身份证号",
       "code": "certId",
       "dataType": "String",
@@ -81,7 +100,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0020",
+      "sortCode": "0030",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -104,7 +123,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0030",
+      "sortCode": "0040",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -129,7 +148,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0040",
+      "sortCode": "0050",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -152,7 +171,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0050",
+      "sortCode": "0060",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -175,7 +194,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0060",
+      "sortCode": "0070",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -199,7 +218,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0070",
+      "sortCode": "0080",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -226,7 +245,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0080",
+      "sortCode": "0090",
       "validatorList": [],
       "multiplier": 1,
       "limitedLength": 0,
@@ -250,7 +269,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0090",
+      "sortCode": "0100",
       "validatorList": []
     },
     {
@@ -270,7 +289,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0100",
+      "sortCode": "0110",
       "validatorList": []
     },
     {
@@ -291,7 +310,7 @@
         "textAlign": "Left",
         "readonly": true
       },
-      "sortCode": "0110",
+      "sortCode": "0120",
       "column": "FACE_FILE_ID",
       "validatorList": []
     },
@@ -311,7 +330,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0120",
+      "sortCode": "0130",
       "validatorList": []
     },
     {
@@ -330,7 +349,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0130",
+      "sortCode": "0140",
       "validatorList": []
     },
     {
@@ -349,7 +368,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0140",
+      "sortCode": "0150",
       "validatorList": []
     },
     {
@@ -368,7 +387,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0150",
+      "sortCode": "0160",
       "validatorList": []
     },
     {
@@ -387,7 +406,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0160",
+      "sortCode": "0170",
       "validatorList": []
     },
     {
@@ -406,7 +425,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0170",
+      "sortCode": "0180",
       "validatorList": []
     },
     {
@@ -426,7 +445,7 @@
         "dataFormat": "String",
         "textAlign": "Left"
       },
-      "sortCode": "0180",
+      "sortCode": "0190",
       "column": "''",
       "validatorList": []
     },
@@ -446,7 +465,7 @@
       "updateable": true,
       "persist": true,
       "enabled": true,
-      "sortCode": "0190",
+      "sortCode": "0200",
       "validatorList": []
     }
   ],

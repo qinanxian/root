@@ -1826,3 +1826,14 @@ children:
         enabled: 'Y'
         url: ReportStatistics/ConsumeNow
         param: ''
+  - topic: 标签管理
+    type: menu
+    icon: fa-hand-pointer-o
+    children: []
+    path: root.197f12fad708c13c5
+    permitCode: ''
+    contextId: 197f12fad708c13c5
+    fullName: 标签管理
+    enabled: 'Y'
+    url: OthApplications/Label
+    param: ''

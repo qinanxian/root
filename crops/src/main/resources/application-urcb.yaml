@@ -24,7 +24,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.ibm.db2.jcc.DB2Driver
-    url: jdbc:db2://111.229.64.141:50000/mydb:currentSchema=DB2INST1;
+    url: jdbc:db2://182.254.135.45:50000/mydb:currentSchema=NULLID;
     username: db2inst1
     password: db2inst1-pwd
 

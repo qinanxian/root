@@ -67,9 +67,9 @@ cn.fisok:
         min-evictable-idle-time-millis: 300000
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.ibm.db2.jcc.DB2Driver
-        url: jdbc:db2://18.10.232.131:60000/cropdb:currentSchema=CROP;
-        username: urcbweb
-        password: UGW0r5rxPWtjGJI8WRfxuyUgleCg57wx4Xyr2NXzKW+ENT9bsCnyNyqHc6hfQpKADf3+buX5msD4ZLcufQLuUA==
+        url: jdbc:db2://182.254.135.45:50000/mydb:currentSchema=NULLID;
+        username: db2inst1
+        password: db2inst1-pwd
         filters: config
         connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALk6IfqGkseaWOdxbihMVwltIwlQysnFaiEtuG2OFDDhUzAwFK9uhy7Bqrwcp0hoTE6W1lbccPFFNitw/PhzbncCAwEAAQ==
     serial-number:

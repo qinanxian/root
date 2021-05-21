@@ -67,11 +67,11 @@ cn.fisok:
         min-evictable-idle-time-millis: 300000
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.ibm.db2.jcc.DB2Driver
-        url: jdbc:db2://111.229.64.141:50000/mydb:currentSchema=DB2INST1;
-        username: DB2INST1
-        password: DxOutMPdImrjpoTiEd1zJUpAwYSiyn90GwdhUHq5UQSZw4yAepkONwVV/CUeDl1ILZKwtsnBmgDdeIS1M0wi4Q==
+        url: jdbc:db2://182.254.135.45:50000/mydb:currentSchema=NULLID;
+        username: db2inst1
+        password: db2inst1-pwd
         filters: config
-        connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALuuCadoKdTU+GSjq7Vb9c2mRpxNMGTnqSN88Ff6htVkEe0dvbRYd8DWKK4DchBwzj+mUmOTw1U89t5lNcr4hKUCAwEAAQ==
+#        connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALuuCadoKdTU+GSjq7Vb9c2mRpxNMGTnqSN88Ff6htVkEe0dvbRYd8DWKK4DchBwzj+mUmOTw1U89t5lNcr4hKUCAwEAAQ==
     serial-number:
       sn-cursor-record-type: DBTable  #流水号生成器记录方式：DBTable|Mybatis|Redis
       default-generator: SN_GENRATOR_AUTO_INCREMENT  #默认流水号生成器,36进制+2位随机数

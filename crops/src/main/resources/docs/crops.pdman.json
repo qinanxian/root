@@ -11584,6 +11584,12 @@
               "chnname": "上级合伙人编号"
             },
             {
+              "name": "CUSTOMER_LABEL",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "客户标签"
+            },
+            {
               "name": "REVISION",
               "type": "Integer",
               "remark": "",
@@ -17198,6 +17204,257 @@
             }
           ],
           "chnname": "企业信息表"
+        }
+      ],
+      "graphCanvas": {
+        "nodes": [],
+        "edges": []
+      },
+      "associations": []
+    },
+    {
+      "name": "YXGL",
+      "chnname": "营销管理",
+      "entities": [
+        {
+          "title": "MARKETING",
+          "fields": [
+            {
+              "name": "ID",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "ID"
+            },
+            {
+              "name": "ACTIVITY_BRAND",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "活动品牌"
+            },
+            {
+              "name": "ACTIVITY_NAME",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "活动名称"
+            },
+            {
+              "name": "ACTIVITY_ATTRIBUTE",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "活动属性"
+            },
+            {
+              "name": "START_TIME",
+              "type": "Date",
+              "remark": "",
+              "chnname": "开始时间"
+            },
+            {
+              "name": "END_TIME",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "结束时间"
+            },
+            {
+              "name": "SYN_STATUS",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "同步状态"
+            },
+            {
+              "name": "REVISION",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "乐观锁"
+            },
+            {
+              "name": "CREATED_BY",
+              "type": "IdOrKey",
+              "remark": "",
+              "chnname": "创建人"
+            },
+            {
+              "name": "CREATED_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "UPDATED_BY",
+              "type": "IdOrKey",
+              "remark": "",
+              "chnname": "更新人"
+            },
+            {
+              "name": "UPDATED_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "uiHint",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "营销管理表"
+        },
+        {
+          "title": "LABELINFO",
+          "fields": [
+            {
+              "name": "ID",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "ID",
+              "pk": true,
+              "notNull": true
+            },
+            {
+              "name": "FULL_NAME",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "标签全称"
+            },
+            {
+              "name": "ABBREV_NAME",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "标签简称"
+            },
+            {
+              "name": "RULSE_FLAG",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "是否支持规则"
+            },
+            {
+              "name": "REMARKS",
+              "type": "Intro",
+              "remark": "",
+              "chnname": "备注"
+            },
+            {
+              "name": "REVISION",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "乐观锁"
+            },
+            {
+              "name": "CREATED_BY",
+              "type": "IdOrKey",
+              "remark": "",
+              "chnname": "创建人"
+            },
+            {
+              "name": "CREATED_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "UPDATED_BY",
+              "type": "IdOrKey",
+              "remark": "",
+              "chnname": "更新人"
+            },
+            {
+              "name": "UPDATED_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "uiHint",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "标签信息表"
         }
       ],
       "graphCanvas": {

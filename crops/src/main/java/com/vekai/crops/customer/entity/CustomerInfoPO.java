@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-
 @Table(name="CUSTOMER_INFO")
 public class CustomerInfoPO implements Serializable,Cloneable{
     /** 编号 */
@@ -75,6 +74,12 @@ public class CustomerInfoPO implements Serializable,Cloneable{
     private String sourceOa ;
     /** 客户来源机构号 */
     private String sourceOrg ;
+    /** 营销合伙人编号 */
+    private String marketId ;
+    /** 上级合伙人编号 */
+    private String partnerId ;
+    /** 客户标签 */
+    private String customerLabel ;
     /** 乐观锁 */
     private Integer revision ;
     /** 创建人 */
@@ -349,6 +354,30 @@ public class CustomerInfoPO implements Serializable,Cloneable{
     /** 客户来源机构号 */
     public void setSourceOrg(String sourceOrg){
         this.sourceOrg = sourceOrg;
+    }
+    /** 营销合伙人编号 */
+    public String getMarketId(){
+        return this.marketId;
+    }
+    /** 营销合伙人编号 */
+    public void setMarketId(String marketId){
+        this.marketId = marketId;
+    }
+    /** 上级合伙人编号 */
+    public String getPartnerId(){
+        return this.partnerId;
+    }
+    /** 上级合伙人编号 */
+    public void setPartnerId(String partnerId){
+        this.partnerId = partnerId;
+    }
+    /** 客户标签 */
+    public String getCustomerLabel(){
+        return this.customerLabel;
+    }
+    /** 客户标签 */
+    public void setCustomerLabel(String customerLabel){
+        this.customerLabel = customerLabel;
     }
     /** 乐观锁 */
     public Integer getRevision(){
