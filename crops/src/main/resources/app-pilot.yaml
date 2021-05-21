@@ -1827,13 +1827,34 @@ children:
         url: ReportStatistics/ConsumeNow
         param: ''
   - topic: 标签管理
-    type: menu
-    icon: fa-hand-pointer-o
-    children: []
     path: root.197f12fad708c13c5
-    permitCode: ''
     contextId: 197f12fad708c13c5
+    permitCode: ''
+    type: menu
     fullName: 标签管理
+    icon: fa-hand-pointer-o
     enabled: 'Y'
     url: OthApplications/Label
+    param: ''
+  - topic: ' 营销管理'
+    type: menu
+    icon: roic-showcase
+    children:
+      - topic: 营销活动
+        type: menu
+        icon: ''
+        children: []
+        path: root.198f5e64db70d7a53.198f6045a2755582b
+        permitCode: ''
+        contextId: 198f6045a2755582b
+        fullName: 营销活动
+        enabled: 'Y'
+        url: OthApplications/Activitty
+        param: ''
+    path: root.198f5e64db70d7a53
+    permitCode: ''
+    contextId: 198f5e64db70d7a53
+    fullName: ' 营销管理'
+    enabled: 'Y'
+    url: ''
     param: ''

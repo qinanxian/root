@@ -17223,13 +17223,9 @@
               "name": "ID",
               "type": "DefaultString",
               "remark": "",
-              "chnname": "ID"
-            },
-            {
-              "name": "ACTIVITY_BRAND",
-              "type": "DefaultString",
-              "remark": "",
-              "chnname": "活动品牌"
+              "chnname": "活动ID",
+              "pk": true,
+              "notNull": true
             },
             {
               "name": "ACTIVITY_NAME",
@@ -17238,28 +17234,58 @@
               "chnname": "活动名称"
             },
             {
-              "name": "ACTIVITY_ATTRIBUTE",
-              "type": "DefaultString",
-              "remark": "",
-              "chnname": "活动属性"
-            },
-            {
-              "name": "START_TIME",
+              "name": "ACTIVITY_START_TIME",
               "type": "Date",
               "remark": "",
-              "chnname": "开始时间"
+              "chnname": "活动开始时间"
             },
             {
-              "name": "END_TIME",
-              "type": "DefaultString",
+              "name": "ACTIVITY_ENT_TIME",
+              "type": "Date",
               "remark": "",
-              "chnname": "结束时间"
+              "chnname": "活动结束时间"
             },
             {
-              "name": "SYN_STATUS",
+              "name": "ACTIVITY_URL",
+              "type": "Intro",
+              "remark": "",
+              "chnname": "活动网址"
+            },
+            {
+              "name": "TARGET_CUSTOMER",
               "type": "DefaultString",
               "remark": "",
-              "chnname": "同步状态"
+              "chnname": "目标客户"
+            },
+            {
+              "name": "ACTIVITY_STATUS",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "活动状态"
+            },
+            {
+              "name": "LATANDLONG_A",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "网格经纬度A"
+            },
+            {
+              "name": "LATANDLONG_B",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "网格经纬度B"
+            },
+            {
+              "name": "LATANDLONG_C",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "网格经纬度C"
+            },
+            {
+              "name": "LATANDLONG_D",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "网格经纬度D"
             },
             {
               "name": "REVISION",
