@@ -2,6 +2,7 @@ package com.vekai.crops.common.controller;
 
 import cn.fisok.sqloy.core.BeanCruder;
 import cn.fisok.web.kit.HttpKit;
+import com.vekai.crops.common.service.ActivityService;
 import com.vekai.crops.common.service.FileGatwayServiceImpl;
 import com.vekai.crops.common.service.HolidayConfigurAtionService;
 import com.vekai.crops.common.service.WhiteListOfNetworkService;
@@ -56,6 +57,9 @@ public class FileComnController {
     @Autowired
     private FileGatwayServiceImpl fileGatwayService;
 
+    @Autowired
+    private ActivityService activityService;
+
     static final String CONF_FILE = "webapp/office/pageoffice/demo-import-config.xlsx";
     static final String NETWORK_FILE = "webapp/office/pageoffice/network-template.xlsx";
     static final String INSURENET_FILE = "webapp/office/pageoffice/insurenet-template.xlsx";
@@ -64,6 +68,7 @@ public class FileComnController {
     static final String LARGECASHWHITE_FILE = "webapp/office/pageoffice/largeCashWhite-template.xlsx";
     static final String STAFFWHITE_FILE = "webapp/office/pageoffice/staffwhite-template.xlsx";
     static final String HOLIDAY = "webapp/office/pageoffice/HolidayConfiguration-template.xlsx";
+    static final String ACTIVITYF_ILE = "webapp/office/pageoffice/activityList-template.xlsx";
 
     /**
      * 下载文件系统文件
@@ -115,6 +120,22 @@ public class FileComnController {
             IOKit.close(inputStream);
         }
 //        return inputStream;
+    }
+
+    /**
+     * 下载营销活动Excel模版
+     *
+     * @param templateName
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/downloadActivityList")
+    public void downloadActivityList(String templateName, HttpServletRequest request, HttpServletResponse response) {
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(ACTIVITYF_ILE);
+        String fileName = cn.fisok.web.kit.HttpKit.iso8859(templateName, request);
+
+        Map<String, String> headers = MapKit.mapOf("Content-Disposition", "attachment; filename=" + fileName);
+        HttpKit.renderStream(response, inputStream, ContentType.XLSX, headers);
     }
 
     /**
@@ -242,7 +263,8 @@ public class FileComnController {
             itemName = "年度节假日配置列表";
         } else if ("downloadWhiteList".equals(key)) {
             itemName = "企业预约开户网点人员白名单";
-
+        }else if ("downloadActivi".equals(key)) {
+            itemName = "营销活动列表";
         }
         InputStream dataInput = getUploadInputStream(request);
         InputStream confInput = this.getClass().getClassLoader().getResourceAsStream(CONF_FILE);
@@ -319,6 +341,8 @@ public class FileComnController {
                     holidayConfigurAtionService.setHolyId(data);
                 } else if ("企业预约开户网点人员白名单".equals(id)) {
                     whiteListOfNetworkservice.getWhiteListOfNetwork(data);
+                }else if ("营销活动".equals(id)) {
+                    activityService.setHolyId(data);
                 }
 
             }
