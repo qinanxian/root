@@ -11585,7 +11585,7 @@
             },
             {
               "name": "CUSTOMER_LABEL",
-              "type": "DefaultString",
+              "type": "Intro",
               "remark": "",
               "chnname": "客户标签"
             },

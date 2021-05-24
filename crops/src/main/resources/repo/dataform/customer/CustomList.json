@@ -72,10 +72,12 @@
       "column": "CUSTOMER_LABEL",
       "elementUIHint": {
         "dataFormat": "String",
-        "editStyle": "Text",
+        "editStyle": "CheckBox",
         "visible": true,
         "colspan": 1,
-        "textAlign": "Left"
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT ID AS CODE, FULL_NAME AS NAME FROM LABELINFO"
       },
       "updateable": true,
       "persist": true,

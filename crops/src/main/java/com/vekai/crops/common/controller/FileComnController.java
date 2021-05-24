@@ -264,7 +264,7 @@ public class FileComnController {
         } else if ("downloadWhiteList".equals(key)) {
             itemName = "企业预约开户网点人员白名单";
         }else if ("downloadActivi".equals(key)) {
-            itemName = "营销活动列表";
+            itemName = "营销活动";
         }
         InputStream dataInput = getUploadInputStream(request);
         InputStream confInput = this.getClass().getClassLoader().getResourceAsStream(CONF_FILE);

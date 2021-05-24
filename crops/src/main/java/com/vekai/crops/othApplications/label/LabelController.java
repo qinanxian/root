@@ -26,7 +26,7 @@ public class LabelController {
         ArrayNode orgIdArray = JsonUtil.getArrayNodeByPath(jsonNode, "orgIdArray");
         for (int i = 0; i < orgIdArray.size(); i++) {
             String s = orgIdArray.get(i).textValue();
-            stringBuilder.append("/"+s);
+            stringBuilder.append(s+",");
         }
         String id = JsonUtil.getJsonStringValue(jsonNode, "id");
         String sql="select * from CUSTOMER_INFO where id =:id ";

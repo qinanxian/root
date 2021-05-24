@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/Activity")
 public class ActivityController {
@@ -26,12 +28,31 @@ public class ActivityController {
         String sql="select * from MARKETING where id =:id ";
         String id = JsonUtil.getJsonStringValue(jsonNode, "id");
         Marketing marketing = beanCruder.selectOne(Marketing.class, sql, "id", id);
+
+        String sqlCust="select * from CUSTOMER_INFO";
+        List<CustomerInfoPO> customerInfoPOS = beanCruder.selectList(CustomerInfoPO.class, sqlCust);
         if("3".equals(marketing.getActivityStatus())){
             return 1;
+        }else if("0".equals(marketing.getActivityStatus())){
+            marketing.setActivityStatus("1");
+            int update = beanCruder.update(marketing);
+        }else if("1".equals(marketing.getActivityStatus())){
+            return 2;
         }
-        String[] strArr = targetCustomer.split(",");
-        for (int i = 0; i < strArr.length; ++i){
-            System.out.println("发送消息给标签为"+strArr[i]+"的客户");//这里输出a b c
+        for (CustomerInfoPO customerInfoPO : customerInfoPOS) {
+            String customerLabel = customerInfoPO.getCustomerLabel();
+            if(customerLabel!=null&&!"".equals(customerLabel)){
+                String[] split = customerLabel.split(",");
+                for (int i = 0; i < split.length; i++) {
+                    String s = split[i];
+                    String[] strArr = targetCustomer.split(",");
+                    for (int j = 0; j < strArr.length; ++j){
+                        if(split[i].equals(strArr[j])){
+                            System.out.println("发送消息给标签为"+strArr[j]+"的客户"+"客户的姓名为"+customerInfoPO.getCertName()+",手机号为"+customerInfoPO.getTel());//这里输出a b c
+                        }
+                    }
+                }
+            }
         }
         return 0;
     }
