@@ -1,0 +1,58 @@
+{
+  "id": "othapplications-CustomInfoLabelInfo",
+  "pack": "othapplications",
+  "code": "CustomInfoLabelInfo",
+  "name": "编辑客户标签",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "LABELINFO",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "LABELINFO"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-CustomInfoLabelInfo",
+      "name": "ID",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-CustomInfoLabelInfo",
+      "name": "标签全称",
+      "code": "fullName",
+      "dataType": "String",
+      "column": "FULL_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}

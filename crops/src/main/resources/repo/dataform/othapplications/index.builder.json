@@ -1,0 +1,405 @@
+{
+  "desc": "该文件为自动生成和维护，请勿手动修改",
+  "dataforms": [
+    {
+      "id": "othapplications-AddRepaymentInfo",
+      "code": "AddRepaymentInfo",
+      "name": "新增还款信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 1,
+      "fieldLength": 6,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-AddPreApproval",
+      "code": "AddPreApproval",
+      "name": "新增预授信信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 11,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-Apply",
+      "code": "Apply",
+      "name": "申请产品",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 2,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-BusinessInfo",
+      "code": "BusinessInfo",
+      "name": "业务详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 12,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-ApplyInfo",
+      "code": "ApplyInfo",
+      "name": "应用详情",
+      "dataModelType": "DataMap",
+      "tags": "详情",
+      "formStyle": "DetailInfo",
+      "columnNumber": 1,
+      "fieldLength": 2,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-CooperInfo",
+      "code": "CooperInfo",
+      "name": "合作机构详情单",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 1,
+      "fieldLength": 5,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-Business",
+      "code": "Business",
+      "name": "业务信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 15,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-CardInfo",
+      "code": "CardInfo",
+      "name": "卡单详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 42,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-Card",
+      "code": "Card",
+      "name": "卡单信息表",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 50,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-Cooper",
+      "code": "Cooper",
+      "name": "合作机构",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 5,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-CustWishesInfo",
+      "code": "CustWishesInfo",
+      "name": "客户意愿详情",
+      "dataModelType": "DataMap",
+      "tags": "ELECTRONIC_INTEND",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 5,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-Distribute",
+      "code": "Distribute",
+      "name": "融资订单信息分发",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 1,
+      "fieldLength": 7,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-CarInfo",
+      "code": "CarInfo",
+      "name": "车辆信息详情",
+      "dataModelType": "DataMap",
+      "tags": "车辆",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 7,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-CustWishesList",
+      "code": "CustWishesList",
+      "name": "客户意愿列表",
+      "dataModelType": "DataMap",
+      "tags": "ELECTRONIC_INTEND",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 8,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-ElectAuthorList",
+      "code": "ElectAuthorList",
+      "name": "电子授权列表",
+      "dataModelType": "DataMap",
+      "tags": "ELECTRONIC_AUTHOR",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 13,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-ElectContractInfo",
+      "code": "ElectContractInfo",
+      "name": "电子合同详情",
+      "dataModelType": "DataMap",
+      "tags": "ELECTRONIC_CONTRACT",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 19,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-ElectAuthorInfo",
+      "code": "ElectAuthorInfo",
+      "name": "电子授权详情",
+      "dataModelType": "DataMap",
+      "tags": "ELECTRONIC_AUTHOR",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 11,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-DoorSignatrueList",
+      "code": "DoorSignatrueList",
+      "name": "上门面签列表",
+      "dataModelType": "DataMap",
+      "tags": "DOOR_SIGNATRUE",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 12,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-DoorSignatrueInfo",
+      "code": "DoorSignatrueInfo",
+      "name": "上面面签详情",
+      "dataModelType": "DataMap",
+      "tags": "DOOR_SIGNATRUE",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 8,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-FilingContractInfo",
+      "code": "FilingContractInfo",
+      "name": "备案合同信息详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 10,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-FinaInfo",
+      "code": "FinaInfo",
+      "name": "融资订单信息详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 27,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-ElectContractList",
+      "code": "ElectContractList",
+      "name": "电子合同列表",
+      "dataModelType": "DataMap",
+      "tags": "ELECTRONIC_CONTRACT",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 8,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-FinancingList",
+      "code": "FinancingList",
+      "name": "融资订单信息列表",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 10,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-EnterpriseInfo",
+      "code": "EnterpriseInfo",
+      "name": "企业详情信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 43,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-FilingContractList",
+      "code": "FilingContractList",
+      "name": "备案合同信息管理列表",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 10,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-Para",
+      "code": "Para",
+      "name": "期限利率详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 5,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-PreApprovalList",
+      "code": "PreApprovalList",
+      "name": "预授信信息列表管理",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 10,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-PreApprovalInfo",
+      "code": "PreApprovalInfo",
+      "name": "新增预授信信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 11,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-UpdateRepaymentInfo",
+      "code": "UpdateRepaymentInfo",
+      "name": "修改还款信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 1,
+      "fieldLength": 6,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-ParaInfo",
+      "code": "ParaInfo",
+      "name": "期限利率详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 1,
+      "fieldLength": 5,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-RepaymentInfo",
+      "code": "RepaymentInfo",
+      "name": "还款信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 2,
+      "fieldLength": 4,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-PaymentInfo",
+      "code": "PaymentInfo",
+      "name": "支付信息",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 2,
+      "fieldLength": 3,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-QueryUserName",
+      "code": "QueryUserName",
+      "name": "获取网点操作员",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 5,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-yxgl",
+      "code": "yxgl",
+      "name": "营销管理",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 12,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-CustomInfoLabelInfo",
+      "code": "CustomInfoLabelInfo",
+      "name": "编辑客户标签",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 2,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-labelList",
+      "code": "labelList",
+      "name": "标签管理列表",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 9,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-labelInfo",
+      "code": "labelInfo",
+      "name": "标签管理详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 10,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-acticityInfo",
+      "code": "acticityInfo",
+      "name": "营销活动详情",
+      "dataModelType": "DataMap",
+      "formStyle": "DetailInfo",
+      "columnNumber": 2,
+      "fieldLength": 13,
+      "validateLength": 0
+    },
+    {
+      "id": "othapplications-acticityList",
+      "code": "acticityList",
+      "name": "营销活动列表",
+      "dataModelType": "DataMap",
+      "formStyle": "DataTable",
+      "columnNumber": 1,
+      "fieldLength": 7,
+      "validateLength": 0
+    }
+  ]
+}

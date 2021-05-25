@@ -1,0 +1,157 @@
+{
+  "id": "othapplications-acticityList",
+  "pack": "othapplications",
+  "code": "acticityList",
+  "name": "营销活动列表",
+  "managedByRR": false,
+  "dataModelType": "DataMap",
+  "dataModel": "MARKETING",
+  "formUIHint": {
+    "columnNumber": 1,
+    "formStyle": "DataTable"
+  },
+  "query": {
+    "select": "select",
+    "from": "MARKETING"
+  },
+  "elements": [
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "活动ID",
+      "code": "id",
+      "dataType": "String",
+      "column": "ID",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": false,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0000",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "活动名称",
+      "code": "activityName",
+      "dataType": "String",
+      "column": "ACTIVITY_NAME",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0010",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "活动开始时间",
+      "code": "activityStartTime",
+      "dataType": "Date",
+      "column": "ACTIVITY_START_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0020",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "活动结束时间",
+      "code": "activityEntTime",
+      "dataType": "Date",
+      "column": "ACTIVITY_ENT_TIME",
+      "elementUIHint": {
+        "dataFormat": "Date",
+        "editStyle": "DatePicker",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0030",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "目标客户",
+      "code": "targetCustomer",
+      "dataType": "String",
+      "column": "TARGET_CUSTOMER",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "CheckBox",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "SQLQuery",
+        "dictCodeExpr": "SELECT ID AS CODE, FULL_NAME AS NAME FROM LABELINFO"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0040",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "活动状态",
+      "code": "activityStatus",
+      "dataType": "String",
+      "column": "ACTIVITY_STATUS",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Select",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left",
+        "dictCodeMode": "DictCode",
+        "dictCodeExpr": "activityStatus"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0050",
+      "validatorList": []
+    },
+    {
+      "dataformId": "othapplications-acticityList",
+      "name": "活动网址",
+      "code": "activityUrl",
+      "dataType": "String",
+      "column": "ACTIVITY_URL",
+      "elementUIHint": {
+        "dataFormat": "String",
+        "editStyle": "Text",
+        "visible": true,
+        "colspan": 1,
+        "textAlign": "Left"
+      },
+      "updateable": true,
+      "persist": true,
+      "enabled": true,
+      "sortCode": "0060",
+      "validatorList": []
+    }
+  ],
+  "filters": []
+}
